@@ -1,0 +1,22 @@
+{
+  "buildFiles": [
+    "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/build/cmake/compiler_id.cmake",
+    "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/build/cmake/android-legacy.toolchain.cmake",
+    "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/src/main/jni/CMakeLists.txt",
+    "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake",
+    "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/debug/x86_64\" clean"
+  ],
+  "buildTargetsCommand": "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/debug/x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Debug-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommand": "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/debug/x86_64\" native-lib",
+      "abi": "x86_64",
+      "output": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so",
+      "runtimeFiles": []
+    }
+  }
+}

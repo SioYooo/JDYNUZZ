@@ -1,0 +1,11 @@
+# ninja log v5
+0	152	1653102325	CMakeFiles/native-lib.dir/native-lib.cpp.o	7f31725da9810f4c
+153	187	1653102325	/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	f99e3beb69775368
+0	519	1653102740	CMakeFiles/native-lib.dir/native-lib.cpp.o	7f31725da9810f4c
+519	729	1653102740	/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	f99e3beb69775368
+0	14	0	clean	ff6a1356e7578140
+5	704	1657083230	CMakeFiles/native-lib.dir/native-lib.cpp.o	7f31725da9810f4c
+704	1030	1657083230	/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	f99e3beb69775368
+1	13	0	clean	ff6a1356e7578140
+1	142	1657083279	CMakeFiles/native-lib.dir/native-lib.cpp.o	7f31725da9810f4c
+142	196	1657083279	/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	f99e3beb69775368

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="42ee4f6d-ddda-4d6e-b1e8-1ef13721a61c" name="136.186.241.67" url="http://136.186.241.67">
+        <fileTransfer rootFolder="/hci/chaoran_data" accessType="SFTP" host="136.186.241.67" port="22" sshConfigId="8916736f-5eea-4256-adff-a2af9833c113" sshConfig="136.186.241.67" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" connections="30" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
+          </advancedOptions>
+        </fileTransfer>
+        <option name="numberOfConnections" value="30" />
+      </webServer>
+    </option>
+  </component>
+</project>

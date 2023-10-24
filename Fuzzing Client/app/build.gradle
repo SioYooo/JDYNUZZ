@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.example.fuzzer"
+        minSdkVersion 29
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // 增加cmake控制属性
+        externalNativeBuild {
+            cmake {
+                // 指定编译架构 可以省略
+                //abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86', 'x86_64'
+                // cpp 编译时的额外选项 可以省略
+                cppFlags ""
+            }
+        }
+    }
+
+    // 在android节点下
+    // 指定CMakeLists.txt路径
+    externalNativeBuild {
+        cmake {
+            // 在该文件种设置所要编写的c源码位置，以及编译后so文件的名字
+            path "src/main/jni/CMakeLists.txt"
+            // cmake版本 可以省略
+            version "3.10.2"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.example.fuzzer'
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation files('libs/fastjson-1.2.73.jar')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+}

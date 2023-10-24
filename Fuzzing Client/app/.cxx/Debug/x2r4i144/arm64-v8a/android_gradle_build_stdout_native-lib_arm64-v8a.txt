@@ -1,0 +1,3 @@
+ninja: Entering directory `/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/Debug/x2r4i144/arm64-v8a'
+[1/2] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+[2/2] Linking CXX shared library /Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cxx/Debug/x2r4i144/obj/arm64-v8a/libnative-lib.so

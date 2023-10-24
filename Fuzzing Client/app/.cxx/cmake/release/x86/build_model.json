@@ -1,0 +1,208 @@
+{
+  "abi": "X86",
+  "abiPlatformVersion": 29,
+  "buildSettings": {
+    "environmentVariables": []
+  },
+  "cmake": {
+    "cmakeArtifactsBaseFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/x86",
+    "cmakeServerLogFile": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/x86/cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cxx/release/x86",
+    "effectiveConfiguration": {
+      "name": "traditional-android-studio-cmake-environment",
+      "description": "Composite reified CMakeSettings configuration",
+      "generator": "Ninja",
+      "inheritEnvironments": [
+        "ndk"
+      ],
+      "buildRoot": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/x86",
+      "cmakeToolchain": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake",
+      "cmakeExecutable": "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+      "variables": [
+        {
+          "name": "CMAKE_FIND_ROOT_PATH",
+          "value": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/prefab/x86/prefab"
+        },
+        {
+          "name": "CMAKE_BUILD_TYPE",
+          "value": "Release"
+        },
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake"
+        },
+        {
+          "name": "ANDROID_ABI",
+          "value": "x86"
+        },
+        {
+          "name": "ANDROID_NDK",
+          "value": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888"
+        },
+        {
+          "name": "ANDROID_PLATFORM",
+          "value": "android-29"
+        },
+        {
+          "name": "CMAKE_ANDROID_ARCH_ABI",
+          "value": "x86"
+        },
+        {
+          "name": "CMAKE_ANDROID_NDK",
+          "value": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888"
+        },
+        {
+          "name": "CMAKE_EXPORT_COMPILE_COMMANDS",
+          "value": "ON"
+        },
+        {
+          "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
+          "value": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cmake/release/obj/x86"
+        },
+        {
+          "name": "CMAKE_MAKE_PROGRAM",
+          "value": "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+        },
+        {
+          "name": "CMAKE_SYSTEM_NAME",
+          "value": "Android"
+        },
+        {
+          "name": "CMAKE_SYSTEM_VERSION",
+          "value": "29"
+        }
+      ]
+    }
+  },
+  "cxxBuildFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/x86",
+  "info": {
+    "abi": "X86",
+    "bitness": 32,
+    "deprecated": false,
+    "default": true
+  },
+  "originalCxxBuildFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/x86",
+  "variant": {
+    "buildSystemArgumentList": [],
+    "buildTargetSet": [],
+    "cFlagsList": [],
+    "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
+    "cppFlagsList": [
+      ""
+    ],
+    "isDebuggableEnabled": false,
+    "module": {
+      "buildSystem": "CMAKE",
+      "cmake": {
+        "cmakeExe": "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake",
+        "minimumCmakeVersion": "3.10.2",
+        "ninjaExe": "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja"
+      },
+      "cmakeToolchainFile": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake",
+      "cxxFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx",
+      "gradleModulePathName": ":app",
+      "intermediatesFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates",
+      "makeFile": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/src/main/jni/CMakeLists.txt",
+      "moduleBuildFile": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build.gradle",
+      "moduleRootFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app",
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkFolder": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888",
+      "ndkMetaAbiList": [
+        {
+          "abi": "ARMEABI_V7A",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "ARM64_V8A",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86",
+          "bitness": 32,
+          "deprecated": false,
+          "default": true
+        },
+        {
+          "abi": "X86_64",
+          "bitness": 64,
+          "deprecated": false,
+          "default": true
+        }
+      ],
+      "ndkMetaPlatforms": {
+        "min": 19,
+        "max": 32,
+        "aliases": {
+          "20": 19,
+          "25": 24,
+          "J": 16,
+          "J-MR1": 17,
+          "J-MR2": 18,
+          "K": 19,
+          "L": 21,
+          "L-MR1": 22,
+          "M": 23,
+          "N": 24,
+          "N-MR1": 24,
+          "O": 26,
+          "O-MR1": 27,
+          "P": 28,
+          "Q": 29,
+          "R": 30,
+          "S": 31,
+          "Sv2": 32
+        }
+      },
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultStl": "LIBCXX_STATIC",
+      "ndkVersion": "24.0.8215888",
+      "project": {
+        "compilerSettingsCacheFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/.cxx",
+        "cxxFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/.cxx",
+        "isBuildOnlyTargetAbiEnabled": true,
+        "isCmakeBuildCohabitationEnabled": false,
+        "isNativeCompilerSettingsCacheEnabled": false,
+        "rootBuildGradleFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer",
+        "sdkFolder": "/Users/chaoranli/Library/Android/sdk",
+        "isPrefabEnabled": false
+      },
+      "splitsAbiFilterSet": [],
+      "stlSharedObjectMap": {
+        "LIBCXX_SHARED": {
+          "ARMEABI_V7A": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "ARM64_V8A": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "X86": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "X86_64": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
+        },
+        "LIBCXX_STATIC": {},
+        "NONE": {},
+        "SYSTEM": {}
+      }
+    },
+    "objFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cmake/release/obj",
+    "variantName": "release",
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "ARM64_V8A",
+      "X86",
+      "X86_64"
+    ],
+    "prefabDirectory": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/prefab",
+    "prefabPackageDirectoryList": []
+  },
+  "prefabFolder": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/cmake/release/prefab/x86"
+}

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/Debug/x2r4i144/armeabi-v7a",
+  "command": "/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi29 --sysroot=/Users/chaoranli/Library/Android/sdk/ndk/24.0.8215888/toolchains/llvm/prebuilt/darwin-x86_64/sysroot  -Dnative_lib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fprofile-instr-generate -fcoverage-mapping -fno-limit-debug-info  -fPIC   -o CMakeFiles/native-lib.dir/native-lib.cpp.o -c /Users/chaoranli/AndroidStudioProjects/fuzzer/app/src/main/jni/native-lib.cpp",
+  "file": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/src/main/jni/native-lib.cpp"
+}
+]

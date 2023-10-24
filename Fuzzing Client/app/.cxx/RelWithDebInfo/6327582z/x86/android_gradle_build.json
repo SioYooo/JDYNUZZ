@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/src/main/jni/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/RelWithDebInfo/6327582z/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/RelWithDebInfo/6327582z/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib-RelWithDebInfo-x86": {
+      "buildCommandComponents": [
+        "/Users/chaoranli/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/.cxx/RelWithDebInfo/6327582z/x86",
+        "native-lib"
+      ],
+      "buildType": "release",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "output": "/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cxx/RelWithDebInfo/6327582z/obj/x86/libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

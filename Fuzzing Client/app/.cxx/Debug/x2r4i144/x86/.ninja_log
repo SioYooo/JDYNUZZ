@@ -1,0 +1,7 @@
+# ninja log v5
+0	5	0	clean	ff6a1356e7578140
+0	831	1661915693	CMakeFiles/native-lib.dir/native-lib.cpp.o	1958033c98e9cd2f
+0	9	0	clean	ff6a1356e7578140
+0	11	0	clean	ff6a1356e7578140
+2	712	1661915729	CMakeFiles/native-lib.dir/native-lib.cpp.o	1958033c98e9cd2f
+712	779	1661915729	/Users/chaoranli/AndroidStudioProjects/fuzzer/app/build/intermediates/cxx/Debug/x2r4i144/obj/x86/libnative-lib.so	94377a71503c568
