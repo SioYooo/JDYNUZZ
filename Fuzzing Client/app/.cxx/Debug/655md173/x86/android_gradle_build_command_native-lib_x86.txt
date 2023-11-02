@@ -1,0 +1,7 @@
+Executable : C:\Users\au424\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+arguments : 
+-C
+F:\TIFS\JDYNUZZ\Fuzzing Client\app\.cxx\Debug\655md173\x86
+native-lib
+jvmArgs : 
+

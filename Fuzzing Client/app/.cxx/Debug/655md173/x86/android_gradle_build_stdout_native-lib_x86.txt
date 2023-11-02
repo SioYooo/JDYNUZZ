@@ -1,0 +1,3 @@
+ninja: Entering directory `F:\TIFS\JDYNUZZ\Fuzzing Client\app\.cxx\Debug\655md173\x86'
+[1/2] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+[2/2] Linking CXX shared library "F:\TIFS\JDYNUZZ\Fuzzing Client\app\build\intermediates\cxx\Debug\655md173\obj\x86\libnative-lib.so"

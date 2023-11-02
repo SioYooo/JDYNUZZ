@@ -24,16 +24,23 @@ public class Engine {
     // 值数组【"abc"，-1，【"obj"，。。。】。。。】
     // 两组同时传给客户端
 
+    // 设置 device ID，作为给 adb 的 指令进行传参
+    // TODO：可能需要修改为虚拟机 ID
     static String DEVICE = "8CFX1NP4C";
+    // PACKAGE_name 参数 用做查找 进程 ID 等作用 - 在 ADB 中进行 fuzzer engine 查找
     static String PACKAGE_NAME = "com.example.fuzzer";
 //    static String adb_path = "/hci/chaoran_data/android-12.0.0_r31/out/soong/host/linux-x86/bin/adb";
+    // 设置 adb 指令
     static String adb_path = "adb";
+    // 进行 JNI 的 API index 计数
     static int STARTFROM = 0;
     static boolean PRINT_ADB_LOG = false;
+    // 设置每个 API 的 time out 时间
     static int TIME_OUT_EVERY_API = 6 * 1000;
 
     static boolean KILL_BY_TIMEOUT = false;
     static String objFileName = "";
+    // 遍历 API index
     static int API_INDEX = -1;
     static String pid;
     static String lastAvailablePid;
@@ -63,7 +70,9 @@ public class Engine {
         return getRandomCharacter('\u0000', '\uFFFF');
     }
 
+
     public static void analyzeJNI() {
+        // 通过 load() 函数对 jni12.0/jni_with_isStatic.json 文件进行读取解析得到 jniClass list
         List<JniClass> jniList = load();
         int total = jniList.size();
         int apiHasObj = 0;

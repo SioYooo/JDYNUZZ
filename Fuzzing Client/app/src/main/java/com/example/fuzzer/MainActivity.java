@@ -69,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
     private static PrintWriter writer;
     private static boolean PROVIDE_VALUES = false;
     private static String objFileName = null;
+    private static String DCIM_PATH = "/sdcard/Android/data/com.example.fuzzer/files/DCIM";
 
 
     protected String handleStr() {
@@ -1148,6 +1149,9 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         Log.e("JNI_OUT_PUT", string);
+        // 输出完整的 DCIM 路径
+        //Log.e("Path", Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM).getAbsolutePath());
+        Log.e("DCIM_PATH", getApplicationContext().getExternalFilesDir(Environment.DIRECTORY_DCIM).getAbsolutePath());
 
         // run server, normal mode
         new Thread(serverRun).start();
@@ -1910,6 +1914,8 @@ public class MainActivity extends AppCompatActivity {
 
         File folder = getApplicationContext().getExternalFilesDir(Environment.DIRECTORY_DCIM);
         if (folder.exists() ||folder.mkdir()) {
+            // 使用 debug 打印出 folder 的路径
+
             File file = new File(folder, objFileName + ".obj");
             FileOutputStream fileOut = null;
             try {

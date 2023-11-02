@@ -23,6 +23,11 @@ public class Engine {
     // adb path
     static String adb_path = set_adb_path();
 
+    // operating system seperator
+    static String seperator = File.separator;
+
+    static String os = System.getProperty("os.name");
+
 
 
     static int StartFrom = 0;
@@ -123,6 +128,93 @@ public class Engine {
         System.out.println("% non-static = " + Math.round((float)count_non_static/(float)classNo * 10000f)/100f + "\\%");
         System.out.println("total API number with object: " + apiHasObj);
 
+    }
+
+    public static void reproduction(String objFilePath, boolean needPush) throws Exception {
+        String objFile = "";
+
+        // if need push, push the obj file to the device
+        if (needPush) {
+            objFile = objFilePath.substring(objFilePath.lastIndexOf("/") + 1).replace(".obj", "");
+            String target = "/storage/emulated/0/Android/data/com.example.fuzzer/files/DCIM";
+            String command = adb_path + " push " + objFilePath + " " + target;
+            System.out.println(command);
+            ProcessBuilder pb;
+            if (os.contains("Windows")) {
+                pb = new ProcessBuilder("cmd", "/c", command);
+
+            } else {
+                pb = new ProcessBuilder(command);
+            }
+            Process p = pb.start();
+            int exitVal = p.waitFor();
+            System.out.println("cmd result: " + exitVal);
+            // 如果 push 失败，直接退出，否则, objFile = ObjFilePath
+            if (exitVal != 0) {
+                System.out.println("push obj file failed");
+                System.exit(exitVal);
+            } else {
+                objFile = objFilePath;
+            }
+        }
+
+        int port = 6100;
+
+        lastAvailablePid = pid;
+        System.out.println("lastAvailablePid: " + lastAvailablePid);
+        record_str = "";
+        hasSaved = false;
+        KILL_BY_TIMEOUT = false;
+
+        if (not_debug) {
+            // TODO: 做LogMonitorThread
+            logMoniterTimeOutThread = new Thread(logMoniterTimeOutRun);
+            logMoniterTimeOutThread.start();
+        }
+
+    }
+
+    public static String getPID(){
+        String activity = "MainActivity";
+
+        Process process = null;
+        String pid = "";
+        try {
+            while(pid.isEmpty()){
+                process = Runtime.getRuntime().exec(adb_path + " -s "+DEVICE+" shell pidof "+PACKAGE_NAME);
+
+                DataInputStream dis = new DataInputStream(process.getInputStream());
+                byte[] buf = new byte[8];
+                int len = -1;
+                StringBuilder sb = new StringBuilder();
+                while ((len = dis.read(buf)) != -1) {
+                    String str = new String(buf, 0, len);
+                    sb.append(str);
+                }
+//                if(!sb.toString().trim().isEmpty()){
+                pid = sb.toString().trim();
+                System.out.println("Obtain PID: " + pid);
+//                }
+
+
+                if(pid.isEmpty()){
+//                    System.out.println("kill -9 lastAvailablePid:" + lastAvailablePid);
+//                    Runtime.getRuntime().exec("kill -9 "+lastAvailablePid);
+//                    lastAvailablePid
+                    System.out.println(adb_path + " -s " + DEVICE + " shell am force-stop " + PACKAGE_NAME);
+                    Runtime.getRuntime().exec(adb_path + " -s " + DEVICE + " shell am force-stop " + PACKAGE_NAME);
+                    TimeUnit.MILLISECONDS.sleep(1000);
+                    Runtime.getRuntime().exec(adb_path + " -s "+DEVICE+" shell am start "+PACKAGE_NAME+"/."+activity);
+                    TimeUnit.MILLISECONDS.sleep(1000);
+                }
+            }
+            return pid;
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     // init basicTypes list
