@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="136.186.241.67" id="8916736f-5eea-4256-adff-a2af9833c113" keyPath="$USER_HOME$/.ssh/id_rsa-remote-ssh" port="22" customName="136.186.241.67" nameFormat="CUSTOM" username="chaoran" useOpenSSHConfig="true">
+        <option name="customName" value="136.186.241.67" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

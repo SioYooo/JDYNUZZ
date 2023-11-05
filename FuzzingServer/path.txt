@@ -1,3 +1,0 @@
-# enter required executable path for configuring the environment (please enter absolute path)
-
-adb_path = C:\Users\au424\AppData\Local\Android\Sdk\platform-tools\adb.exe
