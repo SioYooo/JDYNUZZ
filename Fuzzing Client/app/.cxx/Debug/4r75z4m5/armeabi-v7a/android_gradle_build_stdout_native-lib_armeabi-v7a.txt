@@ -1,0 +1,2 @@
+ninja: Entering directory `/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/.cxx/Debug/4r75z4m5/armeabi-v7a'
+ninja: no work to do.

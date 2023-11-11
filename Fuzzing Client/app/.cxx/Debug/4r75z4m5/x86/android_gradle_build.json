@@ -1,0 +1,40 @@
+{
+  "stringTable": {},
+  "buildFiles": [
+    "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/src/main/jni/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/siyu/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/.cxx/Debug/4r75z4m5/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/siyu/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/.cxx/Debug/4r75z4m5/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "native-lib-Debug-x86": {
+      "buildCommandComponents": [
+        "/home/siyu/Android/Sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/.cxx/Debug/4r75z4m5/x86",
+        "native-lib"
+      ],
+      "buildType": "debug",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "output": "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/build/intermediates/cxx/Debug/4r75z4m5/obj/x86/libnative-lib.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {},
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

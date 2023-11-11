@@ -69,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
     private static PrintWriter writer;
     private static boolean PROVIDE_VALUES = false;
     private static String objFileName = null;
-    private static String DCIM_PATH = "/sdcard/Android/data/com.example.fuzzer/files/DCIM";
+    // private static String DCIM_PATH = "/sdcard/Android/data/com.example.fuzzer/files/DCIM";
+    // DCIM_PATH for emulator
+    private static String DCIM_PATH = "/storage/emulated/0/Android/data/com.example.fuzzer/files/DCIM";
 
 
     protected String handleStr() {
