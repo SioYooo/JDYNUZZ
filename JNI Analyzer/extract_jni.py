@@ -3666,12 +3666,7 @@ def test14(tem):
                         found = oper
                         print('FOUND', oper)
                         tem = tem[:oper[0]] + '&&' + tem[oper[0]+2:]
-                        print(tem)
-                    elif oper[2] == '!' and oper[0]>start and oper[0]<end:
-                        found = oper
-                        print('FOUND', oper)
-                        tem = tem[:oper[0]] + tem[oper[0]+1:]
-                        print(tem)
+                        print(tem)8625
 
                 if found:
                     print('FOUND true')
@@ -3693,12 +3688,7 @@ def test14(tem):
     print(tem)
 
 def test122():
-    # c_cpp_list = find_command_star_node('frameworks/av/media/libmediaplayerservice/MediaPlayerService.cpp')
-    # entry_funs = ['MediaPlayerService::listenForRemoteDisplay(', 'Client::setDataSource(']
-    # cpp = 'frameworks/av/services/camera/libcameraservice/CameraService.cpp'
-    # cpp = 'frameworks/av/services/radio/RadioService.cpp'
-    cpp = 'frameworks/av/services/audioflinger/AudioFlinger.cpp'
-    # cpp = 'AudioRecord.cpp'
+    # c_cpp_list = find_command_star_node('frameworks/av/media/libmediaplayerservice/MediaPl8625
     # print(project_path)
     c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '12.0', compdb=True)
     # 7.0 和 8.0函数名不同
