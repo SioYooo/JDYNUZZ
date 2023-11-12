@@ -89,29 +89,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "AnalyzeApkAction.lastApkPath": "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/build/intermediates/apk/debug/app-debug.apk",
-    "ApkExportedModule": "fuzzer.app",
-    "ExportApk.ApkPathForfuzzer.app": "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "cidr.known.project.marker": "true",
-    "com.android.tools.idea.devicemanager.tab": "Physical",
-    "last_opened_file_path": "/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/build/intermediates/apk/debug/app-debug.apk",
-    "memory.settings.postsync.last.time.stamp": "1699560854800",
-    "project.structure.last.edited": "SDK Location",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;AnalyzeApkAction.lastApkPath&quot;: &quot;/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/build/intermediates/apk/debug/app-debug.apk&quot;,
+    &quot;ApkExportedModule&quot;: &quot;fuzzer.app&quot;,
+    &quot;ExportApk.ApkPathForfuzzer.app&quot;: &quot;/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.android.tools.idea.devicemanager.tab&quot;: &quot;Physical&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/siyu/tifs/JDYNUZZ/Fuzzing Client/app/build/intermediates/apk/debug/app-debug.apk&quot;,
+    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1699560854800&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
-  "keyToStringList": {
-    "ExportApk.BuildVariants": [
-      "debug"
+  &quot;keyToStringList&quot;: {
+    &quot;ExportApk.BuildVariants&quot;: [
+      &quot;debug&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Signing Configs" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />

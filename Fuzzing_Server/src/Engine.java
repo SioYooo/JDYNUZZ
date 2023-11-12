@@ -171,7 +171,7 @@ public class Engine {
 //    }
         analyzeJNI();
         // 批量 ===========================================================
-        bench();
+        // bench();
 
         bench_dependency();
 //        testClass = "android.graphics.RenderNode";

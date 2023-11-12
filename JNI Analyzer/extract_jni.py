@@ -39,7 +39,9 @@ callgraph
 # init_arg_config = ['-isystem/hci/chaoran_data/android-10.0.0_r45/prebuilts/clang/host/linux-x86/clang-r353983c1/lib64/clang/9.0.3/include']
 # init_arg_config = ['-x', 'c++', '-isystem/hci/chaoran_data/android-10.0.0_r45/prebuilts/clang/host/linux-x86/clang-r353983c1/lib64/clang/9.0.3/include']
 
-project_path = '/hci/chaoran_data/android-12.0.0_r31/'
+# project_path = '/hci/chaoran_data/android-12.0.0_r31/'
+project_path = '/data_ssd_1/siyu/aosp/'
+# TODO: change path
 Config.set_library_path('/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/')
 init_arg_config = ['-isystem/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include']
 
