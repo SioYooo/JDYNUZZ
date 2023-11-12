@@ -16,6 +16,9 @@ Pixel 3
 # -------------
 # Download and Extract Pixel 3 Driver Binary from https://developers.google.com/android/drivers#bluelinesp1a.210812.016.c1
 
+# cp two downloaded driver binary into the root folder of AOSP
+# then execute these two shell scripts
+
 # -------------
 # Compilation 
 # Document https://source.android.com/docs/setup/build/building

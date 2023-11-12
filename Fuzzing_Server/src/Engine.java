@@ -25,9 +25,9 @@ public class Engine {
     // 两组同时传给客户端
 
     // 设置 device ID，作为给 adb 的 指令进行传参
-    //static String DEVICE = "8CFX1NP4C";
+    static String DEVICE = "8CFX1NP4C";
     // static String DEVICE = "emulator-5554";
-    static String DEVICE = "0.0.0.0:6520";
+    // static String DEVICE = "0.0.0.0:6520";
     // PACKAGE_name 参数 用做查找 进程 ID 等作用 - 在 ADB 中进行 fuzzer engine 查找
     static String PACKAGE_NAME = "com.example.fuzzer";
 //    static String adb_path = "/hci/chaoran_data/android-12.0.0_r31/out/soong/host/linux-x86/bin/adb";
@@ -520,6 +520,7 @@ public class Engine {
                     continue;
                 }
                 System.out.println("\n\nFrom here, new call!!!(" + API_INDEX + "/" + total + ")");
+                Runtime.getRuntime().exec(adb_path + " -s " + DEVICE + " shell input swipe 300 1000 300 100");
                 jni.print();
 
                 String className = jni.getClass_();

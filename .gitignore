@@ -1,1 +1,2 @@
-/Fuzzing_server/crash_log/*
+/Fuzzing_Server/crash_log/*
+/Fuzzing_Server/hwasan_crash_log/*

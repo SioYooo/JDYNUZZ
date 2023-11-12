@@ -1,4 +1,5 @@
-apk="../app/build/outputs/apk/debug/app-debug.apk"
+# apk="../app/build/outputs/apk/debug/app-debug.apk"
+apk="../app/debug/app-debug.apk"
 device="8CFX1NP4C"
 
 # run these two lines first
