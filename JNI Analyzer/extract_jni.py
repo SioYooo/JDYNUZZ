@@ -39,9 +39,7 @@ callgraph
 # init_arg_config = ['-isystem/hci/chaoran_data/android-10.0.0_r45/prebuilts/clang/host/linux-x86/clang-r353983c1/lib64/clang/9.0.3/include']
 # init_arg_config = ['-x', 'c++', '-isystem/hci/chaoran_data/android-10.0.0_r45/prebuilts/clang/host/linux-x86/clang-r353983c1/lib64/clang/9.0.3/include']
 
-# project_path = '/hci/chaoran_data/android-12.0.0_r31/'
-project_path = '/data_ssd_1/siyu/aosp/'
-# TODO: change path
+project_path = '/hci/chaoran_data/android-12.0.0_r31/'
 Config.set_library_path('/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/')
 init_arg_config = ['-isystem/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include']
 
@@ -3666,7 +3664,12 @@ def test14(tem):
                         found = oper
                         print('FOUND', oper)
                         tem = tem[:oper[0]] + '&&' + tem[oper[0]+2:]
-                        print(tem)8625
+                        print(tem)
+                    elif oper[2] == '!' and oper[0]>start and oper[0]<end:
+                        found = oper
+                        print('FOUND', oper)
+                        tem = tem[:oper[0]] + tem[oper[0]+1:]
+                        print(tem)
 
                 if found:
                     print('FOUND true')
@@ -3688,7 +3691,12 @@ def test14(tem):
     print(tem)
 
 def test122():
-    # c_cpp_list = find_command_star_node('frameworks/av/media/libmediaplayerservice/MediaPl8625
+    # c_cpp_list = find_command_star_node('frameworks/av/media/libmediaplayerservice/MediaPlayerService.cpp')
+    # entry_funs = ['MediaPlayerService::listenForRemoteDisplay(', 'Client::setDataSource(']
+    # cpp = 'frameworks/av/services/camera/libcameraservice/CameraService.cpp'
+    # cpp = 'frameworks/av/services/radio/RadioService.cpp'
+    cpp = 'frameworks/av/services/audioflinger/AudioFlinger.cpp'
+    # cpp = 'AudioRecord.cpp'
     # print(project_path)
     c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '12.0', compdb=True)
     # 7.0 和 8.0函数名不同
