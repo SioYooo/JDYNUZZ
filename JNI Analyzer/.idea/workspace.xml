@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3357631b-4b99-47f0-ba93-45393f5f2edf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/jni12.0_old/jni.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jni12.0_old/jni_class_list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jni12.0_old/jni_with_isStatic.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jni12.0_old/list.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tem/out_build_ninja.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_jni.py" beforeDir="false" afterPath="$PROJECT_DIR$/extract_jni.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/find_jni_java_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/find_jni_java_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jni12.0/jni.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jni12.0/jni_class_list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jni12.0/jni_with_isStatic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jni12.0/list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ninja_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/ninja_parse.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2Y77CLlebOmDtO4oRTNUJWn4Ipf" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/siyu/tifs/JDYNUZZ/JNI Analyzer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tem" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3357631b-4b99-47f0-ba93-45393f5f2edf" name="Changes" comment="" />
+      <created>1699864636094</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699864636094</updated>
+      <workItem from="1699864637086" duration="82000" />
+      <workItem from="1699864725281" duration="9863000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JNI_Analyzer$find_jni_java_class.coverage" NAME="find_jni_java_class Coverage Results" MODIFIED="1699936389429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/JNI_Analyzer$extract_jni_new.coverage" NAME="extract_jni_new Coverage Results" MODIFIED="1699871171802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/JNI_Analyzer$extract_jni.coverage" NAME="extract_jni Coverage Results" MODIFIED="1699937043614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/JNI_Analyzer$generate_compdb.coverage" NAME="generate_compdb Coverage Results" MODIFIED="1699929060855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/JNI_Analyzer$helper.coverage" NAME="helper Coverage Results" MODIFIED="1699936382641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/JNI_Analyzer$ninja_parse.coverage" NAME="ninja_parse Coverage Results" MODIFIED="1699929113322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

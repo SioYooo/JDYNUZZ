@@ -950,9 +950,12 @@ public class config {
         jar_list.add(BASE + "dialer-grpc-core-target_intermediates.jar");
         jar_list.add(BASE + "androidx.media_media_intermediates.jar");
 
+
+
         for (String tem: jar_list){
             r += File.pathSeparator + tem;
         }
+        System.out.println(r);
         return r;
     }
 
