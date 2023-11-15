@@ -3,3 +3,5 @@
 /Fuzzing_Server/hwasan_crash_log*
 /Fuzzing_Server/crash_log*
 # 忽略 JNI Analyzer 文件夹下的文件
+JNI Analyzer/tem/*
+
