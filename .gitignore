@@ -2,5 +2,5 @@
 /Fuzzing_Server/hwasan_crash_log/*
 /Fuzzing_Server/hwasan_crash_log*
 /Fuzzing_Server/crash_log*
-JNI Analyzer/tem/*
+JNI_Analyzer/tem/*
 
