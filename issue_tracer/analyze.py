@@ -39,6 +39,10 @@ def calculate_issue_category():
 
 def save_to_file():
     with open(cwd + os.sep + 'result.txt', "w", encoding='utf-8') as f:
+        f.write("Total issue file: " + str(len(issue_file_dict)) + "\n")
+        f.write("Total issue categories: " + str(len(issue_categories_dict)) + "\n")
+        f.write("*" * 50 + "\n")
+
         for category in issue_categories_dict:
             f.write(category + ": " + str(issue_categories_dict[category]) + "\n")
 
