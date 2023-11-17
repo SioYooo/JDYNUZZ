@@ -123,5 +123,7 @@ with open(args.ninja_file) as ninja_file:
         if not has_subcommands:
             parse_command(command, file)
 
-with open('compile_commands.json', 'w') as compdb_file:
+# 传入参数应该处于 out/soong/build.ninja 所在目录
+# /data_ssd_1/siyu/aosp/out/build-aosp_blueline.ninja
+with open('/home/siyu/tifs/JDYNUZZ/JNI Analyzer/tem/compile_commands.json', 'w') as compdb_file:
     json.dump(compdb, compdb_file, indent=1)

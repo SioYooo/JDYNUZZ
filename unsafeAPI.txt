@@ -28,7 +28,8 @@ com.android.i18n.timezone.internal.Memory void pokeIntArray(long, int[], int, in
 com.android.org.conscrypt.NativeCrypto boolean X25519(byte[], byte[], byte[])
 com.android.org.conscrypt.NativeCrypto byte[] SSL_export_keying_material(long, com.android.org.conscrypt.NativeSsl, byte[], byte[], int)
 com.android.org.conscrypt.NativeCrypto int SSL_set_protocol_versions(long, com.android.org.conscrypt.NativeSsl, int, int)
-dalvik.system.VMDebug void startMethodTracingDdmsImpl(int, int, boolean, int)
+dalvik.system.VMDebug void startMethodzsy940427
+TracingDdmsImpl(int, int, boolean, int)
 libcore.io.Memory void pokeDoubleArray(long, double[], int, int, boolean)
 libcore.io.Memory void pokeFloatArray(long, float[], int, int, boolean)
 libcore.io.Memory void pokeIntArray(long, int[], int, int, boolean)

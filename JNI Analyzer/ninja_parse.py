@@ -22,8 +22,11 @@ build $
 # ninja_file2 = 'build-aosp_arm64.ninja'
 # project_path = '/hci/chaoran_data/android-9.0.0_r47'
 # project_path = '/hci/chaoran_data/android-8.1.0_r67'
-ninja_file = 'build-aosp_arm64.ninja'
-project_path = '/hci/chaoran_data/android-10.0.0_r45'
+# ninja_file = 'build-aosp_arm64.ninja'
+# project_path = '/hci/chaoran_data/android-10.0.0_r45'
+
+ninja_file = 'build-aosp_blueline.ninja'
+project_path = '/data_ssd_1/siyu/aosp'
 
 def process_soong_ninja():
 
@@ -395,6 +398,8 @@ def merge_jsons(version):
         json.dump(json_list, file_obj)
 
 if __name__ == '__main__':
-    # process_soong_ninja()
-    # process_out_ninja()
-    merge_jsons('10.0')
+    process_soong_ninja()
+    process_out_ninja()
+    # merge_jsons('10.0')
+    
+    merge_jsons("")

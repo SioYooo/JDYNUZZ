@@ -20,7 +20,9 @@ compdb = True
 # save_path = 'jni10.0/jni.json'
 # save_path2 = 'jni10.0/cleaned_java_jni.json'
 # version = '10.0'
-project_path = '/hci/chaoran_data/android-12.0.0_r31'
+# project_path = '/hci/chaoran_data/android-12.0.0_r31'
+
+project_path = '/data_ssd_1/siyu/aosp'
 save_path2 = 'jni12.0/jni_class_list.json'
 save_path = 'jni12.0/jni.json'
 version = '12.0'
