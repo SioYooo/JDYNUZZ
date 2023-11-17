@@ -512,7 +512,7 @@ public class Engine {
         while(time < times_max) {
             time++;
             //List顺序打乱
-//            Collections.shuffle(jniList);
+            Collections.shuffle(jniList);
 
             for (JniClass jni : jniList) {
                 API_INDEX = API_INDEX + 1;
