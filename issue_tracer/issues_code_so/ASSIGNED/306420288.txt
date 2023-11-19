@@ -1,0 +1,17 @@
+.so
+variant.jniLibs.addGeneratedSourceDirectory()
+variant.unitTest.jniLibs.addGeneratedSourceDirectory()
+externalNativeBuild
+Build: AI-232.9921.47.2321.10905494, 202310050128
+
+AI-232.9921.47.2321.10905494, JRE 17.0.8+0-17.0.8b1000.22-10799086x64 JetBrains s.r.o., OS Linux(amd64) v6.4.4-3rodete1-amd64, screens 3840.0x2080.0
+
+AS: Iguana | 2023.2.1 Canary 7
+Kotlin plugin: 232-1.9.0-release-358-AS9921.47.2321.10905494
+Android Gradle Plugin: 8.1.2
+Gradle: 8.4
+Gradle JDK: JetBrains Runtime version 17.0.8
+NDK: from local.properties: (not specified), latest from SDK: 25.2.9519653
+CMake: from local.properties: (not specified), latest from SDK: 3.22.1-g37088a8, from PATH: 3.26.4
+Source: send_feedback_icon
+

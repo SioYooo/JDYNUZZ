@@ -1,0 +1,13 @@
+.so
+.so
+.so
+.so
+.so
+Edit Configurations... | Debugger | Symbol Directories
+-DNDEBUG
+add_definitions(-DNDEBUG)
+
+LOCAL_CFLAGS += -DNDEBUG
+
+#ifdef DEBUG
+wrap.sh
