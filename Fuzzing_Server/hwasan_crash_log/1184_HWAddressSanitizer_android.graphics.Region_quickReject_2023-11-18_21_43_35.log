@@ -1,0 +1,12 @@
+
+android.graphics.Region|quickReject|android.graphics.Region|boolean
+
+objfileName: 1700304226047.obj
+
+android.graphics.Region|quickReject|2023-11-18 21:43:35
+11-18 10:43:46.085 16872 16891 I app_process64: ==16872==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x0077fc606b48
+11-18 10:43:46.085 16872 16891 I app_process64: READ of size 16 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T34
+11-18 10:43:46.102 16872 16891 I app_process64:     #0 0x77fc606b44  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1eb44)
+11-18 10:43:46.102 16872 16891 I app_process64:     #1 0x77f8b18cd4  (/system/lib64/libhwui.so+0x718cd4)
+11-18 10:43:46.102 16872 16891 I app_process64: 
+11-18 10:43:46.102 16872 16891 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x6effffffff in tid 16891 (Thread-2), pid 16872 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.media.MediaMuxer|nativeRelease|long|void
+
+objfileName: 1700297314027.obj
+
+android.media.MediaMuxer|nativeRelease
+
+android.media.MediaMuxer|nativeRelease|2023-11-18 19:48:23
+11-18 08:48:34.052  8459  8479 I app_process64: ==8459==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x0077f825c4b0
+11-18 08:48:34.052  8459  8479 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T34
+11-18 08:48:34.069  8459  8479 I app_process64:     #0 0x77f825c4ac  (/system/lib64/libutils.so+0x104ac)
+11-18 08:48:34.069  8459  8479 I app_process64:     #1 0x77bd9a7d6c  (/system/lib64/libmedia_jni.so+0xa4d6c)
+11-18 08:48:34.069  8459  8479 I app_process64: 
+11-18 08:48:34.069  8459  8479 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x6effffffff in tid 8479 (Thread-2), pid 8459 (.example.fuzzer)

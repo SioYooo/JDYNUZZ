@@ -1,0 +1,220 @@
+
+android.os.Process|parseProcLine|byte[], int, int, int[], java.lang.String[], long[], float[]|boolean
+
+objfileName: 1700199222999.obj
+
+android.os.Process|parseProcLine
+
+android.os.Process|parseProcLine|2023-11-17 16:33:32
+11-17 05:33:43.051 14175 14194 I app_process64: ==14175==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0037290c9a9e at pc 0x0078174645e4
+11-17 05:33:43.051 14175 14194 I app_process64: READ of size 1 at 0x0037290c9a9e tags: 3f/00 (ptr/mem) in thread T34
+11-17 05:33:43.069 14175 14194 I app_process64:     #0 0x78174645e0  (/system/lib64/libandroid_runtime.so+0x22b5e0)
+11-17 05:33:43.069 14175 14194 I app_process64:     #1 0x78174648f4  (/system/lib64/libandroid_runtime.so+0x22b8f4)
+11-17 05:33:43.069 14175 14194 I app_process64: 
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T0 0x006e00002000 stack: [0x007fd5065000,0x007fd5865000) sz: 8388608 tls: [0x00781aed2fc0,0x00781aed6000)
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T16 0x006e00012000 stack: [0x0078051e2000,0x0078051f3cb0) sz: 72880 tls: [0x0078051f3fc0,0x0078051f7000)
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T17 0x006e00016000 stack: [0x0078051a7000,0x0078051b8cb0) sz: 72880 tls: [0x0078051b8fc0,0x0078051bc000)
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T18 0x006e0000a000 stack: [0x007804dd4000,0x007804de5cb0) sz: 72880 tls: [0x007804de5fc0,0x007804de9000)
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T19 0x006e0000e000 stack: [0x007804d9a000,0x007804dabcb0) sz: 72880 tls: [0x007804dabfc0,0x007804daf000)
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T20 0x006e00006000 stack: [0x0077c6702000,0x0077c67fbcb0) sz: 1023152 tls: [0x0077c67fbfc0,0x0077c67ff000)
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T21 0x006e0001a000 stack: [0x0077c5604000,0x0077c56fdcb0) sz: 1023152 tls: [0x0077c56fdfc0,0x0077c5701000)
+11-17 05:33:43.069 14175 14194 I app_process64: Thread: T22 0x006e0001e000 stack: [0x0077c5506000,0x0077c55ffcb0) sz: 1023152 tls: [0x0077c55fffc0,0x0077c5603000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T23 0x006e00022000 stack: [0x00776e9ce000,0x00776eacfcb0) sz: 1055920 tls: [0x00776eacffc0,0x00776ead3000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T24 0x006e00026000 stack: [0x00776d8c0000,0x00776d9c9cb0) sz: 1088688 tls: [0x00776d9c9fc0,0x00776d9cd000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T25 0x006e0002a000 stack: [0x00776c7b2000,0x00776c8bbcb0) sz: 1088688 tls: [0x00776c8bbfc0,0x00776c8bf000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T26 0x006e0002e000 stack: [0x00776c6a4000,0x00776c7adcb0) sz: 1088688 tls: [0x00776c7adfc0,0x00776c7b1000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T27 0x006e00032000 stack: [0x00776a596000,0x00776a69fcb0) sz: 1088688 tls: [0x00776a69ffc0,0x00776a6a3000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T28 0x006e00036000 stack: [0x00776939a000,0x007769493cb0) sz: 1023152 tls: [0x007769493fc0,0x007769497000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T29 0x006e0003a000 stack: [0x00776829c000,0x007768395cb0) sz: 1023152 tls: [0x007768395fc0,0x007768399000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T30 0x006e0003e000 stack: [0x00776719e000,0x007767297cb0) sz: 1023152 tls: [0x007767297fc0,0x00776729b000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T31 0x006e00042000 stack: [0x007765b85000,0x007765c7ecb0) sz: 1023152 tls: [0x007765c7efc0,0x007765c82000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T34 0x006e00046000 stack: [0x007764a35000,0x007764b3ecb0) sz: 1088688 tls: [0x007764b3efc0,0x007764b42000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T36 0x006e0004a000 stack: [0x0077636b1000,0x0077637aacb0) sz: 1023152 tls: [0x0077637aafc0,0x0077637ae000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T37 0x006e0004e000 stack: [0x0077635b3000,0x0077636accb0) sz: 1023152 tls: [0x0077636acfc0,0x0077636b0000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T38 0x006e00052000 stack: [0x0077614b5000,0x0077615aecb0) sz: 1023152 tls: [0x0077615aefc0,0x0077615b2000)
+11-17 05:33:43.070 14175 14194 I app_process64: Thread: T39 0x006e00056000 stack: [0x0077603b7000,0x0077604b0cb0) sz: 1023152 tls: [0x0077604b0fc0,0x0077604b4000)
+11-17 05:33:43.070 14175 14194 I app_process64: HWAddressSanitizer can not describe address in more detail.
+11-17 05:33:43.070 14175 14194 I app_process64: Memory tags around the buggy address (one tag corresponds to 16 bytes):
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c920: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c930: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c940: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c950: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c960: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c970: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c980: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c990: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64: =>0x00727290c9a0: 00  00  00  00  00  00  00  00  00 [00] 00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c9b0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c9c0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c9d0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c9e0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c9f0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290ca00: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290ca10: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290ca20: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.070 14175 14194 I app_process64: Tags for short granules around the buggy address (one tag corresponds to 16 bytes):
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c990: ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  .. 
+11-17 05:33:43.070 14175 14194 I app_process64: =>0x00727290c9a0: ..  ..  ..  ..  ..  ..  ..  ..  .. [..] ..  ..  ..  ..  ..  .. 
+11-17 05:33:43.070 14175 14194 I app_process64:   0x00727290c9b0: ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  .. 
+11-17 05:33:43.070 14175 14194 I app_process64: See https://clang.llvm.org/docs/HardwareAssistedAddressSanitizerDesign.html#short-granules for a description of short granule tags
+11-17 05:33:43.071 14175 14194 I app_process64: Registers where the failure occurred (pc 0x0078174645e4):
+11-17 05:33:43.071 14175 14194 I app_process64:     x0  3f000037290c9a9e  x1  da00007764b3ab90  x2  02000076764b3a77  x3  0040000dc00088e1
+11-17 05:33:43.071 14175 14194 I app_process64:     x4  0040000dc0008801  x5  0000007764b3a740  x6  0040000dc00088c1  x7  0040000dc0008841
+11-17 05:33:43.071 14175 14194 I app_process64:     x8  00000000a11fcc7e  x9  00000000ffffffff  x10 00000000a11fcc7f  x11 00000000dee03381
+11-17 05:33:43.071 14175 14194 I app_process64:     x12 02000076764b3a79  x13 000000007fffffff  x14 02000076764b3a7b  x15 02000076764b3a78
+11-17 05:33:43.071 14175 14194 I app_process64:     x16 00000077fc6096ac  x17 000000000000000e  x18 00000077647d6000  x19 9100003f87e96e40
+11-17 05:33:43.071 14175 14194 I app_process64:     x20 0200006f00000000  x21 000000007fffffff  x22 0000000080000000  x23 0000007764b3ad54
+11-17 05:33:43.071 14175 14194 I app_process64:     x24 00000000a11fcc7e  x25 0000007764b3f000  x26 3f00003787ecce20  x27 0000000000000000
+11-17 05:33:43.071 14175 14194 I app_process64:     x28 0000000000000000  x29 0000007764b3abb0  x30 00000078174645e4
+11-17 05:33:43.071 14175 14194 I app_process64: SUMMARY: HWAddressSanitizer: tag-mismatch (/system/lib64/libandroid_runtime.so+0x22b5e0) 
+11-17 05:33:43.071 14175 14194 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 14194 (Thread-2), pid 14175 (.example.fuzzer)
+11-17 05:33:43.111 14204 14204 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+11-17 05:33:43.112   809   809 I tombstoned: received crash request for pid 14194
+11-17 05:33:43.112 14204 14204 I crash_dump64: performing dump of process 14175 (target tid = 14194)
+11-17 05:33:43.126 14204 14204 E DEBUG   : failed to read /proc/uptime: Permission denied
+11-17 05:33:43.321 14204 14204 W unwind  : Failed to initialize DEX file support: dlopen failed: library "libdexfile.so" not found
+11-17 05:33:43.436     0     0 I         : c2    654 logd: logdr: UID=10093 GID=10093 PID=14204 n tail=0 logMask=8 pid=14175 start=0ns deadline=0ns
+11-17 05:33:43.467     0     0 I         : c3    654 logd: logdr: UID=10093 GID=10093 PID=14204 n tail=0 logMask=1 pid=14175 start=0ns deadline=0ns
+11-17 05:33:43.595 14204 14204 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-17 05:33:43.595 14204 14204 F DEBUG   : Build fingerprint: 'Android/aosp_blueline/blueline:12/SP1A.210812.016.C1/eng.siyu.20231111.224311:userdebug/test-keys'
+11-17 05:33:43.595 14204 14204 F DEBUG   : Revision: 'MP1.0'
+11-17 05:33:43.595 14204 14204 F DEBUG   : ABI: 'arm64'
+11-17 05:33:43.595 14204 14204 F DEBUG   : Timestamp: 2023-11-17 05:33:43.125604402+0000
+11-17 05:33:43.595 14204 14204 F DEBUG   : Process uptime: 0s
+11-17 05:33:43.596 14204 14204 F DEBUG   : Cmdline: com.example.fuzzer
+11-17 05:33:43.596 14204 14204 F DEBUG   : pid: 14175, tid: 14194, name: Thread-2  >>> com.example.fuzzer <<<
+11-17 05:33:43.596 14204 14204 F DEBUG   : uid: 10093
+11-17 05:33:43.596 14204 14204 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-17 05:33:43.596 14204 14204 F DEBUG   : Abort message: '==14175==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0037290c9a9e at pc 0x0078174645e4
+11-17 05:33:43.596 14204 14204 F DEBUG   : READ of size 1 at 0x0037290c9a9e tags: 3f/00 (ptr/mem) in thread T34
+11-17 05:33:43.596 14204 14204 F DEBUG   :     #0 0x78174645e0  (/system/lib64/libandroid_runtime.so+0x22b5e0)
+11-17 05:33:43.596 14204 14204 F DEBUG   :     #1 0x78174648f4  (/system/lib64/libandroid_runtime.so+0x22b8f4)
+11-17 05:33:43.596 14204 14204 F DEBUG   : 
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T0 0x006e00002000 stack: [0x007fd5065000,0x007fd5865000) sz: 8388608 tls: [0x00781aed2fc0,0x00781aed6000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T16 0x006e00012000 stack: [0x0078051e2000,0x0078051f3cb0) sz: 72880 tls: [0x0078051f3fc0,0x0078051f7000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T17 0x006e00016000 stack: [0x0078051a7000,0x0078051b8cb0) sz: 72880 tls: [0x0078051b8fc0,0x0078051bc000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T18 0x006e0000a000 stack: [0x007804dd4000,0x007804de5cb0) sz: 72880 tls: [0x007804de5fc0,0x007804de9000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T19 0x006e0000e000 stack: [0x007804d9a000,0x007804dabcb0) sz: 72880 tls: [0x007804dabfc0,0x007804daf000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T20 0x006e00006000 stack: [0x0077c6702000,0x0077c67fbcb0) sz: 1023152 tls: [0x0077c67fbfc0,0x0077c67ff000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T21 0x006e0001a000 stack: [0x0077c5604000,0x0077c56fdcb0) sz: 1023152 tls: [0x0077c56fdfc0,0x0077c5701000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T22 0x006e0001e000 stack: [0x0077c5506000,0x0077c55ffcb0) sz: 1023152 tls: [0x0077c55fffc0,0x0077c5603000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T23 0x006e00022000 stack: [0x00776e9ce000,0x00776eacfcb0) sz: 1055920 tls: [0x00776eacffc0,0x00776ead3000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T24 0x006e00026000 stack: [0x00776d8c0000,0x00776d9c9cb0) sz: 1088688 tls: [0x00776d9c9fc0,0x00776d9cd000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T25 0x006e0002a000 stack: [0x00776c7b2000,0x00776c8bbcb0) sz: 1088688 tls: [0x00776c8bbfc0,0x00776c8bf000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T26 0x006e0002e000 stack: [0x00776c6a4000,0x00776c7adcb0) sz: 1088688 tls: [0x00776c7adfc0,0x00776c7b1000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T27 0x006e00032000 stack: [0x00776a596000,0x00776a69fcb0) sz: 1088688 tls: [0x00776a69ffc0,0x00776a6a3000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T28 0x006e00036000 stack: [0x00776939a000,0x007769493cb0) sz: 1023152 tls: [0x007769493fc0,0x007769497000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T29 0x006e0003a000 stack: [0x00776829c000,0x007768395cb0) sz: 1023152 tls: [0x007768395fc0,0x007768399000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T30 0x006e0003e000 stack: [0x00776719e000,0x007767297cb0) sz: 1023152 tls: [0x007767297fc0,0x00776729b000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T31 0x006e00042000 stack: [0x007765b85000,0x007765c7ecb0) sz: 1023152 tls: [0x007765c7efc0,0x007765c82000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T34 0x006e00046000 stack: [0x007764a35000,0x007764b3ecb0) sz: 1088688 tls: [0x007764b3efc0,0x007764b42000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T36 0x006e0004a000 stack: [0x0077636b1000,0x0077637aacb0) sz: 1023152 tls: [0x0077637aafc0,0x0077637ae000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T37 0x006e0004e000 stack: [0x0077635b3000,0x0077636accb0) sz: 1023152 tls: [0x0077636acfc0,0x0077636b0000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T38 0x006e00052000 stack: [0x0077614b5000,0x0077615aecb0) sz: 1023152 tls: [0x0077615aefc0,0x0077615b2000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : Thread: T39 0x006e00056000 stack: [0x0077603b7000,0x0077604b0cb0) sz: 1023152 tls: [0x0077604b0fc0,0x0077604b4000)
+11-17 05:33:43.596 14204 14204 F DEBUG   : HWAddressSanitizer can not describe address in more detail.
+11-17 05:33:43.596 14204 14204 F DEBUG   : Memory tags around the buggy address (one tag corresponds to 16 bytes):
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c920: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c930: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c940: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c950: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c960: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c970: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c980: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c990: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   : =>0x00727290c9a0: 00  00  00  00  00  00  00  00  00 [00] 00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c9b0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c9c0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c9d0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c9e0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c9f0: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290ca00: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290ca10: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290ca20: 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 
+11-17 05:33:43.596 14204 14204 F DEBUG   : Tags for short granules around the buggy address (one tag corresponds to 16 bytes):
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c990: ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  .. 
+11-17 05:33:43.596 14204 14204 F DEBUG   : =>0x00727290c9a0: ..  ..  ..  ..  ..  ..  ..  ..  .. [..] ..  ..  ..  ..  ..  .. 
+11-17 05:33:43.596 14204 14204 F DEBUG   :   0x00727290c9b0: ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  ..  .. 
+11-17 05:33:43.596 14204 14204 F DEBUG   : See https://clang.llvm.org/docs/HardwareAssistedAddressSanitizerDesign.html#short-granules for a description of short granule tags
+11-17 05:33:43.596 14204 14204 F DEBUG   : Registers where the failure occurred (pc 0x0078174645e4):
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x0  3f000037290c9a9e  x1  da00007764b3ab90  x2  02000076764b3a77  x3  0040000dc00088e1
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x4  0040000dc0008801  x5  0000007764b3a740  x6  0040000dc00088c1  x7  0040000dc0008841
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x8  00000000a11fcc7e  x9  00000000ffffffff  x10 00000000a11fcc7f  x11 00000000dee03381
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x12 02000076764b3a79  x13 000000007fffffff  x14 02000076764b3a7b  x15 02000076764b3a78
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x16 00000077fc6096ac  x17 000000000000000e  x18 00000077647d6000  x19 9100003f87e96e40
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x20 0200006f00000000  x21 000000007fffffff  x22 0000000080000000  x23 0000007764b3ad54
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x24 00000000a11fcc7e  x25 0000007764b3f000  x26 3f00003787ecce20  x27 0000000000000000
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x28 0000000000000000  x29 0000007764b3abb0  x30 00000078174645e4
+11-17 05:33:43.596 14204 14204 F DEBUG   : SUMMARY: HWAddressSanitizer: tag-mismatch (/system/lib64/libandroid_runtime.so+0x22b5e0) 
+11-17 05:33:43.596 14204 14204 F DEBUG   : '
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x0  0000000000000000  x1  0000000000003772  x2  0000000000000006  x3  9a00007764b3a730
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x4  0000007764b3a7b0  x5  8080808080808080  x6  8080808080808080  x7  8080808080808080
+11-17 05:33:43.596 14204 14204 F DEBUG   :     x8  00000000000000f0  x9  0000007764b3a730  x10 00000076764b3a7b  x11 9a00007764b3a7b0
+11-17 05:33:43.597 14204 14204 F DEBUG   :     x12 0000000000000000  x13 000000000000009a  x14 0200006effffffff  x15 00000007764b3a53
+11-17 05:33:43.597 14204 14204 F DEBUG   :     x16 000000000000009a  x17 00000077f1f72120  x18 00000077647d6000  x19 1a00007764b3a7b0
+11-17 05:33:43.597 14204 14204 F DEBUG   :     x20 0200006f00000000  x21 5a00007764b3a720  x22 da00007764b3a700  x23 9a00007764b3a730
+11-17 05:33:43.597 14204 14204 F DEBUG   :     x24 000000000000375f  x25 0000000000003772  x26 00000000ffffffff  x27 0000000000000000
+11-17 05:33:43.597 14204 14204 F DEBUG   :     x28 00000037290c9a9e  x29 0000007764b3a830
+11-17 05:33:43.597 14204 14204 F DEBUG   :     lr  00000077f1efef78  sp  0000007764b3a700  pc  00000077f1efef90  pst 0000000060000000
+11-17 05:33:43.597 14204 14204 F DEBUG   : backtrace:
+11-17 05:33:43.597 14204 14204 F DEBUG   :       #00 pc 000000000005bf90  /apex/com.android.runtime/lib64/bionic/libc.so (abort+356) (BuildId: 4e9eb0a9a3a51fd38c54515e3d4fdf99)
+11-17 05:33:43.597 14204 14204 F DEBUG   :       #01 pc 000000000002b710  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Abort()+60) (BuildId: c43f06ecec3119e9e2e588c25348b5a62e819c42)
+11-17 05:33:43.597 14204 14204 F DEBUG   :       #02 pc 000000000002a5f8  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Die()+204) (BuildId: c43f06ecec3119e9e2e588c25348b5a62e819c42)
+11-17 05:33:43.597 14204 14204 F DEBUG   :       #03 pc 0000000000020cbc  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan::ScopedReport::~ScopedReport()+156) (BuildId: c43f06ecec3119e9e2e588c25348b5a62e819c42)
+11-17 05:33:43.597 14204 14204 F DEBUG   :       #04 pc 0000000000021358  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan::ReportTagMismatch(__sanitizer::StackTrace*, unsigned long, unsigned long, bool, bool, unsigned long*)+684) (BuildId: c43f06ecec3119e9e2e588c25348b5a62e819c42)
+11-17 05:33:43.597 14204 14204 F DEBUG   :       #05 pc 000000000001e96c  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan::HandleTagMismatch(__hwasan::AccessInfo, unsigned long, unsigned long, ucontext*, unsigned long*)+236) (BuildId: c43f06ecec3119e9e2e588c25348b5a62e819c42)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #06 pc 000000000001e87c  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan_tag_mismatch4+108) (BuildId: c43f06ecec3119e9e2e588c25348b5a62e819c42)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #07 pc 00000000000216f0  /apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so (__hwasan_tag_mismatch+140) (BuildId: c43f06ecec3119e9e2e588c25348b5a62e819c42)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #08 pc 000000000022b5e0  /system/lib64/libandroid_runtime.so (android_os_Process_parseProcLineArray(_JNIEnv*, _jobject*, char*, int, int, _jintArray*, _jobjectArray*, _jlongArray*, _jfloatArray*)+1232) (BuildId: 2d3370965d764c9a844dfe181d95ad56)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #09 pc 000000000022b8f4  /system/lib64/libandroid_runtime.so (android_os_Process_parseProcLine(_JNIEnv*, _jobject*, _jbyteArray*, int, int, _jintArray*, _jobjectArray*, _jlongArray*, _jfloatArray*)+144) (BuildId: 2d3370965d764c9a844dfe181d95ad56)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #10 pc 00000000001a88e4  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+212) (BuildId: e65838693b2addeef3208949dad689dccfbd89f1)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #11 pc 0000000000218be8  /apex/com.android.art/lib64/libart.so (art_quick_invoke_static_stub+568) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #12 pc 00000000002c5054  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+488) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #13 pc 0000000000952cd0  /apex/com.android.art/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+560) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #14 pc 00000000009517a4  /apex/com.android.art/lib64/libart.so (_jobject* art::InvokeMethod<(art::PointerSize)8>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned long)+2544) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #15 pc 00000000008405d4  /apex/com.android.art/lib64/libart.so (art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobjectArray*)+168) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #16 pc 00000000000b2f74  /apex/com.android.art/javalib/arm64/boot.oat (art_jni_trampoline+132) (BuildId: adf41f98c2a0f6e27c7593ab3412d77efb413563)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #17 pc 0000000000218964  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #18 pc 00000000002c5038  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+460) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #19 pc 000000000052ad70  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+984) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.598 14204 14204 F DEBUG   :       #20 pc 00000000005220b4  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1804) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #21 pc 0000000000b75cec  /apex/com.android.art/lib64/libart.so (MterpInvokeVirtual+2948) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #22 pc 0000000000203814  /apex/com.android.art/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #23 pc 0000000000004ae0  /system/priv-app/mytestapp/app-debug.apk
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #24 pc 0000000000511980  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+936) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #25 pc 00000000005209a0  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame*, art::JValue*)+508) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #26 pc 000000000052419c  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<true, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1536) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #27 pc 0000000000b78510  /apex/com.android.art/lib64/libart.so (MterpInvokeVirtualRange+2576) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #28 pc 0000000000203b14  /apex/com.android.art/lib64/libart.so (mterp_op_invoke_virtual_range+20) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #29 pc 0000000000006186  /system/priv-app/mytestapp/app-debug.apk
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #30 pc 0000000000511980  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+936) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #31 pc 00000000005209a0  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame*, art::JValue*)+508) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #32 pc 0000000000522098  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1776) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #33 pc 0000000000b75cec  /apex/com.android.art/lib64/libart.so (MterpInvokeVirtual+2948) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #34 pc 0000000000203814  /apex/com.android.art/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.599 14204 14204 F DEBUG   :       #35 pc 0000000000002ee0  /system/priv-app/mytestapp/app-debug.apk
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #36 pc 0000000000511980  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+936) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #37 pc 00000000005209a0  /apex/com.android.art/lib64/libart.so (art::interpreter::ArtInterpreterToInterpreterBridge(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame*, art::JValue*)+508) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #38 pc 0000000000522098  /apex/com.android.art/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1776) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #39 pc 0000000000b81b70  /apex/com.android.art/lib64/libart.so (MterpInvokeInterface+3396) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #40 pc 0000000000203a14  /apex/com.android.art/lib64/libart.so (mterp_op_invoke_interface+20) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #41 pc 00000000000eda70  /apex/com.android.art/javalib/core-oj.jar
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #42 pc 0000000000511980  /apex/com.android.art/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+936) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #43 pc 0000000000b56638  /apex/com.android.art/lib64/libart.so (artQuickToInterpreterBridge+2280) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #44 pc 0000000000222378  /apex/com.android.art/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #45 pc 0000000000218964  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #46 pc 00000000002c5038  /apex/com.android.art/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+460) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #47 pc 0000000000952cd0  /apex/com.android.art/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+560) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #48 pc 0000000000954de8  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithJValues<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, jvalue const*)+928) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #49 pc 00000000009df34c  /apex/com.android.art/lib64/libart.so (art::Thread::CreateCallback(void*)+2620) (BuildId: 6cdd47aaefb2d1a357f4c345a41eafab)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #50 pc 00000000000ec9c4  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+140) (BuildId: 4e9eb0a9a3a51fd38c54515e3d4fdf99)
+11-17 05:33:43.600 14204 14204 F DEBUG   :       #51 pc 000000000005e580  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 4e9eb0a9a3a51fd38c54515e3d4fdf99)
+11-17 05:33:43.678  1707 14209 W ActivityTaskManager:   Force finishing activity com.example.fuzzer/.MainActivity
+11-17 05:33:43.679  1707 14210 I DropBoxManagerService: add tag=system_app_native_crash isTagEnabled=true flags=0x6
+11-17 05:33:43.680   809   809 E tombstoned: Tombstone written to: tombstone_11
+11-17 05:33:43.634     0     0 I         : c7      1 init: Untracked pid 14204 exited with status 0
+11-17 05:33:43.687  1707  1934 I BootReceiver: Copying /data/tombstones/tombstone_11 to DropBox (SYSTEM_TOMBSTONE)
+11-17 05:33:43.687  1707  1934 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+11-17 05:33:43.641     0     0 I         : c2      1 init: Untracked pid 14206 exited with status 0
+11-17 05:33:43.644     0     0 I         : c4  12577 binder: undelivered transaction 29639102, process died.
+11-17 05:33:43.692   999   999 I Zygote  : Process 14175 exited due to signal 6 (Aborted)

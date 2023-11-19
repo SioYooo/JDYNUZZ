@@ -1,0 +1,12 @@
+
+android.view.SurfaceControl|nativeSetTransparentRegionHint|long, long, android.graphics.Region|void
+
+objfileName: 1700205377274.obj
+
+android.view.SurfaceControl|nativeSetTransparentRegionHint|2023-11-17 18:16:06
+11-17 07:16:17.304 17992 18011 I app_process64: ==17992==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000000f at pc 0x0077f8b1b2f4
+11-17 07:16:17.304 17992 18011 I app_process64: READ of size 8 at 0x00000000000f tags: 80/00 (ptr/mem) in thread T34
+11-17 07:16:17.321 17992 18011 I app_process64:     #0 0x77f8b1b2f0  (/system/lib64/libhwui.so+0x71b2f0)
+11-17 07:16:17.321 17992 18011 I app_process64:     #1 0x77f8b1b274  (/system/lib64/libhwui.so+0x71b274)
+11-17 07:16:17.321 17992 18011 I app_process64: 
+11-17 07:16:17.321 17992 18011 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x6effffffff in tid 18011 (Thread-2), pid 17992 (.example.fuzzer)

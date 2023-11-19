@@ -1,0 +1,15 @@
+
+android.media.MediaPlayer|_setVideoSurface|android.view.Surface|void
+
+objfileName: 1700322423068.obj
+
+android.media.MediaPlayer|_setVideoSurface
+code -1: NoSuchMethodException
+
+android.media.MediaPlayer|_setVideoSurface|2023-11-19 02:46:52
+11-18 15:47:04.242 20553 20564 I app_process64: ==20553==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x0077f825c4b0
+11-18 15:47:04.242 20553 20564 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T26
+11-18 15:47:04.259 20553 20564 I app_process64:     #0 0x77f825c4ac  (/system/lib64/libutils.so+0x104ac)
+11-18 15:47:04.259 20553 20564 I app_process64:     #1 0x78173ea960  (/system/lib64/libandroid_runtime.so+0x1b1960)
+11-18 15:47:04.259 20553 20564 I app_process64: 
+11-18 15:47:04.259 20553 20564 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x6effffffff in tid 20564 (FinalizerDaemon), pid 20553 (.example.fuzzer)

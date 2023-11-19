@@ -1,0 +1,23 @@
+
+com.android.org.conscrypt.NativeCrypto|PEM_read_bio_X509_CRL|long|long
+
+objfileName: 1700301735466.obj
+
+com.android.org.conscrypt.NativeCrypto|PEM_read_bio_X509_CRL
+
+com.android.org.conscrypt.NativeCrypto|PEM_read_bio_X509_CRL|2023-11-18 21:02:04
+11-18 10:02:15.505  2026  2084 I app_process64: ==2026==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x0077bdcec9fc
+11-18 10:02:15.505  2026  2084 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T34
+11-18 10:02:15.524  2026  2084 I app_process64:     #0 0x77bdcec9f8  (/apex/com.android.conscrypt/lib64/libcrypto.so+0x699f8)
+11-18 10:02:15.524  2026  2084 I app_process64:     #1 0x77bdd3fa58  (/apex/com.android.conscrypt/lib64/libcrypto.so+0xbca58)
+11-18 10:02:15.524  2026  2084 I app_process64:     #2 0x77bdd3f5b8  (/apex/com.android.conscrypt/lib64/libcrypto.so+0xbc5b8)
+11-18 10:02:15.524  2026  2084 I app_process64:     #3 0x77bdd41680  (/apex/com.android.conscrypt/lib64/libcrypto.so+0xbe680)
+11-18 10:02:15.524  2026  2084 I app_process64:     #4 0x77c159d2a0  (/apex/com.android.conscrypt/lib64/libjavacrypto.so+0x382a0)
+11-18 10:02:15.524  2026  2084 I app_process64:     #5 0x77e6c22244  (/apex/com.android.art/lib64/libart.so+0x222244)
+11-18 10:02:15.524  2026  2084 I app_process64:     #6 0x77e6c18be8  (/apex/com.android.art/lib64/libart.so+0x218be8)
+11-18 10:02:15.524  2026  2084 I app_process64:     #7 0x77e6cc5054  (/apex/com.android.art/lib64/libart.so+0x2c5054)
+11-18 10:02:15.524  2026  2084 I app_process64:     #8 0x77e7352cd0  (/apex/com.android.art/lib64/libart.so+0x952cd0)
+11-18 10:02:15.524  2026  2084 I app_process64:     #9 0x77e73517a4  (/apex/com.android.art/lib64/libart.so+0x9517a4)
+11-18 10:02:15.525  2026  2084 I app_process64:     #10 0x77e72405d4  (/apex/com.android.art/lib64/libart.so+0x8405d4)
+11-18 10:02:15.525  2026  2084 I app_process64: 
+11-18 10:02:15.525  2026  2084 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x6effffffff in tid 2084 (Thread-2), pid 2026 (.example.fuzzer)
