@@ -146,14 +146,11 @@ public class Engine {
     }
 
     public static void main(String[] args) throws Exception {
-        // start Fuzzing server on android phone
-        Runtime.getRuntime().exec(adb_path + " shell am start -n com.example.fuzzer/.MainActivity");
-//        Runtime.getRuntime().exec(adb_path + " -s " +DEVICE+ " shell input keyevent 224");
-        Runtime.getRuntime().exec(adb_path + " shell input keyevent 224");
-        TimeUnit.MILLISECONDS.sleep(1000);
-//        Runtime.getRuntime().exec(adb_path + " -s "+DEVICE+" shell input swipe 300 1000 300 100");
-        Runtime.getRuntime().exec(adb_path + " shell input swipe 300 1000 300 100");
-        TimeUnit.MILLISECONDS.sleep(1000);
+        // 命令行当输入 -i xx 后，取 xx 为 index 开始进行 fuzzing
+        if(args.length == 2 && args[0].equals("-i")) {
+            STARTFROM = Integer.parseInt(args[1]);
+            System.out.println("STARTFROM = " + STARTFROM);
+        }
 
         // 命令行模式 ===========================================================
 //        if(args.length == 2) {
@@ -516,17 +513,18 @@ public class Engine {
 
         int times_max = 10;
         int time = 0;
-        API_INDEX = -1;
+        // API_INDEX = -1;
+        API_INDEX = STARTFROM - 1;
         while(time < times_max) {
             time++;
             //List顺序打乱
-            Collections.shuffle(jniList);
+            // Collections.shuffle(jniList);
 
             for (JniClass jni : jniList) {
                 API_INDEX = API_INDEX + 1;
-                if (API_INDEX < STARTFROM) {
-                    continue;
-                }
+//                if (API_INDEX < STARTFROM) {
+//                    continue;
+//                }
                 System.out.println("\n\nFrom here, new call!!!(" + API_INDEX + "/" + total + ")");
                 Runtime.getRuntime().exec(adb_path + " -s " + DEVICE + " shell input swipe 300 1000 300 100");
                 jni.print();
@@ -805,7 +803,9 @@ public class Engine {
     public static List<JniClass> load() {
         BufferedReader reader;
         try {
-            reader = new BufferedReader(new FileReader(new File("jni12.0/jni_with_isStatic.json")));
+            // 10.0.0_r2 版本
+            reader = new BufferedReader(new FileReader(new File("jni10.0/jni_with_isStatic.json")));
+            // reader = new BufferedReader(new FileReader(new File("jni12.0/jni_with_isStatic.json")));
 //            JSONObject data = (JSONObject) JSON.parse(reader.readLine());
             String txt = reader.readLine();
             reader.close();

@@ -17,7 +17,8 @@ import pickle
 import copy
 from util import get_tu, get_cursor, get_cursors
 
-pathname = '/hci/chaoran_data/jni/dependency/temp'
+# pathname = '/hci/chaoran_data/jni/dependency/temp'
+pathname = '/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/jni/dependency/temp'
 filelist = os.listdir(pathname)
 
 dependency_unique = set()
@@ -25,6 +26,7 @@ dependency_full = []
 jni_full = []
 file_full = []
 java_class = set()
+
 
 def process_jni_methods(jni_methods):
     for tem in jni_methods:
@@ -36,6 +38,7 @@ def process_jni_methods(jni_methods):
         clazz = tem['java_fun_full'].split(' ')
 
         java_class.add(clazz[0])
+
 
 def process_dependency(dependency, jni_methods):
     for tem in dependency:
@@ -53,8 +56,8 @@ def process_dependency(dependency, jni_methods):
             # raise Exception('jni1 is None or jni0 is None: '+file_full[-1])
             pass
         else:
-            if jni0+jni1 not in dependency_unique and 'release' not in jni0:
-                dependency_unique.add(jni0+jni1)
+            if jni0 + jni1 not in dependency_unique and 'release' not in jni0:
+                dependency_unique.add(jni0 + jni1)
                 dependency_full.append({'file': file_full[-1], 'cpp': tem, 'java': [jni0, jni1]})
 
 
@@ -73,6 +76,7 @@ def process_json(full_path):
 
         # print('jni_methods', jni_methods)
         # print('dependency', dependency)
+
 
 for file in filelist:
     full_path = os.path.join(pathname, file)

@@ -3786,14 +3786,16 @@ def find_fun_cpp(path, search_str):
 
 
 def test13():
-    skip = True
+    save_path = '/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/jni/dependency/temp'
+    # skip = True
     with open('debug_index.log', 'w') as f:
         f.write('')
-    with open('jni12.0/jni.json') as file_obj:
+    with open('jni10.0/jni.json') as file_obj:
         cpp_jni_list = json.load(file_obj)
         total = len(cpp_jni_list)
         for i, cpp_jni in enumerate(cpp_jni_list):
             print('===============each cpp_jni==================')
+            print(cpp_jni)
             print(i, '/', total)
 
             with open('debug_index.log', 'a') as f:
@@ -3810,30 +3812,40 @@ def test13():
 
             entry_funs = []
             cpp = cpp_jni['cpp']
-            print(cpp)
+            print('CPP : ' + cpp)
             # if 'frameworks/base/core/jni/android_hardware_camera2_DngCreator.cpp' not in cpp:
             #     continue
             vars = cpp_jni['pairs']
-            for var in vars:
-                for pair in var:
-                    # if 'nativeScreenshot' in pair:
-                    entry_funs.append(pair[-1] + '(')
-            first_lvl_funs = entry_funs
-            # 暂时只测试一个fun
-            entry_funs = entry_funs[:1]
-            print(entry_funs)
-            # exit(0)
-            c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '10.0', compdb=True)
-            c_cpp_list = c_cpp_list[0]
+            print('vars : ', vars)
+            if len(vars) == 0:
+                # print('No vars found')
+                # 跳过当前cpp
+                continue
+            else:
+                for var in vars:
+                    for pair in var:
+                        # if 'nativeScreenshot' in pair:
+                        entry_funs.append(pair[-1] + '(')
+                first_lvl_funs = entry_funs
+                # 暂时只测试一个fun
+                # entry_funs = entry_funs[:1]
+                # print(entry_funs)
+                # exit(0)
+                c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '10.0', compdb=True)
+                if not c_cpp_list:
+                    # print('cpp not found')
+                    continue # 跳出当前循环
+                print(c_cpp_list)
+                c_cpp_list = c_cpp_list[0]
 
-            file = project_path + c_cpp_list['file']
+                file = project_path + c_cpp_list['file']
 
-            pro_path = project_path
-            ninja_args = c_cpp_list['arguments'][1:]
-            main_file_analyser = file_analyser()
-            main_file_analyser.run(file, pro_path, ninja_args, entry_funs=entry_funs, extend_analyze=False,
-                                   reverse_search=False, print_all_node=False, generate_html=False)
-            # break
+                pro_path = project_path
+                ninja_args = c_cpp_list['arguments'][1:]
+                main_file_analyser = file_analyser()
+                main_file_analyser.run(file, pro_path, ninja_args, entry_funs=entry_funs, extend_analyze=True,
+                                       reverse_search=False, print_all_node=False, generate_html=False)
+                # break
 
 
 if __name__ == '__main__':

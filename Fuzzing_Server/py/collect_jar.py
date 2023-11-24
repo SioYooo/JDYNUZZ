@@ -15,12 +15,15 @@ from shutil import copyfile
 # version = '10.0'
 # project_path = '/hci/chaoran_data/android-10.0.0_r45/out/target/common/obj/JAVA_LIBRARIES'
 
-version = '12.0'
-project_path = '/hci/chaoran_data/android-12.0.0_r31/out/target/common/obj/JAVA_LIBRARIES'
+version = '10.0'
+# project_path = '/hci/chaoran_data/android-12.0.0_r31/out/target/common/obj/JAVA_LIBRARIES'
+project_path = '/data_ssd_1/siyu/10.0.0_r2/aosp/out/target/common/obj/JAVA_LIBRARIES'
 
 
 def findAllFile(base):
-    path = 'jar' + '/jar' + version
+    # path = 'jar' + '/jar' + version
+    path = "/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/jar/jar10.0"
+    print(base)
     if not os.path.exists(path):
         os.makedirs(path)
     dirs = os.listdir(base)
@@ -53,6 +56,7 @@ def collect(path):
             print('jar_list.add(BASE + "%s");'% f)
 
 if __name__ == '__main__':
-    # find()
-    collect('jar/jar12.0')
+    find()
+    # collect('jar/jar10.0')
+    collect("/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/jar/jar10.0")
     pass

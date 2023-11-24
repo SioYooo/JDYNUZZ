@@ -78,7 +78,9 @@ def find_command_star_node(filename, version_prefix, compdb=False):
         with open('tem/'+version_prefix+'compile_commands_full.json') as file_obj:
             js = json.load(file_obj)
             cpp = filename.replace('.h', '.cpp')
+            print('cpp:', cpp)
             c = filename.replace('.h', '.c')
+            print('c:', c)
             for tem in js:
                 if cpp in tem['file'] or c in tem['file']:
                     list.append(tem)
