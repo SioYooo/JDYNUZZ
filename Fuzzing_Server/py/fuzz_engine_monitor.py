@@ -52,6 +52,9 @@ def kill_process():
 
 
 if __name__ == "__main__":
+    cmd = 'adb shell settings put global crash_dialog_blacklist_pkglist "com.example.fuzzer"'
+    os.system(cmd)
+    time.sleep(1)
     manager = multiprocessing.Manager()
     shared_data = manager.dict({'api_index': None, 'last_update': time.time()})
 
