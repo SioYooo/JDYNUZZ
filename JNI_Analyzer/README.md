@@ -19,3 +19,10 @@ python3 ninja_parse.py
 ```bash
 python3 find_jni_java_class.py
 ```
+
+
+```10.0.0_r2
+python3 generate_compdb.py /data_ssd_1/siyu/10.0.0_r2/aosp/out/soong/build.ninja
+
+
+```

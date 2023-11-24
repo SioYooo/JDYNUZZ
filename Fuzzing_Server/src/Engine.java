@@ -94,6 +94,11 @@ public class Engine {
     public static void analyzeJNI() {
         // 通过 load() 函数对 jni12.0/jni_with_isStatic.json 文件进行读取解析得到 jniClass list
         List<JniClass> jniList = load();
+
+        // remove android.graphics.RenderNode 相关 - 每次都是 这个 class 内的函数报错导致程序退出
+        assert jniList != null;
+        jniList.removeIf(jni -> jni.getClass_().contains("android.graphics.RenderNode"));
+
         int total = jniList.size();
         int apiHasObj = 0;
         System.out.println("total = " + total);
@@ -494,6 +499,9 @@ public class Engine {
         ADBForward();
 
         List<JniClass> jniList = load();
+        // remove android.graphics.RenderNode 相关 - 每次都是 这个 class 内的函数报错导致程序退出
+        assert jniList != null;
+        jniList.removeIf(jni -> jni.getClass_().contains("android.graphics.RenderNode"));
         // below code is to enable D3G or not
 //        List<JniClass> jniList_dependency = addDependency(jniList, apiDependency);
 //        System.out.println("dependency 数量：" + jniList_dependency.size());

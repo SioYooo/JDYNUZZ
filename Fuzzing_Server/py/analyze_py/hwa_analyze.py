@@ -10,9 +10,9 @@ key_string = 'hwasan_crash_log'
 hwasan_dir = []
 # hwasan_crash_list 为crash report 的存放路径
 hwasan_crash_list = []
-
-# api_list 为去重后的 crash report
 api_list = []
+# bug_list 为去重后的 crash report
+bug_list = []
 repeated_api_list = []
 # 用于存储 crash 相关的 traceback 信息，如果已经出现过的 traceback 信息，就证明为重复的 crash
 crash_check_list = []
@@ -54,6 +54,7 @@ def print_and_save():
     print("Found hwasan crash dir: ", len(hwasan_dir))
     print("Found hwasan crash files: ", len(hwasan_crash_list))
     print("Found api: ", len(api_list))
+    print("Found bug: ", len(bug_list))
     print("Found repeated api: ", len(repeated_api_list))
     with open("/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_result.txt", "w") as file:
         file.write("Found hwasan crash files: " + str(len(hwasan_crash_list)) + "\n")
@@ -64,6 +65,10 @@ def print_and_save():
         for api in api_list:
             file.write(api + "\n")
         file.write("*" * 50 + "\n")
+        file.write("Found bug: " + str(len(bug_list)) + "\n")
+        for bug in bug_list:
+            file.write(str(bug) + "\n")
+        file.write("*" * 50 + "\n")
         file.write("Found repeated unsafe api: " + str(len(repeated_api_list)) + "\n")
         for api in repeated_api_list:
             file.write(api + "\n")
@@ -71,44 +76,47 @@ def print_and_save():
 
 
 def analyze_file():
-    bug_list = []
     # 遍历所有 crash log 文件
     for f in hwasan_crash_list:
-        filename = os.path.basename(f)
         with open(f, 'r') as file:
             lines = file.readlines()
-            for line in lines:
+            line_no = 0
+            summary_found = False  # 用于标记是否找到 SUMMARY
+            while line_no < len(lines):
+                line = lines[line_no].strip()  # 去除行首尾的空格和换行符
                 # 跳过空行
-                if line == '' or line == '/n':
+                if not line:
+                    line_no += 1
                     continue
-                # # when found "I app_process64:", delete this string
-                # if "I app_process64:" in line:
-                #     line = line[line.index("I app_process64:") + len("I app_process64:"):]
-                #     line = line.strip()
+
                 # 检查所有行中是否含有 ERROR: HWAddressSanitizer:
-                if 'ERROR: HWAddressSanitizer:' in line:
-                    # 获取当前line 的行数
-                    line_num = lines.index(line)
-                    # get next 3 lines and merge into one string
-                    stack_string = lines[line_num + 1] + lines[line_num + 2] + lines[line_num + 3]
+                if 'ERROR: HWAddressSanitizer:' in line and not summary_found:
+                    # 获取当前line的行数
+                    print(lines[line_no])
+                    # 获取接下来的3行并合并成一个字符串
+                    stack_string = lines[line_no + 1] + lines[line_no + 2] + lines[line_no + 3]
+                    print(stack_string)
                     if stack_string in crash_check_list:
                         repeated_api_list.append(f)
-                        continue
                     else:
                         crash_check_list.append(stack_string)
-                    # 首先为i crash reason 赋一个基础的原因，如果 crash reason 为 summary，则会被替换
-                    crash_reason = line.split('ERROR: HWAddressSanitizer:')[1]
-                    crash_cause_dict[f] = crash_reason
-                # 当找到 summary 时，说明当前行会输出 crash 的原因，替换之前的 crash reason
-                if ' SUMMARY: ' in line:
-                    crash_reason = line.split(' SUMMARY: ')[1]
-                    crash_cause_dict[f] = crash_reason
+                        # 为 crash reason 赋一个基础的原因
+                        crash_reason = line.split('ERROR: HWAddressSanitizer:')[1].strip()
+                        crash_cause_dict[f] = crash_reason
 
-            result = [f, stack_string, crash_reason]
-            if result is None:
-                continue
-            else:
-                api_list.append(result)
+                # 当找到 summary 时，替换之前的 crash reason
+                if ' SUMMARY: ' in line:
+                    crash_reason = line.split(' SUMMARY: ')[1].strip()
+                    crash_cause_dict[f] = crash_reason
+                    summary_found = True  # 标记找到了 SUMMARY
+
+                line_no += 1
+
+            # 如果找到了 crash 原因，则添加到 api_list
+            if f in crash_cause_dict and summary_found:
+                result = [f, stack_string, crash_cause_dict[f]]
+                bug_list.append(result)
+
 
 
 # def analyze_file():
@@ -150,7 +158,7 @@ def analyze_file():
 #                 if is_specific:
 #                     if not line.startswith('==') and not line.startswith('Thread:'):
 #                         specific = line
-#                         specific_api_dict[basename.split('_')[2] + '_' + basename.split('_')[3]] = specific
+#                         specific_api_*dict[basename.split('_')[2] + '_' + basename.split('_')[3]] = specific
 #                     is_specific = False
 #
 #                 if san_start and line == '':

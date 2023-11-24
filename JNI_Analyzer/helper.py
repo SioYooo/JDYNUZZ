@@ -47,7 +47,7 @@ def get_cpp_files_path(compdb=False, version = ''):
     if compdb:
         # with open('tem/'+version+'compile_commands_full.json') as file_obj:
         # with open('tem/' + 'complie_commands_full.json') as file_obj:
-        with open('/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/tem/compile_commands_full.json') as file_obj:
+        with open('/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/tem/10.0compile_commands_full.json') as file_obj:
             js = json.load(file_obj)
             list.extend(js)
 

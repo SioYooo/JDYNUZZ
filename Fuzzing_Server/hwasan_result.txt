@@ -1,66 +1,4 @@
 Found hwasan crash files: 149
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/42_HWAddressSanitizer_android.os.HwBlob_putNativeHandle_2023-11-18_18_52_25.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/373_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-18_19_41_45.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1958_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_CRL_bio_2023-11-19_05_20_48.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/167_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_20_14_54.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/203_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-18_02_01_46.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2743_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-19_07_19_09.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/635_HWAddressSanitizer_android.os.HwBlob_getFieldHandle_2023-11-19_02_03_10.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2112_HWAddressSanitizer_android.os.HwParcel_writeInt8_2023-11-19_00_02_50.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2877_HWAddressSanitizer_android.os.HwBlob_getInt32_2023-11-19_07_39_21.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/381_HWAddressSanitizer_android.graphics.BitmapFactory_nativeDecodeByteArray_2023-11-18_19_42_54.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1402_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_BIO_free_all_2023-11-19_03_57_50.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1993_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_23_45_02.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/455_HWAddressSanitizer_android.os.HwBlob_putDouble_2023-11-18_19_53_51.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/928_HWAddressSanitizer_android.media.MediaPlayer__setVideoSurface_2023-11-19_02_46_52.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2509_HWAddressSanitizer_android.view.SurfaceControl_nativeSetTransparentRegionHint_2023-11-19_06_43_57.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/689_HWAddressSanitizer_android.os.HwBlob_copyToInt32Array_2023-11-19_02_11_12.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/444_HWAddressSanitizer_android.view.Surface_nativeRelease_2023-11-18_19_52_16.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2292_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-19_06_11_11.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/296_HWAddressSanitizer_android.os.HwBlob_putFloatArray_2023-11-18_02_15_45.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/694_HWAddressSanitizer_android.graphics.Region_quickContains_2023-11-17_17_49_45.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/349_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_session_id_2023-11-18_12_07_58.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2322_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_cipher_2023-11-19_06_15_43.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/418_HWAddressSanitizer_android.media.MediaMuxer_nativeRelease_2023-11-18_19_48_23.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/103_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_19_01_38.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1525_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-19_04_16_14.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/593_HWAddressSanitizer_android.os.HwParcel_writeString_2023-11-19_01_57_00.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/638_HWAddressSanitizer_android.view.SurfaceControl_nativeSetBuffer_2023-11-19_02_03_33.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2530_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-19_06_47_00.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/3272_HWAddressSanitizer_android.os.HwBlob_putInt8_2023-11-19_08_38_39.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/441_HWAddressSanitizer_android.os.HwBlob_putInt16Array_2023-11-18_12_21_46.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2223_HWAddressSanitizer_android.os.HwBlob_putBool_2023-11-19_06_00_44.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/58_HWAddressSanitizer_android.hardware.Camera_setPreviewSurface_2023-11-17_19_59_00.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/799_HWAddressSanitizer_android.app.NativeActivity_onSurfaceCreatedNative_2023-11-19_02_27_42.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1184_HWAddressSanitizer_android.graphics.Region_quickReject_2023-11-18_21_43_35.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1767_HWAddressSanitizer_android.os.HwBlob_putString_2023-11-18_23_11_21.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/207_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_X509_REVOKED_get_serialNumber_2023-11-18_19_17_08.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1280_HWAddressSanitizer_com.android.server.tv.TvInputHal_nativeAddOrUpdateStream_2023-11-18_21_58_05.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/909_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_PEM_read_bio_X509_CRL_2023-11-18_21_02_04.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/73_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_18_13_04.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/695_HWAddressSanitizer_android.graphics.Region_quickReject_2023-11-17_17_49_49.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/856_HWAddressSanitizer_android.opengl.GLES30_glGetActiveUniformBlockName_2023-11-19_02_36_08.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/3445_HWAddressSanitizer_android.os.HwBlob_putInt32Array_2023-11-19_09_04_20.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/804_HWAddressSanitizer_android.os.HwParcel_writeBuffer_2023-11-18_20_46_26.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/531_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_bio_2023-11-18_12_35_22.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/115_HWAddressSanitizer_android.media.ImageReader_nativeCreateImagePlanes_2023-11-18_11_33_06.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1075_HWAddressSanitizer_android.os.HwBlob_putBlob_2023-11-18_21_27_02.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1457_HWAddressSanitizer_android.graphics.Region_translate_2023-11-18_22_24_35.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/718_HWAddressSanitizer_android.os.HwBlob_getDouble_2023-11-19_02_15_29.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/130_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_cipher_2023-11-18_18_21_32.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1661_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_BIO_free_all_2023-11-18_22_55_25.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/236_HWAddressSanitizer_android.os.HwBlob_putInt16_2023-11-18_18_37_08.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/43_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-18_11_22_25.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/255_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_11_53_49.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/572_HWAddressSanitizer_android.media.MediaCodec_native_setSurface_2023-11-18_20_11_25.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/3507_HWAddressSanitizer_android.os.HwBlob_getString_2023-11-19_09_13_38.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/192_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_16_33_32.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/870_HWAddressSanitizer_android.view.SurfaceControl_nativeSetTransparentRegionHint_2023-11-17_18_16_06.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/286_HWAddressSanitizer_android.os.HwParcel_writeHidlMemory_2023-11-18_19_28_52.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/1395_HWAddressSanitizer_android.view.Surface_nativeRelease_2023-11-19_03_56_51.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2126_HWAddressSanitizer_android.os.HwBlob_getInt16_2023-11-19_05_46_00.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/698_HWAddressSanitizer_android.graphics.Region_scale_2023-11-17_17_50_06.log
-/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log/2084_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_bio_2023-11-19_05_39_40.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_16.11.2023/215_HWAddressSanitizer_android.view.Surface_nativeRelease_2023-11-16_00_32_47.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_16.11.2023/89_HWAddressSanitizer_android.view.SurfaceControl_nativeSetBuffer_2023-11-16_00_13_35.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_16.11.2023/991_HWAddressSanitizer_android.graphics.Typeface_nativeCreateFromArray_2023-11-16_02_30_14.log
@@ -111,6 +49,68 @@ Found hwasan crash files: 149
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/1936_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_PKCS7_bio_2023-11-12_05_19_37.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2678_HWAddressSanitizer_android.os.HwBlob_getInt32_2023-11-12_07_10_13.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/1967_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_X509_supported_extension_2023-11-12_05_23_38.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/42_HWAddressSanitizer_android.os.HwBlob_putNativeHandle_2023-11-18_18_52_25.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/373_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-18_19_41_45.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1958_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_CRL_bio_2023-11-19_05_20_48.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/167_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_20_14_54.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/203_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-18_02_01_46.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2743_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-19_07_19_09.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/635_HWAddressSanitizer_android.os.HwBlob_getFieldHandle_2023-11-19_02_03_10.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2112_HWAddressSanitizer_android.os.HwParcel_writeInt8_2023-11-19_00_02_50.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2877_HWAddressSanitizer_android.os.HwBlob_getInt32_2023-11-19_07_39_21.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/381_HWAddressSanitizer_android.graphics.BitmapFactory_nativeDecodeByteArray_2023-11-18_19_42_54.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1402_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_BIO_free_all_2023-11-19_03_57_50.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1993_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_23_45_02.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/455_HWAddressSanitizer_android.os.HwBlob_putDouble_2023-11-18_19_53_51.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/928_HWAddressSanitizer_android.media.MediaPlayer__setVideoSurface_2023-11-19_02_46_52.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2509_HWAddressSanitizer_android.view.SurfaceControl_nativeSetTransparentRegionHint_2023-11-19_06_43_57.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/689_HWAddressSanitizer_android.os.HwBlob_copyToInt32Array_2023-11-19_02_11_12.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/444_HWAddressSanitizer_android.view.Surface_nativeRelease_2023-11-18_19_52_16.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2292_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-19_06_11_11.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/296_HWAddressSanitizer_android.os.HwBlob_putFloatArray_2023-11-18_02_15_45.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/694_HWAddressSanitizer_android.graphics.Region_quickContains_2023-11-17_17_49_45.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/349_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_session_id_2023-11-18_12_07_58.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2322_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_cipher_2023-11-19_06_15_43.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/418_HWAddressSanitizer_android.media.MediaMuxer_nativeRelease_2023-11-18_19_48_23.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/103_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_19_01_38.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1525_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-19_04_16_14.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/593_HWAddressSanitizer_android.os.HwParcel_writeString_2023-11-19_01_57_00.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/638_HWAddressSanitizer_android.view.SurfaceControl_nativeSetBuffer_2023-11-19_02_03_33.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2530_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-19_06_47_00.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/3272_HWAddressSanitizer_android.os.HwBlob_putInt8_2023-11-19_08_38_39.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/441_HWAddressSanitizer_android.os.HwBlob_putInt16Array_2023-11-18_12_21_46.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2223_HWAddressSanitizer_android.os.HwBlob_putBool_2023-11-19_06_00_44.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/58_HWAddressSanitizer_android.hardware.Camera_setPreviewSurface_2023-11-17_19_59_00.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/799_HWAddressSanitizer_android.app.NativeActivity_onSurfaceCreatedNative_2023-11-19_02_27_42.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1184_HWAddressSanitizer_android.graphics.Region_quickReject_2023-11-18_21_43_35.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1767_HWAddressSanitizer_android.os.HwBlob_putString_2023-11-18_23_11_21.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/207_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_X509_REVOKED_get_serialNumber_2023-11-18_19_17_08.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1280_HWAddressSanitizer_com.android.server.tv.TvInputHal_nativeAddOrUpdateStream_2023-11-18_21_58_05.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/909_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_PEM_read_bio_X509_CRL_2023-11-18_21_02_04.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/73_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_18_13_04.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/695_HWAddressSanitizer_android.graphics.Region_quickReject_2023-11-17_17_49_49.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/856_HWAddressSanitizer_android.opengl.GLES30_glGetActiveUniformBlockName_2023-11-19_02_36_08.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/3445_HWAddressSanitizer_android.os.HwBlob_putInt32Array_2023-11-19_09_04_20.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/804_HWAddressSanitizer_android.os.HwParcel_writeBuffer_2023-11-18_20_46_26.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/531_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_bio_2023-11-18_12_35_22.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/115_HWAddressSanitizer_android.media.ImageReader_nativeCreateImagePlanes_2023-11-18_11_33_06.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1075_HWAddressSanitizer_android.os.HwBlob_putBlob_2023-11-18_21_27_02.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1457_HWAddressSanitizer_android.graphics.Region_translate_2023-11-18_22_24_35.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/718_HWAddressSanitizer_android.os.HwBlob_getDouble_2023-11-19_02_15_29.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/130_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_cipher_2023-11-18_18_21_32.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1661_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_BIO_free_all_2023-11-18_22_55_25.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/236_HWAddressSanitizer_android.os.HwBlob_putInt16_2023-11-18_18_37_08.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/43_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-18_11_22_25.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/255_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_11_53_49.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/572_HWAddressSanitizer_android.media.MediaCodec_native_setSurface_2023-11-18_20_11_25.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/3507_HWAddressSanitizer_android.os.HwBlob_getString_2023-11-19_09_13_38.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/192_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_16_33_32.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/870_HWAddressSanitizer_android.view.SurfaceControl_nativeSetTransparentRegionHint_2023-11-17_18_16_06.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/286_HWAddressSanitizer_android.os.HwParcel_writeHidlMemory_2023-11-18_19_28_52.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1395_HWAddressSanitizer_android.view.Surface_nativeRelease_2023-11-19_03_56_51.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2126_HWAddressSanitizer_android.os.HwBlob_getInt16_2023-11-19_05_46_00.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/698_HWAddressSanitizer_android.graphics.Region_scale_2023-11-17_17_50_06.log
+/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2084_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_bio_2023-11-19_05_39_40.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/550_HWAddressSanitizer_android.graphics.Typeface_nativeCreateWeightAlias_2023-11-16_13_18_29.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/551_HWAddressSanitizer_android.graphics.Typeface_nativeCreateFromArray_2023-11-16_13_18_33.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2054_HWAddressSanitizer_android.os.HwBlob_putInt64_2023-11-16_17_03_43.log
@@ -149,75 +149,238 @@ Found hwasan crash files: 149
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_15.11.2023/89_HWAddressSanitizer_android.view.SurfaceControl_nativeSetBuffer_2023-11-14_16_15_04.log
 /home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_15.11.2023/8_HWAddressSanitizer_android.graphics.Region_quickReject_2023-11-14_16_02_47.log
 **************************************************
-Found unsafe api: 220
-android.os.HwBlob_putNativeHandle
-android.os.HwBlob_getInt64
+Found unsafe api: 71
+android.view.Surface_nativeRelease
+android.view.SurfaceControl_nativeSetBuffer
+android.graphics.Typeface_nativeCreateFromArray
+com.android.org.conscrypt.NativeCrypto_i2d
+android.os.HwBlob_putBoolArray
 com.android.org.conscrypt.NativeCrypto_d2i
-android.os.Process_parseProcLine
-android.os.HwBlob_copyToInt8Array
-android.os.HwBlob_getFieldHandle
-android.os.HwParcel_writeInt8
-android.os.HwBlob_getInt32
-android.graphics.BitmapFactory_nativeDecodeByteArray
-com.android.org.conscrypt.NativeCrypto_BIO
-android.os.HwBlob_copyToFloatArray
+android.media.ImageWriter_nativeAttachAndQueueGraphicBuffer
+android.os.HwBlob_getInt8
+android.os.HwBlob_putFloat
 android.os.HwBlob_putDouble
+android.os.HwBlob_putNativeHandle
+android.view.MotionEvent_nativeGetRawAxisValue
+android.media.MediaSync_native
+android.os.HwBlob_copyToInt64Array
+android.os.HwBlob_copyToInt16Array
+com.android.org.conscrypt.NativeCrypto_BIO
+com.android.org.conscrypt.NativeCrypto_SSL
+android.os.HwBlob_putInt64
+android.graphics.HardwareRenderer_nSetSurface
+android.hardware.camera2.impl.CameraMetadataNative_nativeGetTypeFromTagLocal
+android.media.MediaMuxer_nativeRelease
+android.os.HwBlob_getBool
+android.os.HwBlob_getString
+com.android.org.conscrypt.NativeCrypto_X509
+android.os.HwBlob_putBool
+com.android.org.conscrypt.NativeCrypto_PEM
+com.android.org.conscrypt.NativeCrypto_ASN1
+android.os.HwBlob_copyToInt32Array
+android.os.HwBlob_putInt16Array
+android.opengl.GLES30_glGetActiveUniformBlockName
+android.os.HwBlob_copyToDoubleArray
+android.os.HwBlob_putInt32Array
+android.graphics.BitmapFactory_nativeDecodeByteArray
+com.android.org.conscrypt.NativeCrypto_get
+android.os.HwBlob_getInt64
+android.hardware.HardwareBuffer_nCreateFromGraphicBuffer
+android.os.HwBlob_getFieldHandle
+android.os.HwBlob_getDouble
+android.os.HwBlob_putBlob
+android.os.HwParcel_writeInt8
+android.os.HwBlob_copyToBoolArray
+android.os.HwParcel_writeBuffer
+android.os.HwBlob_putInt16
+android.app.NativeActivity_onSurfaceChangedNative
+android.os.HwBlob_copyToInt8Array
+android.os.HwBlob_getInt32
+android.os.Process_parseProcLine
+android.os.HwBlob_copyToFloatArray
 android.media.MediaPlayer_
 android.view.SurfaceControl_nativeSetTransparentRegionHint
-android.os.HwBlob_copyToInt32Array
-android.view.Surface_nativeRelease
-android.os.HwBlob_copyToInt64Array
 android.os.HwBlob_putFloatArray
 android.graphics.Region_quickContains
-com.android.org.conscrypt.NativeCrypto_SSL
-android.media.MediaMuxer_nativeRelease
-android.os.HwBlob_copyToDoubleArray
 android.os.HwParcel_writeString
-android.view.SurfaceControl_nativeSetBuffer
 android.os.HwBlob_putInt8
-android.os.HwBlob_putInt16Array
-android.os.HwBlob_putBool
 android.hardware.Camera_setPreviewSurface
 android.app.NativeActivity_onSurfaceCreatedNative
 android.graphics.Region_quickReject
 android.os.HwBlob_putString
-com.android.org.conscrypt.NativeCrypto_X509
 com.android.server.tv.TvInputHal_nativeAddOrUpdateStream
-com.android.org.conscrypt.NativeCrypto_PEM
-android.opengl.GLES30_glGetActiveUniformBlockName
-android.os.HwBlob_putInt32Array
-android.os.HwParcel_writeBuffer
 android.media.ImageReader_nativeCreateImagePlanes
-android.os.HwBlob_putBlob
 android.graphics.Region_translate
-android.os.HwBlob_getDouble
-android.os.HwBlob_putInt16
 android.media.MediaCodec_native
-android.os.HwBlob_getString
 android.os.HwParcel_writeHidlMemory
 android.os.HwBlob_getInt16
 android.graphics.Region_scale
-android.graphics.Typeface_nativeCreateFromArray
-com.android.org.conscrypt.NativeCrypto_i2d
-android.os.HwBlob_putBoolArray
-android.media.ImageWriter_nativeAttachAndQueueGraphicBuffer
-android.os.HwBlob_getInt8
-android.os.HwBlob_putFloat
-android.view.MotionEvent_nativeGetRawAxisValue
-android.media.MediaSync_native
-android.os.HwBlob_copyToInt16Array
-android.os.HwBlob_putInt64
-android.graphics.HardwareRenderer_nSetSurface
-android.hardware.camera2.impl.CameraMetadataNative_nativeGetTypeFromTagLocal
-android.os.HwBlob_getBool
-com.android.org.conscrypt.NativeCrypto_ASN1
-com.android.org.conscrypt.NativeCrypto_get
-android.hardware.HardwareBuffer_nCreateFromGraphicBuffer
-android.os.HwBlob_copyToBoolArray
-android.app.NativeActivity_onSurfaceChangedNative
 android.graphics.Typeface_nativeCreateWeightAlias
 android.os.HwParcel_writeBool
 android.os.HwBlob_putInt64Array
 android.os.HwBlob_putInt8Array
 android.os.HwBlob_putDoubleArray
 android.os.HwBlob_putInt32
+**************************************************
+Found bug: 80
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2700_HWAddressSanitizer_android.os.HwBlob_putBoolArray_2023-11-12_07_12_41.log', '11-11 20:12:50.990 20889 20908 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:12:50.990 20889 20908 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:12:50.990 20889 20908 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2676_HWAddressSanitizer_android.os.HwBlob_getInt8_2023-11-12_07_09_57.log', '11-11 20:10:06.771 19569 19589 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:10:06.772 19569 19589 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:10:06.772 19569 19589 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2696_HWAddressSanitizer_android.os.HwBlob_putFloat_2023-11-12_07_12_15.log', '11-11 20:12:24.579 20664 20684 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:12:24.579 20664 20684 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:12:24.579 20664 20684 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2697_HWAddressSanitizer_android.os.HwBlob_putDouble_2023-11-12_07_12_20.log', '11-11 20:12:29.650 20721 20741 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:12:29.650 20721 20741 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:12:29.650 20721 20741 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2699_HWAddressSanitizer_android.os.HwBlob_putNativeHandle_2023-11-12_07_12_36.log', '11-11 20:12:45.927 20830 20850 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:12:45.927 20830 20850 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:12:45.927 20830 20850 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2688_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-12_07_11_17.log', '11-11 20:11:26.572 20231 20250 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:11:26.572 20231 20250 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:11:26.572 20231 20250 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2686_HWAddressSanitizer_android.os.HwBlob_copyToInt16Array_2023-11-12_07_11_05.log', '11-11 20:11:14.450 20119 20138 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:11:14.450 20119 20138 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:11:14.450 20119 20138 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2695_HWAddressSanitizer_android.os.HwBlob_putInt64_2023-11-12_07_12_08.log', '11-11 20:12:17.491 20609 20628 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:12:17.492 20609 20628 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:12:17.492 20609 20628 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2675_HWAddressSanitizer_android.os.HwBlob_getBool_2023-11-12_07_09_52.log', '11-11 20:10:01.709 19514 19533 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:10:01.709 19514 19533 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:10:01.709 19514 19533 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2682_HWAddressSanitizer_android.os.HwBlob_getString_2023-11-12_07_10_38.log', '11-11 20:10:48.149  1707  1825 W IorapForwardingService: No service published for: iorapd\n11-11 20:10:48.151 19894 19913 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:10:48.151 19894 19913 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2691_HWAddressSanitizer_android.os.HwBlob_putBool_2023-11-12_07_11_37.log', '11-11 20:11:47.070 20395 20416 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:11:47.070 20395 20416 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:11:47.070 20395 20416 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2687_HWAddressSanitizer_android.os.HwBlob_copyToInt32Array_2023-11-12_07_11_10.log', '11-11 20:11:19.512 20175 20194 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:11:19.512 20175 20194 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:11:19.512 20175 20194 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2702_HWAddressSanitizer_android.os.HwBlob_putInt16Array_2023-11-12_07_12_56.log', '11-11 20:13:06.029 20997 21016 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:13:06.029 20997 21016 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:13:06.029 20997 21016 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/3832_HWAddressSanitizer_android.opengl.GLES30_glGetActiveUniformBlockName_2023-11-12_10_01_17.log', '11-11 23:01:26.500 17219 17239 I app_process64: READ of size 1 at 0x003787eccf21 tags: 4c/01 (ptr/mem) in thread T34\n11-11 23:01:26.518 17219 17239 I app_process64:     #0 0x77e6fd58a0  (/apex/com.android.art/lib64/libart.so+0x5d58a0)\n11-11 23:01:26.518 17219 17239 I app_process64:     #1 0x77e6fd2c20  (/apex/com.android.art/lib64/libart.so+0x5d2c20)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0x5d58a0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2690_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-12_07_11_31.log', '11-11 20:11:40.889 20338 20358 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:11:40.889 20338 20358 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:11:40.889 20338 20358 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2703_HWAddressSanitizer_android.os.HwBlob_putInt32Array_2023-11-12_07_13_01.log', '11-11 20:13:11.092 21053 21072 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:13:11.092 21053 21072 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:13:11.092 21053 21072 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2679_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-12_07_10_18.log', '11-11 20:10:27.772 19733 19753 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:10:27.772 19733 19753 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:10:27.772 19733 19753 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2683_HWAddressSanitizer_android.os.HwBlob_getFieldHandle_2023-11-12_07_10_45.log', '11-11 20:10:55.227 19949 19969 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:10:55.228 19949 19969 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:10:55.228 19949 19969 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2681_HWAddressSanitizer_android.os.HwBlob_getDouble_2023-11-12_07_10_33.log', '11-11 20:10:43.090 19838 19857 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:10:43.090 19838 19857 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:10:43.090 19838 19857 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2707_HWAddressSanitizer_android.os.HwBlob_putBlob_2023-11-12_07_13_35.log', '11-11 20:13:44.404 21260 21281 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:13:44.404 21260 21281 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:13:44.404 21260 21281 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2512_HWAddressSanitizer_android.os.HwParcel_writeInt8_2023-11-12_06_45_26.log', '11-11 19:45:35.623 11208 11228 I app_process64: READ of size 8 at 0x007764b4dbe0 tags: 00/a5 (ptr/mem) in thread T34\n11-11 19:45:35.641 11208 11228 I app_process64:     #0 0x77e75b89f0  (/apex/com.android.art/lib64/libart.so+0xbb89f0)\n11-11 19:45:35.641 11208 11228 I app_process64:     #1 0x77e6dc03e4  (/apex/com.android.art/lib64/libart.so+0x3c03e4)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0xbb89f0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2684_HWAddressSanitizer_android.os.HwBlob_copyToBoolArray_2023-11-12_07_10_51.log', '11-11 20:11:00.291 20005 20025 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:11:00.291 20005 20025 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:11:00.291 20005 20025 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2556_HWAddressSanitizer_android.os.HwParcel_writeBuffer_2023-11-12_06_51_52.log', "11-11 19:52:03.827 13464 13483 I app_process64: READ of size 8 at 0x007764b5eb20 tags: 00/c6 (ptr/mem) in thread T34\n11-11 19:52:03.908   999   999 I Zygote  : Process 3503 exited due to signal 9 (Killed)\n11-11 19:52:03.917   648   648 I lowmemorykiller: Kill 'com.android.quicksearchbox' (3503), uid 10071, oom_score_adj 985 to free 17940kB rss, 40268kB swap; reason: low watermark is breached and thrashing (117%)\n", 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0xbb89f0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2693_HWAddressSanitizer_android.os.HwBlob_putInt16_2023-11-12_07_11_54.log', '11-11 20:12:03.295 20502 20522 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:12:03.295 20502 20522 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:12:03.295 20502 20522 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2685_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-12_07_10_58.log', '11-11 20:11:07.373 20063 20082 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:11:07.374 20063 20082 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:11:07.374 20063 20082 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_14.11.2023/2678_HWAddressSanitizer_android.os.HwBlob_getInt32_2023-11-12_07_10_13.log', '11-11 20:10:22.671 19678 19697 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-11 20:10:22.671 19678 19697 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-11 20:10:22.671 19678 19697 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/42_HWAddressSanitizer_android.os.HwBlob_putNativeHandle_2023-11-18_18_52_25.log', '11-18 07:52:35.861 19990 20010 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 07:52:35.861 19990 20010 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 07:52:35.861 19990 20010 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/373_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-18_19_41_45.log', '11-18 08:41:56.624  6134  6153 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 08:41:56.624  6134  6153 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 08:41:56.624  6134  6153 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/167_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_20_14_54.log', '11-17 09:15:05.367 11180 11200 I app_process64: READ of size 1 at 0x003707ecd1c0 tags: 12/00 (ptr/mem) in thread T35\n11-17 09:15:05.413 11180 11200 I app_process64:     #0 0x7817464560  (/system/lib64/libandroid_runtime.so+0x22b560)\n11-17 09:15:05.413 11180 11200 I app_process64:     #1 0x78174648f4  (/system/lib64/libandroid_runtime.so+0x22b8f4)\n', 'HWAddressSanitizer: tag-mismatch (/system/lib64/libandroid_runtime.so+0x22b560)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/203_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-18_02_01_46.log', '11-17 15:01:56.854 23428 23448 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-17 15:01:56.854 23428 23448 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-17 15:01:56.854 23428 23448 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2743_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-19_07_19_09.log', '11-18 20:19:19.860 21063 21083 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 20:19:19.860 21063 21083 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 20:19:19.861 21063 21083 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/635_HWAddressSanitizer_android.os.HwBlob_getFieldHandle_2023-11-19_02_03_10.log', '11-18 15:03:21.304  5544  5563 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 15:03:21.304  5544  5563 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 15:03:21.304  5544  5563 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2112_HWAddressSanitizer_android.os.HwParcel_writeInt8_2023-11-19_00_02_50.log', '11-18 13:03:01.701  2080  2118 I app_process64: READ of size 8 at 0x007764b56be0 tags: 00/f5 (ptr/mem) in thread T34\n11-18 13:03:01.719  2080  2118 I app_process64:     #0 0x77e75b89f0  (/apex/com.android.art/lib64/libart.so+0xbb89f0)\n11-18 13:03:01.719  2080  2118 I app_process64:     #1 0x77e6dc03e4  (/apex/com.android.art/lib64/libart.so+0x3c03e4)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0xbb89f0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2877_HWAddressSanitizer_android.os.HwBlob_getInt32_2023-11-19_07_39_21.log', '11-18 20:39:32.376 27877 27897 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 20:39:32.377 27877 27897 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 20:39:32.377 27877 27897 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1993_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_23_45_02.log', '11-18 12:45:13.720 27502 27521 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 12:45:13.720 27502 27521 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 12:45:13.721 27502 27521 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/455_HWAddressSanitizer_android.os.HwBlob_putDouble_2023-11-18_19_53_51.log', '11-18 08:54:02.512 10355 10374 I app_process64: WRITE of size 8 at 0x00774e998ffc tags: ae/00 (ptr/mem) in thread T34\n11-18 08:54:02.529 10355 10374 I app_process64:     #0 0x77fc600c84  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x18c84)\n11-18 08:54:02.529 10355 10374 I app_process64:     #1 0x78174209d8  (/system/lib64/libandroid_runtime.so+0x1e79d8)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x18c84)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/689_HWAddressSanitizer_android.os.HwBlob_copyToInt32Array_2023-11-19_02_11_12.log', '11-18 15:11:23.562  8321  8341 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 15:11:23.562  8321  8341 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 15:11:23.562  8321  8341 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2292_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-19_06_11_11.log', '11-18 19:11:22.643 28748 28767 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 19:11:22.643 28748 28767 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 19:11:22.643 28748 28767 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/296_HWAddressSanitizer_android.os.HwBlob_putFloatArray_2023-11-18_02_15_45.log', '11-17 15:15:56.048 28169 28188 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-17 15:15:56.048 28169 28188 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-17 15:15:56.048 28169 28188 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/103_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_19_01_38.log', '11-18 08:01:49.442 23090 23109 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 08:01:49.442 23090 23109 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 08:01:49.442 23090 23109 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1525_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-19_04_16_14.log', '11-18 17:16:24.821 20358 20378 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 17:16:24.821 20358 20378 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 17:16:24.821 20358 20378 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/593_HWAddressSanitizer_android.os.HwParcel_writeString_2023-11-19_01_57_00.log', '11-18 14:57:11.399  3159  3190 I app_process64: READ of size 8 at 0x007764b5cbb0 tags: 00/d9 (ptr/mem) in thread T34\n11-18 14:57:11.417  3159  3190 I app_process64:     #0 0x77e75b89f0  (/apex/com.android.art/lib64/libart.so+0xbb89f0)\n11-18 14:57:11.417  3159  3190 I app_process64:     #1 0x77e6dc03e4  (/apex/com.android.art/lib64/libart.so+0x3c03e4)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0xbb89f0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2530_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-19_06_47_00.log', '11-18 19:47:11.364 10199 10219 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 19:47:11.364 10199 10219 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 19:47:11.364 10199 10219 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/3272_HWAddressSanitizer_android.os.HwBlob_putInt8_2023-11-19_08_38_39.log', '11-18 21:38:50.801 17291 17310 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 21:38:50.801 17291 17310 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 21:38:50.802 17291 17310 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/441_HWAddressSanitizer_android.os.HwBlob_putInt16Array_2023-11-18_12_21_46.log', '11-18 01:21:57.960 26940 26959 I app_process64: WRITE of size 6 at 0x006b6ffffffe tags: dd/00 (ptr/mem) in thread T34\n11-18 01:21:57.978 26940 26959 I app_process64:     #0 0x77fc606ab4  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1eab4)\n11-18 01:21:57.978 26940 26959 I app_process64:     #1 0x78174217dc  (/system/lib64/libandroid_runtime.so+0x1e87dc)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1eab4)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2223_HWAddressSanitizer_android.os.HwBlob_putBool_2023-11-19_06_00_44.log', '11-18 19:00:55.579 25232 25252 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 19:00:55.580 25232 25252 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 19:00:55.580 25232 25252 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1767_HWAddressSanitizer_android.os.HwBlob_putString_2023-11-18_23_11_21.log', '11-18 12:11:32.060 15945 15965 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 12:11:32.060 15945 15965 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 12:11:32.060 15945 15965 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/73_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_18_13_04.log', '11-18 07:13:15.330  7660  7680 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 07:13:15.330  7660  7680 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 07:13:15.330  7660  7680 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/856_HWAddressSanitizer_android.opengl.GLES30_glGetActiveUniformBlockName_2023-11-19_02_36_08.log', '11-18 15:36:18.897 16850 16869 I app_process64: READ of size 1 at 0x003787ecce21 tags: af/01 (ptr/mem) in thread T34\n11-18 15:36:18.913 16850 16869 I app_process64:     #0 0x77e6fd58a0  (/apex/com.android.art/lib64/libart.so+0x5d58a0)\n11-18 15:36:18.914 16850 16869 I app_process64:     #1 0x77e6fd2c20  (/apex/com.android.art/lib64/libart.so+0x5d2c20)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0x5d58a0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/3445_HWAddressSanitizer_android.os.HwBlob_putInt32Array_2023-11-19_09_04_20.log', '11-18 22:04:31.001 26180 26199 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 22:04:31.001 26180 26199 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 22:04:31.001 26180 26199 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/804_HWAddressSanitizer_android.os.HwParcel_writeBuffer_2023-11-18_20_46_26.log', '11-18 09:46:37.922 28198 28218 I app_process64: READ of size 8 at 0x007764b63b20 tags: 00/5c (ptr/mem) in thread T34\n11-18 09:46:37.939 28198 28218 I app_process64:     #0 0x77e75b89f0  (/apex/com.android.art/lib64/libart.so+0xbb89f0)\n11-18 09:46:37.939 28198 28218 I app_process64:     #1 0x77e6dc03e4  (/apex/com.android.art/lib64/libart.so+0x3c03e4)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0xbb89f0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/1075_HWAddressSanitizer_android.os.HwBlob_putBlob_2023-11-18_21_27_02.log', '11-18 10:27:13.056 11328 11348 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 10:27:13.056 11328 11348 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 10:27:13.056 11328 11348 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/718_HWAddressSanitizer_android.os.HwBlob_getDouble_2023-11-19_02_15_29.log', '11-18 15:15:40.258  9805  9825 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 15:15:40.258  9805  9825 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 15:15:40.258  9805  9825 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/236_HWAddressSanitizer_android.os.HwBlob_putInt16_2023-11-18_18_37_08.log', '11-18 07:37:19.881 16024 16043 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 07:37:19.881 16024 16043 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 07:37:19.881 16024 16043 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/43_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-18_11_22_25.log', '11-18 00:22:36.669  6620  6640 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 00:22:36.669  6620  6640 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 00:22:36.669  6620  6640 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/255_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_11_53_49.log', '11-18 00:54:00.405 17432 17452 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 00:54:00.405 17432 17452 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 00:54:00.405 17432 17452 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/3507_HWAddressSanitizer_android.os.HwBlob_getString_2023-11-19_09_13_38.log', '11-18 22:13:48.918 29353 29372 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 22:13:48.918 29353 29372 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 22:13:48.918 29353 29372 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/192_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_16_33_32.log', '11-17 05:33:43.051 14175 14194 I app_process64: READ of size 1 at 0x0037290c9a9e tags: 3f/00 (ptr/mem) in thread T34\n11-17 05:33:43.069 14175 14194 I app_process64:     #0 0x78174645e0  (/system/lib64/libandroid_runtime.so+0x22b5e0)\n11-17 05:33:43.069 14175 14194 I app_process64:     #1 0x78174648f4  (/system/lib64/libandroid_runtime.so+0x22b8f4)\n', 'HWAddressSanitizer: tag-mismatch (/system/lib64/libandroid_runtime.so+0x22b5e0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/286_HWAddressSanitizer_android.os.HwParcel_writeHidlMemory_2023-11-18_19_28_52.log', '11-18 08:29:02.879 32419 32439 I app_process64: READ of size 8 at 0x007764b4cba0 tags: 00/ca (ptr/mem) in thread T34\n11-18 08:29:02.896 32419 32439 I app_process64:     #0 0x77e75b89f0  (/apex/com.android.art/lib64/libart.so+0xbb89f0)\n11-18 08:29:02.896 32419 32439 I app_process64:     #1 0x77e6dc03e4  (/apex/com.android.art/lib64/libart.so+0x3c03e4)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0xbb89f0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_19.11.2023/2126_HWAddressSanitizer_android.os.HwBlob_getInt16_2023-11-19_05_46_00.log', '11-18 18:46:11.616 20306 20326 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-18 18:46:11.616 20306 20326 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-18 18:46:11.616 20306 20326 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2054_HWAddressSanitizer_android.os.HwBlob_putInt64_2023-11-16_17_03_43.log', '11-16 06:03:53.795 17070 17090 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:03:53.795 17070 17090 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:03:53.795 17070 17090 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/1981_HWAddressSanitizer_android.os.HwParcel_writeBool_2023-11-16_16_53_54.log', '11-16 05:54:05.186 13242 13262 I app_process64: READ of size 8 at 0x007764b48be0 tags: 00/20 (ptr/mem) in thread T34\n11-16 05:54:05.204 13242 13262 I app_process64:     #0 0x77e75b89f0  (/apex/com.android.art/lib64/libart.so+0xbb89f0)\n11-16 05:54:05.204 13242 13262 I app_process64:     #1 0x77e6dc03e4  (/apex/com.android.art/lib64/libart.so+0x3c03e4)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.art/lib64/libart.so+0xbb89f0)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2048_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-16_17_03_01.log', '11-16 06:03:12.012 16744 16763 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:03:12.012 16744 16763 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:03:12.012 16744 16763 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2043_HWAddressSanitizer_android.os.HwBlob_copyToBoolArray_2023-11-16_17_02_32.log', '11-16 06:02:42.400 16463 16482 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:02:42.400 16463 16482 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:02:42.400 16463 16482 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2056_HWAddressSanitizer_android.os.HwBlob_putDouble_2023-11-16_17_03_57.log', '11-16 06:04:08.186 17178 17198 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:04:08.186 17178 17198 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:04:08.186 17178 17198 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2041_HWAddressSanitizer_android.os.HwBlob_getString_2023-11-16_17_02_21.log', '11-16 06:02:32.043 16349 16368 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:02:32.043 16349 16368 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:02:32.044 16349 16368 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2026_HWAddressSanitizer_android.os.HwParcel_writeBuffer_2023-11-16_17_00_17.log', '11-16 06:00:28.268 15568 15587 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:00:28.268 15568 15587 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:00:28.268 15568 15587 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2046_HWAddressSanitizer_android.os.HwBlob_copyToInt32Array_2023-11-16_17_02_47.log', '11-16 06:02:57.701 16636 16656 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:02:57.701 16636 16656 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:02:57.701 16636 16656 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2063_HWAddressSanitizer_android.os.HwBlob_putInt64Array_2023-11-16_17_04_45.log', '11-16 06:04:56.040 17558 17578 I app_process64: WRITE of size 32 at 0x007726a59ff8 tags: 07/00 (ptr/mem) in thread T34\n11-16 06:04:56.057 17558 17578 I app_process64:     #0 0x77fc606ab4  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1eab4)\n11-16 06:04:56.057 17558 17578 I app_process64:     #1 0x7817421cb8  (/system/lib64/libandroid_runtime.so+0x1e8cb8)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1eab4)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2037_HWAddressSanitizer_android.os.HwBlob_getInt32_2023-11-16_17_01_49.log', '11-16 06:01:59.592 16138 16158 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:01:59.592 16138 16158 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:01:59.592 16138 16158 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2066_HWAddressSanitizer_android.os.HwBlob_putBlob_2023-11-16_17_05_04.log', '11-16 06:05:16.246 17726 17746 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:05:16.246 17726 17746 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:05:16.246 17726 17746 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2044_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-16_17_02_37.log', '11-16 06:02:47.503 16520 16540 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:02:47.503 16520 16540 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:02:47.504 16520 16540 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2060_HWAddressSanitizer_android.os.HwBlob_putInt8Array_2023-11-16_17_04_21.log', '11-16 06:04:32.234 17401 17421 I app_process64: WRITE of size 4 at 0x007727859fff tags: 7b/00 (ptr/mem) in thread T34\n11-16 06:04:32.251 17401 17421 I app_process64:     #0 0x77fc606ab4  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1eab4)\n11-16 06:04:32.251 17401 17421 I app_process64:     #1 0x781742157c  (/system/lib64/libandroid_runtime.so+0x1e857c)\n', 'HWAddressSanitizer: tag-mismatch (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1eab4)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2057_HWAddressSanitizer_android.os.HwBlob_putString_2023-11-16_17_04_02.log', '11-16 06:04:13.305 17236 17256 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:04:13.305 17236 17256 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:04:13.305 17236 17256 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2065_HWAddressSanitizer_android.os.HwBlob_putDoubleArray_2023-11-16_17_04_59.log', '11-16 06:05:10.341 17668 17688 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:05:10.341 17668 17688 I app_process64:     #1 0x77f1ee9ab4  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46ab4)\n11-16 06:05:10.341 17668 17688 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2042_HWAddressSanitizer_android.os.HwBlob_getFieldHandle_2023-11-16_17_02_27.log', '11-16 06:02:37.336 16404 16424 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:02:37.336 16404 16424 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:02:37.336 16404 16424 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2052_HWAddressSanitizer_android.os.HwBlob_putInt16_2023-11-16_17_03_33.log', '11-16 06:03:43.578 16953 16972 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:03:43.578 16953 16972 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:03:43.578 16953 16972 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2058_HWAddressSanitizer_android.os.HwBlob_putNativeHandle_2023-11-16_17_04_07.log', '11-16 06:04:18.441 17292 17312 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:04:18.442 17292 17312 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:04:18.442 17292 17312 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2045_HWAddressSanitizer_android.os.HwBlob_copyToInt16Array_2023-11-16_17_02_42.log', '11-16 06:02:52.601 16579 16599 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:02:52.601 16579 16599 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:02:52.601 16579 16599 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+['/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/hwasan_crash_log_17.11.2023/2053_HWAddressSanitizer_android.os.HwBlob_putInt32_2023-11-16_17_03_38.log', '11-16 06:03:48.676 17014 17033 I app_process64:     #0 0x77fc60585c  (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)\n11-16 06:03:48.676 17014 17033 I app_process64:     #1 0x77f1ee9a7c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x46a7c)\n11-16 06:03:48.676 17014 17033 I app_process64:     #2 0x781741dfb0  (/system/lib64/libandroid_runtime.so+0x1e4fb0)\n', 'HWAddressSanitizer: allocation-size-too-big (/apex/com.android.runtime/lib64/bionic/libclang_rt.hwasan-aarch64-android.so+0x1d85c)']
+**************************************************
+Found repeated unsafe api: 78
+com.android.org.conscrypt.NativeCrypto_SSL
+com.android.org.conscrypt.NativeCrypto_ASN1
+com.android.org.conscrypt.NativeCrypto_d2i
+com.android.org.conscrypt.NativeCrypto_X509
+android.os.HwBlob_putNativeHandle
+android.os.HwBlob_getInt64
+com.android.org.conscrypt.NativeCrypto_d2i
+android.os.HwBlob_copyToInt8Array
+android.os.HwBlob_getInt64
+android.os.HwBlob_getFieldHandle
+android.os.HwParcel_writeInt8
+android.os.HwBlob_getInt32
+android.graphics.BitmapFactory_nativeDecodeByteArray
+com.android.org.conscrypt.NativeCrypto_BIO
+android.os.HwBlob_putDouble
+android.os.HwBlob_copyToInt32Array
+android.view.Surface_nativeRelease
+android.os.HwBlob_copyToInt64Array
+com.android.org.conscrypt.NativeCrypto_SSL
+com.android.org.conscrypt.NativeCrypto_SSL
+android.media.MediaMuxer_nativeRelease
+android.os.HwBlob_copyToDoubleArray
+android.os.HwBlob_copyToFloatArray
+android.view.SurfaceControl_nativeSetBuffer
+android.os.HwBlob_copyToInt8Array
+android.os.HwBlob_putInt16Array
+android.os.HwBlob_putBool
+com.android.org.conscrypt.NativeCrypto_X509
+com.android.org.conscrypt.NativeCrypto_PEM
+android.os.HwBlob_copyToDoubleArray
+android.graphics.Region_quickReject
+android.opengl.GLES30_glGetActiveUniformBlockName
+android.os.HwBlob_putInt32Array
+android.os.HwParcel_writeBuffer
+com.android.org.conscrypt.NativeCrypto_d2i
+android.os.HwBlob_putBlob
+android.os.HwBlob_getDouble
+com.android.org.conscrypt.NativeCrypto_SSL
+com.android.org.conscrypt.NativeCrypto_BIO
+android.os.HwBlob_putInt16
+android.os.HwBlob_copyToInt64Array
+android.os.HwBlob_copyToFloatArray
+android.os.HwBlob_getString
+android.os.Process_parseProcLine
+android.view.SurfaceControl_nativeSetTransparentRegionHint
+android.view.Surface_nativeRelease
+com.android.org.conscrypt.NativeCrypto_d2i
+android.graphics.Typeface_nativeCreateFromArray
+android.os.HwBlob_putInt64
+com.android.org.conscrypt.NativeCrypto_SSL
+android.graphics.Region_quickContains
+android.os.HwBlob_copyToFloatArray
+android.os.HwBlob_copyToBoolArray
+android.os.HwBlob_putDouble
+android.os.HwBlob_getString
+android.os.HwParcel_writeBuffer
+android.os.HwBlob_copyToInt32Array
+com.android.org.conscrypt.NativeCrypto_PEM
+com.android.org.conscrypt.NativeCrypto_get
+com.android.org.conscrypt.NativeCrypto_SSL
+android.os.HwBlob_getInt32
+android.os.HwBlob_putBlob
+com.android.org.conscrypt.NativeCrypto_SSL
+com.android.org.conscrypt.NativeCrypto_get
+com.android.org.conscrypt.NativeCrypto_i2d
+android.os.HwBlob_copyToInt8Array
+android.os.HwBlob_putString
+com.android.org.conscrypt.NativeCrypto_X509
+com.android.org.conscrypt.NativeCrypto_SSL
+com.android.org.conscrypt.NativeCrypto_SSL
+android.view.MotionEvent_nativeGetRawAxisValue
+android.os.HwBlob_getFieldHandle
+android.view.SurfaceControl_nativeSetBuffer
+android.os.HwBlob_putInt16
+android.os.HwBlob_putNativeHandle
+android.os.HwBlob_copyToInt16Array
+android.view.SurfaceControl_nativeSetBuffer
+android.graphics.Region_quickReject
+**************************************************

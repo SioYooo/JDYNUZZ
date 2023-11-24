@@ -5,15 +5,106 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5e7430d-2fd9-4732-928c-d6a1221a3cd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Fuzzing_Server/hwasan_result.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fuzzing_Server/py/analyze_py/hwa_analyze.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fuzzing_Server/py/fuzz_engine_monitor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.idea/modules/app/fuzzer.app.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.idea/modules/app/fuzzer.app.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.idea/modules/app/fuzzer.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.idea/modules/app/fuzzer.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.idea/modules/app/fuzzer.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.idea/modules/app/fuzzer.app.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/shell/Install_system_priv-app_in_real_device.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/shell/Install_system_priv-app_in_real_device.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/fuzzEngine.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/fuzzEngine.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/103_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_19_01_38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1075_HWAddressSanitizer_android.os.HwBlob_putBlob_2023-11-18_21_27_02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/115_HWAddressSanitizer_android.media.ImageReader_nativeCreateImagePlanes_2023-11-18_11_33_06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1184_HWAddressSanitizer_android.graphics.Region_quickReject_2023-11-18_21_43_35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1280_HWAddressSanitizer_com.android.server.tv.TvInputHal_nativeAddOrUpdateStream_2023-11-18_21_58_05.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/130_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_cipher_2023-11-18_18_21_32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1395_HWAddressSanitizer_android.view.Surface_nativeRelease_2023-11-19_03_56_51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1402_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_BIO_free_all_2023-11-19_03_57_50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1457_HWAddressSanitizer_android.graphics.Region_translate_2023-11-18_22_24_35.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1525_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-19_04_16_14.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1661_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_BIO_free_all_2023-11-18_22_55_25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/167_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_20_14_54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1767_HWAddressSanitizer_android.os.HwBlob_putString_2023-11-18_23_11_21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/192_HWAddressSanitizer_android.os.Process_parseProcLine_2023-11-17_16_33_32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1958_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_CRL_bio_2023-11-19_05_20_48.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/1993_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_23_45_02.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/203_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-18_02_01_46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/207_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_X509_REVOKED_get_serialNumber_2023-11-18_19_17_08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2084_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_bio_2023-11-19_05_39_40.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2112_HWAddressSanitizer_android.os.HwParcel_writeInt8_2023-11-19_00_02_50.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2126_HWAddressSanitizer_android.os.HwBlob_getInt16_2023-11-19_05_46_00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2223_HWAddressSanitizer_android.os.HwBlob_putBool_2023-11-19_06_00_44.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2292_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-19_06_11_11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2322_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_cipher_2023-11-19_06_15_43.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/236_HWAddressSanitizer_android.os.HwBlob_putInt16_2023-11-18_18_37_08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2509_HWAddressSanitizer_android.view.SurfaceControl_nativeSetTransparentRegionHint_2023-11-19_06_43_57.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2530_HWAddressSanitizer_android.os.HwBlob_copyToInt8Array_2023-11-19_06_47_00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/255_HWAddressSanitizer_android.os.HwBlob_copyToFloatArray_2023-11-18_11_53_49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2743_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-19_07_19_09.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/286_HWAddressSanitizer_android.os.HwParcel_writeHidlMemory_2023-11-18_19_28_52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/2877_HWAddressSanitizer_android.os.HwBlob_getInt32_2023-11-19_07_39_21.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/296_HWAddressSanitizer_android.os.HwBlob_putFloatArray_2023-11-18_02_15_45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/3272_HWAddressSanitizer_android.os.HwBlob_putInt8_2023-11-19_08_38_39.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/3445_HWAddressSanitizer_android.os.HwBlob_putInt32Array_2023-11-19_09_04_20.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/349_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_SSL_SESSION_session_id_2023-11-18_12_07_58.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/3507_HWAddressSanitizer_android.os.HwBlob_getString_2023-11-19_09_13_38.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/373_HWAddressSanitizer_android.os.HwBlob_getInt64_2023-11-18_19_41_45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/381_HWAddressSanitizer_android.graphics.BitmapFactory_nativeDecodeByteArray_2023-11-18_19_42_54.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/418_HWAddressSanitizer_android.media.MediaMuxer_nativeRelease_2023-11-18_19_48_23.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/42_HWAddressSanitizer_android.os.HwBlob_putNativeHandle_2023-11-18_18_52_25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/43_HWAddressSanitizer_android.os.HwBlob_copyToInt64Array_2023-11-18_11_22_25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/441_HWAddressSanitizer_android.os.HwBlob_putInt16Array_2023-11-18_12_21_46.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/444_HWAddressSanitizer_android.view.Surface_nativeRelease_2023-11-18_19_52_16.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/455_HWAddressSanitizer_android.os.HwBlob_putDouble_2023-11-18_19_53_51.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/531_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_d2i_X509_bio_2023-11-18_12_35_22.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/572_HWAddressSanitizer_android.media.MediaCodec_native_setSurface_2023-11-18_20_11_25.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/58_HWAddressSanitizer_android.hardware.Camera_setPreviewSurface_2023-11-17_19_59_00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/593_HWAddressSanitizer_android.os.HwParcel_writeString_2023-11-19_01_57_00.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/635_HWAddressSanitizer_android.os.HwBlob_getFieldHandle_2023-11-19_02_03_10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/638_HWAddressSanitizer_android.view.SurfaceControl_nativeSetBuffer_2023-11-19_02_03_33.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/689_HWAddressSanitizer_android.os.HwBlob_copyToInt32Array_2023-11-19_02_11_12.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/694_HWAddressSanitizer_android.graphics.Region_quickContains_2023-11-17_17_49_45.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/695_HWAddressSanitizer_android.graphics.Region_quickReject_2023-11-17_17_49_49.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/698_HWAddressSanitizer_android.graphics.Region_scale_2023-11-17_17_50_06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/718_HWAddressSanitizer_android.os.HwBlob_getDouble_2023-11-19_02_15_29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/73_HWAddressSanitizer_android.os.HwBlob_copyToDoubleArray_2023-11-18_18_13_04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/799_HWAddressSanitizer_android.app.NativeActivity_onSurfaceCreatedNative_2023-11-19_02_27_42.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/804_HWAddressSanitizer_android.os.HwParcel_writeBuffer_2023-11-18_20_46_26.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/856_HWAddressSanitizer_android.opengl.GLES30_glGetActiveUniformBlockName_2023-11-19_02_36_08.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/870_HWAddressSanitizer_android.view.SurfaceControl_nativeSetTransparentRegionHint_2023-11-17_18_16_06.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/909_HWAddressSanitizer_com.android.org.conscrypt.NativeCrypto_PEM_read_bio_X509_CRL_2023-11-18_21_02_04.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_crash_log/928_HWAddressSanitizer_android.media.MediaPlayer__setVideoSurface_2023-11-19_02_46_52.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/hwasan_result.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/hwasan_result.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/py/analyze_py/hwa_analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/py/analyze_py/hwa_analyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/src/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/dependency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/find_jni_java_class.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/find_jni_java_class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/generate_compdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/generate_compdb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/ninja_parse.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/ninja_parse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,14 +153,35 @@
       <workItem from="1700298923310" duration="2909000" />
       <workItem from="1700343158257" duration="938000" />
       <workItem from="1700361027758" duration="3679000" />
+      <workItem from="1700377192935" duration="1225000" />
+      <workItem from="1700379502915" duration="828000" />
+      <workItem from="1700380375286" duration="182000" />
+      <workItem from="1700396862794" duration="432000" />
+      <workItem from="1700446544675" duration="181000" />
+      <workItem from="1700448382519" duration="588000" />
+      <workItem from="1700787682420" duration="2759000" />
+      <workItem from="1700806784088" duration="285000" />
+      <workItem from="1700817080606" duration="2140000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Fuzzing_Server/py/analyze_py/hwa_analyze.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/JDYNUZZ$hwa_analyze.coverage" NAME="hwa_analyze Coverage Results" MODIFIED="1700364005877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py/analyze_py" />
+    <SUITE FILE_PATH="coverage/JDYNUZZ$hwa_analyze.coverage" NAME="hwa_analyze Coverage Results" MODIFIED="1700380422453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py/analyze_py" />
+    <SUITE FILE_PATH="coverage/JDYNUZZ$fuzz_engine_monitor.coverage" NAME="fuzz_engine_monitor Coverage Results" MODIFIED="1700790010833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
     <SUITE FILE_PATH="coverage/JDYNUZZ$analyze_log.coverage" NAME="analyze_log Coverage Results" MODIFIED="1700299279501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
   </component>
 </project>

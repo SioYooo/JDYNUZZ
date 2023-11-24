@@ -125,5 +125,5 @@ with open(args.ninja_file) as ninja_file:
 
 # 传入参数应该处于 out/soong/build.ninja 所在目录
 # /data_ssd_1/siyu/aosp/out/build-aosp_blueline.ninja
-with open('/home/siyu/tifs/JDYNUZZ/JNI Analyzer/tem/compile_commands.json', 'w') as compdb_file:
+with open('/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/tem/10.0compile_commands.json', 'w') as compdb_file:
     json.dump(compdb, compdb_file, indent=1)

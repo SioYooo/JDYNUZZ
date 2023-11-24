@@ -40,7 +40,7 @@ adb reboot-bootloader
 fastboot flashall -w
 ```
 
-## JNI Anslyzer
+## JNI Analyzer
 
 ```
 # get the maaping between Java-side and Native-side JNI functions

@@ -41,10 +41,14 @@ callgraph
 # init_arg_config = ['-isystem/hci/chaoran_data/android-10.0.0_r45/prebuilts/clang/host/linux-x86/clang-r353983c1/lib64/clang/9.0.3/include']
 # init_arg_config = ['-x', 'c++', '-isystem/hci/chaoran_data/android-10.0.0_r45/prebuilts/clang/host/linux-x86/clang-r353983c1/lib64/clang/9.0.3/include']
 
-project_path = '/hci/chaoran_data/android-12.0.0_r31/'
-Config.set_library_path('/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/')
+# project_path = '/hci/chaoran_data/android-12.0.0_r31/'
+project_path = '/data_ssd_1/siyu/10.0.0_r2/aosp'
+# Config.set_library_path('/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/')
+Config.set_library_path('/data_ssd_1/siyu/10.0.0_r2/aosp/prebuilts/clang/host/linux-x86/clang-r353983c/lib64')
+# init_arg_config = [
+#     '-isystem/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include']
 init_arg_config = [
-    '-isystem/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include']
+    '-isystem/data_ssd_1/siyu/10.0.0_r2/aosp/prebuilts/clang/host/linux-x86/clang-r353983c/lib64/clang/9.0.3/include']
 
 h_list = None
 
@@ -92,7 +96,7 @@ class file_analyser():
 
     def save(self):
         obj1 = pickle.dumps(self.CALLGRAPH)
-        with open("tem/save/self.CALLGRAPH", "ab")as f:
+        with open("tem/save/self.CALLGRAPH", "ab") as f:
             f.write(obj1)
 
     def load(self):
@@ -1386,8 +1390,8 @@ class file_analyser():
     def parse_assign(self, node, var, prt, pos=None, level=0):
         if level == 0:
             child = list(node.get_children())
-            self.parse_assign(child[0], var, prt, pos='left', level=level+1)
-            self.parse_assign(child[1], var, prt, pos='right', level=level+1)
+            self.parse_assign(child[0], var, prt, pos='left', level=level + 1)
+            self.parse_assign(child[1], var, prt, pos='right', level=level + 1)
         elif node.kind == CursorKind.CXX_THIS_EXPR:
             node._spelling = 'this'
             print(CursorKind.CXX_THIS_EXPR, node._spelling)
@@ -1476,7 +1480,7 @@ class file_analyser():
                     if pos == 'left':
                         prt['left'].append([child[0], node])
                         print('\n### %s | %s %s' % (var, [child[0].spelling, node.spelling], '='), end='')
-                    elif pos =='right':
+                    elif pos == 'right':
                         prt['right'].append([child[0], node])
                         print('\n### %s | %s %s' % (var, '=', [child[0].spelling, node.spelling]), end='')
 
@@ -1514,11 +1518,11 @@ class file_analyser():
                 print('\n### %s | %s %s' % (var, '=', node.spelling), end='')
 
             # fun
-            if len(children) > 0: # make sure fun has pars
+            if len(children) > 0:  # make sure fun has pars
                 if children[0].kind == CursorKind.MEMBER_REF_EXPR and children[0].spelling == node.spelling:
                     children2 = list(children[0].get_children())
 
-                    if len(children2)>0 and children2[0].kind == CursorKind.UNEXPOSED_EXPR:
+                    if len(children2) > 0 and children2[0].kind == CursorKind.UNEXPOSED_EXPR:
                         # mFaceClass = (jclass) env->NewGlobalRef(faceClazz);
                         #                      child2[0]  node
                         child2 = list(children2[0].get_children())
@@ -1538,11 +1542,10 @@ class file_analyser():
                             print('\n### %s | %s %s %s' % (var, '=', node.kind, node.spelling), end='')
                 # par
                 for child in children[1:]:
-                    self.parse_assign(child, var, prt, pos=pos, level=level+1)
+                    self.parse_assign(child, var, prt, pos=pos, level=level + 1)
         else:
             for child in node.get_children():
-                self.parse_assign(child, var, prt, pos=pos, level=level+1)
-
+                self.parse_assign(child, var, prt, pos=pos, level=level + 1)
 
     def add_self_assign(self, node_str):
         # self.assign[node_str] = {'left': [], 'right': [], 'field': []}
@@ -1559,7 +1562,7 @@ class file_analyser():
               ' ' * (120 - depth - len(str(node.kind)) - len(str(node.spelling))), '-',
               str(node.location).replace('<SourceLocation file \'/hci/chaoran_data/android-12.0.0_r31/', ''))
         for tem in node.get_children():
-            self.show_children(tem, depth=depth+1)
+            self.show_children(tem, depth=depth + 1)
 
     def parse_fun(self, node, var, fun, level=0, type=None):
         if level == 0:
@@ -1592,9 +1595,10 @@ class file_analyser():
                         if child4[0].kind == CursorKind.DECL_REF_EXPR or child4[0].kind == CursorKind.MEMBER_REF_EXPR:
                             print('\n%s | FUN = %s' % (var, [child4[0].spelling, node.spelling]), end='')
                             fun['fun'] = [child4[0], node]
-                        #font->typeface()->GetFontExtent(&extent, minikinPaint, layout.getFakery(i));
+                        # font->typeface()->GetFontExtent(&extent, minikinPaint, layout.getFakery(i));
                         else:
-                            print('got something like:       #font->typeface()->GetFontExtent(&extent, minikinPaint, layout.getFakery(i));')
+                            print(
+                                'got something like:       #font->typeface()->GetFontExtent(&extent, minikinPaint, layout.getFakery(i));')
                             print('ignore it to miake it simple:')
                             print('\n%s | FUN = %s' % (var, [child4[0].spelling, node.spelling]), end='')
                             fun['fun'] = [child4[0], node]
@@ -1602,7 +1606,7 @@ class file_analyser():
                 else:
                     print('\n%s | FUN = %s %s' % (var, node.kind, node.spelling), end='')
                     fun['fun'] = [node]
-            #par
+            # par
             for tem in child[1:]:
                 self.parse_fun(tem, var, level=level + 1, fun=fun)
         else:
@@ -1624,7 +1628,7 @@ class file_analyser():
     def parse_JNImethod(self, node, name, level=0):
         if level == 0:
             for c in list(node.get_children()):
-                self.parse_JNImethod(c, name, level=level+1)
+                self.parse_JNImethod(c, name, level=level + 1)
         elif level == 1:
             cs = list(node.get_children())
             java_fun = cs[0].spelling
@@ -1638,11 +1642,10 @@ class file_analyser():
             else:
                 java_sig = cs[1].spelling
             cpp_fun = list(list(cs[2].get_children())[0].get_children())[0].spelling
-            print('var_name: ' + name +' java_fun: ' + java_fun + ' java_sig: ' + java_sig + ' cpp_fun: ' + cpp_fun)
-            self.var[name].append({'java_fun':java_fun,'java_sig': java_sig, 'cpp_fun': cpp_fun})
+            print('var_name: ' + name + ' java_fun: ' + java_fun + ' java_sig: ' + java_sig + ' cpp_fun: ' + cpp_fun)
+            self.var[name].append({'java_fun': java_fun, 'java_sig': java_sig, 'cpp_fun': cpp_fun})
 
-
-    def parse_RegisterNatives(self, node, type=None, index=1, level=0, parent= None):
+    def parse_RegisterNatives(self, node, type=None, index=1, level=0, parent=None):
         print('\n1587 *** | %2d' % level, ' ' * level, node.kind, (node.spelling or node.displayname), type,
               ' ' * (120 - level - len(str(node.kind)) - len(str(node.spelling))), '', '-',
               str(node.location).replace('<SourceLocation file \'/hci/chaoran_data/android-12.0.0_r31/', ''), end='')
@@ -1651,7 +1654,7 @@ class file_analyser():
             print('\n1603 | num of par list:', total)
             index = total - 3
             class_n = list(node.get_children())[index:][0]
-            self.parse_RegisterNatives(class_n, type='class', index=index, level=level+1, parent=node)
+            self.parse_RegisterNatives(class_n, type='class', index=index, level=level + 1, parent=node)
             method_var_n = list(node.get_children())[index:][1]
             self.parse_RegisterNatives(method_var_n, type='method_var', index=index, level=level + 1, parent=node)
         else:
@@ -1663,7 +1666,8 @@ class file_analyser():
                     self.jni_methods[-1]['class'] = node.spelling
                     print('\nself.jni_methods[\'class\']', node.spelling)
                     pass
-                elif re.match(r'"[0-9a-zA-Z_]+(/[0-9a-zA-Z$_]+)+"', node.spelling) and parent.kind != CursorKind.INIT_LIST_EXPR:
+                elif re.match(r'"[0-9a-zA-Z_]+(/[0-9a-zA-Z$_]+)+"',
+                              node.spelling) and parent.kind != CursorKind.INIT_LIST_EXPR:
                     self.jni_methods.append({})
                     self.jni_methods[-1]['class'] = node.spelling
                     print('\nself.jni_methods[\'class\']', node.spelling)
@@ -1671,12 +1675,14 @@ class file_analyser():
                 else:
                     print('\n', node.spelling, '\'miss match, not assign\'')
             # 是列    没var
-            if 'type' in self.jni_methods[-1].keys() and 'method_var' not in self.jni_methods[-1].keys(): # no method var
+            if 'type' in self.jni_methods[-1].keys() and 'method_var' not in self.jni_methods[
+                -1].keys():  # no method var
                 if node.kind == CursorKind.DECL_REF_EXPR:
                     print('\nself.jni_methods[\'method_var\']', node.spelling)
                     self.jni_methods[-1]['method_var'] = node.spelling
             # 找到类    没var
-            elif 'class' in self.jni_methods[-1].keys() and 'method_var' not in self.jni_methods[-1].keys(): # no method var
+            elif 'class' in self.jni_methods[-1].keys() and 'method_var' not in self.jni_methods[
+                -1].keys():  # no method var
                 if node.referenced is not None and node.referenced.kind == CursorKind.FIELD_DECL:
                     # 不一定是要的那个parent node
                     parent = node.referenced.semantic_parent
@@ -1695,7 +1701,8 @@ class file_analyser():
                         print('\nself.jni_methods[\'method_var\']', node.spelling)
                         self.jni_methods[-1]['method_var'] = node.spelling
             # 没找到类 继续找类
-            elif type == 'class' and 'class' not in self.jni_methods[-1].keys() and node.kind == CursorKind.DECL_REF_EXPR:
+            elif type == 'class' and 'class' not in self.jni_methods[
+                -1].keys() and node.kind == CursorKind.DECL_REF_EXPR:
                 node = node.referenced
                 print('\n1650 |', node.kind, node.spelling, node.location)
 
@@ -1748,8 +1755,7 @@ class file_analyser():
             #     self.jni_methods[-1]['method_var'] = node.spelling
 
             for c in node.get_children():
-                self.parse_RegisterNatives(c, type=type, index=index, level=level+1, parent=node)
-
+                self.parse_RegisterNatives(c, type=type, index=index, level=level + 1, parent=node)
 
     def show_single_assign(self, assign):
         print()
@@ -1757,7 +1763,7 @@ class file_analyser():
         for tem in assign['left']:
             if isinstance(tem, list):
                 for i, temm in enumerate(tem):
-                    if i!=len(tem)-1:
+                    if i != len(tem) - 1:
                         print((temm.spelling or temm.kind), end='. ')
                     else:
                         print((temm.spelling or temm.kind), end=' ')
@@ -1775,16 +1781,19 @@ class file_analyser():
                 print((tem.spelling or tem.kind), end=' ')
         print()
 
-
     def show_info(self, node, cur_fun=None, depth=0, print_node=False, if_stmt=None, last_node=None, case_identifier=[],
                   case_mode=[False], case_level=[10e10], var='root'):
         print_node = True
 
         # debug 显示制定node
-        if node.location.file and (self.print_all_node or print_node) and self.pro_path + 'frameworks' in node.location.file.name:
+        if node.location.file and (
+                self.print_all_node or print_node) and self.pro_path + 'frameworks' in node.location.file.name:
             # print('\n1358|%2d' % depth + ' ' * depth, node.kind, node.spelling, '|current case_identifier:',
             #       case_identifier, end='')
-            print('\n1358|%2d' % depth, ' ' * depth, node.kind, (node.spelling or node.displayname), ' ' * (120-depth-len(str(node.kind))-len(str(node.spelling))-len(var)), var, '-', str(node.location).replace('<SourceLocation file \'/hci/chaoran_data/android-12.0.0_r31/',''), end='')
+            print('\n1358|%2d' % depth, ' ' * depth, node.kind, (node.spelling or node.displayname),
+                  ' ' * (120 - depth - len(str(node.kind)) - len(str(node.spelling)) - len(var)), var, '-',
+                  str(node.location).replace('<SourceLocation file \'/hci/chaoran_data/android-12.0.0_r31/', ''),
+                  end='')
 
             # if('GetDrm' in node.displayname and str(node.kind)=='CursorKind.CALL_EXPR'):
             #     if node.referenced is not None:
@@ -1864,11 +1873,12 @@ class file_analyser():
 
         if node.kind == CursorKind.VAR_DECL:
             children = list(node.get_children())
-            if len(children)>0 and children[0].kind == CursorKind.TYPE_REF and children[0].spelling == 'JNINativeMethod':
+            if len(children) > 0 and children[0].kind == CursorKind.TYPE_REF and children[
+                0].spelling == 'JNINativeMethod':
                 self.var[node.spelling] = []
                 print()
                 self.parse_JNImethod(children[1], node.spelling)
-            elif len(children)>0:
+            elif len(children) > 0:
                 print('\n1859 self.structure_var', node.spelling, node.location)
                 print('\n1859 self.structure_var', children[0].spelling, children[0].spelling != '')
                 if children[0].spelling != '':
@@ -1888,8 +1898,6 @@ class file_analyser():
 
         if node.kind == CursorKind.IF_STMT:
             if_stmt = node
-
-
 
         if node.kind == CursorKind.CALL_EXPR:
             print('\n', node.spelling)
@@ -1993,8 +2001,6 @@ class file_analyser():
                     # 打印的是起点/父节点
                     # if self.print_all_node:
                     #     print('%2d' % depth + ' ' * depth, '|||' + self.fully_qualified_pretty(cur_fun))
-
-
 
         # case 加进 call graph
         if node.kind == CursorKind.CASE_STMT and depth <= case_level[0]:
@@ -2608,7 +2614,7 @@ class file_analyser():
 
                     if len(r_final) > 0 and self.has_no_ignore_fun(
                             self.fully_qualified_pretty(last_node)) and self.has_no_ignore_fun(
-                            self.fully_qualified_pretty(f)):
+                        self.fully_qualified_pretty(f)):
                         print('\n\n###### binder start ######')
                         # if 'frameworks/native/lib' in last_node.location.file.name:
                         #     print('*** END OF CALL because go to native lib')
@@ -3234,14 +3240,14 @@ class file_analyser():
                         print(tem)
 
         for k in self.structure_var.keys():
-                print()
-                print('111 \'structure_var\':', k, '111')
-                tem = self.structure_var[k]
-                    # if isinstance(tem, Cursor):
-                print(tem.spelling)
-                checked_var.append({'k': k, 'v': tem})
-                    # else:
-                    #     print(tem)
+            print()
+            print('111 \'structure_var\':', k, '111')
+            tem = self.structure_var[k]
+            # if isinstance(tem, Cursor):
+            print(tem.spelling)
+            checked_var.append({'k': k, 'v': tem})
+            # else:
+            #     print(tem)
 
         checked_assign = []
 
@@ -3264,7 +3270,6 @@ class file_analyser():
                 if tem is None:
                     print('3034 |', tem, 'is None')
                 return tem
-
 
         print('\n**** assign *****')
 
@@ -3397,7 +3402,7 @@ class file_analyser():
         print()
         print(self.jni_methods)
         for i in range(len(self.jni_methods)):
-            if len(self.jni_methods[i].keys())<2:
+            if len(self.jni_methods[i].keys()) < 2:
                 continue
             self.jni_methods[i]['class'] = self.jni_methods[i]['class'].replace('/', '.').strip().strip('"')
             clazz = self.jni_methods[i]['class']
@@ -3421,10 +3426,10 @@ class file_analyser():
                         if array == 0:
                             output.append(input)
                         elif array == 1:
-                            output.append(input+'[]')
+                            output.append(input + '[]')
                             array = 0
                         elif array == 2:
-                            output.append(input+'[][]')
+                            output.append(input + '[][]')
                             array = 0
                         input = ''
                     elif input.startswith('['):
@@ -3544,13 +3549,13 @@ class file_analyser():
                 # print(parList_output)
                 return_tranformed = transformSmaliType(returnType)
                 # print(return_tranformed)
-                jni_methods[i]['java_fun_full'] = clazz + ' ' + return_tranformed[0] + ' ' + tem['java_fun'] + str(parList_output).replace('[','(').replace(']',')').replace('\'','')
+                jni_methods[i]['java_fun_full'] = clazz + ' ' + return_tranformed[0] + ' ' + tem['java_fun'] + str(
+                    parList_output).replace('[', '(').replace(']', ')').replace('\'', '')
                 print(jni_methods[i]['java_fun_full'])
             jni_methods_full.extend(jni_methods)
 
         if len(jni_methods_full) == 0:
             raise Exception('len(jni_methods_full) =0')
-
 
         first_lvl_funs = self.fist_lvl_funs
         for i in range(len(first_lvl_funs)):
@@ -3564,8 +3569,8 @@ class file_analyser():
             # first_lvl_funs = ['DngCreator_nativeClassInit(', 'DngCreator_init(', ...]
             for first_lvl_funs_t in first_lvl_funs:
                 # if 'DngCreator_getNativeContext' in fun_tem and 'DngCreator_getNativeContext' in first_lvl_funs_t:
-                    # print('11111111111', fun_tem)
-                    # print('22222222222', first_lvl_funs_t)
+                # print('11111111111', fun_tem)
+                # print('22222222222', first_lvl_funs_t)
                 if first_lvl_funs_t in fun_tem or fun_tem in first_lvl_funs_t:
                     return True
             return False
@@ -3757,9 +3762,6 @@ class file_analyser():
                 # print('FOUND ', method, ' ::: ', '[%s]' % permission[0], permission[1])
 
 
-
-
-
 def find_fun_cpp(path, search_str):
     if not os.path.exists(path):
         return None
@@ -3821,7 +3823,7 @@ def test13():
             entry_funs = entry_funs[:1]
             print(entry_funs)
             # exit(0)
-            c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '12.0', compdb=True)
+            c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '10.0', compdb=True)
             c_cpp_list = c_cpp_list[0]
 
             file = project_path + c_cpp_list['file']
@@ -3833,10 +3835,10 @@ def test13():
                                    reverse_search=False, print_all_node=False, generate_html=False)
             # break
 
+
 if __name__ == '__main__':
     # 单个调试
     # test12()
     # 整体流程
     test13()
     # print('sfdsfdsfds','%80s' % 'i love python')
-
