@@ -40,7 +40,7 @@ def monitor_and_restart(cmd, shared_data):
 
 def kill_process():
     # 查找进程
-    cmd = 'ps -ef | grep java -jar fuzzEngine.jar'
+    cmd = 'ps -ef | grep "java -jar fuzzEngine.jar"'
     process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     output = process.stdout.readline()
     if output == '' and process.poll() is not None:
@@ -56,10 +56,9 @@ if __name__ == "__main__":
     os.system(cmd)
     time.sleep(1)
     manager = multiprocessing.Manager()
-    shared_data = manager.dict({'api_index': None, 'last_update': time.time()})
-
+    shared_data = manager.dict({'api_index': 0, 'last_update': time.time()})
     # cmd = 'java -jar fuzzEngine.jar'
-    cmd = 'java -jar fuzzEngine.jar'
+    cmd = f"java -jar fuzzEngine.jar -i {shared_data.get('api_index')}"
     monitor_process = multiprocessing.Process(target=monitor_and_restart, args=(cmd, shared_data))
     monitor_process.start()
     monitor_process.join()

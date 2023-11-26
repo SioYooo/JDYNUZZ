@@ -1,0 +1,14 @@
+
+android.graphics.Movie|nativeDestructor|long|void
+
+objfileName: 1700972267284.obj
+
+android.graphics.Movie|nativeDestructor
+
+android.graphics.Movie|nativeDestructor|2023-11-26 15:17:25
+11-26 04:17:47.304 25797 25820 I app_process64: ==25797==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d96358
+11-26 04:17:47.304 25797 25820 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T38193
+11-26 04:17:47.321 25797 25820 I app_process64:     #0 0x7cd8d96354  (/system/lib64/libandroid_runtime.so+0x1c2354)
+11-26 04:17:47.321 25797 25820 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 04:17:47.321 25797 25820 I app_process64: 
+11-26 04:17:47.321 25797 25820 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 25820 (Thread-2), pid 25797 (.example.fuzzer)

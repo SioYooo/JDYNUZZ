@@ -1,0 +1,15 @@
+
+android.view.InputQueue|nativeSendKeyEvent|long, android.view.KeyEvent, boolean|long
+
+objfileName: 1700972994847.obj
+
+android.view.InputQueue|nativeSendKeyEvent
+
+android.view.InputQueue|nativeSendKeyEvent|2023-11-26 15:29:32
+11-26 04:29:54.893   765   828 I app_process64: ==765==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000006f at pc 0x007cd6f2f900
+11-26 04:29:54.893   765   828 I app_process64: READ of size 8 at 0x00000000006f tags: 80/00 (ptr/mem) in thread T38763
+11-26 04:29:54.909   765   828 I app_process64:     #0 0x7cd6f2f8fc  (/system/lib64/libinput.so+0x1a8fc)
+11-26 04:29:54.909   765   828 I app_process64:     #1 0x7cd8d10404  (/system/lib64/libandroid_runtime.so+0x13c404)
+11-26 04:29:54.909   765   828 I app_process64:     #2 0x710ee82c  (/system/framework/arm64/boot-framework.oat+0x28b82c)
+11-26 04:29:54.909   765   828 I app_process64: 
+11-26 04:29:54.909   765   828 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 828 (Thread-2), pid 765 (.example.fuzzer)

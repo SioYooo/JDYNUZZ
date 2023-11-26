@@ -42,17 +42,23 @@ callgraph
 # init_arg_config = ['-x', 'c++', '-isystem/hci/chaoran_data/android-10.0.0_r45/prebuilts/clang/host/linux-x86/clang-r353983c1/lib64/clang/9.0.3/include']
 
 # project_path = '/hci/chaoran_data/android-12.0.0_r31/'
-project_path = '/data_ssd_1/siyu/10.0.0_r2/aosp'
+project_path = '/data_ssd_1/siyu/10.0.0_r2/aosp/'
 # Config.set_library_path('/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/')
-Config.set_library_path('/data_ssd_1/siyu/10.0.0_r2/aosp/prebuilts/clang/host/linux-x86/clang-r353983c/lib64')
+# Config.set_library_path('/data_ssd_1/siyu/aosp/prebuilts/clang/host/linux-x86/clang-3289846/lib64/')
+Config.set_library_path('/data_ssd_1/siyu/10.0.0_r2/aosp/prebuilts/clang/host/linux-x86/clang-r346389c/lib64')
+
 # init_arg_config = [
 #     '-isystem/hci/chaoran_data/android-12.0.0_r31/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64/clang/12.0.7/include']
 init_arg_config = [
-    '-isystem/data_ssd_1/siyu/10.0.0_r2/aosp/prebuilts/clang/host/linux-x86/clang-r353983c/lib64/clang/9.0.3/include']
+    '-isystem/data_ssd_1/siyu/10.0.0_r2/aosp/prebuilts/clang/host/linux-x86/clang-r346389c/lib64/clang/8.0.7/include']
 
 h_list = None
 
 CursorKind.IF_CONDITION = CursorKind(8625)
+
+skip_cpp_list = ['/data_ssd_1/siyu/10.0.0_r2/aosp/frameworks/base/core/jni/android/graphics/Camera.cpp',
+                 '/data_ssd_1/siyu/10.0.0_r2/aosp/frameworks/base/services/core/jni/BroadcastRadio/Tuner.cpp',
+                 '/data_ssd_1/siyu/10.0.0_r2/aosp/frameworks/base/services/core/jni/BroadcastRadio/TunerCallback.cpp']
 
 
 # class Condition:
@@ -1641,6 +1647,8 @@ class file_analyser():
                 print('java_sig', java_sig)
             else:
                 java_sig = cs[1].spelling
+            print("List 1: " + str(list(cs[2].get_children())))
+            print("List 2: " + str(list(list(cs[2].get_children())[0].get_children())))
             cpp_fun = list(list(cs[2].get_children())[0].get_children())[0].spelling
             print('var_name: ' + name + ' java_fun: ' + java_fun + ' java_sig: ' + java_sig + ' cpp_fun: ' + cpp_fun)
             self.var[name].append({'java_fun': java_fun, 'java_sig': java_sig, 'cpp_fun': cpp_fun})
@@ -1877,7 +1885,10 @@ class file_analyser():
                 0].spelling == 'JNINativeMethod':
                 self.var[node.spelling] = []
                 print()
-                self.parse_JNImethod(children[1], node.spelling)
+                try:
+                    self.parse_JNImethod(children[1], node.spelling)
+                except Exception as e:
+                    return None
             elif len(children) > 0:
                 print('\n1859 self.structure_var', node.spelling, node.location)
                 print('\n1859 self.structure_var', children[0].spelling, children[0].spelling != '')
@@ -3001,22 +3012,24 @@ class file_analyser():
         # exit(2)
 
         if os.path.exists(ast_path):
+            print('load:', ast_path)
             tu = index.read(ast_path)
         else:
+            print('parse:', file)
             tu = index.parse(file, ninja_args)
 
-        for d in tu.diagnostics:
-            if d.severity == d.Error or d.severity == d.Fatal:
-                print(d)
-                if 'use of undeclared identifier' in str(d) or 'file not found' in str(d):
-                    return None
-                raise Exception('aaaaaaaaaaaaaaaaaa')
-            else:
-                print(d)
+        # for d in tu.diagnostics:
+        #     if d.severity == d.Error or d.severity == d.Fatal:
+        #         print("d" + str(d))
+        #         if 'use of undeclared identifier' in str(d) or 'file not found' in str(d):
+        #             return None
+        #         raise Exception('aaaaaaaaaaaaaaaaaa')
+        #     else:
+        #         print(d)
 
-        if not os.path.exists(ast_path):
-            print('save:', ast_path)
-            tu.save(ast_path)
+        # if not os.path.exists(ast_path):
+        #     print('save:', ast_path)
+        #     tu.save(ast_path)
 
         self.node_start[file] = tu.cursor
         self.file_tu[file] = tu
@@ -3065,6 +3078,7 @@ class file_analyser():
         index = Index.create(1)
         self.index = index
         file = self.check_file(file_str)
+        print('file', file)
         self.pro_path = pro_path
 
         tu = None
@@ -3075,11 +3089,15 @@ class file_analyser():
             ninja_args = self.parse_ninja_args(ninja_args)
             args = ninja_args
             tu = self.load_cfg(index, 'clang++', file, args)
+            print('1')
         else:
             tu = self.load_cfg_normal(index, file, ninja_args)
+            print('2')
 
         # print('======RUN FOR DEBUG=====')
-        # command = '/Volumes/android/android-8.0.0_r34/prebuilts/clang/host/darwin-x86/clang-4053586/bin/clang -v ' + str(args).replace('[', '').replace(']', '').replace('b\'', '').replace('\'', '').replace(',', '').replace('-Wa--noexecstack','-Wa,--noexecstack') + ' ' + file
+        # # /Volumes/android/android-8.0.0_r34/prebuilts/clang/host/darwin-x86/clang-4053586/bin/clan
+        # command = '/data_ssd_1/siyu/10.0.0_r2/aosp/prebuilts/clang/host/linux-x86/clang-r346389c/bin/clang -v ' + str(args).replace('[', '').replace(']', '').replace('b\'', '').replace('\'', '').replace(',', '').replace('-Wa--noexecstack','-Wa,--noexecstack') + ' ' + file
+        # os.chdir('/data_ssd_1/siyu/10.0.0_r2/aosp/')
         # b = os.popen(command)
         # text2 = b.read()
         # print(text2)
@@ -3554,8 +3572,8 @@ class file_analyser():
                 print(jni_methods[i]['java_fun_full'])
             jni_methods_full.extend(jni_methods)
 
-        if len(jni_methods_full) == 0:
-            raise Exception('len(jni_methods_full) =0')
+        # if len(jni_methods_full) == 0:
+        #     raise Exception('len(jni_methods_full) =0')
 
         first_lvl_funs = self.fist_lvl_funs
         for i in range(len(first_lvl_funs)):
@@ -3600,7 +3618,8 @@ class file_analyser():
             # print('')
         print('================ END dependency ================')
 
-        with open('dependency/temp/' + file.replace('/', '|') + '.json', 'w') as f:
+        # with open('dependency/temp/' + file.replace('/', '|') + '.json', 'w') as f:
+        with open('/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/dependency/temp/' + file.replace('/', '|') + '.json', 'w') as f:
             json.dump({'file': file, 'jni_methods': jni_methods_full, 'dependency': dependency}, f)
 
         return None
@@ -3785,17 +3804,26 @@ def find_fun_cpp(path, search_str):
         return line_num
 
 
+# 在 jni.json 文件中删除无法处理的 cpp
+def delete_cpp_in_jni_list(jni):
+    for i, cpp_jni in enumerate(jni):
+        cpp = cpp_jni['cpp']
+        if cpp in skip_cpp_list:
+            del jni[i]
+
 def test13():
     save_path = '/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/jni/dependency/temp'
     # skip = True
     with open('debug_index.log', 'w') as f:
         f.write('')
-    with open('jni10.0/jni.json') as file_obj:
+    # with open('jni10.0/jni.json') as file_obj:
+    with open('/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/jni10.0/jni.json') as file_obj:
         cpp_jni_list = json.load(file_obj)
+        delete_cpp_in_jni_list(cpp_jni_list)
         total = len(cpp_jni_list)
         for i, cpp_jni in enumerate(cpp_jni_list):
             print('===============each cpp_jni==================')
-            print(cpp_jni)
+           # print(cpp_jni)
             print(i, '/', total)
 
             with open('debug_index.log', 'a') as f:
@@ -3812,13 +3840,13 @@ def test13():
 
             entry_funs = []
             cpp = cpp_jni['cpp']
-            print('CPP : ' + cpp)
+           # print('CPP : ' + cpp)
             # if 'frameworks/base/core/jni/android_hardware_camera2_DngCreator.cpp' not in cpp:
             #     continue
             vars = cpp_jni['pairs']
-            print('vars : ', vars)
+          #  print('vars : ', vars)
             if len(vars) == 0:
-                # print('No vars found')
+                print('No vars found')
                 # 跳过当前cpp
                 continue
             else:
@@ -3826,24 +3854,27 @@ def test13():
                     for pair in var:
                         # if 'nativeScreenshot' in pair:
                         entry_funs.append(pair[-1] + '(')
-                first_lvl_funs = entry_funs
+                # first_lvl_funs = entry_funs
                 # 暂时只测试一个fun
                 # entry_funs = entry_funs[:1]
                 # print(entry_funs)
                 # exit(0)
-                c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '10.0', compdb=True)
+                print(cpp)
+                # c_cpp_list = find_command_star_node(cpp.replace(project_path, ''), '10.0', compdb=True)
+                cpp_path = os.path.basename(cpp)
+                c_cpp_list = find_command_star_node(cpp_path, '10.0', compdb=True)
                 if not c_cpp_list:
-                    # print('cpp not found')
+                    print('c_cpp_list')
+                    print('cpp not found')
                     continue # 跳出当前循环
                 print(c_cpp_list)
                 c_cpp_list = c_cpp_list[0]
-
                 file = project_path + c_cpp_list['file']
-
+                print('file', file)
                 pro_path = project_path
                 ninja_args = c_cpp_list['arguments'][1:]
                 main_file_analyser = file_analyser()
-                main_file_analyser.run(file, pro_path, ninja_args, entry_funs=entry_funs, extend_analyze=True,
+                main_file_analyser.run(file, pro_path, ninja_args, entry_funs=entry_funs, extend_analyze=False,
                                        reverse_search=False, print_all_node=False, generate_html=False)
                 # break
 

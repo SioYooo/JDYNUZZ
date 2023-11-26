@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nSetTextLocalesByMinikinLocaleListId|long, int|void
+
+objfileName: 1700974214845.obj
+
+android.graphics.Paint|nSetTextLocalesByMinikinLocaleListId
+
+android.graphics.Paint|nSetTextLocalesByMinikinLocaleListId|2023-11-26 15:49:52
+11-26 04:50:14.867 16969 16993 I app_process64: ==16969==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000088 at pc 0x007cd8d9abe0
+11-26 04:50:14.867 16969 16993 I app_process64: WRITE of size 4 at 0x000000000088 tags: 80/00 (ptr/mem) in thread T39934
+11-26 04:50:14.884 16969 16993 I app_process64:     #0 0x7cd8d9abdc  (/system/lib64/libandroid_runtime.so+0x1c6bdc)
+11-26 04:50:14.884 16969 16993 I app_process64:     #1 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-26 04:50:14.884 16969 16993 I app_process64: 
+11-26 04:50:14.884 16969 16993 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 16993 (Thread-2), pid 16969 (.example.fuzzer)

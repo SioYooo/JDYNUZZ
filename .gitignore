@@ -3,4 +3,6 @@
 /Fuzzing_Server/hwasan_crash_log_*
 /Fuzzing_Server/crash_log_*
 JNI_Analyzer/tem/*
+/JNI_Analyzer/cpp_analyzer/llvm-8.0.1.src/*
+JNI_Analyzer/dependency/temp/*
 

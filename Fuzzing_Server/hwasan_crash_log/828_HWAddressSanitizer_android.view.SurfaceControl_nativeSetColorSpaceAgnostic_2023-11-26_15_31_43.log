@@ -1,0 +1,15 @@
+
+android.view.SurfaceControl|nativeSetColorSpaceAgnostic|long, long, boolean|void
+
+objfileName: 1700973125844.obj
+
+android.view.SurfaceControl|nativeSetColorSpaceAgnostic
+
+android.view.SurfaceControl|nativeSetColorSpaceAgnostic|2023-11-26 15:31:43
+11-26 04:32:05.868  3685  3708 I app_process64: ==3685==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-26 04:32:05.868  3685  3708 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T38898
+11-26 04:32:05.885  3685  3708 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 04:32:05.885  3685  3708 I app_process64:     #1 0x7cd8d1f7e4  (/system/lib64/libandroid_runtime.so+0x14b7e4)
+11-26 04:32:05.885  3685  3708 I app_process64:     #2 0x710f5078  (/system/framework/arm64/boot-framework.oat+0x292078)
+11-26 04:32:05.885  3685  3708 I app_process64: 
+11-26 04:32:05.885  3685  3708 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 3708 (Thread-2), pid 3685 (.example.fuzzer)

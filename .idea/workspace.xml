@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5e7430d-2fd9-4732-928c-d6a1221a3cd2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/JNI_Analyzer/jni10.0/jni_backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/py/collect_jar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/py/collect_jar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/src/javaLink/ExtractJNINew.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/src/javaLink/ExtractJNINew.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/fuzzEngine.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/fuzzEngine.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/py/fuzz_engine_monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/py/fuzz_engine_monitor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/src/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JNI_Analyzer/debug_index.log" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/debug_index.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/dependency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency_post_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/dependency_post_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency/dependency_api_call_sequence.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency/dependency_api_call_sequence_graphs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency/dependency_api_call_sequence_paths.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency_analyzsis.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/dependency_analyzsis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JNI_Analyzer/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/helper.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,22 +49,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/siyu/tifs/JDYNUZZ&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/jni10.0",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JNI_Analyzer/jni10.0" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/JNI_Analyzer/jni" />
     </key>
@@ -86,6 +96,7 @@
       <workItem from="1700787682420" duration="2759000" />
       <workItem from="1700806784088" duration="285000" />
       <workItem from="1700817080606" duration="10150000" />
+      <workItem from="1700919965659" duration="19843000" />
     </task>
     <servers />
   </component>
@@ -100,20 +111,15 @@
           <line>97</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/JNI_Analyzer/dependency.py</url>
-          <line>3837</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/JDYNUZZ$hwa_analyze.coverage" NAME="hwa_analyze Coverage Results" MODIFIED="1700380422453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py/analyze_py" />
-    <SUITE FILE_PATH="coverage/JDYNUZZ$dependency.coverage" NAME="dependency Coverage Results" MODIFIED="1700834428036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JNI_Analyzer" />
+    <SUITE FILE_PATH="coverage/JDYNUZZ$dependency.coverage" NAME="dependency Coverage Results" MODIFIED="1700961092448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JNI_Analyzer" />
     <SUITE FILE_PATH="coverage/JDYNUZZ$fuzz_engine_monitor.coverage" NAME="fuzz_engine_monitor Coverage Results" MODIFIED="1700790010833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
     <SUITE FILE_PATH="coverage/JDYNUZZ$analyze_log.coverage" NAME="analyze_log Coverage Results" MODIFIED="1700299279501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
     <SUITE FILE_PATH="coverage/JDYNUZZ$collect_jar.coverage" NAME="collect_jar Coverage Results" MODIFIED="1700838020995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
-    <SUITE FILE_PATH="coverage/JDYNUZZ$helper.coverage" NAME="helper Coverage Results" MODIFIED="1700830703287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JNI_Analyzer" />
+    <SUITE FILE_PATH="coverage/JDYNUZZ$helper.coverage" NAME="helper Coverage Results" MODIFIED="1700921142618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JNI_Analyzer" />
   </component>
 </project>

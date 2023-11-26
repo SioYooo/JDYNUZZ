@@ -1,0 +1,15 @@
+
+android.graphics.Region|nativeGetBounds|long, android.graphics.Rect|boolean
+
+objfileName: 1700972382085.obj
+
+android.graphics.Region|nativeGetBounds
+
+android.graphics.Region|nativeGetBounds|2023-11-26 15:19:20
+11-26 04:19:42.158 26844 26867 I app_process64: ==26844==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d8e618
+11-26 04:19:42.158 26844 26867 I app_process64: READ of size 4 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T38278
+11-26 04:19:42.174 26844 26867 I app_process64:     #0 0x7cd8d8e614  (/system/lib64/libandroid_runtime.so+0x1ba614)
+11-26 04:19:42.174 26844 26867 I app_process64:     #1 0x7cd8da2300  (/system/lib64/libandroid_runtime.so+0x1ce300)
+11-26 04:19:42.174 26844 26867 I app_process64:     #2 0x710f9744  (/system/framework/arm64/boot-framework.oat+0x296744)
+11-26 04:19:42.175 26844 26867 I app_process64: 
+11-26 04:19:42.175 26844 26867 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 26867 (Thread-2), pid 26844 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nGetWordSpacing|long|float
+
+objfileName: 1700974234967.obj
+
+android.graphics.Paint|nGetWordSpacing
+
+android.graphics.Paint|nGetWordSpacing|2023-11-26 15:50:13
+11-26 04:50:35.004 17303 17326 I app_process64: ==17303==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000006b at pc 0x007cd8d9ad18
+11-26 04:50:35.004 17303 17326 I app_process64: READ of size 4 at 0x00000000006b tags: 80/00 (ptr/mem) in thread T39958
+11-26 04:50:35.021 17303 17326 I app_process64:     #0 0x7cd8d9ad14  (/system/lib64/libandroid_runtime.so+0x1c6d14)
+11-26 04:50:35.021 17303 17326 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-26 04:50:35.021 17303 17326 I app_process64: 
+11-26 04:50:35.021 17303 17326 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 17326 (Thread-2), pid 17303 (.example.fuzzer)

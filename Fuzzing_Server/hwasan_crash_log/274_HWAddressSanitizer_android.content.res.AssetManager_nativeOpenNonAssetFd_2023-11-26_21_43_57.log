@@ -1,0 +1,16 @@
+
+android.content.res.AssetManager|nativeOpenNonAssetFd|long, int, java.lang.String, long[]|android.os.ParcelFileDescriptor
+
+objfileName: 1700995459361.obj
+
+android.content.res.AssetManager|nativeOpenNonAssetFd
+
+android.content.res.AssetManager|nativeOpenNonAssetFd|2023-11-26 21:43:57
+11-26 10:44:19.386 23860 23883 I app_process64: ==23860==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd96d6530
+11-26 10:44:19.386 23860 23883 I app_process64: READ of size 2 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T53483
+11-26 10:44:19.403 23860 23883 I app_process64:     #0 0x7cd96d652c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x13052c)
+11-26 10:44:19.403 23860 23883 I app_process64:     #1 0x7cd8fb7400  (/system/lib64/libc++.so+0xe4400)
+11-26 10:44:19.403 23860 23883 I app_process64:     #2 0x7cd8d62a70  (/system/lib64/libandroid_runtime.so+0x18ea70)
+11-26 10:44:19.403 23860 23883 I app_process64:     #3 0x710eebf8  (/system/framework/arm64/boot-framework.oat+0x28bbf8)
+11-26 10:44:19.403 23860 23883 I app_process64: 
+11-26 10:44:19.403 23860 23883 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 23883 (Thread-2), pid 23860 (.example.fuzzer)

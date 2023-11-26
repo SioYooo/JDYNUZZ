@@ -1,0 +1,12 @@
+
+android.view.SurfaceControl|nativeGetContentFrameStats|long, android.view.WindowContentFrameStats|boolean
+
+objfileName: 1700973158226.obj
+
+android.view.SurfaceControl|nativeGetContentFrameStats|2023-11-26 15:32:16
+11-26 04:32:38.264  4220  4243 I app_process64: ==4220==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd74418d8
+11-26 04:32:38.264  4220  4243 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T38938
+11-26 04:32:38.280  4220  4243 I app_process64:     #0 0x7cd74418d4  (/system/lib64/libbinder.so+0x7d8d4)
+11-26 04:32:38.280  4220  4243 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-26 04:32:38.280  4220  4243 I app_process64: 
+11-26 04:32:38.281  4220  4243 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4243 (Thread-2), pid 4220 (.example.fuzzer)

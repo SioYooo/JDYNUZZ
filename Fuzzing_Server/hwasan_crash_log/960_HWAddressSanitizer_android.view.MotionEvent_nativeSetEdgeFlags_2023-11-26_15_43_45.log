@@ -1,0 +1,14 @@
+
+android.view.MotionEvent|nativeSetEdgeFlags|long, int|void
+
+objfileName: 1700973847222.obj
+
+android.view.MotionEvent|nativeSetEdgeFlags
+
+android.view.MotionEvent|nativeSetEdgeFlags|2023-11-26 15:43:45
+11-26 04:44:07.245 12110 12133 I app_process64: ==12110==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd8d14c90
+11-26 04:44:07.245 12110 12133 I app_process64: WRITE of size 4 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T39558
+11-26 04:44:07.262 12110 12133 I app_process64:     #0 0x7cd8d14c8c  (/system/lib64/libandroid_runtime.so+0x140c8c)
+11-26 04:44:07.262 12110 12133 I app_process64:     #1 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-26 04:44:07.262 12110 12133 I app_process64: 
+11-26 04:44:07.262 12110 12133 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 12133 (Thread-2), pid 12110 (.example.fuzzer)

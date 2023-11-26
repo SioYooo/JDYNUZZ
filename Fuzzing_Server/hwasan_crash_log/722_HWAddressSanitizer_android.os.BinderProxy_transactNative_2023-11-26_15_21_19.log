@@ -1,0 +1,14 @@
+
+android.os.BinderProxy|transactNative|int, android.os.Parcel, android.os.Parcel, int|boolean
+
+objfileName: 1700972500924.obj
+
+android.os.BinderProxy|transactNative
+
+android.os.BinderProxy|transactNative|2023-11-26 15:21:19
+11-26 04:21:40.977 27993 28016 I app_process64: ==27993==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d70df4
+11-26 04:21:40.977 27993 28016 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T38368
+11-26 04:21:40.994 27993 28016 I app_process64:     #0 0x7cd8d70df0  (/system/lib64/libandroid_runtime.so+0x19cdf0)
+11-26 04:21:40.994 27993 28016 I app_process64:     #1 0x71125174  (/system/framework/arm64/boot-framework.oat+0x2c2174)
+11-26 04:21:40.994 27993 28016 I app_process64: 
+11-26 04:21:40.994 27993 28016 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 28016 (Thread-2), pid 27993 (.example.fuzzer)

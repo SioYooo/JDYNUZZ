@@ -1,0 +1,14 @@
+
+android.graphics.Picture|nativeGetHeight|long|int
+
+objfileName: 1700974015365.obj
+
+android.graphics.Picture|nativeGetHeight
+
+android.graphics.Picture|nativeGetHeight|2023-11-26 15:46:33
+11-26 04:46:55.385 14151 14174 I app_process64: ==14151==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000004 at pc 0x007cd8da048c
+11-26 04:46:55.385 14151 14174 I app_process64: READ of size 4 at 0x000000000004 tags: 80/00 (ptr/mem) in thread T39718
+11-26 04:46:55.402 14151 14174 I app_process64:     #0 0x7cd8da0488  (/system/lib64/libandroid_runtime.so+0x1cc488)
+11-26 04:46:55.402 14151 14174 I app_process64:     #1 0x710edc68  (/system/framework/arm64/boot-framework.oat+0x28ac68)
+11-26 04:46:55.402 14151 14174 I app_process64: 
+11-26 04:46:55.402 14151 14174 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 14174 (Thread-2), pid 14151 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.os.Parcel|nativeRestoreAllowFds|long, boolean|void
+
+objfileName: 1700988971781.obj
+
+android.os.Parcel|nativeRestoreAllowFds
+
+android.os.Parcel|nativeRestoreAllowFds|2023-11-26 19:55:49
+11-26 08:56:11.804  4673  4696 I app_process64: ==4673==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000059 at pc 0x007cd7435a94
+11-26 08:56:11.804  4673  4696 I app_process64: WRITE of size 1 at 0x000000000059 tags: 80/00 (ptr/mem) in thread T49293
+11-26 08:56:11.820  4673  4696 I app_process64:     #0 0x7cd7435a90  (/system/lib64/libbinder.so+0x71a90)
+11-26 08:56:11.820  4673  4696 I app_process64:     #1 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-26 08:56:11.820  4673  4696 I app_process64: 
+11-26 08:56:11.820  4673  4696 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4696 (Thread-2), pid 4673 (.example.fuzzer)

@@ -1,9 +1,4 @@
 import com.alibaba.fastjson.JSON;
-import com.example.fuzzer.MethodRecorder;
-import util.ApiDependency;
-import util.JniClass;
-import util.JniPath;
-
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -11,6 +6,10 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
+import util.ApiDependency;
+import util.JniClass;
+import util.JniPath;
+
 
 import static java.lang.System.currentTimeMillis;
 import static java.lang.System.exit;
@@ -148,8 +147,9 @@ public class Engine {
     public static void main(String[] args) throws Exception {
         // 命令行当输入 -i xx 后，取 xx 为 index 开始进行 fuzzing
         if(args.length == 2 && args[0].equals("-i")) {
-            STARTFROM = Integer.parseInt(args[1]);
-            System.out.println("STARTFROM = " + STARTFROM);
+            API_INDEX = Integer.parseInt(args[1]);
+            System.out.println("Start from API Index = " + API_INDEX);
+            System.out.println("*******************************************************");
         }
 
         // 命令行模式 ===========================================================
@@ -514,7 +514,6 @@ public class Engine {
         int times_max = 10;
         int time = 0;
         // API_INDEX = -1;
-        API_INDEX = STARTFROM - 1;
         while(time < times_max) {
             time++;
             //List顺序打乱
@@ -522,9 +521,9 @@ public class Engine {
 
             for (JniClass jni : jniList) {
                 API_INDEX = API_INDEX + 1;
-//                if (API_INDEX < STARTFROM) {
-//                    continue;
-//                }
+                if (API_INDEX < STARTFROM) {
+                    continue;
+                }
                 System.out.println("\n\nFrom here, new call!!!(" + API_INDEX + "/" + total + ")");
                 Runtime.getRuntime().exec(adb_path + " -s " + DEVICE + " shell input swipe 300 1000 300 100");
                 jni.print();
@@ -631,7 +630,7 @@ public class Engine {
         int time = 0;
         int total = jniList.size() * times_max;
 
-        API_INDEX = -1;
+        int API_INDEX = -1;
         while(time < times_max) {
             time++;
             //List顺序打乱

@@ -1,0 +1,15 @@
+
+android.view.SurfaceControl|nativeSetCornerRadius|long, long, float|void
+
+objfileName: 1700973146125.obj
+
+android.view.SurfaceControl|nativeSetCornerRadius
+
+android.view.SurfaceControl|nativeSetCornerRadius|2023-11-26 15:32:04
+11-26 04:32:26.148  4021  4044 I app_process64: ==4021==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-26 04:32:26.148  4021  4044 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T38923
+11-26 04:32:26.165  4021  4044 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 04:32:26.165  4021  4044 I app_process64:     #1 0x7cd8d1fae4  (/system/lib64/libandroid_runtime.so+0x14bae4)
+11-26 04:32:26.165  4021  4044 I app_process64:     #2 0x711286e8  (/system/framework/arm64/boot-framework.oat+0x2c56e8)
+11-26 04:32:26.165  4021  4044 I app_process64: 
+11-26 04:32:26.165  4021  4044 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4044 (Thread-2), pid 4021 (.example.fuzzer)

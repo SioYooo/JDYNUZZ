@@ -1,0 +1,14 @@
+
+android.os.MessageQueue|nativeWake|long|void
+
+objfileName: 1700971578106.obj
+
+android.os.MessageQueue|nativeWake
+
+android.os.MessageQueue|nativeWake|2023-11-26 15:05:56
+11-26 04:06:18.126 19148 19171 I app_process64: ==19148==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd8d53150
+11-26 04:06:18.126 19148 19171 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T37658
+11-26 04:06:18.142 19148 19171 I app_process64:     #0 0x7cd8d5314c  (/system/lib64/libandroid_runtime.so+0x17f14c)
+11-26 04:06:18.142 19148 19171 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 04:06:18.142 19148 19171 I app_process64: 
+11-26 04:06:18.142 19148 19171 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 19171 (Thread-2), pid 19148 (.example.fuzzer)

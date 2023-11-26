@@ -1,0 +1,14 @@
+
+android.graphics.Region|nativeOp|long, int, int, int, int, int|boolean
+
+objfileName: 1700972390183.obj
+
+android.graphics.Region|nativeOp
+
+android.graphics.Region|nativeOp|2023-11-26 15:19:28
+11-26 04:19:50.207 26977 27002 I app_process64: ==26977==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000010 at pc 0x007cd8da23d8
+11-26 04:19:50.207 26977 27002 I app_process64: READ of size 8 at 0x000000000010 tags: 80/00 (ptr/mem) in thread T38289
+11-26 04:19:50.223 26977 27002 I app_process64:     #0 0x7cd8da23d4  (/system/lib64/libandroid_runtime.so+0x1ce3d4)
+11-26 04:19:50.224 26977 27002 I app_process64:     #1 0x711018c0  (/system/framework/arm64/boot-framework.oat+0x29e8c0)
+11-26 04:19:50.224 26977 27002 I app_process64: 
+11-26 04:19:50.224 26977 27002 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 27002 (Thread-2), pid 26977 (.example.fuzzer)

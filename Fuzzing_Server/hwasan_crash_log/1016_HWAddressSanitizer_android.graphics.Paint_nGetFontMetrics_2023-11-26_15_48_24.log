@@ -1,0 +1,15 @@
+
+android.graphics.Paint|nGetFontMetrics|long, android.graphics.Paint$FontMetrics|float
+
+objfileName: 1700974126804.obj
+
+android.graphics.Paint|nGetFontMetrics
+
+android.graphics.Paint|nGetFontMetrics|2023-11-26 15:48:24
+11-26 04:48:46.833 15727 15750 I app_process64: ==15727==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000098 at pc 0x007cd8d9c7a8
+11-26 04:48:46.833 15727 15750 I app_process64: READ of size 8 at 0x000000000098 tags: 80/00 (ptr/mem) in thread T39838
+11-26 04:48:46.850 15727 15750 I app_process64:     #0 0x7cd8d9c7a4  (/system/lib64/libandroid_runtime.so+0x1c87a4)
+11-26 04:48:46.850 15727 15750 I app_process64:     #1 0x7cd8d99f28  (/system/lib64/libandroid_runtime.so+0x1c5f28)
+11-26 04:48:46.850 15727 15750 I app_process64:     #2 0x710f79b4  (/system/framework/arm64/boot-framework.oat+0x2949b4)
+11-26 04:48:46.850 15727 15750 I app_process64: 
+11-26 04:48:46.850 15727 15750 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 15750 (Thread-2), pid 15727 (.example.fuzzer)

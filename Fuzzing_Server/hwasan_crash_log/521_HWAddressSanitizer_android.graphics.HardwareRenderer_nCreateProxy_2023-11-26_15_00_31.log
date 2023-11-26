@@ -1,0 +1,21 @@
+
+android.graphics.HardwareRenderer|nCreateProxy|boolean, long|long
+
+objfileName: 1700971253884.obj
+
+android.graphics.HardwareRenderer|nCreateProxy
+
+android.graphics.HardwareRenderer|nCreateProxy|2023-11-26 15:00:31
+11-26 04:00:53.906 15387 15407 I app_process64: ==15387==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cd8d2b994
+11-26 04:00:53.906 15387 15407 I app_process64: WRITE of size 4 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T37360
+11-26 04:00:53.922 15387 15407 I app_process64:     #0 0x7cd8d2b990  (/system/lib64/libandroid_runtime.so+0x157990)
+11-26 04:00:53.922 15387 15407 I app_process64:     #1 0x7cdad47398  (/system/lib64/libhwui.so+0x341398)
+11-26 04:00:53.922 15387 15407 I app_process64:     #2 0x7cdad47024  (/system/lib64/libhwui.so+0x341024)
+11-26 04:00:53.922 15387 15407 I app_process64:     #3 0x7cdad11894  (/system/lib64/libhwui.so+0x30b894)
+11-26 04:00:53.922 15387 15407 I app_process64:     #4 0x7cdace3cc4  (/system/lib64/libhwui.so+0x2ddcc4)
+11-26 04:00:53.923 15387 15407 I app_process64:     #5 0x7cdace39f8  (/system/lib64/libhwui.so+0x2dd9f8)
+11-26 04:00:53.923 15387 15407 I app_process64:     #6 0x7cdbb22ed4  (/system/lib64/libutils.so+0x16ed4)
+11-26 04:00:53.923 15387 15407 I app_process64:     #7 0x7cd96d54fc  (/apex/com.android.runtime/lib64/bionic/libc.so+0x12f4fc)
+11-26 04:00:53.923 15387 15407 I app_process64:     #8 0x7cd9648b3c  (/apex/com.android.runtime/lib64/bionic/libc.so+0xa2b3c)
+11-26 04:00:53.923 15387 15407 I app_process64: 
+11-26 04:00:53.923 15387 15407 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 15407 (RenderThread), pid 15387 (.example.fuzzer)

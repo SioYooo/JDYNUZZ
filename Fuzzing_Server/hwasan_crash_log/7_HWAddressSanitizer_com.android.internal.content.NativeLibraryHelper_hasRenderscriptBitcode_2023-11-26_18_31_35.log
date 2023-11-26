@@ -1,0 +1,15 @@
+
+com.android.internal.content.NativeLibraryHelper|hasRenderscriptBitcode|long|int
+
+objfileName: 1700983917078.obj
+
+com.android.internal.content.NativeLibraryHelper|hasRenderscriptBitcode
+
+com.android.internal.content.NativeLibraryHelper|hasRenderscriptBitcode|2023-11-26 18:31:35
+11-26 07:31:57.099 29989 30012 I app_process64: ==29989==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd77aea80
+11-26 07:31:57.099 29989 30012 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T46193
+11-26 07:31:57.115 29989 30012 I app_process64:     #0 0x7cd77aea7c  (/system/lib64/libandroidfw.so+0x76a7c)
+11-26 07:31:57.115 29989 30012 I app_process64:     #1 0x7cd8c9ecc4  (/system/lib64/libandroid_runtime.so+0xcacc4)
+11-26 07:31:57.115 29989 30012 I app_process64:     #2 0x710edc68  (/system/framework/arm64/boot-framework.oat+0x28ac68)
+11-26 07:31:57.115 29989 30012 I app_process64: 
+11-26 07:31:57.116 29989 30012 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 30012 (Thread-2), pid 29989 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.os.Parcel|nativeWriteInterfaceToken|long, java.lang.String|void
+
+objfileName: 1700911760329.obj
+
+android.os.Parcel|nativeWriteInterfaceToken
+
+android.os.Parcel|nativeWriteInterfaceToken|2023-11-25 22:28:58
+11-25 11:29:20.350 14932 14956 I app_process64: ==14932==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7435c94
+11-25 11:29:20.350 14932 14956 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T29623
+11-25 11:29:20.367 14932 14956 I app_process64:     #0 0x7cd7435c90  (/system/lib64/libbinder.so+0x71c90)
+11-25 11:29:20.367 14932 14956 I app_process64:     #1 0x7cd8d548dc  (/system/lib64/libandroid_runtime.so+0x1808dc)
+11-25 11:29:20.367 14932 14956 I app_process64:     #2 0x710ebdf4  (/system/framework/arm64/boot-framework.oat+0x288df4)
+11-25 11:29:20.367 14932 14956 I app_process64: 
+11-25 11:29:20.367 14932 14956 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 14956 (Thread-2), pid 14932 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.graphics.ImageDecoder|nClose|long|void
+
+objfileName: 1701002693459.obj
+
+android.graphics.ImageDecoder|nClose
+
+android.graphics.ImageDecoder|nClose|2023-11-26 23:44:31
+11-26 12:44:53.481 17097 17120 I app_process64: ==17097==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd8d93c1c
+11-26 12:44:53.481 17097 17120 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T58103
+11-26 12:44:53.498 17097 17120 I app_process64:     #0 0x7cd8d93c18  (/system/lib64/libandroid_runtime.so+0x1bfc18)
+11-26 12:44:53.498 17097 17120 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 12:44:53.498 17097 17120 I app_process64: 
+11-26 12:44:53.498 17097 17120 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 17120 (Thread-2), pid 17097 (.example.fuzzer)

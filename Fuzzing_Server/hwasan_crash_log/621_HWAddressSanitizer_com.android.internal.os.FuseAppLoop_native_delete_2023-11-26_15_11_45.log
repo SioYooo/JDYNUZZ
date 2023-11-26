@@ -1,0 +1,17 @@
+
+com.android.internal.os.FuseAppLoop|native_delete|long|void
+
+objfileName: 1700971926940.obj
+
+com.android.internal.os.FuseAppLoop|native_delete
+
+com.android.internal.os.FuseAppLoop|native_delete|2023-11-26 15:11:45
+11-26 04:12:06.994 21554 21577 I app_process64: ==21554==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cd96d71f4
+11-26 04:12:06.994 21554 21577 I app_process64: READ of size 2 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T37863
+11-26 04:12:07.010 21554 21577 I app_process64:     #0 0x7cd96d71f0  (/apex/com.android.runtime/lib64/bionic/libc.so+0x1311f0)
+11-26 04:12:07.010 21554 21577 I app_process64:     #1 0x7cd8fb73e8  (/system/lib64/libc++.so+0xe43e8)
+11-26 04:12:07.010 21554 21577 I app_process64:     #2 0x7cd8e0c28c  (/system/lib64/libandroid_runtime.so+0x23828c)
+11-26 04:12:07.010 21554 21577 I app_process64:     #3 0x7cd8e0bb30  (/system/lib64/libandroid_runtime.so+0x237b30)
+11-26 04:12:07.010 21554 21577 I app_process64:     #4 0x710f4274  (/system/framework/arm64/boot-framework.oat+0x291274)
+11-26 04:12:07.010 21554 21577 I app_process64: 
+11-26 04:12:07.010 21554 21577 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 21577 (Thread-2), pid 21554 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.view.SurfaceControl|nativeSetWindowCrop|long, long, int, int, int, int|void
+
+objfileName: 1700973142065.obj
+
+android.view.SurfaceControl|nativeSetWindowCrop
+
+android.view.SurfaceControl|nativeSetWindowCrop|2023-11-26 15:32:00
+11-26 04:32:22.090  3954  3978 I app_process64: ==3954==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-26 04:32:22.090  3954  3978 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T38919
+11-26 04:32:22.106  3954  3978 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 04:32:22.106  3954  3978 I app_process64:     #1 0x7cd8d1f9f4  (/system/lib64/libandroid_runtime.so+0x14b9f4)
+11-26 04:32:22.106  3954  3978 I app_process64:     #2 0x71129210  (/system/framework/arm64/boot-framework.oat+0x2c6210)
+11-26 04:32:22.107  3954  3978 I app_process64: 
+11-26 04:32:22.107  3954  3978 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 3978 (Thread-2), pid 3954 (.example.fuzzer)

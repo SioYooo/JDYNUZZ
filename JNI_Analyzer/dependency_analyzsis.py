@@ -132,7 +132,7 @@ def transformSmaliType(input):
 # print(parList_output)
 # exit(0)
 
-def check_dependency_temp(url="/hci/chaoran_data/jni/dependency/temp/"):
+def check_dependency_temp(url="/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/dependency/temp/"):
     file  = os.listdir(url)
     for f in file:
         real_url = path.join (url , f)
@@ -244,7 +244,7 @@ def scaner_file (url):
             pass
         print(real_url)
 
-scaner_file("/hci/chaoran_data/jni/dependency/temp/")
+scaner_file("/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/dependency/temp/")
 
 
 

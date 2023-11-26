@@ -1,0 +1,14 @@
+
+android.view.MotionEvent|nativeGetRawAxisValue|long, int, int, int|float
+
+objfileName: 1700973791204.obj
+
+android.view.MotionEvent|nativeGetRawAxisValue
+
+android.view.MotionEvent|nativeGetRawAxisValue|2023-11-26 15:42:49
+11-26 04:43:11.227 11185 11208 I app_process64: ==11185==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000057 at pc 0x007cd8d1485c
+11-26 04:43:11.227 11185 11208 I app_process64: READ of size 8 at 0x000000000057 tags: 80/00 (ptr/mem) in thread T39488
+11-26 04:43:11.244 11185 11208 I app_process64:     #0 0x7cd8d14858  (/system/lib64/libandroid_runtime.so+0x140858)
+11-26 04:43:11.244 11185 11208 I app_process64:     #1 0x71129620  (/system/framework/arm64/boot-framework.oat+0x2c6620)
+11-26 04:43:11.244 11185 11208 I app_process64: 
+11-26 04:43:11.244 11185 11208 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 11208 (Thread-2), pid 11185 (.example.fuzzer)

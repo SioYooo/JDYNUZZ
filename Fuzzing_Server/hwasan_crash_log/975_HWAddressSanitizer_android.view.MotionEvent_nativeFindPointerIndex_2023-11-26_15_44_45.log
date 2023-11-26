@@ -1,0 +1,15 @@
+
+android.view.MotionEvent|nativeFindPointerIndex|long, int|int
+
+objfileName: 1700973906903.obj
+
+android.view.MotionEvent|nativeFindPointerIndex
+
+android.view.MotionEvent|nativeFindPointerIndex|2023-11-26 15:44:45
+11-26 04:45:06.925 13102 13125 I app_process64: ==13102==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000057 at pc 0x007cd6f2e578
+11-26 04:45:06.925 13102 13125 I app_process64: READ of size 8 at 0x000000000057 tags: 80/00 (ptr/mem) in thread T39633
+11-26 04:45:06.942 13102 13125 I app_process64:     #0 0x7cd6f2e574  (/system/lib64/libinput.so+0x19574)
+11-26 04:45:06.942 13102 13125 I app_process64:     #1 0x7cd8d14e08  (/system/lib64/libandroid_runtime.so+0x140e08)
+11-26 04:45:06.942 13102 13125 I app_process64:     #2 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-26 04:45:06.942 13102 13125 I app_process64: 
+11-26 04:45:06.942 13102 13125 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 13125 (Thread-2), pid 13102 (.example.fuzzer)

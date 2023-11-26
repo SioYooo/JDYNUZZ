@@ -1,0 +1,14 @@
+
+android.content.res.AssetManager|nativeThemeGetChangingConfigurations|long|int
+
+objfileName: 1701001867242.obj
+
+android.content.res.AssetManager|nativeThemeGetChangingConfigurations
+
+android.content.res.AssetManager|nativeThemeGetChangingConfigurations|2023-11-26 23:30:45
+11-26 12:31:07.264 11203 11226 I app_process64: ==11203==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cd8d676e4
+11-26 12:31:07.264 11203 11226 I app_process64: READ of size 4 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T57603
+11-26 12:31:07.280 11203 11226 I app_process64:     #0 0x7cd8d676e0  (/system/lib64/libandroid_runtime.so+0x1936e0)
+11-26 12:31:07.280 11203 11226 I app_process64:     #1 0x710edc68  (/system/framework/arm64/boot-framework.oat+0x28ac68)
+11-26 12:31:07.280 11203 11226 I app_process64: 
+11-26 12:31:07.280 11203 11226 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 11226 (Thread-2), pid 11203 (.example.fuzzer)

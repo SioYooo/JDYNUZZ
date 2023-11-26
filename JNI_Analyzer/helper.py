@@ -5,6 +5,7 @@ from clang.cindex import Config
 from clang.cindex import Index
 import json
 
+
 def get_file(base, extension):
     for root, ds, fs in os.walk(base):
         for f in fs:
@@ -14,7 +15,7 @@ def get_file(base, extension):
 
 
 def find_files(path, extension):
-    filename = 'tem/'+path.replace('/','_')+'_' + extension + '_list.npy'
+    filename = 'tem/' + path.replace('/', '_') + '_' + extension + '_list.npy'
     if not os.path.exists(filename):
         list = []
         for i in get_file(path, extension):
@@ -24,6 +25,7 @@ def find_files(path, extension):
 
     list = np.load(filename)
     return list
+
 
 def find_c_or_cpp(filename):
     list = []
@@ -42,7 +44,8 @@ def find_c_or_cpp(filename):
             list.append(tem)
     return list
 
-def get_cpp_files_path(compdb=False, version = ''):
+
+def get_cpp_files_path(compdb=False, version=''):
     list = []
     if compdb:
         # with open('tem/'+version+'compile_commands_full.json') as file_obj:
@@ -72,17 +75,21 @@ def get_cpp_files_path(compdb=False, version = ''):
 
     return list
 
+
 def find_command_star_node(filename, version_prefix, compdb=False):
     list = []
     if compdb:
-        with open('tem/'+version_prefix+'compile_commands_full.json') as file_obj:
+        # with open('tem/' + version_prefix + 'compile_commands_full.json') as file_obj:
+        with open('/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/tem/10.0compile_commands_full.json') as file_obj:
             js = json.load(file_obj)
+
             cpp = filename.replace('.h', '.cpp')
             print('cpp:', cpp)
             c = filename.replace('.h', '.c')
             print('c:', c)
             for tem in js:
                 if cpp in tem['file'] or c in tem['file']:
+                    print('found cpp', cpp)
                     list.append(tem)
         # if os.path.exists('tem/'+version_prefix+'out_build_ninja.json'):
         #     with open('tem/' + version_prefix + 'out_build_ninja.json') as file_obj:
@@ -101,14 +108,14 @@ def find_command_star_node(filename, version_prefix, compdb=False):
         #             if cpp in tem['file'] or c in tem['file']:
         #                 list.append(tem)
     else:
-        with open('tem/'+version_prefix+'build-aosp_arm64.json') as file_obj:
+        with open('tem/' + version_prefix + 'build-aosp_arm64.json') as file_obj:
             js = json.load(file_obj)
             cpp = filename.replace('.h', '.cpp')
             c = filename.replace('.h', '.c')
             for tem in js:
                 if cpp in tem['source'] or c in tem['source']:
                     list.append(tem)
-        with open('tem/'+version_prefix+'out_build_ninja.json') as file_obj:
+        with open('tem/' + version_prefix + 'out_build_ninja.json') as file_obj:
             js = json.load(file_obj)
             cpp = filename.replace('.h', '.cpp')
             c = filename.replace('.h', '.c')
@@ -117,6 +124,7 @@ def find_command_star_node(filename, version_prefix, compdb=False):
                     list.append(tem)
 
     return list
+
 
 def cpp_exist_spefic_h(h, cpp, project_path):
     full_cpp = project_path + cpp
@@ -128,12 +136,13 @@ def cpp_exist_spefic_h(h, cpp, project_path):
                 return True
     return False
 
+
 def find_command(file, version_prefix, compdb=False, project_path='/Volumes/android/android-8.0.0_r34/'):
     # h_file = file.replace(project_path, '')
     list = []
     if compdb:
-        print('searching in ' + 'tem/'+version_prefix+'compile_commands_full.json ' + ' ...')
-        with open('tem/'+version_prefix+'compile_commands_full.json') as file_obj:
+        print('searching in ' + 'tem/' + version_prefix + 'compile_commands_full.json ' + ' ...')
+        with open('tem/' + version_prefix + 'compile_commands_full.json') as file_obj:
             # Directory Then go to the command to find the directory exists and the file ends with cpp and add it
             # print('.line 98 .h:', h_file)
             # dir = os.path.dirname(h_file)
@@ -189,7 +198,7 @@ def find_command(file, version_prefix, compdb=False, project_path='/Volumes/andr
         #                 print('foundcpp', cpp)
         #                 list.append(tem)
     else:
-        with open('tem/'+version_prefix+'build-aosp_arm64.json') as file_obj:
+        with open('tem/' + version_prefix + 'build-aosp_arm64.json') as file_obj:
             js = json.load(file_obj)
             filename = '/' + os.path.basename(file)
             cpp = filename.replace('.h', '.cpp')
@@ -197,7 +206,7 @@ def find_command(file, version_prefix, compdb=False, project_path='/Volumes/andr
             for tem in js:
                 if cpp in tem['source'] or c in tem['source']:
                     list.append(tem)
-        with open('tem/'+version_prefix+'out_build_ninja.json') as file_obj:
+        with open('tem/' + version_prefix + 'out_build_ninja.json') as file_obj:
             js = json.load(file_obj)
             filename = '/' + os.path.basename(file)
             cpp = filename.replace('.h', '.cpp')
@@ -237,12 +246,13 @@ def find_command(file, version_prefix, compdb=False, project_path='/Volumes/andr
     # exit(0)
     return best_command
 
+
 def find_command_all_cpp(file, version_prefix, compdb=False, project_path='/Volumes/android/android-8.0.0_r34/'):
     h_file = file.replace(project_path, '')
     list = []
     if compdb:
-        print('searching in ' + 'tem/'+version_prefix+'compile_commands_full.json ' + ' ...')
-        with open('tem/'+version_prefix+'compile_commands_full.json') as file_obj:
+        print('searching in ' + 'tem/' + version_prefix + 'compile_commands_full.json ' + ' ...')
+        with open('tem/' + version_prefix + 'compile_commands_full.json') as file_obj:
             # Directory Then go to the command to find the directory exists and the file ends with cpp and add it
             print('.line 98 .h:', h_file)
             dir = os.path.dirname(h_file)
@@ -293,7 +303,7 @@ def find_command_all_cpp(file, version_prefix, compdb=False, project_path='/Volu
         #                 if cpp_exist_spefic_h(h_file, tem['file'], project_path):
         #                     list.append(tem)
     else:
-        with open('tem/'+version_prefix+'build-aosp_arm64.json') as file_obj:
+        with open('tem/' + version_prefix + 'build-aosp_arm64.json') as file_obj:
             js = json.load(file_obj)
             filename = '/' + os.path.basename(file)
             cpp = filename.replace('.h', '.cpp')
@@ -301,7 +311,7 @@ def find_command_all_cpp(file, version_prefix, compdb=False, project_path='/Volu
             for tem in js:
                 if cpp in tem['source'] or c in tem['source']:
                     list.append(tem)
-        with open('tem/'+version_prefix+'out_build_ninja.json') as file_obj:
+        with open('tem/' + version_prefix + 'out_build_ninja.json') as file_obj:
             js = json.load(file_obj)
             filename = '/' + os.path.basename(file)
             cpp = filename.replace('.h', '.cpp')
@@ -339,11 +349,12 @@ def find_command_all_cpp(file, version_prefix, compdb=False, project_path='/Volu
     # exit(0)
     return list
 
+
 if __name__ == '__main__':
     # h_list = find_files('/Volumes/android/android-8.0.0_r34', '.h')
     # c_list = find_files('/Volumes/android/android-8.0.0_r34', '.c')
 
-    a = ['aaaaa',r'\"']
+    a = ['aaaaa', r'\"']
     print(a)
     print(a[1])
     aaa = a[1].replace(r'\\', '\\')
@@ -352,4 +363,3 @@ if __name__ == '__main__':
     print(a)
     # with open('tem/aaaa.json', 'w') as file_obj:
     #     json.dump(a, file_obj)
-

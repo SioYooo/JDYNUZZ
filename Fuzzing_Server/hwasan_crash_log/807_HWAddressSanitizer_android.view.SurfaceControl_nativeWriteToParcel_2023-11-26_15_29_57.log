@@ -1,0 +1,14 @@
+
+android.view.SurfaceControl|nativeWriteToParcel|long, android.os.Parcel|void
+
+objfileName: 1700973019246.obj
+
+android.view.SurfaceControl|nativeWriteToParcel
+
+android.view.SurfaceControl|nativeWriteToParcel|2023-11-26 15:29:57
+11-26 04:30:19.278  1727  1755 I app_process64: ==1727==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000010 at pc 0x007cd8b461b0
+11-26 04:30:19.278  1727  1755 I app_process64: READ of size 8 at 0x000000000010 tags: 80/00 (ptr/mem) in thread T38793
+11-26 04:30:19.294  1727  1755 I app_process64:     #0 0x7cd8b461ac  (/system/lib64/libgui.so+0xf71ac)
+11-26 04:30:19.294  1727  1755 I app_process64:     #1 0x710ebdf4  (/system/framework/arm64/boot-framework.oat+0x288df4)
+11-26 04:30:19.294  1727  1755 I app_process64: 
+11-26 04:30:19.294  1727  1755 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 1755 (Thread-2), pid 1727 (.example.fuzzer)

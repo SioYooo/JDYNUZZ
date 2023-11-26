@@ -1,0 +1,15 @@
+
+android.content.res.AssetManager|nativeThemeDestroy|long|void
+
+objfileName: 1700998696125.obj
+
+android.content.res.AssetManager|nativeThemeDestroy
+
+android.content.res.AssetManager|nativeThemeDestroy|2023-11-26 22:37:54
+11-26 11:38:16.149 18143 18166 I app_process64: ==18143==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000807 at pc 0x007cd777cd68
+11-26 11:38:16.149 18143 18166 I app_process64: READ of size 8 at 0x000000000807 tags: 80/00 (ptr/mem) in thread T55588
+11-26 11:38:16.166 18143 18166 I app_process64:     #0 0x7cd777cd64  (/system/lib64/libandroidfw.so+0x44d64)
+11-26 11:38:16.166 18143 18166 I app_process64:     #1 0x7cd8d66e64  (/system/lib64/libandroid_runtime.so+0x192e64)
+11-26 11:38:16.166 18143 18166 I app_process64:     #2 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 11:38:16.166 18143 18166 I app_process64: 
+11-26 11:38:16.166 18143 18166 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 18166 (Thread-2), pid 18143 (.example.fuzzer)

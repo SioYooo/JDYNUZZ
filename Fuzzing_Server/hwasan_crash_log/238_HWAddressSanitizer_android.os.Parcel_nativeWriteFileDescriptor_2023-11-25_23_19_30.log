@@ -1,0 +1,14 @@
+
+android.os.Parcel|nativeWriteFileDescriptor|long, java.io.FileDescriptor|long
+
+objfileName: 1700914792292.obj
+
+android.os.Parcel|nativeWriteFileDescriptor
+
+android.os.Parcel|nativeWriteFileDescriptor|2023-11-25 23:19:30
+11-25 12:19:52.332  6420  6444 I app_process64: ==6420==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000006f at pc 0x007cd7446754
+11-25 12:19:52.332  6420  6444 I app_process64: READ of size 8 at 0x00000000006f tags: 80/00 (ptr/mem) in thread T31514
+11-25 12:19:52.348  6420  6444 I app_process64:     #0 0x7cd7446750  (/system/lib64/libbinder.so+0x82750)
+11-25 12:19:52.349  6420  6444 I app_process64:     #1 0x710ed6b4  (/system/framework/arm64/boot-framework.oat+0x28a6b4)
+11-25 12:19:52.349  6420  6444 I app_process64: 
+11-25 12:19:52.349  6420  6444 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 6444 (Thread-2), pid 6420 (.example.fuzzer)

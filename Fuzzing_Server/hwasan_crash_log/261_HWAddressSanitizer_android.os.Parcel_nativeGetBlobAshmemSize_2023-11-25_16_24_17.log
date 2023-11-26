@@ -1,0 +1,14 @@
+
+android.os.Parcel|nativeGetBlobAshmemSize|long|long
+
+objfileName: 1700889879269.obj
+
+android.os.Parcel|nativeGetBlobAshmemSize
+
+android.os.Parcel|nativeGetBlobAshmemSize|2023-11-25 16:24:17
+11-25 05:24:39.288  4291  4314 I app_process64: ==4291==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000006f at pc 0x007cd7446734
+11-25 05:24:39.288  4291  4314 I app_process64: READ of size 8 at 0x00000000006f tags: 80/00 (ptr/mem) in thread T15748
+11-25 05:24:39.304  4291  4314 I app_process64:     #0 0x7cd7446730  (/system/lib64/libbinder.so+0x82730)
+11-25 05:24:39.304  4291  4314 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-25 05:24:39.304  4291  4314 I app_process64: 
+11-25 05:24:39.305  4291  4314 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4314 (Thread-2), pid 4291 (.example.fuzzer)

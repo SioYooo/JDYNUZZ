@@ -1,0 +1,14 @@
+
+android.graphics.Matrix|nInvert|long, long|boolean
+
+objfileName: 1700973651962.obj
+
+android.graphics.Matrix|nInvert
+
+android.graphics.Matrix|nInvert|2023-11-26 15:40:30
+11-26 04:40:51.982  9455  9478 I app_process64: ==9455==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000024 at pc 0x007cd8d95a28
+11-26 04:40:51.982  9455  9478 I app_process64: READ of size 4 at 0x000000000024 tags: 80/00 (ptr/mem) in thread T39353
+11-26 04:40:51.999  9455  9478 I app_process64:     #0 0x7cd8d95a24  (/system/lib64/libandroid_runtime.so+0x1c1a24)
+11-26 04:40:51.999  9455  9478 I app_process64:     #1 0x710f6418  (/system/framework/arm64/boot-framework.oat+0x293418)
+11-26 04:40:51.999  9455  9478 I app_process64: 
+11-26 04:40:51.999  9455  9478 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 9478 (Thread-2), pid 9455 (.example.fuzzer)

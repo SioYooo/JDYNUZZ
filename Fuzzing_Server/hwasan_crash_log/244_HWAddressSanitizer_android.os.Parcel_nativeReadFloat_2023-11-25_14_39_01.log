@@ -1,0 +1,14 @@
+
+android.os.Parcel|nativeReadFloat|long|float
+
+objfileName: 1700883563294.obj
+
+android.os.Parcel|nativeReadFloat
+
+android.os.Parcel|nativeReadFloat|2023-11-25 14:39:01
+11-25 03:39:23.313 17812 17836 I app_process64: ==17812==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd7441c8c
+11-25 03:39:23.313 17812 17836 I app_process64: READ of size 8 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T11694
+11-25 03:39:23.330 17812 17836 I app_process64:     #0 0x7cd7441c88  (/system/lib64/libbinder.so+0x7dc88)
+11-25 03:39:23.330 17812 17836 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-25 03:39:23.330 17812 17836 I app_process64: 
+11-25 03:39:23.330 17812 17836 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 17836 (Thread-2), pid 17812 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nGetTextSkewX|long|float
+
+objfileName: 1700974355898.obj
+
+android.graphics.Paint|nGetTextSkewX
+
+android.graphics.Paint|nGetTextSkewX|2023-11-26 15:52:13
+11-26 04:52:35.920 19285 19308 I app_process64: ==19285==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000060 at pc 0x007cd8d9acb0
+11-26 04:52:35.920 19285 19308 I app_process64: READ of size 4 at 0x000000000060 tags: 80/00 (ptr/mem) in thread T40108
+11-26 04:52:35.936 19285 19308 I app_process64:     #0 0x7cd8d9acac  (/system/lib64/libandroid_runtime.so+0x1c6cac)
+11-26 04:52:35.936 19285 19308 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-26 04:52:35.936 19285 19308 I app_process64: 
+11-26 04:52:35.937 19285 19308 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 19308 (Thread-2), pid 19285 (.example.fuzzer)

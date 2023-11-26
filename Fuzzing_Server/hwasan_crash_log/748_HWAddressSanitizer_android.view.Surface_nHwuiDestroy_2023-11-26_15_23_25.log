@@ -1,0 +1,14 @@
+
+android.view.Surface|nHwuiDestroy|long|void
+
+objfileName: 1700972627325.obj
+
+android.view.Surface|nHwuiDestroy
+
+android.view.Surface|nHwuiDestroy|2023-11-26 15:23:25
+11-26 04:23:47.345 29682 29705 I app_process64: ==29682==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d1cc28
+11-26 04:23:47.345 29682 29705 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T38498
+11-26 04:23:47.362 29682 29705 I app_process64:     #0 0x7cd8d1cc24  (/system/lib64/libandroid_runtime.so+0x148c24)
+11-26 04:23:47.362 29682 29705 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 04:23:47.362 29682 29705 I app_process64: 
+11-26 04:23:47.362 29682 29705 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 29705 (Thread-2), pid 29682 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nGetTextRunCursor|long, char[], int, int, int, int, int|int
+
+objfileName: 1700974082424.obj
+
+android.graphics.Paint|nGetTextRunCursor
+
+android.graphics.Paint|nGetTextRunCursor|2023-11-26 15:47:40
+11-26 04:48:02.465 14999 15022 I app_process64: ==14999==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000097 at pc 0x007cd8d9868c
+11-26 04:48:02.465 14999 15022 I app_process64: READ of size 8 at 0x000000000097 tags: 80/00 (ptr/mem) in thread T39783
+11-26 04:48:02.481 14999 15022 I app_process64:     #0 0x7cd8d98688  (/system/lib64/libandroid_runtime.so+0x1c4688)
+11-26 04:48:02.481 14999 15022 I app_process64:     #1 0x710f81bc  (/system/framework/arm64/boot-framework.oat+0x2951bc)
+11-26 04:48:02.481 14999 15022 I app_process64: 
+11-26 04:48:02.482 14999 15022 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 15022 (Thread-2), pid 14999 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.content.res.AssetManager|nativeThemeClear|long|void
+
+objfileName: 1700969696488.obj
+
+android.content.res.AssetManager|nativeThemeClear
+
+android.content.res.AssetManager|nativeThemeClear|2023-11-26 14:34:34
+11-26 03:34:56.510   981  1014 I app_process64: ==981==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd777d500
+11-26 03:34:56.510   981  1014 I app_process64: WRITE of size 4 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T36263
+11-26 03:34:56.526   981  1014 I app_process64:     #0 0x7cd777d4fc  (/system/lib64/libandroidfw.so+0x454fc)
+11-26 03:34:56.526   981  1014 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 03:34:56.526   981  1014 I app_process64: 
+11-26 03:34:56.526   981  1014 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 1014 (Thread-2), pid 981 (.example.fuzzer)

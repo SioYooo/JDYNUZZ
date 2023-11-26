@@ -1,0 +1,14 @@
+
+android.view.MotionEvent|nativeGetPointerCoords|long, int, int, android.view.MotionEvent$PointerCoords|void
+
+objfileName: 1700973739584.obj
+
+android.view.MotionEvent|nativeGetPointerCoords
+
+android.view.MotionEvent|nativeGetPointerCoords|2023-11-26 15:41:57
+11-26 04:42:19.653 10617 10640 I app_process64: ==10617==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000058 at pc 0x007cd8d14118
+11-26 04:42:19.653 10617 10640 I app_process64: READ of size 8 at 0x000000000058 tags: 80/00 (ptr/mem) in thread T39443
+11-26 04:42:19.670 10617 10640 I app_process64:     #0 0x7cd8d14114  (/system/lib64/libandroid_runtime.so+0x140114)
+11-26 04:42:19.670 10617 10640 I app_process64:     #1 0x710fdae4  (/system/framework/arm64/boot-framework.oat+0x29aae4)
+11-26 04:42:19.670 10617 10640 I app_process64: 
+11-26 04:42:19.670 10617 10640 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 10640 (Thread-2), pid 10617 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.view.SurfaceControl|nativeDisconnect|long|void
+
+objfileName: 1700973031425.obj
+
+android.view.SurfaceControl|nativeDisconnect
+
+android.view.SurfaceControl|nativeDisconnect|2023-11-26 15:30:09
+11-26 04:30:31.445  2132  2157 I app_process64: ==2132==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd8b459dc
+11-26 04:30:31.445  2132  2157 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T38808
+11-26 04:30:31.461  2132  2157 I app_process64:     #0 0x7cd8b459d8  (/system/lib64/libgui.so+0xf69d8)
+11-26 04:30:31.461  2132  2157 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 04:30:31.461  2132  2157 I app_process64: 
+11-26 04:30:31.461  2132  2157 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 2157 (Thread-2), pid 2132 (.example.fuzzer)

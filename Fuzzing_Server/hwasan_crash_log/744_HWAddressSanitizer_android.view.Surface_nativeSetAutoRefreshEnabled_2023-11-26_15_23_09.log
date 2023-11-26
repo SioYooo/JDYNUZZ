@@ -1,0 +1,14 @@
+
+android.view.Surface|nativeSetAutoRefreshEnabled|long, boolean|int
+
+objfileName: 1700972611259.obj
+
+android.view.Surface|nativeSetAutoRefreshEnabled
+
+android.view.Surface|nativeSetAutoRefreshEnabled|2023-11-26 15:23:09
+11-26 04:23:31.280 29416 29439 I app_process64: ==29416==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0000000000a7 at pc 0x007cd8d1c8b0
+11-26 04:23:31.280 29416 29439 I app_process64: READ of size 8 at 0x0000000000a7 tags: 80/00 (ptr/mem) in thread T38478
+11-26 04:23:31.297 29416 29439 I app_process64:     #0 0x7cd8d1c8ac  (/system/lib64/libandroid_runtime.so+0x1488ac)
+11-26 04:23:31.297 29416 29439 I app_process64:     #1 0x710ee320  (/system/framework/arm64/boot-framework.oat+0x28b320)
+11-26 04:23:31.297 29416 29439 I app_process64: 
+11-26 04:23:31.297 29416 29439 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 29439 (Thread-2), pid 29416 (.example.fuzzer)

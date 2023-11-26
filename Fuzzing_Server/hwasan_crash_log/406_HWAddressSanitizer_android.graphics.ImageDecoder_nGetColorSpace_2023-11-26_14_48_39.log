@@ -1,0 +1,14 @@
+
+android.graphics.ImageDecoder|nGetColorSpace|long|android.graphics.ColorSpace
+
+objfileName: 1700970541144.obj
+
+android.graphics.ImageDecoder|nGetColorSpace
+
+android.graphics.ImageDecoder|nGetColorSpace|2023-11-26 14:48:39
+11-26 03:49:01.165  8209  8232 I app_process64: ==8209==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d93d8c
+11-26 03:49:01.165  8209  8232 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T36788
+11-26 03:49:01.181  8209  8232 I app_process64:     #0 0x7cd8d93d88  (/system/lib64/libandroid_runtime.so+0x1bfd88)
+11-26 03:49:01.181  8209  8232 I app_process64:     #1 0x710ed0e8  (/system/framework/arm64/boot-framework.oat+0x28a0e8)
+11-26 03:49:01.181  8209  8232 I app_process64: 
+11-26 03:49:01.182  8209  8232 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 8232 (Thread-2), pid 8209 (.example.fuzzer)
