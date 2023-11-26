@@ -1,0 +1,15 @@
+
+android.view.Surface|nativeUnlockCanvasAndPost|long, android.graphics.Canvas|void
+
+objfileName: 1701027929899.obj
+
+android.view.Surface|nativeUnlockCanvasAndPost
+
+android.view.Surface|nativeUnlockCanvasAndPost|2023-11-27 06:45:08
+11-26 19:45:29.932 21031 21054 I app_process64: ==21031==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cdbb1cdc8
+11-26 19:45:29.932 21031 21054 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T73948
+11-26 19:45:29.948 21031 21054 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 19:45:29.949 21031 21054 I app_process64:     #1 0x7cd8d1b614  (/system/lib64/libandroid_runtime.so+0x147614)
+11-26 19:45:29.949 21031 21054 I app_process64:     #2 0x710ebdf4  (/system/framework/arm64/boot-framework.oat+0x288df4)
+11-26 19:45:29.949 21031 21054 I app_process64: 
+11-26 19:45:29.949 21031 21054 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 21054 (Thread-2), pid 21031 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.media.AudioRecord|native_set_marker_pos|int|int
+
+objfileName: 1701026552953.obj
+
+android.media.AudioRecord|native_set_marker_pos
+
+android.media.AudioRecord|native_set_marker_pos|2023-11-27 06:22:11
+11-26 19:22:32.987  9929  9953 I app_process64: ==9929==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cdbb1cdc8
+11-26 19:22:32.987  9929  9953 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T73029
+11-26 19:22:33.003  9929  9953 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 19:22:33.003  9929  9953 I app_process64:     #1 0x7cd8db3878  (/system/lib64/libandroid_runtime.so+0x1df878)
+11-26 19:22:33.003  9929  9953 I app_process64:     #2 0x711224e4  (/system/framework/arm64/boot-framework.oat+0x2bf4e4)
+11-26 19:22:33.003  9929  9953 I app_process64: 
+11-26 19:22:33.003  9929  9953 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 9953 (Thread-2), pid 9929 (.example.fuzzer)

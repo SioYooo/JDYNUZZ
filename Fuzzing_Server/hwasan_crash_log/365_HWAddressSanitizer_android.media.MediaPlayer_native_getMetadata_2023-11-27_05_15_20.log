@@ -1,0 +1,16 @@
+
+android.media.MediaPlayer|native_getMetadata|boolean, boolean, android.os.Parcel|boolean
+
+objfileName: 1701022542560.obj
+
+android.media.MediaPlayer|native_getMetadata
+
+android.media.MediaPlayer|native_getMetadata|2023-11-27 05:15:20
+11-26 18:15:42.610 10458 10481 I app_process64: ==10458==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000005f at pc 0x007cd7434360
+11-26 18:15:42.610 10458 10481 I app_process64: READ of size 8 at 0x00000000005f tags: 80/00 (ptr/mem) in thread T70473
+11-26 18:15:42.626 10458 10481 I app_process64:     #0 0x7cd743435c  (/system/lib64/libbinder.so+0x7035c)
+11-26 18:15:42.626 10458 10481 I app_process64:     #1 0x7cd74465f8  (/system/lib64/libbinder.so+0x825f8)
+11-26 18:15:42.626 10458 10481 I app_process64:     #2 0x7cc067dc14  (/system/lib64/libmedia_jni.so+0x6ec14)
+11-26 18:15:42.626 10458 10481 I app_process64:     #3 0x71122c48  (/system/framework/arm64/boot-framework.oat+0x2bfc48)
+11-26 18:15:42.626 10458 10481 I app_process64: 
+11-26 18:15:42.626 10458 10481 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 10481 (Thread-2), pid 10458 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.media.MediaMuxer|nativeSetOrientationHint|long, int|void
+
+objfileName: 1701030309378.obj
+
+android.media.MediaMuxer|nativeSetOrientationHint
+
+android.media.MediaMuxer|nativeSetOrientationHint|2023-11-27 07:24:47
+11-26 20:25:09.403  9022  9045 I app_process64: ==9022==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cdbb1cdc8
+11-26 20:25:09.403  9022  9045 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T75448
+11-26 20:25:09.420  9022  9045 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 20:25:09.420  9022  9045 I app_process64:     #1 0x7cc0678344  (/system/lib64/libmedia_jni.so+0x69344)
+11-26 20:25:09.420  9022  9045 I app_process64:     #2 0x710ef420  (/system/framework/arm64/boot-framework.oat+0x28c420)
+11-26 20:25:09.420  9022  9045 I app_process64: 
+11-26 20:25:09.420  9022  9045 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 9045 (Thread-2), pid 9022 (.example.fuzzer)

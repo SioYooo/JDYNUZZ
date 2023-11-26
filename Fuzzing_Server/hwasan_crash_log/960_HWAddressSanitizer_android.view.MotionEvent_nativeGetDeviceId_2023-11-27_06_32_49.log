@@ -1,0 +1,14 @@
+
+android.view.MotionEvent|nativeGetDeviceId|long|int
+
+objfileName: 1701027191139.obj
+
+android.view.MotionEvent|nativeGetDeviceId
+
+android.view.MotionEvent|nativeGetDeviceId|2023-11-27 06:32:49
+11-26 19:33:11.163 14988 15011 I app_process64: ==14988==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cd8d14ad4
+11-26 19:33:11.163 14988 15011 I app_process64: READ of size 4 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T73448
+11-26 19:33:11.179 14988 15011 I app_process64:     #0 0x7cd8d14ad0  (/system/lib64/libandroid_runtime.so+0x140ad0)
+11-26 19:33:11.179 14988 15011 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-26 19:33:11.179 14988 15011 I app_process64: 
+11-26 19:33:11.180 14988 15011 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 15011 (Thread-2), pid 14988 (.example.fuzzer)

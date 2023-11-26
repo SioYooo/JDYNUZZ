@@ -1,0 +1,15 @@
+
+android.database.CursorWindow|nativePutString|long, java.lang.String, int, int|boolean
+
+objfileName: 1701021828457.obj
+
+android.database.CursorWindow|nativePutString
+
+android.database.CursorWindow|nativePutString|2023-11-27 05:03:26
+11-26 18:03:48.483  4710  4733 I app_process64: ==4710==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd77b471c
+11-26 18:03:48.483  4710  4733 I app_process64: READ of size 1 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T69983
+11-26 18:03:48.499  4710  4733 I app_process64:     #0 0x7cd77b4718  (/system/lib64/libandroidfw.so+0x7c718)
+11-26 18:03:48.499  4710  4733 I app_process64:     #1 0x7cd8cf6e0c  (/system/lib64/libandroid_runtime.so+0x122e0c)
+11-26 18:03:48.499  4710  4733 I app_process64:     #2 0x710fdf74  (/system/framework/arm64/boot-framework.oat+0x29af74)
+11-26 18:03:48.499  4710  4733 I app_process64: 
+11-26 18:03:48.500  4710  4733 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4733 (Thread-2), pid 4710 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.database.CursorWindow|nativeGetName|long|java.lang.String
+
+objfileName: 1701033464318.obj
+
+android.database.CursorWindow|nativeGetName
+
+android.database.CursorWindow|nativeGetName|2023-11-27 08:17:22
+11-26 21:17:44.341  3520  3544 I app_process64: ==3520==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cdbb1e134
+11-26 21:17:44.342  3520  3544 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T77528
+11-26 21:17:44.358  3520  3544 I app_process64:     #0 0x7cdbb1e130  (/system/lib64/libutils.so+0x12130)
+11-26 21:17:44.358  3520  3544 I app_process64:     #1 0x7cd8cf6120  (/system/lib64/libandroid_runtime.so+0x122120)
+11-26 21:17:44.358  3520  3544 I app_process64:     #2 0x710ed0e8  (/system/framework/arm64/boot-framework.oat+0x28a0e8)
+11-26 21:17:44.358  3520  3544 I app_process64: 
+11-26 21:17:44.358  3520  3544 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 3544 (Thread-2), pid 3520 (.example.fuzzer)

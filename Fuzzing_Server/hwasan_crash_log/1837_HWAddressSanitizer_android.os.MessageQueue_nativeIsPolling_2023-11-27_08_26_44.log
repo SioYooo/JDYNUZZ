@@ -1,0 +1,14 @@
+
+android.os.MessageQueue|nativeIsPolling|long|boolean
+
+objfileName: 1701034026699.obj
+
+android.os.MessageQueue|nativeIsPolling
+
+android.os.MessageQueue|nativeIsPolling|2023-11-27 08:26:44
+11-26 21:27:06.722  7814  7837 I app_process64: ==7814==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd8d531c4
+11-26 21:27:06.722  7814  7837 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T77883
+11-26 21:27:06.739  7814  7837 I app_process64:     #0 0x7cd8d531c0  (/system/lib64/libandroid_runtime.so+0x17f1c0)
+11-26 21:27:06.739  7814  7837 I app_process64:     #1 0x710ed2f8  (/system/framework/arm64/boot-framework.oat+0x28a2f8)
+11-26 21:27:06.739  7814  7837 I app_process64: 
+11-26 21:27:06.739  7814  7837 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 7837 (Thread-2), pid 7814 (.example.fuzzer)

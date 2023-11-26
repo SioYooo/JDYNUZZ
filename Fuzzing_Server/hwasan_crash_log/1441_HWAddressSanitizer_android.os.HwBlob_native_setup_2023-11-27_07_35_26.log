@@ -1,0 +1,19 @@
+
+android.os.HwBlob|native_setup|int|void
+
+objfileName: 1701030948738.obj
+
+android.os.HwBlob|native_setup
+
+android.os.HwBlob|native_setup|2023-11-27 07:35:26
+11-26 20:35:49.782 13892 13915 I app_process64: ==13892==ERROR: HWAddressSanitizer: requested allocation size 0xfffffffffffffffc exceeds maximum supported size of 0x80000000
+11-26 20:35:49.798   832   832 D Zygote  : Forked child process 13919
+11-26 20:35:49.802  1371  1402 I ActivityManager: Start proc 13919:com.android.launcher3/u0a94 for service {com.android.launcher3/com.android.quickstep.TouchInteractionService}
+11-26 20:35:49.815   928   928 E lowmemorykiller: Kill 'com.example.fuzzer' (13892), uid 10109, oom_adj 0 to free 2296788kB
+11-26 20:35:49.815   928   928 I lowmemorykiller: Reclaimed 2296788kB, cache(72056kB) and free(42132kB)-reserved(44776kB) below min(73728kB) for oom_adj 0
+11-26 20:35:49.815   928   928 I lowmemorykiller: Suppressed 6 failed kill reports
+11-26 20:35:49.911   928   928 I lowmemorykiller: 9 memory pressure events were skipped after a kill!
+code null: crash before code was sent
+11-26 20:35:50.013  1371  1572 W InputDispatcher: channel 'da8689c com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+11-26 20:35:50.013  1371  1572 E InputDispatcher: channel 'da8689c com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+11-26 20:35:50.013  1371  5640 I ActivityManager: Process com.example.fuzzer (pid 13892) has died: fore TOP 

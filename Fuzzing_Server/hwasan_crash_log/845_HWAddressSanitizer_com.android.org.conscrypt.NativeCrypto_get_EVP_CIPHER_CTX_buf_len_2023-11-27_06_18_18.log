@@ -1,0 +1,20 @@
+
+com.android.org.conscrypt.NativeCrypto|get_EVP_CIPHER_CTX_buf_len|com.android.org.conscrypt.NativeRef$EVP_CIPHER_CTX|int
+
+objfileName: 1701026320195.obj
+
+com.android.org.conscrypt.NativeCrypto|get_EVP_CIPHER_CTX_buf_len
+
+com.android.org.conscrypt.NativeCrypto|get_EVP_CIPHER_CTX_buf_len|2023-11-27 06:18:18
+11-26 19:18:40.228  7976  8000 I app_process64: ==7976==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000063 at pc 0x007cc038a4e4
+11-26 19:18:40.228  7976  8000 I app_process64: READ of size 4 at 0x000000000063 tags: 80/00 (ptr/mem) in thread T72874
+11-26 19:18:40.245  7976  8000 I app_process64:     #0 0x7cc038a4e0  (/apex/com.android.conscrypt/lib64/libjavacrypto.so+0x294e0)
+11-26 19:18:40.245  7976  8000 I app_process64:     #1 0x7cd55f6350  (/apex/com.android.runtime/lib64/libart.so+0x148350)
+11-26 19:18:40.245  7976  8000 I app_process64:     #2 0x7cd55ed5b8  (/apex/com.android.runtime/lib64/libart.so+0x13f5b8)
+11-26 19:18:40.245  7976  8000 I app_process64:     #3 0x7cd55fe8a0  (/apex/com.android.runtime/lib64/libart.so+0x1508a0)
+11-26 19:18:40.245  7976  8000 I app_process64:     #4 0x7cd5c23fcc  (/apex/com.android.runtime/lib64/libart.so+0x775fcc)
+11-26 19:18:40.245  7976  8000 I app_process64:     #5 0x7cd5c26eac  (/apex/com.android.runtime/lib64/libart.so+0x778eac)
+11-26 19:18:40.245  7976  8000 I app_process64:     #6 0x7cd5b4fea0  (/apex/com.android.runtime/lib64/libart.so+0x6a1ea0)
+11-26 19:18:40.245  7976  8000 I app_process64:     #7 0x70a10c34  (/system/framework/arm64/boot.oat+0xc2c34)
+11-26 19:18:40.245  7976  8000 I app_process64: 
+11-26 19:18:40.245  7976  8000 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 8000 (Thread-2), pid 7976 (.example.fuzzer)

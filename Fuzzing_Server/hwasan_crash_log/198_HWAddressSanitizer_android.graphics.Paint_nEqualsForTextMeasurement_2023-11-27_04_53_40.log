@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nEqualsForTextMeasurement|long, long|boolean
+
+objfileName: 1701021242100.obj
+
+android.graphics.Paint|nEqualsForTextMeasurement
+
+android.graphics.Paint|nEqualsForTextMeasurement|2023-11-27 04:53:40
+11-26 17:54:02.123 31274 31298 I app_process64: ==31274==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000098 at pc 0x007cd8d9b4b8
+11-26 17:54:02.123 31274 31298 I app_process64: READ of size 8 at 0x000000000098 tags: 80/00 (ptr/mem) in thread T69614
+11-26 17:54:02.139 31274 31298 I app_process64:     #0 0x7cd8d9b4b4  (/system/lib64/libandroid_runtime.so+0x1c74b4)
+11-26 17:54:02.139 31274 31298 I app_process64:     #1 0x710f6418  (/system/framework/arm64/boot-framework.oat+0x293418)
+11-26 17:54:02.139 31274 31298 I app_process64: 
+11-26 17:54:02.140 31274 31298 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 31298 (Thread-2), pid 31274 (.example.fuzzer)

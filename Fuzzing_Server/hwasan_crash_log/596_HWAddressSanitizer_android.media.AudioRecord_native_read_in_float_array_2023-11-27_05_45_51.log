@@ -1,0 +1,14 @@
+
+android.media.AudioRecord|native_read_in_float_array|float[], int, int, boolean|int
+
+objfileName: 1701024373898.obj
+
+android.media.AudioRecord|native_read_in_float_array
+
+android.media.AudioRecord|native_read_in_float_array|2023-11-27 05:45:51
+11-26 18:46:13.971 24291 24314 I app_process64: ==24291==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7436370
+11-26 18:46:13.971 24291 24314 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T71628
+11-26 18:46:13.987 24291 24314 I app_process64:     #0 0x7cd743636c  (/system/lib64/libbinder.so+0x7236c)
+11-26 18:46:13.987 24291 24314 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-26 18:46:13.987 24291 24314 I app_process64: 
+11-26 18:46:13.987 24291 24314 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 24314 (Thread-2), pid 24291 (.example.fuzzer)

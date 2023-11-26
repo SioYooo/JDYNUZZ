@@ -1,0 +1,14 @@
+
+com.android.internal.util.VirtualRefBasePtr|nDecStrong|long|void
+
+objfileName: 1701022679400.obj
+
+com.android.internal.util.VirtualRefBasePtr|nDecStrong
+
+com.android.internal.util.VirtualRefBasePtr|nDecStrong|2023-11-27 05:17:37
+11-26 18:17:59.423 11608 11631 I app_process64: ==11608==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd8e16b14
+11-26 18:17:59.423 11608 11631 I app_process64: WRITE of size 4 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T70568
+11-26 18:17:59.440 11608 11631 I app_process64:     #0 0x7cd8e16b10  (/system/lib64/libandroid_runtime.so+0x242b10)
+11-26 18:17:59.440 11608 11631 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 18:17:59.440 11608 11631 I app_process64: 
+11-26 18:17:59.440 11608 11631 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 11631 (Thread-2), pid 11608 (.example.fuzzer)

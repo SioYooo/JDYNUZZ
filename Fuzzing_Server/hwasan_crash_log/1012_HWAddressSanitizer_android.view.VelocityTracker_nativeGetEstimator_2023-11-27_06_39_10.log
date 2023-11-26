@@ -1,0 +1,15 @@
+
+android.view.VelocityTracker|nativeGetEstimator|long, int, android.view.VelocityTracker$Estimator|boolean
+
+objfileName: 1701027572062.obj
+
+android.view.VelocityTracker|nativeGetEstimator
+
+android.view.VelocityTracker|nativeGetEstimator|2023-11-27 06:39:10
+11-26 19:39:32.096 18147 18170 I app_process64: ==18147==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000010 at pc 0x007cd6f4b1d8
+11-26 19:39:32.096 18147 18170 I app_process64: READ of size 8 at 0x000000000010 tags: 80/00 (ptr/mem) in thread T73708
+11-26 19:39:32.112 18147 18170 I app_process64:     #0 0x7cd6f4b1d4  (/system/lib64/libinput.so+0x361d4)
+11-26 19:39:32.112 18147 18170 I app_process64:     #1 0x7cd8d312b8  (/system/lib64/libandroid_runtime.so+0x15d2b8)
+11-26 19:39:32.112 18147 18170 I app_process64:     #2 0x710f82ec  (/system/framework/arm64/boot-framework.oat+0x2952ec)
+11-26 19:39:32.112 18147 18170 I app_process64: 
+11-26 19:39:32.112 18147 18170 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 18170 (Thread-2), pid 18147 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+org.apache.harmony.xml.ExpatAttributes|getLocalName|long, long, int|java.lang.String
+
+objfileName: 1701027357096.obj
+
+org.apache.harmony.xml.ExpatAttributes|getLocalName
+
+org.apache.harmony.xml.ExpatAttributes|getLocalName|2023-11-27 06:35:35
+11-26 19:35:57.121 16310 16333 I app_process64: ==16310==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cccba490c
+11-26 19:35:57.121 16310 16333 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T73558
+11-26 19:35:57.138 16310 16333 I app_process64:     #0 0x7cccba4908  (/apex/com.android.runtime/lib64/libjavacore.so+0x50908)
+11-26 19:35:57.138 16310 16333 I app_process64:     #1 0x70cf48d8  (/system/framework/arm64/boot-core-libart.oat+0x538d8)
+11-26 19:35:57.138 16310 16333 I app_process64: 
+11-26 19:35:57.138 16310 16333 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 16333 (Thread-2), pid 16310 (.example.fuzzer)

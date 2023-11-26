@@ -1,0 +1,14 @@
+
+android.view.InputQueue|nativeDispose|long|void
+
+objfileName: 1701031632779.obj
+
+android.view.InputQueue|nativeDispose
+
+android.view.InputQueue|nativeDispose|2023-11-27 07:46:50
+11-26 20:47:12.802 19458 19481 I app_process64: ==19458==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d1028c
+11-26 20:47:12.802 19458 19481 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T76343
+11-26 20:47:12.818 19458 19481 I app_process64:     #0 0x7cd8d10288  (/system/lib64/libandroid_runtime.so+0x13c288)
+11-26 20:47:12.818 19458 19481 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 20:47:12.818 19458 19481 I app_process64: 
+11-26 20:47:12.818 19458 19481 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 19481 (Thread-2), pid 19458 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.graphics.NinePatch|nativeGetTransparentRegion|long, long, android.graphics.Rect|long
+
+objfileName: 1701026396738.obj
+
+android.graphics.NinePatch|nativeGetTransparentRegion
+
+android.graphics.NinePatch|nativeGetTransparentRegion|2023-11-27 06:19:34
+11-26 19:19:56.775  8513  8536 I app_process64: ==8513==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d7d2cc
+11-26 19:19:56.775  8513  8536 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T72918
+11-26 19:19:56.792  8513  8536 I app_process64:     #0 0x7cd8d7d2c8  (/system/lib64/libandroid_runtime.so+0x1a92c8)
+11-26 19:19:56.792  8513  8536 I app_process64:     #1 0x7cd8d971b4  (/system/lib64/libandroid_runtime.so+0x1c31b4)
+11-26 19:19:56.792  8513  8536 I app_process64:     #2 0x710f73cc  (/system/framework/arm64/boot-framework.oat+0x2943cc)
+11-26 19:19:56.792  8513  8536 I app_process64: 
+11-26 19:19:56.792  8513  8536 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 8536 (Thread-2), pid 8513 (.example.fuzzer)

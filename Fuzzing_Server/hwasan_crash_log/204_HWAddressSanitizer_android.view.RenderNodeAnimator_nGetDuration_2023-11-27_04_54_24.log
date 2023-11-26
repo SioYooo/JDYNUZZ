@@ -1,0 +1,14 @@
+
+android.view.RenderNodeAnimator|nGetDuration|long|long
+
+objfileName: 1701021286001.obj
+
+android.view.RenderNodeAnimator|nGetDuration
+
+android.view.RenderNodeAnimator|nGetDuration|2023-11-27 04:54:24
+11-26 17:54:46.024 31636 31659 I app_process64: ==31636==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000050 at pc 0x007cd8d199ac
+11-26 17:54:46.024 31636 31659 I app_process64: READ of size 8 at 0x000000000050 tags: 80/00 (ptr/mem) in thread T69643
+11-26 17:54:46.040 31636 31659 I app_process64:     #0 0x7cd8d199a8  (/system/lib64/libandroid_runtime.so+0x1459a8)
+11-26 17:54:46.040 31636 31659 I app_process64:     #1 0x710ed1e8  (/system/framework/arm64/boot-framework.oat+0x28a1e8)
+11-26 17:54:46.040 31636 31659 I app_process64: 
+11-26 17:54:46.041 31636 31659 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 31659 (Thread-2), pid 31636 (.example.fuzzer)

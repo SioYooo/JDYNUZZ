@@ -1,0 +1,27 @@
+
+com.android.org.conscrypt.NativeCrypto|X509_CRL_get_lastUpdate|long, com.android.org.conscrypt.OpenSSLX509CRL|long
+
+objfileName: 1701033791439.obj
+
+com.android.org.conscrypt.NativeCrypto|X509_CRL_get_lastUpdate|2023-11-27 08:22:49
+11-26 21:23:11.468  5894  5917 I app_process64: ==5894==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cc0390354
+11-26 21:23:11.468  5894  5917 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T77723
+11-26 21:23:11.485  5894  5917 I app_process64:     #0 0x7cc0390350  (/apex/com.android.conscrypt/lib64/libjavacrypto.so+0x2f350)
+11-26 21:23:11.485  5894  5917 I app_process64:     #1 0x7cd55f6350  (/apex/com.android.runtime/lib64/libart.so+0x148350)
+11-26 21:23:11.485  5894  5917 I app_process64:     #2 0x7cd55ed5b8  (/apex/com.android.runtime/lib64/libart.so+0x13f5b8)
+11-26 21:23:11.485  5894  5917 I app_process64:     #3 0x7cd55fe8a0  (/apex/com.android.runtime/lib64/libart.so+0x1508a0)
+11-26 21:23:11.485  5894  5917 I app_process64:     #4 0x7cd58c6c08  (/apex/com.android.runtime/lib64/libart.so+0x418c08)
+11-26 21:23:11.485  5894  5917 I app_process64:     #5 0x7cd58be9a0  (/apex/com.android.runtime/lib64/libart.so+0x4109a0)
+11-26 21:23:11.485  5894  5917 I app_process64:     #6 0x7cd5dbb66c  (/apex/com.android.runtime/lib64/libart.so+0x90d66c)
+11-26 21:23:11.485  5894  5917 I app_process64:     #7 0x7cd55e7994  (/apex/com.android.runtime/lib64/libart.so+0x139994)
+11-26 21:23:11.485  5894  5917 I app_process64:     #8 0x7cd586ba88  (/apex/com.android.runtime/lib64/libart.so+0x3bda88)
+11-26 21:23:11.485  5894  5917 I app_process64:     #9 0x7cd5d9c318  (/apex/com.android.runtime/lib64/libart.so+0x8ee318)
+11-26 21:23:11.485  5894  5917 I app_process64:     #10 0x7cd55f6468  (/apex/com.android.runtime/lib64/libart.so+0x148468)
+11-26 21:23:11.485  5894  5917 I app_process64:     #11 0x7cd55ed334  (/apex/com.android.runtime/lib64/libart.so+0x13f334)
+11-26 21:23:11.485  5894  5917 I app_process64:     #12 0x7cd55fe884  (/apex/com.android.runtime/lib64/libart.so+0x150884)
+11-26 21:23:11.485  5894  5917 I app_process64:     #13 0x7cd5c23fcc  (/apex/com.android.runtime/lib64/libart.so+0x775fcc)
+11-26 21:23:11.485  5894  5917 I app_process64:     #14 0x7cd5c28964  (/apex/com.android.runtime/lib64/libart.so+0x77a964)
+11-26 21:23:11.485  5894  5917 I app_process64:     #15 0x7cd5b3aa18  (/apex/com.android.runtime/lib64/libart.so+0x68ca18)
+11-26 21:23:11.486  5894  5917 I app_process64:     #16 0x70a0eb98  (/system/framework/arm64/boot.oat+0xc0b98)
+11-26 21:23:11.486  5894  5917 I app_process64: 
+11-26 21:23:11.486  5894  5917 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 5917 (Thread-2), pid 5894 (.example.fuzzer)

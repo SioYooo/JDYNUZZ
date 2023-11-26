@@ -1,0 +1,15 @@
+
+com.android.internal.os.FuseAppLoop|native_replySimple|long, long, int|void
+
+objfileName: 1701030574496.obj
+
+com.android.internal.os.FuseAppLoop|native_replySimple
+
+com.android.internal.os.FuseAppLoop|native_replySimple|2023-11-27 07:29:12
+11-26 20:29:34.556 11016 11039 I app_process64: ==11016==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd85192dc
+11-26 20:29:34.556 11016 11039 I app_process64: READ of size 4 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T75613
+11-26 20:29:34.572 11016 11039 I app_process64:     #0 0x7cd85192d8  (/system/lib64/libappfuse.so+0x52d8)
+11-26 20:29:34.572 11016 11039 I app_process64:     #1 0x7cd8e0bc98  (/system/lib64/libandroid_runtime.so+0x237c98)
+11-26 20:29:34.572 11016 11039 I app_process64:     #2 0x71115244  (/system/framework/arm64/boot-framework.oat+0x2b2244)
+11-26 20:29:34.572 11016 11039 I app_process64: 
+11-26 20:29:34.572 11016 11039 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 11039 (Thread-2), pid 11016 (.example.fuzzer)

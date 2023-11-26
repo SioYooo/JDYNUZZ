@@ -1,0 +1,14 @@
+
+android.graphics.FontFamily|nCreateFamily|long|long
+
+objfileName: 1701021272702.obj
+
+android.graphics.FontFamily|nCreateFamily
+
+android.graphics.FontFamily|nCreateFamily|2023-11-27 04:54:10
+11-26 17:54:32.724 31513 31536 I app_process64: ==31513==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd8d87ba0
+11-26 17:54:32.724 31513 31536 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T69633
+11-26 17:54:32.741 31513 31536 I app_process64:     #0 0x7cd8d87b9c  (/system/lib64/libandroid_runtime.so+0x1b3b9c)
+11-26 17:54:32.741 31513 31536 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-26 17:54:32.741 31513 31536 I app_process64: 
+11-26 17:54:32.741 31513 31536 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 31536 (Thread-2), pid 31513 (.example.fuzzer)

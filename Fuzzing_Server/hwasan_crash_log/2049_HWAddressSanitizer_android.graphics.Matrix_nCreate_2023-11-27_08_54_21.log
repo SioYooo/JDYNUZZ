@@ -1,0 +1,15 @@
+
+android.graphics.Matrix|nCreate|long|long
+
+objfileName: 1701035683878.obj
+
+android.graphics.Matrix|nCreate
+
+android.graphics.Matrix|nCreate|2023-11-27 08:54:21
+11-26 21:54:43.902 21806 21829 I app_process64: ==21806==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd90fa484
+11-26 21:54:43.902 21806 21829 I app_process64: READ of size 40 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T78943
+11-26 21:54:43.918 21806 21829 I app_process64:     #0 0x7cd90fa480  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1c480)
+11-26 21:54:43.918 21806 21829 I app_process64:     #1 0x7cd8d95020  (/system/lib64/libandroid_runtime.so+0x1c1020)
+11-26 21:54:43.918 21806 21829 I app_process64:     #2 0x710ed1e8  (/system/framework/arm64/boot-framework.oat+0x28a1e8)
+11-26 21:54:43.918 21806 21829 I app_process64: 
+11-26 21:54:43.918 21806 21829 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 21829 (Thread-2), pid 21806 (.example.fuzzer)

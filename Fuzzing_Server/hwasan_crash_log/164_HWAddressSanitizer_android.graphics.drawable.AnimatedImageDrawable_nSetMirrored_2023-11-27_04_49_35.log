@@ -1,0 +1,14 @@
+
+android.graphics.drawable.AnimatedImageDrawable|nSetMirrored|long, boolean|void
+
+objfileName: 1701020997516.obj
+
+android.graphics.drawable.AnimatedImageDrawable|nSetMirrored
+
+android.graphics.drawable.AnimatedImageDrawable|nSetMirrored|2023-11-27 04:49:35
+11-26 17:49:57.540 29205 29229 I app_process64: ==29205==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0000000000b7 at pc 0x007cd8d7c83c
+11-26 17:49:57.540 29205 29229 I app_process64: WRITE of size 1 at 0x0000000000b7 tags: 80/00 (ptr/mem) in thread T69443
+11-26 17:49:57.556 29205 29229 I app_process64:     #0 0x7cd8d7c838  (/system/lib64/libandroid_runtime.so+0x1a8838)
+11-26 17:49:57.556 29205 29229 I app_process64:     #1 0x711026a0  (/system/framework/arm64/boot-framework.oat+0x29f6a0)
+11-26 17:49:57.556 29205 29229 I app_process64: 
+11-26 17:49:57.556 29205 29229 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 29229 (Thread-2), pid 29205 (.example.fuzzer)

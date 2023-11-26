@@ -1,0 +1,14 @@
+
+android.hardware.SystemSensorManager$BaseEventQueue|nativeDisableSensor|long, int|int
+
+objfileName: 1701019762041.obj
+
+android.hardware.SystemSensorManager$BaseEventQueue|nativeDisableSensor
+
+android.hardware.SystemSensorManager$BaseEventQueue|nativeDisableSensor|2023-11-27 04:29:00
+11-26 17:29:22.066 19679 19703 I app_process64: ==19679==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8df99f4
+11-26 17:29:22.066 19679 19703 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T68653
+11-26 17:29:22.082 19679 19703 I app_process64:     #0 0x7cd8df99f0  (/system/lib64/libandroid_runtime.so+0x2259f0)
+11-26 17:29:22.082 19679 19703 I app_process64:     #1 0x710ee320  (/system/framework/arm64/boot-framework.oat+0x28b320)
+11-26 17:29:22.082 19679 19703 I app_process64: 
+11-26 17:29:22.082 19679 19703 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 19703 (Thread-2), pid 19679 (.example.fuzzer)

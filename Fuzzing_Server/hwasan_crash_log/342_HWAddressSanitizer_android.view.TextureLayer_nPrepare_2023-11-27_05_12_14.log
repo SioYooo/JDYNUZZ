@@ -1,0 +1,14 @@
+
+android.view.TextureLayer|nPrepare|long, int, int, boolean|boolean
+
+objfileName: 1701022356761.obj
+
+android.view.TextureLayer|nPrepare
+
+android.view.TextureLayer|nPrepare|2023-11-27 05:12:14
+11-26 18:12:36.788  9096  9120 I app_process64: ==9096==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd8d06c6c
+11-26 18:12:36.788  9096  9120 I app_process64: READ of size 4 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T70358
+11-26 18:12:36.804  9096  9120 I app_process64:     #0 0x7cd8d06c68  (/system/lib64/libandroid_runtime.so+0x132c68)
+11-26 18:12:36.804  9096  9120 I app_process64:     #1 0x711267d0  (/system/framework/arm64/boot-framework.oat+0x2c37d0)
+11-26 18:12:36.804  9096  9120 I app_process64: 
+11-26 18:12:36.805  9096  9120 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 9120 (Thread-2), pid 9096 (.example.fuzzer)

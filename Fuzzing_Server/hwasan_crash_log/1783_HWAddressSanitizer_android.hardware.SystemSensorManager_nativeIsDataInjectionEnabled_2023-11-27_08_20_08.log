@@ -1,0 +1,16 @@
+
+android.hardware.SystemSensorManager|nativeIsDataInjectionEnabled|long|boolean
+
+objfileName: 1701033630613.obj
+
+android.hardware.SystemSensorManager|nativeIsDataInjectionEnabled
+
+android.hardware.SystemSensorManager|nativeIsDataInjectionEnabled|2023-11-27 08:20:08
+11-26 21:20:30.650  4561  4584 I app_process64: ==4561==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd96d6530
+11-26 21:20:30.651  4561  4584 I app_process64: READ of size 2 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T77613
+11-26 21:20:30.667  4561  4584 I app_process64:     #0 0x7cd96d652c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x13052c)
+11-26 21:20:30.667  4561  4584 I app_process64:     #1 0x7cd7c1b268  (/system/lib64/libsensor.so+0x15268)
+11-26 21:20:30.667  4561  4584 I app_process64:     #2 0x7cd8df8160  (/system/lib64/libandroid_runtime.so+0x224160)
+11-26 21:20:30.668  4561  4584 I app_process64:     #3 0x710ed2f8  (/system/framework/arm64/boot-framework.oat+0x28a2f8)
+11-26 21:20:30.668  4561  4584 I app_process64: 
+11-26 21:20:30.668  4561  4584 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4584 (Thread-2), pid 4561 (.example.fuzzer)

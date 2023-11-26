@@ -1,0 +1,14 @@
+
+android.graphics.BaseRecordingCanvas|nDrawTextOnPath|long, java.lang.String, long, float, float, int, long|void
+
+objfileName: 1701024174040.obj
+
+android.graphics.BaseRecordingCanvas|nDrawTextOnPath
+
+android.graphics.BaseRecordingCanvas|nDrawTextOnPath|2023-11-27 05:42:32
+11-26 18:42:54.068 22667 22690 I app_process64: ==22667==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000097 at pc 0x007cd8cff554
+11-26 18:42:54.068 22667 22690 I app_process64: READ of size 8 at 0x000000000097 tags: 80/00 (ptr/mem) in thread T71493
+11-26 18:42:54.085 22667 22690 I app_process64:     #0 0x7cd8cff550  (/system/lib64/libandroid_runtime.so+0x12b550)
+11-26 18:42:54.085 22667 22690 I app_process64:     #1 0x7110545c  (/system/framework/arm64/boot-framework.oat+0x2a245c)
+11-26 18:42:54.085 22667 22690 I app_process64: 
+11-26 18:42:54.085 22667 22690 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 22690 (Thread-2), pid 22667 (.example.fuzzer)

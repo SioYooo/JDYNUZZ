@@ -1,0 +1,14 @@
+
+android.util.PathParser|nSetPathData|long, long|void
+
+objfileName: 1701023201301.obj
+
+android.util.PathParser|nSetPathData
+
+android.util.PathParser|nSetPathData|2023-11-27 05:26:19
+11-26 18:26:41.324 15138 15161 I app_process64: ==15138==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d74d54
+11-26 18:26:41.324 15138 15161 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T70863
+11-26 18:26:41.341 15138 15161 I app_process64:     #0 0x7cd8d74d50  (/system/lib64/libandroid_runtime.so+0x1a0d50)
+11-26 18:26:41.341 15138 15161 I app_process64:     #1 0x710f9a60  (/system/framework/arm64/boot-framework.oat+0x296a60)
+11-26 18:26:41.341 15138 15161 I app_process64: 
+11-26 18:26:41.341 15138 15161 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 15161 (Thread-2), pid 15138 (.example.fuzzer)

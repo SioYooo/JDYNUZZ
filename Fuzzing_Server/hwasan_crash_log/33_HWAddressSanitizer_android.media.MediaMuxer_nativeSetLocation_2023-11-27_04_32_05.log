@@ -1,0 +1,16 @@
+
+android.media.MediaMuxer|nativeSetLocation|long, int, int|void
+
+objfileName: 1701019947799.obj
+
+android.media.MediaMuxer|nativeSetLocation
+
+android.media.MediaMuxer|nativeSetLocation|2023-11-27 04:32:05
+11-26 17:32:27.846 21338 21362 I app_process64: ==21338==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000050 at pc 0x007cd96d6530
+11-26 17:32:27.847 21338 21362 I app_process64: READ of size 2 at 0x000000000050 tags: 80/00 (ptr/mem) in thread T68789
+11-26 17:32:27.863 21338 21362 I app_process64:     #0 0x7cd96d652c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x13052c)
+11-26 17:32:27.863 21338 21362 I app_process64:     #1 0x7cd7f4afc8  (/system/lib64/libstagefright.so+0x140fc8)
+11-26 17:32:27.863 21338 21362 I app_process64:     #2 0x7cc06783fc  (/system/lib64/libmedia_jni.so+0x693fc)
+11-26 17:32:27.863 21338 21362 I app_process64:     #3 0x710f2108  (/system/framework/arm64/boot-framework.oat+0x28f108)
+11-26 17:32:27.863 21338 21362 I app_process64: 
+11-26 17:32:27.863 21338 21362 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 21362 (Thread-2), pid 21338 (.example.fuzzer)

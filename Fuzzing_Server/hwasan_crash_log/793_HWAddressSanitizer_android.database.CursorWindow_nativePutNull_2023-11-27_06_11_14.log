@@ -1,0 +1,15 @@
+
+android.database.CursorWindow|nativePutNull|long, int, int|boolean
+
+objfileName: 1701025896719.obj
+
+android.database.CursorWindow|nativePutNull
+
+android.database.CursorWindow|nativePutNull|2023-11-27 06:11:14
+11-26 19:11:36.745  4901  4925 I app_process64: ==4901==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd77b497c
+11-26 19:11:36.745  4901  4925 I app_process64: READ of size 1 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T72614
+11-26 19:11:36.761  4901  4925 I app_process64:     #0 0x7cd77b4978  (/system/lib64/libandroidfw.so+0x7c978)
+11-26 19:11:36.761  4901  4925 I app_process64:     #1 0x7cd8cf74bc  (/system/lib64/libandroid_runtime.so+0x1234bc)
+11-26 19:11:36.761  4901  4925 I app_process64:     #2 0x710fe2f8  (/system/framework/arm64/boot-framework.oat+0x29b2f8)
+11-26 19:11:36.761  4901  4925 I app_process64: 
+11-26 19:11:36.761  4901  4925 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4925 (Thread-2), pid 4901 (.example.fuzzer)

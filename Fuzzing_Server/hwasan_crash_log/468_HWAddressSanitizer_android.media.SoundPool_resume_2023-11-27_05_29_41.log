@@ -1,0 +1,14 @@
+
+android.media.SoundPool|resume|int|void
+
+objfileName: 1701023403040.obj
+
+android.media.SoundPool|resume
+
+android.media.SoundPool|resume|2023-11-27 05:29:41
+11-26 18:30:03.082 16630 16653 I app_process64: ==16630==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7436370
+11-26 18:30:03.082 16630 16653 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T70988
+11-26 18:30:03.098 16630 16653 I app_process64:     #0 0x7cd743636c  (/system/lib64/libbinder.so+0x7236c)
+11-26 18:30:03.098 16630 16653 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-26 18:30:03.098 16630 16653 I app_process64: 
+11-26 18:30:03.099 16630 16653 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 16653 (Thread-2), pid 16630 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.view.SurfaceControl|nativeTransferTouchFocus|long, android.os.IBinder, android.os.IBinder|void
+
+objfileName: 1701021095278.obj
+
+android.view.SurfaceControl|nativeTransferTouchFocus
+
+android.view.SurfaceControl|nativeTransferTouchFocus|2023-11-27 04:51:13
+11-26 17:51:35.306 30066 30089 I app_process64: ==30066==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000009f at pc 0x007cd8b4f2d4
+11-26 17:51:35.306 30066 30089 I app_process64: READ of size 8 at 0x00000000009f tags: 80/00 (ptr/mem) in thread T69513
+11-26 17:51:35.323 30066 30089 I app_process64:     #0 0x7cd8b4f2d0  (/system/lib64/libgui.so+0x1002d0)
+11-26 17:51:35.323 30066 30089 I app_process64:     #1 0x7cd8d24218  (/system/lib64/libandroid_runtime.so+0x150218)
+11-26 17:51:35.323 30066 30089 I app_process64:     #2 0x71129350  (/system/framework/arm64/boot-framework.oat+0x2c6350)
+11-26 17:51:35.323 30066 30089 I app_process64: 
+11-26 17:51:35.323 30066 30089 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 30089 (Thread-2), pid 30066 (.example.fuzzer)

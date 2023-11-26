@@ -1,0 +1,15 @@
+
+android.view.VelocityTracker|nativeDispose|long|void
+
+objfileName: 1701028119818.obj
+
+android.view.VelocityTracker|nativeDispose
+
+android.view.VelocityTracker|nativeDispose|2023-11-27 06:48:17
+11-26 19:48:39.841 22344 22367 I app_process64: ==22344==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000010 at pc 0x007cd6f4a360
+11-26 19:48:39.841 22344 22367 I app_process64: READ of size 8 at 0x000000000010 tags: 80/00 (ptr/mem) in thread T74058
+11-26 19:48:39.857 22344 22367 I app_process64:     #0 0x7cd6f4a35c  (/system/lib64/libinput.so+0x3535c)
+11-26 19:48:39.857 22344 22367 I app_process64:     #1 0x7cd8d30e84  (/system/lib64/libandroid_runtime.so+0x15ce84)
+11-26 19:48:39.857 22344 22367 I app_process64:     #2 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-26 19:48:39.857 22344 22367 I app_process64: 
+11-26 19:48:39.858 22344 22367 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 22367 (Thread-2), pid 22344 (.example.fuzzer)
