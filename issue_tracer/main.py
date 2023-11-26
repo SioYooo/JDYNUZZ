@@ -21,6 +21,7 @@ aosp_count_dict = {}
 code_start_pattern = "<code>"
 code_end_pattern = "</code>"
 save_pattern_2 = ".so"
+id_tag_dict = {}
 
 
 def args_parse(input_args):
@@ -355,17 +356,26 @@ def get_aosp_version():
             continue
         # 获取第一列的内容
         td = tds[0]
+        # 获取第二列的内容
+        td2 = tds[1]
         aosp_build_list.append(td.text)
+        id_tag_dict[td.text] = td2.text
     # 将 aosp_build_list 写入文件
     with open("aosp_build_list.txt", "w", encoding='utf-8') as f:
         for item in aosp_build_list:
             f.write(item + "\n")
+
+    # 将 id 和 tag 写入文件
+    with open("id_tag_dict.txt", "w", encoding='utf-8') as f2:
+        for key in id_tag_dict.keys():
+            f2.write(key + " " + id_tag_dict[key] + "\n")
+
     print("Finished processing aosp_build_list.")
 
 
 if __name__ == "__main__":
     args = sys.argv
-    if "aosp_build_list.txt" not in os.listdir():
+    if "aosp_build_list.txt" not in os.listdir() or "id_tag_dict.txt" not in os.listdir():
         get_aosp_version()
     else:
         with open("aosp_build_list.txt", "r", encoding='utf-8') as f:

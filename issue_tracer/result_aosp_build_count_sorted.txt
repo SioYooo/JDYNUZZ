@@ -97,4 +97,24 @@ NBD90X: 1
 NDE63U: 1
 N2G48B: 1
 MXB48T: 1
+NMF26F: 1
+**************************************************
+FIXED: 52
+INFEASIBLE: 42
+OBSOLETE: 41
+ASSIGNED: 14
+INTENDED_BEHAVIOR: 12
+NOT_REPRODUCIBLE: 10
+col: 7
+DUPLICATE: 6
+ACCEPTED: 1
+NEW: 1
+**************************************************
+FIXED: 52
+OBSOLETE: 41
+ASSIGNED: 14
+col: 7
+DUPLICATE: 6
+ACCEPTED: 1
+NEW: 1
 **************************************************
