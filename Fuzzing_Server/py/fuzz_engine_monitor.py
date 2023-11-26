@@ -3,9 +3,8 @@ import subprocess
 import multiprocessing
 import time
 
-
-def run_command(cmd):
-    os.chdir("/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/")  # 切换目录
+def run_command(cmd, shared_data):
+    os.chdir("/home/siyu/tifs/JDYNUZZ/Fuzzing_Server/")
     process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
     while True:
@@ -19,10 +18,11 @@ def run_command(cmd):
                 shared_data['last_update'] = time.time()
 
 
-def monitor_and_restart(cmd, shared_data):
+def monitor_and_restart(cmd_template, shared_data):
     while True:
-        # 启动 run_command 进程
-        command_process = multiprocessing.Process(target=run_command, args=(cmd,))
+        current_index = shared_data.get('api_index')
+        cmd = cmd_template.format(api_index=current_index)
+        command_process = multiprocessing.Process(target=run_command, args=(cmd, shared_data))
         command_process.start()
 
         last_index = None
@@ -32,15 +32,15 @@ def monitor_and_restart(cmd, shared_data):
             if last_index is not None and last_index == current_index:
                 print("api_index 20秒内没有变化，准备重启进程")
                 kill_process()
-                command_process.terminate()  # 杀死当前进程
-                command_process.join()  # 等待进程结束
-                break  # 跳出内层循环，重新启动命令
+                command_process.terminate()
+                command_process.join()
+                break
             last_index = current_index
 
 
+
 def kill_process():
-    # 查找进程
-    cmd = 'ps -ef | grep "java -jar fuzzEngine.jar"'
+    cmd = 'ps -ef | grep "java -jar fuzzEngine.jar -i"'
     process = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
     output = process.stdout.readline()
     if output == '' and process.poll() is not None:
@@ -57,8 +57,7 @@ if __name__ == "__main__":
     time.sleep(1)
     manager = multiprocessing.Manager()
     shared_data = manager.dict({'api_index': 0, 'last_update': time.time()})
-    # cmd = 'java -jar fuzzEngine.jar'
-    cmd = f"java -jar fuzzEngine.jar -i {shared_data.get('api_index')}"
-    monitor_process = multiprocessing.Process(target=monitor_and_restart, args=(cmd, shared_data))
+    cmd_template = "java -jar fuzzEngine.jar -i {api_index}"
+    monitor_process = multiprocessing.Process(target=monitor_and_restart, args=(cmd_template, shared_data))
     monitor_process.start()
     monitor_process.join()

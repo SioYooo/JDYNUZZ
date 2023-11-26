@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e7430d-2fd9-4732-928c-d6a1221a3cd2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JNI_Analyzer/jni10.0/jni_backup.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fuzzing Client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing Client/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/fuzzEngine.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/fuzzEngine.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/py/fuzz_engine_monitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/py/fuzz_engine_monitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fuzzing_Server/src/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fuzzing_Server/src/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/debug_index.log" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/debug_index.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/dependency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency/dependency_api_call_sequence.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency/dependency_api_call_sequence_graphs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency/dependency_api_call_sequence_paths.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/dependency_analyzsis.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/dependency_analyzsis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JNI_Analyzer/helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/JNI_Analyzer/helper.py" afterDir="false" />
-    </list>
+    <list default="true" id="e5e7430d-2fd9-4732-928c-d6a1221a3cd2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -96,7 +81,7 @@
       <workItem from="1700787682420" duration="2759000" />
       <workItem from="1700806784088" duration="285000" />
       <workItem from="1700817080606" duration="10150000" />
-      <workItem from="1700919965659" duration="19843000" />
+      <workItem from="1700919965659" duration="20032000" />
     </task>
     <servers />
   </component>
