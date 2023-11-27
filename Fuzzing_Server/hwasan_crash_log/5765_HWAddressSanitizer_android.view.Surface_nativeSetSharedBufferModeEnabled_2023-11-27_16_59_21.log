@@ -1,0 +1,14 @@
+
+android.view.Surface|nativeSetSharedBufferModeEnabled|long, boolean|int
+
+objfileName: 1701064783012.obj
+
+android.view.Surface|nativeSetSharedBufferModeEnabled
+
+android.view.Surface|nativeSetSharedBufferModeEnabled|2023-11-27 16:59:21
+11-27 05:59:43.039  9019  9042 I app_process64: ==9019==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0000000000a8 at pc 0x007cd8d1c87c
+11-27 05:59:43.039  9019  9042 I app_process64: READ of size 8 at 0x0000000000a8 tags: 80/00 (ptr/mem) in thread T97628
+11-27 05:59:43.056  9019  9042 I app_process64:     #0 0x7cd8d1c878  (/system/lib64/libandroid_runtime.so+0x148878)
+11-27 05:59:43.056  9019  9042 I app_process64:     #1 0x710ee320  (/system/framework/arm64/boot-framework.oat+0x28b320)
+11-27 05:59:43.056  9019  9042 I app_process64: 
+11-27 05:59:43.056  9019  9042 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 9042 (Thread-2), pid 9019 (.example.fuzzer)

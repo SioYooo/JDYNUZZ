@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nGetOffsetForAdvance|long, char[], int, int, int, int, boolean, float|int
+
+objfileName: 1701037652078.obj
+
+android.graphics.Paint|nGetOffsetForAdvance
+
+android.graphics.Paint|nGetOffsetForAdvance|2023-11-27 09:27:10
+11-26 22:27:32.110  7520  7543 I app_process64: ==7520==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000097 at pc 0x007cd8d997e8
+11-26 22:27:32.110  7520  7543 I app_process64: READ of size 8 at 0x000000000097 tags: 80/00 (ptr/mem) in thread T80248
+11-26 22:27:32.126  7520  7543 I app_process64:     #0 0x7cd8d997e4  (/system/lib64/libandroid_runtime.so+0x1c57e4)
+11-26 22:27:32.127  7520  7543 I app_process64:     #1 0x710f7c4c  (/system/framework/arm64/boot-framework.oat+0x294c4c)
+11-26 22:27:32.127  7520  7543 I app_process64: 
+11-26 22:27:32.127  7520  7543 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 7543 (Thread-2), pid 7520 (.example.fuzzer)

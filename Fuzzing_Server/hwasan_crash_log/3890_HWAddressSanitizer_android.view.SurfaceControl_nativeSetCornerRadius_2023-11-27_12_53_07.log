@@ -1,0 +1,15 @@
+
+android.view.SurfaceControl|nativeSetCornerRadius|long, long, float|void
+
+objfileName: 1701050009735.obj
+
+android.view.SurfaceControl|nativeSetCornerRadius
+
+android.view.SurfaceControl|nativeSetCornerRadius|2023-11-27 12:53:07
+11-27 01:53:29.762 15074 15097 I app_process64: ==15074==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cdbb1cdc8
+11-27 01:53:29.762 15074 15097 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T88178
+11-27 01:53:29.779 15074 15097 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-27 01:53:29.779 15074 15097 I app_process64:     #1 0x7cd8d1fae4  (/system/lib64/libandroid_runtime.so+0x14bae4)
+11-27 01:53:29.779 15074 15097 I app_process64:     #2 0x711286e8  (/system/framework/arm64/boot-framework.oat+0x2c56e8)
+11-27 01:53:29.779 15074 15097 I app_process64: 
+11-27 01:53:29.779 15074 15097 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 15097 (Thread-2), pid 15074 (.example.fuzzer)

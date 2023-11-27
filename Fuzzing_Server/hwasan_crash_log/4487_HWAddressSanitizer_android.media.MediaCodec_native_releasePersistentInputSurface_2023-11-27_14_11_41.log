@@ -1,0 +1,13 @@
+
+android.media.MediaCodec|native_releasePersistentInputSurface|android.view.Surface|void
+
+objfileName: 1701054723136.obj
+
+android.media.MediaCodec|native_releasePersistentInputSurface|2023-11-27 14:11:41
+11-27 03:12:03.180 22090 22114 I app_process64: ==22090==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd7442408
+11-27 03:12:03.180 22090 22114 I app_process64: READ of size 8 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T91188
+11-27 03:12:03.196 22090 22114 I app_process64:     #0 0x7cd7442404  (/system/lib64/libbinder.so+0x7e404)
+11-27 03:12:03.196 22090 22114 I app_process64:     #1 0x7cd8d542a8  (/system/lib64/libandroid_runtime.so+0x1802a8)
+11-27 03:12:03.196 22090 22114 I app_process64:     #2 0x710ed0e8  (/system/framework/arm64/boot-framework.oat+0x28a0e8)
+11-27 03:12:03.196 22090 22114 I app_process64: 
+11-27 03:12:03.196 22090 22114 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 22114 (Thread-2), pid 22090 (.example.fuzzer)

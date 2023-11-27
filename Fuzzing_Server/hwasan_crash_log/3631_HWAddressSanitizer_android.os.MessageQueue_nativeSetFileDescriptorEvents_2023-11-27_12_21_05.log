@@ -1,0 +1,14 @@
+
+android.os.MessageQueue|nativeSetFileDescriptorEvents|long, int, int|void
+
+objfileName: 1701048087274.obj
+
+android.os.MessageQueue|nativeSetFileDescriptorEvents
+
+android.os.MessageQueue|nativeSetFileDescriptorEvents|2023-11-27 12:21:05
+11-27 01:21:27.300 30612 30635 I app_process64: ==30612==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cd8d52918
+11-27 01:21:27.300 30612 30635 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T86883
+11-27 01:21:27.316 30612 30635 I app_process64:     #0 0x7cd8d52914  (/system/lib64/libandroid_runtime.so+0x17e914)
+11-27 01:21:27.316 30612 30635 I app_process64:     #1 0x710f2108  (/system/framework/arm64/boot-framework.oat+0x28f108)
+11-27 01:21:27.316 30612 30635 I app_process64: 
+11-27 01:21:27.317 30612 30635 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 30635 (Thread-2), pid 30612 (.example.fuzzer)

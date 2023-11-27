@@ -1,0 +1,14 @@
+
+android.graphics.BaseCanvas|nDrawColor|long, int, int|void
+
+objfileName: 1701059259815.obj
+
+android.graphics.BaseCanvas|nDrawColor
+
+android.graphics.BaseCanvas|nDrawColor|2023-11-27 15:27:17
+11-27 04:27:39.842 25044 25067 I app_process64: ==25044==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8cfd474
+11-27 04:27:39.842 25044 25067 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T94028
+11-27 04:27:39.858 25044 25067 I app_process64:     #0 0x7cd8cfd470  (/system/lib64/libandroid_runtime.so+0x129470)
+11-27 04:27:39.858 25044 25067 I app_process64:     #1 0x710f2108  (/system/framework/arm64/boot-framework.oat+0x28f108)
+11-27 04:27:39.858 25044 25067 I app_process64: 
+11-27 04:27:39.858 25044 25067 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 25067 (Thread-2), pid 25044 (.example.fuzzer)

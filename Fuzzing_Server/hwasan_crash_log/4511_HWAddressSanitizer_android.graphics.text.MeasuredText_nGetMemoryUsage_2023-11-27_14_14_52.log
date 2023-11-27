@@ -1,0 +1,14 @@
+
+android.graphics.text.MeasuredText|nGetMemoryUsage|long|int
+
+objfileName: 1701054914693.obj
+
+android.graphics.text.MeasuredText|nGetMemoryUsage
+
+android.graphics.text.MeasuredText|nGetMemoryUsage|2023-11-27 14:14:52
+11-27 03:15:14.718 23526 23549 I app_process64: ==23526==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd8db13ec
+11-27 03:15:14.718 23526 23549 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T91308
+11-27 03:15:14.735 23526 23549 I app_process64:     #0 0x7cd8db13e8  (/system/lib64/libandroid_runtime.so+0x1dd3e8)
+11-27 03:15:14.735 23526 23549 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 03:15:14.735 23526 23549 I app_process64: 
+11-27 03:15:14.735 23526 23549 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 23549 (Thread-2), pid 23526 (.example.fuzzer)

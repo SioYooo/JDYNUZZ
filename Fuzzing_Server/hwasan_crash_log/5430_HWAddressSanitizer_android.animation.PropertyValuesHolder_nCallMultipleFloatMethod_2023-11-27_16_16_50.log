@@ -1,0 +1,19 @@
+
+android.animation.PropertyValuesHolder|nCallMultipleFloatMethod|java.lang.Object, long, float[]|void
+
+objfileName: 1701062232235.obj
+
+android.animation.PropertyValuesHolder|nCallMultipleFloatMethod
+
+android.animation.PropertyValuesHolder|nCallMultipleFloatMethod|2023-11-27 16:16:50
+11-27 05:17:12.270 16465 16488 I app_process64: ==16465==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd59e2b40
+11-27 05:17:12.270 16465 16488 I app_process64: READ of size 4 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T95928
+11-27 05:17:12.287 16465 16488 I app_process64:     #0 0x7cd59e2b3c  (/apex/com.android.runtime/lib64/libart.so+0x534b3c)
+11-27 05:17:12.287 16465 16488 I app_process64:     #1 0x7cd59e0d6c  (/apex/com.android.runtime/lib64/libart.so+0x532d6c)
+11-27 05:17:12.287 16465 16488 I app_process64:     #2 0x7cd59dfdb8  (/apex/com.android.runtime/lib64/libart.so+0x531db8)
+11-27 05:17:12.287 16465 16488 I app_process64:     #3 0x7cd59e9258  (/apex/com.android.runtime/lib64/libart.so+0x53b258)
+11-27 05:17:12.287 16465 16488 I app_process64:     #4 0x7cd59ea72c  (/apex/com.android.runtime/lib64/libart.so+0x53c72c)
+11-27 05:17:12.287 16465 16488 I app_process64:     #5 0x7cd8e0b19c  (/system/lib64/libandroid_runtime.so+0x23719c)
+11-27 05:17:12.287 16465 16488 I app_process64:     #6 0x710eb5c0  (/system/framework/arm64/boot-framework.oat+0x2885c0)
+11-27 05:17:12.287 16465 16488 I app_process64: 
+11-27 05:17:12.287 16465 16488 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 16488 (Thread-2), pid 16465 (.example.fuzzer)

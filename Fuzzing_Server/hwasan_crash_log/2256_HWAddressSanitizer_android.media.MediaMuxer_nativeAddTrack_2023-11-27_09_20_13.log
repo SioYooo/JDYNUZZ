@@ -1,0 +1,15 @@
+
+android.media.MediaMuxer|nativeAddTrack|long, java.lang.String[], java.lang.Object[]|int
+
+objfileName: 1701037235699.obj
+
+android.media.MediaMuxer|nativeAddTrack
+
+android.media.MediaMuxer|nativeAddTrack|2023-11-27 09:20:13
+11-26 22:20:35.733  4299  4322 I app_process64: ==4299==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-26 22:20:35.733  4299  4322 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T79978
+11-26 22:20:35.749  4299  4322 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 22:20:35.749  4299  4322 I app_process64:     #1 0x7cc0678194  (/system/lib64/libmedia_jni.so+0x69194)
+11-26 22:20:35.749  4299  4322 I app_process64:     #2 0x7110a780  (/system/framework/arm64/boot-framework.oat+0x2a7780)
+11-26 22:20:35.749  4299  4322 I app_process64: 
+11-26 22:20:35.749  4299  4322 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4322 (Thread-2), pid 4299 (.example.fuzzer)

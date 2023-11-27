@@ -1,0 +1,15 @@
+
+android.graphics.HardwareRenderer|nDestroy|long, long|void
+
+objfileName: 1701054700810.obj
+
+android.graphics.HardwareRenderer|nDestroy
+
+android.graphics.HardwareRenderer|nDestroy|2023-11-27 14:11:18
+11-27 03:11:40.836 21906 21929 I app_process64: ==21906==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000450 at pc 0x007cd8d292b4
+11-27 03:11:40.836 21906 21929 I app_process64: READ of size 8 at 0x000000000450 tags: 80/00 (ptr/mem) in thread T91173
+11-27 03:11:40.853 21906 21929 I app_process64:     #0 0x7cd8d292b0  (/system/lib64/libandroid_runtime.so+0x1552b0)
+11-27 03:11:40.853 21906 21929 I app_process64:     #1 0x710f29e0  (/system/framework/arm64/boot-framework.oat+0x28f9e0)
+11-27 03:11:40.853 21906 21929 I app_process64: 
+--------- beginning of crash
+11-27 03:11:40.853 21906 21929 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 21929 (Thread-2), pid 21906 (.example.fuzzer)

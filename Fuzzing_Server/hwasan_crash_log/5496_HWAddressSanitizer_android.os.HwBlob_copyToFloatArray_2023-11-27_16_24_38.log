@@ -1,0 +1,109 @@
+
+android.os.HwBlob|copyToFloatArray|long, float[], int|void
+
+objfileName: 1701062699990.obj
+
+android.os.HwBlob|copyToFloatArray
+
+android.os.HwBlob|copyToFloatArray|2023-11-27 16:24:38
+11-27 05:25:00.027 21545 21568 I app_process64: ==21545==ERROR: HWAddressSanitizer: requested allocation size 0xffffffffb124f525 exceeds maximum supported size of 0x80000000
+11-27 05:25:00.044 21545 21568 I app_process64:     #0 0x7cd90f93c4  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1b3c4)
+11-27 05:25:00.044 21545 21568 I app_process64:     #1 0x7cd95e946c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x4346c)
+11-27 05:25:00.044 21545 21568 I app_process64:     #2 0x7cd8d406d8  (/system/lib64/libandroid_runtime.so+0x16c6d8)
+11-27 05:25:00.044 21545 21568 I app_process64:     #3 0x710f0f84  (/system/framework/arm64/boot-framework.oat+0x28df84)
+11-27 05:25:00.058 21545 21568 I app_process64:     #4 0x7cd3f85f0b  (/system/framework/framework.jar+0x1008f0b)
+11-27 05:25:00.058 21545 21568 I app_process64: 
+11-27 05:25:00.058 21545 21568 I app_process64: ==21545==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+11-27 05:25:00.058 21545 21568 I app_process64: SUMMARY: HWAddressSanitizer: allocation-size-too-big (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1b3c4) 
+11-27 05:25:00.058 21545 21568 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 21568 (Thread-2), pid 21545 (.example.fuzzer)
+11-27 05:25:00.060  1669  1669 D KeyguardClockSwitch: Updating clock: 525
+11-27 05:25:00.101 21574 21574 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+11-27 05:25:00.102  1083  1083 I /system/bin/tombstoned: received crash request for pid 21568
+11-27 05:25:00.102 21574 21574 I crash_dump64: performing dump of process 21545 (target tid = 21568)
+11-27 05:25:00.111 21574 21574 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-27 05:25:00.111 21574 21574 F DEBUG   : Build fingerprint: 'Android/aosp_blueline/blueline:10/QP1A.190711.020/eng.siyu.20231125.030149:userdebug/test-keys'
+11-27 05:25:00.111 21574 21574 F DEBUG   : Revision: 'MP1.0'
+11-27 05:25:00.111 21574 21574 F DEBUG   : ABI: 'arm64'
+11-27 05:25:00.112 21574 21574 F DEBUG   : Timestamp: 2023-11-27 05:25:00+0000
+11-27 05:25:00.112 21574 21574 F DEBUG   : pid: 21545, tid: 21568, name: Thread-2  >>> com.example.fuzzer <<<
+11-27 05:25:00.112 21574 21574 F DEBUG   : uid: 10109
+11-27 05:25:00.112 21574 21574 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x0  0000000000000000  x1  0000000000005440  x2  0000000000000006  x3  5500007c6f44d350
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x4  0000007c6f44d3d0  x5  fefefefefefefeff  x6  fefefefefefefeff  x7  7f7f7f7f7f7f7f7f
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x8  00000000000000f0  x9  0200007400000000  x10 0000007bc6f44d3d  x11 0000007bc6f44d3c
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x12 0000000000000055  x13 0000000000000055  x14 00000007c6f44d1a  x15 00000007c6f44d22
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x16 0000000000000055  x17 0000000000000055  x18 0000007c6f0c6000  x19 0200007400000000
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x20 5400007c6f44d3d0  x21 5600007c6f44d340  x22 5700007c6f44d320  x23 5500007c6f44d350
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x24 0000000000005429  x25 0000000000005440  x26 00000000ffffffff  x27 cf0000471dd86e30
+11-27 05:25:00.112 21574 21574 F DEBUG   :     x28 0000007c6f452020  x29 0000007c6f44d4a0
+11-27 05:25:00.112 21574 21574 F DEBUG   :     sp  0000007c6f44d320  lr  0000007cd9646098  pc  0000007cd96460b4
+11-27 05:25:00.306 21574 21574 F DEBUG   : 
+11-27 05:25:00.306 21574 21574 F DEBUG   : backtrace:
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #00 pc 00000000000a00b4  /apex/com.android.runtime/lib64/bionic/libc.so (abort+352) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #01 pc 00000000000276ac  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Abort()+56) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #02 pc 0000000000026ab0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Die()+200) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #03 pc 00000000000287a0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::ReportAllocationSizeTooBig(unsigned long, unsigned long, __sanitizer::StackTrace const*)+76) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #04 pc 00000000000183d0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::HwasanAllocate(__sanitizer::StackTrace*, unsigned long, unsigned long, bool)+708) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #05 pc 0000000000018434  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::hwasan_calloc(unsigned long, unsigned long, __sanitizer::StackTrace*)+56) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #06 pc 000000000001b3f8  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer_calloc+128) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #07 pc 000000000004346c  /apex/com.android.runtime/lib64/bionic/libc.so (calloc+56) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #08 pc 000000000016c6d8  /system/lib64/libandroid_runtime.so (JHwBlob_native_setup(_JNIEnv*, _jobject*, int)+300) (BuildId: 608a42a16f2b1474852a08d1c1af4e6d)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #09 pc 000000000028df84  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+132) (BuildId: fc6c362971570fa38236aa93a2426909230f6823)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #10 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #11 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.306 21574 21574 F DEBUG   :       #12 pc 0000000000418c08  /apex/com.android.runtime/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+916) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #13 pc 00000000004109a0  /apex/com.android.runtime/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1572) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #14 pc 000000000090c4ec  /apex/com.android.runtime/lib64/libart.so (MterpInvokeDirect+1120) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #15 pc 0000000000139914  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_direct+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #16 pc 00000000002f62c2  /system/framework/framework.jar (android.os.HwBlob.<init>+6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #17 pc 00000000003bda88  /apex/com.android.runtime/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+1028) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #18 pc 00000000008ee318  /apex/com.android.runtime/lib64/libart.so (artQuickToInterpreterBridge+2540) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #19 pc 0000000000148468  /apex/com.android.runtime/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #20 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #21 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #22 pc 0000000000775fcc  /apex/com.android.runtime/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+544) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #23 pc 000000000077a964  /apex/com.android.runtime/lib64/libart.so (art::InvokeConstructor(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ObjPtr<art::mirror::Object>, _jobject*)+1052) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #24 pc 000000000068ca18  /apex/com.android.runtime/lib64/libart.so (art::Constructor_newInstance0(_JNIEnv*, _jobject*, _jobjectArray*)+1292) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #25 pc 00000000000c0b98  /system/framework/arm64/boot.oat (art_jni_trampoline+152) (BuildId: 9acdc84a8fcd063a1fd61d0dc163b27bfcdc0159)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #26 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #27 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #28 pc 0000000000418c08  /apex/com.android.runtime/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+916) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #29 pc 00000000004109a0  /apex/com.android.runtime/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1572) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #30 pc 000000000090c4ec  /apex/com.android.runtime/lib64/libart.so (MterpInvokeDirect+1120) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #31 pc 0000000000139914  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_direct+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #32 pc 00000000000f780c  /apex/com.android.runtime/javalib/core-oj.jar (java.lang.reflect.Constructor.newInstance+8)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #33 pc 0000000000908608  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+3164) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.307 21574 21574 F DEBUG   :       #34 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #35 pc 00000000000055e2  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.handleObject+598)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #36 pc 0000000000908608  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+3164) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #37 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #38 pc 0000000000004d26  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.process+4878)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #39 pc 000000000090ef04  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtualRange+2664) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #40 pc 0000000000139b14  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual_range+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #41 pc 0000000000006186  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.TCPServer+602)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #42 pc 0000000000908608  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+3164) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #43 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #44 pc 0000000000002ee0  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity$2.run+4)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #45 pc 000000000090b494  /apex/com.android.runtime/lib64/libart.so (MterpInvokeInterface+3644) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #46 pc 0000000000139a14  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_interface+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #47 pc 00000000000ea918  /apex/com.android.runtime/javalib/core-oj.jar (java.lang.Thread.run+8)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #48 pc 00000000003bda88  /apex/com.android.runtime/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+1028) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #49 pc 00000000008ee318  /apex/com.android.runtime/lib64/libart.so (artQuickToInterpreterBridge+2540) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #50 pc 0000000000148468  /apex/com.android.runtime/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #51 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #52 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #53 pc 0000000000775fcc  /apex/com.android.runtime/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+544) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #54 pc 0000000000777ea0  /apex/com.android.runtime/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue const*)+888) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #55 pc 00000000007df2b8  /apex/com.android.runtime/lib64/libart.so (art::Thread::CreateCallback(void*)+2456) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #56 pc 000000000012f4fc  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 05:25:00.308 21574 21574 F DEBUG   :       #57 pc 00000000000a2b3c  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 05:25:00.851  1083  1083 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_23
+11-27 05:25:00.856  1371 21581 W ActivityTaskManager:   Force finishing activity com.example.fuzzer/.MainActivity
+11-27 05:25:00.856  1371 21582 I DropBoxManagerService: add tag=system_app_native_crash isTagEnabled=true flags=0x2
+11-27 05:25:00.864  1371  1446 I BootReceiver: Copying /data/tombstones/tombstone_23 to DropBox (SYSTEM_TOMBSTONE)
+11-27 05:25:00.868  1371  1446 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+11-27 05:25:00.871  1371  1392 I ActivityManager: Showing crash dialog for package com.example.fuzzer u0
+code null: crash before code was sent
+11-27 05:25:00.927  1371  1572 W InputDispatcher: channel '670e954 com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+11-27 05:25:00.927  1371  1572 E InputDispatcher: channel '670e954 com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+11-27 05:25:00.928   832   832 I Zygote  : Process 21545 exited due to signal 6 (Aborted)

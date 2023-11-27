@@ -1,0 +1,158 @@
+
+android.util.StatsLogInternal|write|int, byte[], int, int, int, long, long, int, int, int|int
+
+objfileName: 1701036105839.obj
+
+android.util.StatsLogInternal|write
+code 0: success
+
+android.util.StatsLogInternal|write|2023-11-27 09:01:23
+11-26 22:01:45.869 11327 11329 I statsd  : ==11327==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0047f1130400 at pc 0x0057f1225190
+11-26 22:01:45.869 26273 26296 I System.out: 保存好了
+11-26 22:01:45.869 11327 11329 I statsd  : READ of size 4 at 0x0047f1130400 tags: 24/00 (ptr/mem) in thread T2
+11-26 22:01:45.882 11327 11329 I statsd  :     #0 0x57f122518c  (/system/bin/statsd+0xf318c)
+11-26 22:01:45.882 11327 11329 I statsd  :     #1 0x57f120f0b4  (/system/bin/statsd+0xdd0b4)
+11-26 22:01:45.882 11327 11329 I statsd  :     #2 0x57f1213ebc  (/system/bin/statsd+0xe1ebc)
+11-26 22:01:45.882 11327 11329 I statsd  :     #3 0x57f121dad8  (/system/bin/statsd+0xebad8)
+11-26 22:01:45.882 11327 11329 I statsd  :     #4 0x57f121dabc  (/system/bin/statsd+0xebabc)
+11-26 22:01:45.882 11327 11329 I statsd  :     #5 0x57f121dab0  (/system/bin/statsd+0xebab0)
+11-26 22:01:45.883 11327 11329 I statsd  :     #6 0x57f121da34  (/system/bin/statsd+0xeba34)
+11-26 22:01:45.883 11327 11329 I statsd  :     #7 0x7c0b34f4fc  (/apex/com.android.runtime/lib64/bionic/libc.so+0x12f4fc)
+11-26 22:01:45.883 11327 11329 I statsd  :     #8 0x7c0b2c2b3c  (/apex/com.android.runtime/lib64/bionic/libc.so+0xa2b3c)
+11-26 22:01:45.883 11327 11329 I statsd  : 
+11-26 22:01:45.883 11327 11329 I statsd  : Thread: T7 0x00730001e000 stack: [0x007c02e17000,0x007c02f0fd50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.883 11327 11329 I statsd  : Thread: T6 0x00730001a000 stack: [0x007c03f14000,0x007c0400cd50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.883 11327 11329 I statsd  : Thread: T5 0x007300016000 stack: [0x007c05011000,0x007c05109d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.884 11327 11329 I statsd  : Thread: T4 0x007300012000 stack: [0x007c0610e000,0x007c06206d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.884 11327 11329 I statsd  : Thread: T3 0x00730000e000 stack: [0x007c0720b000,0x007c07303d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.884 11327 11329 I statsd  : Thread: T2 0x00730000a000 stack: [0x007c08308000,0x007c08400d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.884 11327 11329 I statsd  : Thread: T1 0x007300006000 stack: [0x007c09503000,0x007c095fbd50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.884 11327 11329 I statsd  : Thread: T0 0x007300002000 stack: [0x007feb9e4000,0x007fec1e4000) sz: 8388608 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.884 11327 11329 I statsd  : HWAddressSanitizer can not describe address in more detail.
+11-26 22:01:45.884 11327 11329 I statsd  : Memory tags around the buggy address (one tag corresponds to 16 bytes):
+11-26 22:01:45.884 11327 11329 I statsd  :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.885 11327 11329 I chatty  : uid=1066(statsd) Binder:11327_2 identical 6 lines
+11-26 22:01:45.885 11327 11329 I statsd  :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.885 11327 11329 I statsd  : =>[00] 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 <=
+11-26 22:01:45.885 11327 11329 I statsd  :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.885 11327 11329 I chatty  : uid=1066(statsd) Binder:11327_2 identical 5 lines
+11-26 22:01:45.885 11327 11329 I statsd  :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.885 11327 11329 I statsd  : Registers where the failure occurred (pc 0x0057f1225190):
+11-26 22:01:45.885 11327 11329 I statsd  :     x0  24000047f1130400  x1  0000000080000000  x2  000000000002efe0  x3  0000007c0847ccd0
+11-26 22:01:45.885 11327 11329 I statsd  :     x4  0000007c084009b8  x5  0000007c08400b00  x6  0000007c08400af0  x7  0000007c08400ad0
+11-26 22:01:45.885 11327 11329 I statsd  :     x8  24000049f1130400  x9  0200007400000000  x10 0000000000000000  x11 00000007c0840098
+11-26 22:01:45.885 11327 11329 I statsd  :     x12 0000000000000002  x13 02000073ffffffff  x14 00000007c08400b4  x15 0000000000000002
+11-26 22:01:45.886 11327 11329 I statsd  :     x16 0000007c0aa38198  x17 0000000000000024  x18 0000007c07914000  x19 00000057f123cf48
+11-26 22:01:45.886 11327 11329 I statsd  :     x20 0200007400000000  x21 0000000080000000  x22 8600007c08400980  x23 0000007c08401020
+11-26 22:01:45.886 11327 11329 I statsd  :     x24 0000007c08400990  x25 0000007c0847ca84  x26 0000007c084009a0  x27 0000007c0847ca85
+11-26 22:01:45.886 11327 11329 I statsd  :     x28 2a000039f1137300  x29 0000007c08400a00  x30 00000057f1225190
+11-26 22:01:45.886 11327 11329 I statsd  : SUMMARY: HWAddressSanitizer: tag-mismatch (/system/bin/statsd+0xf318c) 
+11-26 22:01:45.886 11327 11329 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 11329 (Binder:11327_2), pid 11327 (Binder:11327_2)
+11-26 22:01:45.923 26301 26301 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+11-26 22:01:45.924  1083  1083 I /system/bin/tombstoned: received crash request for pid 11329
+11-26 22:01:45.925 26301 26301 I crash_dump64: performing dump of process 11327 (target tid = 11329)
+11-26 22:01:45.931 26301 26301 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-26 22:01:45.931 26301 26301 F DEBUG   : Build fingerprint: 'Android/aosp_blueline/blueline:10/QP1A.190711.020/eng.siyu.20231125.030149:userdebug/test-keys'
+11-26 22:01:45.931 26301 26301 F DEBUG   : Revision: 'MP1.0'
+11-26 22:01:45.931 26301 26301 F DEBUG   : ABI: 'arm64'
+11-26 22:01:45.932 26301 26301 F DEBUG   : Timestamp: 2023-11-26 22:01:45+0000
+11-26 22:01:45.932 26301 26301 F DEBUG   : pid: 11327, tid: 11329, name: Binder:11327_2  >>> /system/bin/statsd <<<
+11-26 22:01:45.932 26301 26301 F DEBUG   : uid: 1066
+11-26 22:01:45.932 26301 26301 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-26 22:01:45.933 26301 26301 F DEBUG   : Abort message: '==11327==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0047f1130400 at pc 0x0057f1225190
+11-26 22:01:45.933 26301 26301 F DEBUG   : READ of size 4 at 0x0047f1130400 tags: 24/00 (ptr/mem) in thread T2
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #0 0x57f122518c  (/system/bin/statsd+0xf318c)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #1 0x57f120f0b4  (/system/bin/statsd+0xdd0b4)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #2 0x57f1213ebc  (/system/bin/statsd+0xe1ebc)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #3 0x57f121dad8  (/system/bin/statsd+0xebad8)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #4 0x57f121dabc  (/system/bin/statsd+0xebabc)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #5 0x57f121dab0  (/system/bin/statsd+0xebab0)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #6 0x57f121da34  (/system/bin/statsd+0xeba34)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #7 0x7c0b34f4fc  (/apex/com.android.runtime/lib64/bionic/libc.so+0x12f4fc)
+11-26 22:01:45.933 26301 26301 F DEBUG   :     #8 0x7c0b2c2b3c  (/apex/com.android.runtime/lib64/bionic/libc.so+0xa2b3c)
+11-26 22:01:45.933 26301 26301 F DEBUG   : 
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T7 0x00730001e000 stack: [0x007c02e17000,0x007c02f0fd50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T6 0x00730001a000 stack: [0x007c03f14000,0x007c0400cd50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T5 0x007300016000 stack: [0x007c05011000,0x007c05109d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T4 0x007300012000 stack: [0x007c0610e000,0x007c06206d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T3 0x00730000e000 stack: [0x007c0720b000,0x007c07303d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T2 0x00730000a000 stack: [0x007c08308000,0x007c08400d50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T1 0x007300006000 stack: [0x007c09503000,0x007c095fbd50) sz: 1019216 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : Thread: T0 0x007300002000 stack: [0x007feb9e4000,0x007fec1e4000) sz: 8388608 tls: [0x000000000000,0x000000000000)
+11-26 22:01:45.933 26301 26301 F DEBUG   : HWAddressSanitizer can not describe address in more detail.
+11-26 22:01:45.933 26301 26301 F DEBUG   : Memory tags around the buggy address (one tag corresponds to 16 bytes):
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   : =>[00] 00  00  00  00  00  00  00  00  00  00  00  00  00  00  00 <=
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-26 22:01:45.933 26301 26301 F DEBUG   : Registers where the failure occurred (pc 0x0057f1225190):
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x0  24000047f1130400  x1  0000000080000000  x2  000000000002efe0  x3  0000007c0847ccd0
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x4  0000007c084009b8  x5  0000007c08400b00  x6  0000007c08400af0  x7  0000007c08400ad0
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x8  24000049f1130400  x9  0200007400000000  x10 0000000000000000  x11 00000007c0840098
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x12 0000000000000002  x13 02000073ffffffff  x14 00000007c08400b4  x15 0000000000000002
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x16 0000007c0aa38198  x17 0000000000000024  x18 0000007c07914000  x19 00000057f123cf48
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x20 0200007400000000  x21 0000000080000000  x22 8600007c08400980  x23 0000007c08401020
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x24 0000007c08400990  x25 0000007c0847ca84  x26 0000007c084009a0  x27 0000007c0847ca85
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x28 2a000039f1137300  x29 0000007c08400a00  x30 00000057f1225190
+11-26 22:01:45.933 26301 26301 F DEBUG   : SUMMARY: HWAddressSanitizer: tag-mismatch (/system/bin/statsd+0xf318c) 
+11-26 22:01:45.933 26301 26301 F DEBUG   : '
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x0  0000000000000000  x1  0000000000002c41  x2  0000000000000006  x3  9500007c084005c0
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x4  0000007c08400640  x5  8080808080808080  x6  8080808080808080  x7  0000000000000008
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x8  00000000000000f0  x9  0200007400000000  x10 0000007bc0840064  x11 0000007bc0840063
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x12 0000000000000095  x13 0000000000000095  x14 00000007c0840053  x15 00347b7b500f8111
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x16 0000000000000095  x17 0000000000000095  x18 0000007c07914000  x19 0200007400000000
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x20 9400007c08400640  x21 9600007c084005b0  x22 9700007c08400590  x23 9500007c084005c0
+11-26 22:01:45.933 26301 26301 F DEBUG   :     x24 0000000000002c3f  x25 0000000000002c41  x26 00000000ffffffff  x27 000000787f113040
+11-26 22:01:45.934 26301 26301 F DEBUG   :     x28 00000047f1130400  x29 0000007c08400710
+11-26 22:01:45.934 26301 26301 F DEBUG   :     sp  0000007c08400590  lr  0000007c0b2c0098  pc  0000007c0b2c00b4
+11-26 22:01:45.950 26301 26301 F DEBUG   : 
+11-26 22:01:45.950 26301 26301 F DEBUG   : backtrace:
+11-26 22:01:45.950 26301 26301 F DEBUG   :       #00 pc 00000000000a00b4  /apex/com.android.runtime/lib64/bionic/libc.so (abort+352) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #01 pc 00000000000276ac  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Abort()+56) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #02 pc 0000000000026ab0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Die()+200) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #03 pc 000000000001d828  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::ScopedReport::~ScopedReport()+120) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #04 pc 000000000001dee8  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::ReportTagMismatch(__sanitizer::StackTrace*, unsigned long, unsigned long, bool, bool, unsigned long*)+668) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #05 pc 000000000001c1c4  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::HandleTagMismatch(__hwasan::AccessInfo, unsigned long, unsigned long, ucontext*, unsigned long*)+232) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #06 pc 000000000001c0d8  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan_tag_mismatch_stub+76) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #07 pc 000000000001e1d8  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan_tag_mismatch+64) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-26 22:01:45.951 26301 26301 F DEBUG   :       #08 pc 00000000000f318c  /system/bin/statsd (android::os::statsd::StatsdStats::noteAtomLogged(int, int)+264) (BuildId: d4f9941465076a4f27e422ff42f01615)
+11-26 22:01:45.952 26301 26301 F DEBUG   :       #09 pc 00000000000dd0b4  /system/bin/statsd (android::os::statsd::StatsLogProcessor::OnLogEvent(android::os::statsd::LogEvent*)+640) (BuildId: d4f9941465076a4f27e422ff42f01615)
+11-26 22:01:45.952 26301 26301 F DEBUG   :       #10 pc 00000000000e1ebc  /system/bin/statsd (android::os::statsd::StatsService::readLogs()+140) (BuildId: d4f9941465076a4f27e422ff42f01615)
+11-26 22:01:45.952 26301 26301 F DEBUG   :       #11 pc 00000000000ebad8  /system/bin/statsd (_ZZN7android2os6statsd12StatsServiceC1ERKNS_2spINS_6LooperEEENSt3__110shared_ptrINS1_13LogEventQueueEEEENK3$_6clEv+24) (BuildId: d4f9941465076a4f27e422ff42f01615)
+11-26 22:01:45.952 26301 26301 F DEBUG   :       #12 pc 00000000000ebabc  /system/bin/statsd (_ZNSt3__18__invokeIZN7android2os6statsd12StatsServiceC1ERKNS1_2spINS1_6LooperEEENS_10shared_ptrINS3_13LogEventQueueEEEE3$_6JEEEDTclclsr3std3__1E7forwardIT_Efp_Espclsr3std3__1E7forwardIT0_Efp0_EEEOSE_DpOSF_+8) (BuildId: d4f9941465076a4f27e422ff42f01615)
+11-26 22:01:45.952 26301 26301 F DEBUG   :       #13 pc 00000000000ebab0  /system/bin/statsd (_ZNSt3__116__thread_executeINS_10unique_ptrINS_15__thread_structENS_14default_deleteIS2_EEEEZN7android2os6statsd12StatsServiceC1ERKNS6_2spINS6_6LooperEEENS_10shared_ptrINS8_13LogEventQueueEEEE3$_6JEJEEEvRNS_5tupleIJT_T0_DpT1_EEENS_15__tuple_indicesIJXspT2_EEEE+12) (BuildId: d4f9941465076a4f27e422ff42f01615)
+11-26 22:01:45.952 26301 26301 F DEBUG   :       #14 pc 00000000000eba34  /system/bin/statsd (_ZNSt3__114__thread_proxyINS_5tupleIJNS_10unique_ptrINS_15__thread_structENS_14default_deleteIS3_EEEEZN7android2os6statsd12StatsServiceC1ERKNS7_2spINS7_6LooperEEENS_10shared_ptrINS9_13LogEventQueueEEEE3$_6EEEEEPvSL_+56) (BuildId: d4f9941465076a4f27e422ff42f01615)
+11-26 22:01:45.953 26301 26301 F DEBUG   :       #15 pc 000000000012f4fc  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-26 22:01:45.953 26301 26301 F DEBUG   :       #16 pc 00000000000a2b3c  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-26 22:01:46.374  1371  1690 W NativeCrashListener: Couldn't find ProcessRecord for pid 11327
+11-26 22:01:46.376  1083  1083 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_18
+11-26 22:01:46.388  1371  3537 I StatsCompanionService: Statsd is dead - erase all my knowledge.
+11-26 22:01:46.388   606   606 I ServiceManager: service 'stats' died
+11-26 22:01:46.389  1371  3537 W AlarmManager: Unrecognized alarm listener com.android.server.stats.StatsCompanionService$AnomalyAlarmListener@215f1b6
+11-26 22:01:46.389  1371  3537 W AlarmManager: Unrecognized alarm listener com.android.server.stats.StatsCompanionService$PullingAlarmListener@bc18eb7
+11-26 22:01:46.398  1371  1446 I BootReceiver: Copying /data/tombstones/tombstone_18 to DropBox (SYSTEM_TOMBSTONE)
+11-26 22:01:46.400  1371  1446 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+11-26 22:01:46.467 26308 26308 I ServiceManagement: Registered android.frameworks.stats@1.0::IStats/default (start delay of 70ms)
+11-26 22:01:46.468 26308 26308 I statsd  : Statsd starts to listen to socket.
+11-26 22:01:46.474  1371  3537 I StatsCompanionService: Told statsd that StatsCompanionService is alive.
+11-26 22:01:46.500 26308 26312 E statsd  : Found dropped events: 1 error -2 last atom tag 186 from uid 1000
+11-26 22:01:46.891  1371  2478 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-26 22:01:48.884   861   861 I /vendor/bin/hw/android.hardware.health@2.0-service.crosshatch: Entry state_: 1 charger_status: Full batteryLevel: 98
+11-26 22:01:48.884   861   861 I /vendor/bin/hw/android.hardware.health@2.0-service.crosshatch: Exit state_: 1 batteryLevel: 100
+11-26 22:01:51.071  1371 24116 W ActivityManager: Ignoring remove of inactive process: ProcessRecord{14a04a7 0:com.example.fuzzer/u0a109}
+11-26 22:01:51.105  1371  1879 E InputDispatcher: Window handle Window{7a1ec54 u0 Application Error: com.example.fuzzer} has no registered input channel
+11-26 22:01:51.950  1371  1879 I ActivityManager: Force stopping com.example.fuzzer appid=10109 user=0: from pid 26317
+11-26 22:01:51.952  1371  1879 I ActivityManager: Killing 26273:com.example.fuzzer/u0a109 (adj 0): stop com.example.fuzzer
+11-26 22:01:51.954  1371  1879 W ActivityTaskManager: Force removing ActivityRecord{4faa801 u0 com.example.fuzzer/.MainActivity t15792 f}: app died, no saved state

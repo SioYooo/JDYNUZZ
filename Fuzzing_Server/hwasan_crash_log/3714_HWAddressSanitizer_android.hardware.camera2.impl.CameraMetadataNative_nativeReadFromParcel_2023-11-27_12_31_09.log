@@ -1,0 +1,17 @@
+
+android.hardware.camera2.impl.CameraMetadataNative|nativeReadFromParcel|android.os.Parcel|void
+
+objfileName: 1701048691273.obj
+
+android.hardware.camera2.impl.CameraMetadataNative|nativeReadFromParcel
+
+android.hardware.camera2.impl.CameraMetadataNative|nativeReadFromParcel|2023-11-27 12:31:09
+11-27 01:31:31.344  4468  4491 I app_process64: ==4468==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd743d950
+11-27 01:31:31.344  4468  4491 I app_process64: READ of size 8 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T87298
+11-27 01:31:31.360  4468  4491 I app_process64:     #0 0x7cd743d94c  (/system/lib64/libbinder.so+0x7994c)
+11-27 01:31:31.360  4468  4491 I app_process64:     #1 0x7cd84cf9b8  (/system/lib64/libcamera_client.so+0x4a9b8)
+11-27 01:31:31.361  4468  4491 I app_process64:     #2 0x7cd84cfea4  (/system/lib64/libcamera_client.so+0x4aea4)
+11-27 01:31:31.361  4468  4491 I app_process64:     #3 0x7cd8ddd954  (/system/lib64/libandroid_runtime.so+0x209954)
+11-27 01:31:31.361  4468  4491 I app_process64:     #4 0x710fc0a4  (/system/framework/arm64/boot-framework.oat+0x2990a4)
+11-27 01:31:31.361  4468  4491 I app_process64: 
+11-27 01:31:31.361  4468  4491 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4491 (Thread-2), pid 4468 (.example.fuzzer)

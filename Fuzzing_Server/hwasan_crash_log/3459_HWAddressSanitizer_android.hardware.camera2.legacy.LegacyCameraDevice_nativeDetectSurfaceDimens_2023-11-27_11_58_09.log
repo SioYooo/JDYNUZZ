@@ -1,0 +1,13 @@
+
+android.hardware.camera2.legacy.LegacyCameraDevice|nativeDetectSurfaceDimens|android.view.Surface, int[]|int
+
+objfileName: 1701046711435.obj
+
+android.hardware.camera2.legacy.LegacyCameraDevice|nativeDetectSurfaceDimens|2023-11-27 11:58:09
+11-27 00:58:31.545 19108 19131 I app_process64: ==19108==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7442408
+11-27 00:58:31.545 19108 19131 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T86023
+11-27 00:58:31.561 19108 19131 I app_process64:     #0 0x7cd7442404  (/system/lib64/libbinder.so+0x7e404)
+11-27 00:58:31.561 19108 19131 I app_process64:     #1 0x7cd8d542a8  (/system/lib64/libandroid_runtime.so+0x1802a8)
+11-27 00:58:31.561 19108 19131 I app_process64:     #2 0x710ed0e8  (/system/framework/arm64/boot-framework.oat+0x28a0e8)
+11-27 00:58:31.561 19108 19131 I app_process64: 
+11-27 00:58:31.561 19108 19131 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 19131 (Thread-2), pid 19108 (.example.fuzzer)

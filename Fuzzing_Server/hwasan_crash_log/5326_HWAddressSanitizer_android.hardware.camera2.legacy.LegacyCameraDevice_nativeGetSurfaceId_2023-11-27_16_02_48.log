@@ -1,0 +1,17 @@
+
+android.hardware.camera2.legacy.LegacyCameraDevice|nativeGetSurfaceId|android.view.Surface|long
+
+objfileName: 1701061390693.obj
+
+android.hardware.camera2.legacy.LegacyCameraDevice|nativeGetSurfaceId
+
+android.hardware.camera2.legacy.LegacyCameraDevice|nativeGetSurfaceId|2023-11-27 16:02:48
+11-27 05:03:10.729 10150 10173 I app_process64: ==10150==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cdbb1cdc8
+11-27 05:03:10.729 10150 10173 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T95388
+11-27 05:03:10.745 10150 10173 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-27 05:03:10.745 10150 10173 I app_process64:     #1 0x7cd8d1a048  (/system/lib64/libandroid_runtime.so+0x146048)
+11-27 05:03:10.745 10150 10173 I app_process64:     #2 0x7cd8de12fc  (/system/lib64/libandroid_runtime.so+0x20d2fc)
+11-27 05:03:10.746 10150 10173 I app_process64:     #3 0x7cd8ddff70  (/system/lib64/libandroid_runtime.so+0x20bf70)
+11-27 05:03:10.746 10150 10173 I app_process64:     #4 0x710ec03c  (/system/framework/arm64/boot-framework.oat+0x28903c)
+11-27 05:03:10.746 10150 10173 I app_process64: 
+11-27 05:03:10.746 10150 10173 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 10173 (Thread-2), pid 10150 (.example.fuzzer)

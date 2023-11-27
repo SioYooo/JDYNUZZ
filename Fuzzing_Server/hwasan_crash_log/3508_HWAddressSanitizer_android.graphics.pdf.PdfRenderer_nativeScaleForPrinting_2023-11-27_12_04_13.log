@@ -1,0 +1,16 @@
+
+android.graphics.pdf.PdfRenderer|nativeScaleForPrinting|long|boolean
+
+objfileName: 1701047075134.obj
+
+android.graphics.pdf.PdfRenderer|nativeScaleForPrinting
+
+android.graphics.pdf.PdfRenderer|nativeScaleForPrinting|2023-11-27 12:04:13
+11-27 01:04:35.172 22056 22079 I app_process64: ==22056==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000050 at pc 0x007cdb8d01a4
+11-27 01:04:35.172 22056 22079 I app_process64: READ of size 8 at 0x000000000050 tags: 80/00 (ptr/mem) in thread T86268
+11-27 01:04:35.189 22056 22079 I app_process64:     #0 0x7cdb8d01a0  (/system/lib64/libpdfium.so+0x43d1a0)
+11-27 01:04:35.189 22056 22079 I app_process64:     #1 0x7cdb77e8dc  (/system/lib64/libpdfium.so+0x2eb8dc)
+11-27 01:04:35.189 22056 22079 I app_process64:     #2 0x7cd8dafcd4  (/system/lib64/libandroid_runtime.so+0x1dbcd4)
+11-27 01:04:35.189 22056 22079 I app_process64:     #3 0x710ed2f8  (/system/framework/arm64/boot-framework.oat+0x28a2f8)
+11-27 01:04:35.189 22056 22079 I app_process64: 
+11-27 01:04:35.189 22056 22079 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 22079 (Thread-2), pid 22056 (.example.fuzzer)

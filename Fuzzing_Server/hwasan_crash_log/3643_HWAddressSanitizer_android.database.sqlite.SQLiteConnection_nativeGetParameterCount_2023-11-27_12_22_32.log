@@ -1,0 +1,14 @@
+
+android.database.sqlite.SQLiteConnection|nativeGetParameterCount|long, long|int
+
+objfileName: 1701048174794.obj
+
+android.database.sqlite.SQLiteConnection|nativeGetParameterCount
+
+android.database.sqlite.SQLiteConnection|nativeGetParameterCount|2023-11-27 12:22:32
+11-27 01:22:54.819 31348 31371 I app_process64: ==31348==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd755b888
+11-27 01:22:54.819 31348 31371 I app_process64: READ of size 2 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T86943
+11-27 01:22:54.835 31348 31371 I app_process64:     #0 0x7cd755b884  (/system/lib64/libsqlite.so+0x34884)
+11-27 01:22:54.836 31348 31371 I app_process64:     #1 0x710fe8a0  (/system/framework/arm64/boot-framework.oat+0x29b8a0)
+11-27 01:22:54.836 31348 31371 I app_process64: 
+11-27 01:22:54.836 31348 31371 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 31371 (Thread-2), pid 31348 (.example.fuzzer)

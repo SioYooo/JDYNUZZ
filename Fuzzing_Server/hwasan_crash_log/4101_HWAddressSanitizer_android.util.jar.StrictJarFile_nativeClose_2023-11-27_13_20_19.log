@@ -1,0 +1,15 @@
+
+android.util.jar.StrictJarFile|nativeClose|long|void
+
+objfileName: 1701051641814.obj
+
+android.util.jar.StrictJarFile|nativeClose
+
+android.util.jar.StrictJarFile|nativeClose|2023-11-27 13:20:19
+11-27 02:20:41.839 29041 29064 I app_process64: ==29041==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000017 at pc 0x007cd8468198
+11-27 02:20:41.839 29041 29064 I app_process64: READ of size 1 at 0x000000000017 tags: 80/00 (ptr/mem) in thread T89253
+11-27 02:20:41.855 29041 29064 I app_process64:     #0 0x7cd8468194  (/system/lib64/libziparchive.so+0x5194)
+11-27 02:20:41.855 29041 29064 I app_process64:     #1 0x7cd84691d8  (/system/lib64/libziparchive.so+0x61d8)
+11-27 02:20:41.855 29041 29064 I app_process64:     #2 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-27 02:20:41.855 29041 29064 I app_process64: 
+11-27 02:20:41.855 29041 29064 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 29064 (Thread-2), pid 29041 (.example.fuzzer)

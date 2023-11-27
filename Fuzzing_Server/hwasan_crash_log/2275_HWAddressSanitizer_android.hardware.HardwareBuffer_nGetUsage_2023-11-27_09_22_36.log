@@ -1,0 +1,14 @@
+
+android.hardware.HardwareBuffer|nGetUsage|long|long
+
+objfileName: 1701037378619.obj
+
+android.hardware.HardwareBuffer|nGetUsage
+
+android.hardware.HardwareBuffer|nGetUsage|2023-11-27 09:22:36
+11-26 22:22:58.643  5439  5462 I app_process64: ==5439==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8df7030
+11-26 22:22:58.643  5439  5462 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T80073
+11-26 22:22:58.659  5439  5462 I app_process64:     #0 0x7cd8df702c  (/system/lib64/libandroid_runtime.so+0x22302c)
+11-26 22:22:58.659  5439  5462 I app_process64:     #1 0x711008a8  (/system/framework/arm64/boot-framework.oat+0x29d8a8)
+11-26 22:22:58.659  5439  5462 I app_process64: 
+11-26 22:22:58.660  5439  5462 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 5462 (Thread-2), pid 5439 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.view.MotionEvent|nativeOffsetLocation|long, float, float|void
+
+objfileName: 1701050475253.obj
+
+android.view.MotionEvent|nativeOffsetLocation
+
+android.view.MotionEvent|nativeOffsetLocation|2023-11-27 13:00:53
+11-27 02:01:15.280 18668 18691 I app_process64: ==18668==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000002f at pc 0x007cd6f2e5d0
+11-27 02:01:15.280 18668 18691 I app_process64: READ of size 8 at 0x00000000002f tags: 80/00 (ptr/mem) in thread T88478
+11-27 02:01:15.297 18668 18691 I app_process64:     #0 0x7cd6f2e5cc  (/system/lib64/libinput.so+0x195cc)
+11-27 02:01:15.297 18668 18691 I app_process64:     #1 0x710f6b30  (/system/framework/arm64/boot-framework.oat+0x293b30)
+11-27 02:01:15.297 18668 18691 I app_process64: 
+11-27 02:01:15.297 18668 18691 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 18691 (Thread-2), pid 18668 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nGetStrokeMiter|long|float
+
+objfileName: 1701054320648.obj
+
+android.graphics.Paint|nGetStrokeMiter
+
+android.graphics.Paint|nGetStrokeMiter|2023-11-27 14:04:58
+11-27 03:05:20.674 19246 19269 I app_process64: ==19246==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000043 at pc 0x007cd8d9a624
+11-27 03:05:20.674 19246 19269 I app_process64: READ of size 4 at 0x000000000043 tags: 80/00 (ptr/mem) in thread T90948
+11-27 03:05:20.690 19246 19269 I app_process64:     #0 0x7cd8d9a620  (/system/lib64/libandroid_runtime.so+0x1c6620)
+11-27 03:05:20.690 19246 19269 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 03:05:20.690 19246 19269 I app_process64: 
+11-27 03:05:20.690 19246 19269 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 19269 (Thread-2), pid 19246 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nSetTextAlign|long, int|void
+
+objfileName: 1701052951772.obj
+
+android.graphics.Paint|nSetTextAlign
+
+android.graphics.Paint|nSetTextAlign|2023-11-27 13:42:09
+11-27 02:42:31.799  7600  7623 I app_process64: ==7600==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000009f at pc 0x007cd8d9abc0
+11-27 02:42:31.799  7600  7623 I app_process64: WRITE of size 4 at 0x00000000009f tags: 80/00 (ptr/mem) in thread T90068
+11-27 02:42:31.815  7600  7623 I app_process64:     #0 0x7cd8d9abbc  (/system/lib64/libandroid_runtime.so+0x1c6bbc)
+11-27 02:42:31.815  7600  7623 I app_process64:     #1 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-27 02:42:31.815  7600  7623 I app_process64: 
+11-27 02:42:31.815  7600  7623 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 7623 (Thread-2), pid 7600 (.example.fuzzer)

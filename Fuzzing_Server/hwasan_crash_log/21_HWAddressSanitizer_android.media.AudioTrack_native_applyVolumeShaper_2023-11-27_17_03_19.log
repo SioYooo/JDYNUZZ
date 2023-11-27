@@ -1,0 +1,15 @@
+
+android.media.AudioTrack|native_applyVolumeShaper|android.media.VolumeShaper$Configuration, android.media.VolumeShaper$Operation|int
+
+objfileName: 1701065021611.obj
+
+android.media.AudioTrack|native_applyVolumeShaper
+
+android.media.AudioTrack|native_applyVolumeShaper|2023-11-27 17:03:19
+11-27 06:03:41.688 10880 10903 I app_process64: ==10880==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-27 06:03:41.688 10880 10903 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T97783
+11-27 06:03:41.704 10880 10903 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-27 06:03:41.704 10880 10903 I app_process64:     #1 0x7cd8dc439c  (/system/lib64/libandroid_runtime.so+0x1f039c)
+11-27 06:03:41.704 10880 10903 I app_process64:     #2 0x711228d8  (/system/framework/arm64/boot-framework.oat+0x2bf8d8)
+11-27 06:03:41.704 10880 10903 I app_process64: 
+11-27 06:03:41.704 10880 10903 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 10903 (Thread-2), pid 10880 (.example.fuzzer)

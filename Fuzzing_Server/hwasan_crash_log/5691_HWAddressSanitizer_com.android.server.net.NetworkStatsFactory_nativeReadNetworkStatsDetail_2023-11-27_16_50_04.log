@@ -1,0 +1,12 @@
+
+com.android.server.net.NetworkStatsFactory|nativeReadNetworkStatsDetail|android.net.NetworkStats, java.lang.String, int, java.lang.String[], int, boolean|int
+
+objfileName: 1701064226133.obj
+
+com.android.server.net.NetworkStatsFactory|nativeReadNetworkStatsDetail|2023-11-27 16:50:04
+11-27 05:50:26.168  1827  1864 I app_process64: ==1827==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd74418d8
+11-27 05:50:26.169  1827  1864 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T97258
+11-27 05:50:26.185  1827  1864 I app_process64:     #0 0x7cd74418d4  (/system/lib64/libbinder.so+0x7d8d4)
+11-27 05:50:26.185  1827  1864 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 05:50:26.185  1827  1864 I app_process64: 
+11-27 05:50:26.185  1827  1864 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 1864 (Thread-2), pid 1827 (.example.fuzzer)

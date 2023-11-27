@@ -1,0 +1,15 @@
+
+android.graphics.SweepGradient|nativeCreate|long, float, float, long[], float[], long|long
+
+objfileName: 1701057710956.obj
+
+android.graphics.SweepGradient|nativeCreate
+
+android.graphics.SweepGradient|nativeCreate|2023-11-27 15:01:29
+11-27 04:01:50.986 12901 12924 I app_process64: ==12901==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8cff708
+11-27 04:01:50.986 12901 12924 I app_process64: WRITE of size 4 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T93023
+11-27 04:01:51.003 12901 12924 I app_process64:     #0 0x7cd8cff704  (/system/lib64/libandroid_runtime.so+0x12b704)
+11-27 04:01:51.003 12901 12924 I app_process64:     #1 0x7cd8da4720  (/system/lib64/libandroid_runtime.so+0x1d0720)
+11-27 04:01:51.003 12901 12924 I app_process64:     #2 0x71101fe8  (/system/framework/arm64/boot-framework.oat+0x29efe8)
+11-27 04:01:51.003 12901 12924 I app_process64: 
+11-27 04:01:51.003 12901 12924 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 12924 (Thread-2), pid 12901 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nSetUnderlineText|long, boolean|void
+
+objfileName: 1701064299372.obj
+
+android.graphics.Paint|nSetUnderlineText
+
+android.graphics.Paint|nSetUnderlineText|2023-11-27 16:51:17
+11-27 05:51:39.400  2953  2976 I app_process64: ==2953==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0000000000a5 at pc 0x007cd8d9a3e4
+11-27 05:51:39.400  2953  2976 I app_process64: WRITE of size 1 at 0x0000000000a5 tags: 80/00 (ptr/mem) in thread T97318
+11-27 05:51:39.416  2953  2976 I app_process64:     #0 0x7cd8d9a3e0  (/system/lib64/libandroid_runtime.so+0x1c63e0)
+11-27 05:51:39.416  2953  2976 I app_process64:     #1 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-27 05:51:39.416  2953  2976 I app_process64: 
+11-27 05:51:39.416  2953  2976 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 2976 (Thread-2), pid 2953 (.example.fuzzer)

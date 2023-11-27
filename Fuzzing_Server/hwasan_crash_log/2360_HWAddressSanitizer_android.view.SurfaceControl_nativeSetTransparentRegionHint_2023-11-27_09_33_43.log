@@ -1,0 +1,15 @@
+
+android.view.SurfaceControl|nativeSetTransparentRegionHint|long, long, android.graphics.Region|void
+
+objfileName: 1701038045056.obj
+
+android.view.SurfaceControl|nativeSetTransparentRegionHint
+
+android.view.SurfaceControl|nativeSetTransparentRegionHint|2023-11-27 09:33:43
+11-26 22:34:05.090 10510 10533 I app_process64: ==10510==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-26 22:34:05.090 10510 10533 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T80503
+11-26 22:34:05.107 10510 10533 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-26 22:34:05.107 10510 10533 I app_process64:     #1 0x7cd8d1f12c  (/system/lib64/libandroid_runtime.so+0x14b12c)
+11-26 22:34:05.107 10510 10533 I app_process64:     #2 0x7112845c  (/system/framework/arm64/boot-framework.oat+0x2c545c)
+11-26 22:34:05.107 10510 10533 I app_process64: 
+11-26 22:34:05.107 10510 10533 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 10533 (Thread-2), pid 10510 (.example.fuzzer)

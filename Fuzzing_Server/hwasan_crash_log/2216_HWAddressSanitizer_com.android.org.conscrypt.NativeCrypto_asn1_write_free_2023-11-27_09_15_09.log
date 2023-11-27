@@ -1,0 +1,15 @@
+
+com.android.org.conscrypt.NativeCrypto|asn1_write_free|long|void
+
+objfileName: 1701036931659.obj
+
+com.android.org.conscrypt.NativeCrypto|asn1_write_free
+
+com.android.org.conscrypt.NativeCrypto|asn1_write_free|2023-11-27 09:15:09
+11-26 22:15:31.683  1146  1197 I app_process64: ==1146==ERROR: HWAddressSanitizer: invalid-free on address 0x000000000000 at pc 0x007cd90fc9e0
+11-26 22:15:31.683  1146  1197 I app_process64: tags: 80/00 (ptr/mem)
+11-26 22:15:31.700  1146  1197 I app_process64:     #0 0x7cd90fc9dc  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1e9dc)
+11-26 22:15:31.700  1146  1197 I app_process64:     #1 0x7cd55f6350  (/apex/com.android.runtime/lib64/libart.so+0x148350)
+11-26 22:15:31.714  1146  1197 I app_process64:     #2 0x5c00007c6f45513c  (<unknown module>)
+11-26 22:15:31.714  1146  1197 I app_process64: 
+11-26 22:15:31.715  1146  1197 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 1197 (Thread-2), pid 1146 (.example.fuzzer)

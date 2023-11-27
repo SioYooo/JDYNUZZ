@@ -1,0 +1,14 @@
+
+android.view.MotionEvent|nativeSetButtonState|long, int|void
+
+objfileName: 1701043126390.obj
+
+android.view.MotionEvent|nativeSetButtonState
+
+android.view.MotionEvent|nativeSetButtonState|2023-11-27 10:58:24
+11-26 23:58:46.417 22135 22158 I app_process64: ==22135==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000027 at pc 0x007cd8d14cf0
+11-26 23:58:46.417 22135 22158 I app_process64: WRITE of size 4 at 0x000000000027 tags: 80/00 (ptr/mem) in thread T83773
+11-26 23:58:46.434 22135 22158 I app_process64:     #0 0x7cd8d14cec  (/system/lib64/libandroid_runtime.so+0x140cec)
+11-26 23:58:46.434 22135 22158 I app_process64:     #1 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-26 23:58:46.434 22135 22158 I app_process64: 
+11-26 23:58:46.434 22135 22158 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 22158 (Thread-2), pid 22135 (.example.fuzzer)

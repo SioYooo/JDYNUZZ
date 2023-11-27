@@ -1,0 +1,12 @@
+
+android.media.AudioSystem|startAudioSource|android.media.AudioPortConfig, android.media.AudioAttributes|int
+
+objfileName: 1701062522590.obj
+
+android.media.AudioSystem|startAudioSource|2023-11-27 16:21:40
+11-27 05:22:02.716 20032 20055 I app_process64: ==20032==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7436370
+11-27 05:22:02.716 20032 20055 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T96133
+11-27 05:22:02.732 20032 20055 I app_process64:     #0 0x7cd743636c  (/system/lib64/libbinder.so+0x7236c)
+11-27 05:22:02.732 20032 20055 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 05:22:02.732 20032 20055 I app_process64: 
+11-27 05:22:02.732 20032 20055 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 20055 (Thread-2), pid 20032 (.example.fuzzer)

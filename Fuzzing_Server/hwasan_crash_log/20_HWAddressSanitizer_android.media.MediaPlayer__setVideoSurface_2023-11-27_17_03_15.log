@@ -1,0 +1,16 @@
+
+android.media.MediaPlayer|_setVideoSurface|android.view.Surface|void
+
+objfileName: 1701065017588.obj
+
+android.media.MediaPlayer|_setVideoSurface
+
+android.media.MediaPlayer|_setVideoSurface|2023-11-27 17:03:15
+11-27 06:03:37.638 10814 10837 I app_process64: ==10814==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-27 06:03:37.638 10814 10837 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T97778
+11-27 06:03:37.654 10814 10837 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-27 06:03:37.654 10814 10837 I app_process64:     #1 0x7cd8d1a048  (/system/lib64/libandroid_runtime.so+0x146048)
+11-27 06:03:37.654 10814 10837 I app_process64:     #2 0x7cc067a2f8  (/system/lib64/libmedia_jni.so+0x6b2f8)
+11-27 06:03:37.654 10814 10837 I app_process64:     #3 0x710f9e98  (/system/framework/arm64/boot-framework.oat+0x296e98)
+11-27 06:03:37.655 10814 10837 I app_process64: 
+11-27 06:03:37.655 10814 10837 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 10837 (Thread-2), pid 10814 (.example.fuzzer)

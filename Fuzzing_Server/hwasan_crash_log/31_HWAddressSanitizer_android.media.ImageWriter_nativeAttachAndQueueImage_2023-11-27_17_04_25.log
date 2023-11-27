@@ -1,0 +1,16 @@
+
+android.media.ImageWriter|nativeAttachAndQueueImage|long, long, int, long, int, int, int, int, int, int|int
+
+objfileName: 1701065087848.obj
+
+android.media.ImageWriter|nativeAttachAndQueueImage
+
+android.media.ImageWriter|nativeAttachAndQueueImage|2023-11-27 17:04:25
+11-27 06:04:47.900 11496 11519 I app_process64: ==11496==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-27 06:04:47.900 11496 11519 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T97833
+11-27 06:04:47.916 11496 11519 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-27 06:04:47.916 11496 11519 I app_process64:     #1 0x7cd8d1a048  (/system/lib64/libandroid_runtime.so+0x146048)
+11-27 06:04:47.916 11496 11519 I app_process64:     #2 0x7cc06434a4  (/system/lib64/libmedia_jni.so+0x344a4)
+11-27 06:04:47.916 11496 11519 I app_process64:     #3 0x711086f0  (/system/framework/arm64/boot-framework.oat+0x2a56f0)
+11-27 06:04:47.916 11496 11519 I app_process64: 
+11-27 06:04:47.917 11496 11519 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 11519 (Thread-2), pid 11496 (.example.fuzzer)

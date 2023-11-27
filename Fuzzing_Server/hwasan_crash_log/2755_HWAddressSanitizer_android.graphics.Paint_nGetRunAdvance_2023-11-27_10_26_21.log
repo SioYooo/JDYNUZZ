@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nGetRunAdvance|long, char[], int, int, int, int, boolean, int|float
+
+objfileName: 1701041203538.obj
+
+android.graphics.Paint|nGetRunAdvance
+
+android.graphics.Paint|nGetRunAdvance|2023-11-27 10:26:21
+11-26 23:26:43.569  4313  4336 I app_process64: ==4313==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000097 at pc 0x007cd8d994b0
+11-26 23:26:43.570  4313  4336 I app_process64: READ of size 8 at 0x000000000097 tags: 80/00 (ptr/mem) in thread T82503
+11-26 23:26:43.586  4313  4336 I app_process64:     #0 0x7cd8d994ac  (/system/lib64/libandroid_runtime.so+0x1c54ac)
+11-26 23:26:43.586  4313  4336 I app_process64:     #1 0x710f7dac  (/system/framework/arm64/boot-framework.oat+0x294dac)
+11-26 23:26:43.586  4313  4336 I app_process64: 
+11-26 23:26:43.586  4313  4336 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4336 (Thread-2), pid 4313 (.example.fuzzer)

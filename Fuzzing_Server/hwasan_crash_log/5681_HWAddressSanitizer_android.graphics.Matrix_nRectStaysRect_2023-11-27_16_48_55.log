@@ -1,0 +1,14 @@
+
+android.graphics.Matrix|nRectStaysRect|long|boolean
+
+objfileName: 1701064157752.obj
+
+android.graphics.Matrix|nRectStaysRect
+
+android.graphics.Matrix|nRectStaysRect|2023-11-27 16:48:55
+11-27 05:49:17.778 32767   353 I app_process64: ==32767==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000023 at pc 0x007cd8d95940
+11-27 05:49:17.778 32767   353 I app_process64: READ of size 4 at 0x000000000023 tags: 80/00 (ptr/mem) in thread T97208
+11-27 05:49:17.794 32767   353 I app_process64:     #0 0x7cd8d9593c  (/system/lib64/libandroid_runtime.so+0x1c193c)
+11-27 05:49:17.794 32767   353 I app_process64:     #1 0x710f65d0  (/system/framework/arm64/boot-framework.oat+0x2935d0)
+11-27 05:49:17.795 32767   353 I app_process64: 
+11-27 05:49:17.795 32767   353 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 353 (Thread-2), pid 32767 (.example.fuzzer)

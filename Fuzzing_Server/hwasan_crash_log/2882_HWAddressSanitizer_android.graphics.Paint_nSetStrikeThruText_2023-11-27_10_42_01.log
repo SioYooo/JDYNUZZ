@@ -1,0 +1,14 @@
+
+android.graphics.Paint|nSetStrikeThruText|long, boolean|void
+
+objfileName: 1701042143900.obj
+
+android.graphics.Paint|nSetStrikeThruText
+
+android.graphics.Paint|nSetStrikeThruText|2023-11-27 10:42:01
+11-26 23:42:23.927 13238 13261 I app_process64: ==13238==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0000000000a3 at pc 0x007cd8d9a40c
+11-26 23:42:23.927 13238 13261 I app_process64: WRITE of size 1 at 0x0000000000a3 tags: 80/00 (ptr/mem) in thread T83138
+11-26 23:42:23.943 13238 13261 I app_process64:     #0 0x7cd8d9a408  (/system/lib64/libandroid_runtime.so+0x1c6408)
+11-26 23:42:23.943 13238 13261 I app_process64:     #1 0x710f83a8  (/system/framework/arm64/boot-framework.oat+0x2953a8)
+11-26 23:42:23.943 13238 13261 I app_process64: 
+11-26 23:42:23.943 13238 13261 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 13261 (Thread-2), pid 13238 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.view.InputEventReceiver|nativeFinishInputEvent|long, int, boolean|void
+
+objfileName: 1701048525558.obj
+
+android.view.InputEventReceiver|nativeFinishInputEvent
+
+android.view.InputEventReceiver|nativeFinishInputEvent|2023-11-27 12:28:23
+11-27 01:28:45.587  2905  2928 I app_process64: ==2905==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d0b980
+11-27 01:28:45.587  2905  2928 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T87173
+11-27 01:28:45.603  2905  2928 I app_process64:     #0 0x7cd8d0b97c  (/system/lib64/libandroid_runtime.so+0x13797c)
+11-27 01:28:45.603  2905  2928 I app_process64:     #1 0x710f2108  (/system/framework/arm64/boot-framework.oat+0x28f108)
+11-27 01:28:45.603  2905  2928 I app_process64: 
+11-27 01:28:45.603  2905  2928 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 2928 (Thread-2), pid 2905 (.example.fuzzer)

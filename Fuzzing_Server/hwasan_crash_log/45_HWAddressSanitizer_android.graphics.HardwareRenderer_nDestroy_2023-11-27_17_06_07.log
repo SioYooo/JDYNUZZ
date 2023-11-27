@@ -1,0 +1,14 @@
+
+android.graphics.HardwareRenderer|nDestroy|long, long|void
+
+objfileName: 1701065190029.obj
+
+android.graphics.HardwareRenderer|nDestroy
+
+android.graphics.HardwareRenderer|nDestroy|2023-11-27 17:06:07
+11-27 06:06:30.056 12338 12362 I app_process64: ==12338==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000044f at pc 0x007cd8d292b4
+11-27 06:06:30.056 12338 12362 I app_process64: READ of size 8 at 0x00000000044f tags: 80/00 (ptr/mem) in thread T97903
+11-27 06:06:30.072 12338 12362 I app_process64:     #0 0x7cd8d292b0  (/system/lib64/libandroid_runtime.so+0x1552b0)
+11-27 06:06:30.072 12338 12362 I app_process64:     #1 0x710f29e0  (/system/framework/arm64/boot-framework.oat+0x28f9e0)
+11-27 06:06:30.072 12338 12362 I app_process64: 
+11-27 06:06:30.072 12338 12362 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 12362 (Thread-2), pid 12338 (.example.fuzzer)

@@ -1,0 +1,15 @@
+
+android.content.res.XmlBlock|nativeDestroyParseState|long|void
+
+objfileName: 1701060861058.obj
+
+android.content.res.XmlBlock|nativeDestroyParseState
+
+android.content.res.XmlBlock|nativeDestroyParseState|2023-11-27 15:53:59
+11-27 04:54:21.083  6115  6138 I app_process64: ==6115==ERROR: HWAddressSanitizer: invalid-free on address 0x000000000000 at pc 0x007cd90fc9e0
+11-27 04:54:21.083  6115  6138 I app_process64: tags: 80/00 (ptr/mem)
+11-27 04:54:21.100  6115  6138 I app_process64:     #0 0x7cd90fc9dc  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1e9dc)
+11-27 04:54:21.100  6115  6138 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-27 04:54:21.114  6115  6138 I app_process64:     #2 0x7cd485d168  (/system/framework/framework.jar+0x6ed168)
+11-27 04:54:21.114  6115  6138 I app_process64: 
+11-27 04:54:21.115  6115  6138 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 6138 (Thread-2), pid 6115 (.example.fuzzer)

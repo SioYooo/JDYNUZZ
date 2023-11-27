@@ -1,0 +1,16 @@
+
+android.media.AudioTrack|native_setVolume|float, float|void
+
+objfileName: 1701056006558.obj
+
+android.media.AudioTrack|native_setVolume
+
+android.media.AudioTrack|native_setVolume|2023-11-27 14:33:04
+11-27 03:33:26.639 31224 31247 I app_process64: ==31224==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd7436370
+11-27 03:33:26.639 31224 31247 I app_process64: READ of size 8 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T91948
+11-27 03:33:26.651   861   861 I /vendor/bin/hw/android.hardware.health@2.0-service.crosshatch: Entry state_: 1 charger_status: Charging batteryLevel: 100
+11-27 03:33:26.651   861   861 I /vendor/bin/hw/android.hardware.health@2.0-service.crosshatch: Exit state_: 1 batteryLevel: 100
+11-27 03:33:26.655 31224 31247 I app_process64:     #0 0x7cd743636c  (/system/lib64/libbinder.so+0x7236c)
+11-27 03:33:26.655 31224 31247 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 03:33:26.655 31224 31247 I app_process64: 
+11-27 03:33:26.655 31224 31247 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 31247 (Thread-2), pid 31224 (.example.fuzzer)

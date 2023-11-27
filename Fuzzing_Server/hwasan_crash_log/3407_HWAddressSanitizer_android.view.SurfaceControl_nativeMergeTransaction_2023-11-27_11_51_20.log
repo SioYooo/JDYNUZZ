@@ -1,0 +1,14 @@
+
+android.view.SurfaceControl|nativeMergeTransaction|long, long|void
+
+objfileName: 1701046301956.obj
+
+android.view.SurfaceControl|nativeMergeTransaction
+
+android.view.SurfaceControl|nativeMergeTransaction|2023-11-27 11:51:20
+11-27 00:51:41.995 16037 16060 I app_process64: ==16037==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000017 at pc 0x007cd8b495a0
+11-27 00:51:41.995 16037 16060 I app_process64: READ of size 8 at 0x000000000017 tags: 80/00 (ptr/mem) in thread T85763
+11-27 00:51:42.012 16037 16060 I app_process64:     #0 0x7cd8b4959c  (/system/lib64/libgui.so+0xfa59c)
+11-27 00:51:42.012 16037 16060 I app_process64:     #1 0x710f29e0  (/system/framework/arm64/boot-framework.oat+0x28f9e0)
+11-27 00:51:42.012 16037 16060 I app_process64: 
+11-27 00:51:42.012 16037 16060 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 16060 (Thread-2), pid 16037 (.example.fuzzer)
