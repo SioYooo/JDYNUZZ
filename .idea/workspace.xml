@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5e7430d-2fd9-4732-928c-d6a1221a3cd2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue_id_list.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/issue_tracer/analyze_aosp_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/analyze_aosp_build.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue_tracer/backtrace_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/backtrace_list.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count_sorted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count_sorted.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7

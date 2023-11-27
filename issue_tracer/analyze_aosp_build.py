@@ -10,6 +10,8 @@ category_dict = {}
 reproducible_dict = {}
 reproducible_list = []
 id_tag_dict = {}
+backtrace_dict = {}
+available_backtrace_list = []
 
 
 def read_id_tag():
@@ -102,6 +104,11 @@ def save_to_file():
             f.write(path + "\n")
         f.write("Reproducible Category List End" + "\n")
 
+        f.write("Available Backtrace List Start" + "\n")
+        for path in available_backtrace_list:
+            f.write(path + "\n")
+        f.write("Available Backtrace List End" + "\n")
+
 
 def sort_file(begin_line: str, end_line: str):
     with open(cwd + os.sep + 'result_aosp_build_count.txt', "r", encoding='utf-8') as f:
@@ -161,29 +168,22 @@ def analyze_tag():
                 print("category: " + category + " build_id: " + build_id + " tag: " + id_tag_dict[aosp_id])
                 print("*" * 50)
 
-def check_issue_id_list():
-    global reproducible_list
-    temp = []
-    for p in reproducible_list:
-        file_name = os.path.basename(p)
-        temp.append(file_name)
+def analyze_backtrace_list():
+    global backtrace_dict, available_backtrace_list
     with open(cwd + os.sep + 'backtrace_list.txt', "r", encoding='utf-8') as f:
         lines = f.readlines()
         for line in lines:
             parts = line.split(':')
             if len(parts) >= 2:
                 file_path = parts[0].strip()
-                file_name = os.path.basename(file_path)
-                if file_name in temp:
-                    print("file_path: " + file_path + " file_name: " + file_name)
-                    print("*" * 50)
-                    print("temp: " + str(len(temp)))
-                    temp.remove(file_name)
-                    print("temp: " + str(len(temp)))
-                else:
-                    print("file_path: " + file_path + " file_name: " + file_name + " not in check_list")
-                    print("*" * 50)
-    print("temp: " + str(temp))
+                status = parts[1].strip()
+                backtrace_dict[file_path] = status
+                if status == 'Yes':
+                    available_backtrace_list.append(file_path)
+        print("backtrace_dict: " + str(backtrace_dict))
+        print("available_backtrace_list: " + str(available_backtrace_list))
+        print("available_backtrace_list: " + str(len(available_backtrace_list)))
+
 
 
 if __name__ == '__main__':
@@ -200,7 +200,8 @@ if __name__ == '__main__':
     sort_file("Reproducible Category Count Start", "Reproducible Category Count End")
     # 然后复制所有的reproducible文件
     copy_reproducible_file()
-    check_issue_id_list()
+    # 然后排序所有的available backtrace的个数
+    analyze_backtrace_list()
     # read_tag
     # read_id_tag()
     # analyze_tag()
