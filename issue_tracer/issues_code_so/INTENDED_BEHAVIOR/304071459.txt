@@ -1,7 +1,0 @@
-libart.so
-(I[J[I)V
-thread_list.cc:1314] Check failed: self-&gt;GetState() != ThreadState::kRunnable (self-&gt;GetState()=Runnable, ThreadState::kRunnable=Runnable)Signal: Segmentation fault (PC: 0x9D4B3938)Stack Trace:* 0x9D4B3938* 0x74CEFEF485* 0x69B292EC70
-JvmManager::VibrateDevice()
-Unregister
-thread_list.cc:1314] Check failed
-libc
