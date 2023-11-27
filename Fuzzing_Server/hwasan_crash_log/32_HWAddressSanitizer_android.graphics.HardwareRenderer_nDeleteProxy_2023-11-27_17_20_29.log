@@ -1,0 +1,14 @@
+
+android.graphics.HardwareRenderer|nDeleteProxy|long|void
+
+objfileName: 1701066051470.obj
+
+android.graphics.HardwareRenderer|nDeleteProxy
+
+android.graphics.HardwareRenderer|nDeleteProxy|2023-11-27 17:20:29
+11-27 06:20:51.496 14476 14500 I app_process64: ==14476==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8d28ea0
+11-27 06:20:51.496 14476 14500 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T98078
+11-27 06:20:51.513 14476 14500 I app_process64:     #0 0x7cd8d28e9c  (/system/lib64/libandroid_runtime.so+0x154e9c)
+11-27 06:20:51.513 14476 14500 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-27 06:20:51.513 14476 14500 I app_process64: 
+11-27 06:20:51.513 14476 14500 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 14500 (Thread-2), pid 14476 (.example.fuzzer)

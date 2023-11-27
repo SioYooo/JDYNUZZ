@@ -1,0 +1,179 @@
+
+android.graphics.SurfaceTexture|nativeGetTransformMatrix|float[]|void
+
+objfileName: 1701074001491.obj
+
+android.graphics.SurfaceTexture|nativeGetTransformMatrix
+
+android.graphics.SurfaceTexture|nativeGetTransformMatrix|2023-11-27 19:32:59
+11-27 08:33:21.532 18541 18564 I app_process64: ==18541==ERROR: HWAddressSanitizer: alocation-tail-overwritten; heap object [0x00451ddb5c60,0x00451ddb5c78) of size 24
+11-27 08:33:21.532 18541 18564 I app_process64: 
+11-27 08:33:21.549 18541 18564 I app_process64:     #0 0x7cd90fca64  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1ea64)
+11-27 08:33:21.549 18541 18564 I app_process64:     #1 0x7cd5a9f7b8  (/apex/com.android.runtime/lib64/libart.so+0x5f17b8)
+11-27 08:33:21.549 18541 18564 I app_process64:     #2 0x7cd59f5a40  (/apex/com.android.runtime/lib64/libart.so+0x547a40)
+11-27 08:33:21.549 18541 18564 I app_process64:     #3 0x7cd8da725c  (/system/lib64/libandroid_runtime.so+0x1d325c)
+11-27 08:33:21.549 18541 18564 I app_process64:     #4 0x710f9e98  (/system/framework/arm64/boot-framework.oat+0x296e98)
+11-27 08:33:21.563 18541 18564 I app_process64:     #5 0x7cd485d514  (/system/framework/framework.jar+0x6ed514)
+11-27 08:33:21.563 18541 18564 I app_process64: 
+11-27 08:33:21.564 18541 18564 I app_process64: allocated here:
+11-27 08:33:21.564 18541 18564 I app_process64:     #0 0x7cd90fc840  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1e840)
+11-27 08:33:21.564 18541 18564 I app_process64:     #1 0x7cd5a98a74  (/apex/com.android.runtime/lib64/libart.so+0x5eaa74)
+11-27 08:33:21.564 18541 18564 I app_process64:     #2 0x7cd59f3e9c  (/apex/com.android.runtime/lib64/libart.so+0x545e9c)
+11-27 08:33:21.564 18541 18564 I app_process64:     #3 0x7cd8da7214  (/system/lib64/libandroid_runtime.so+0x1d3214)
+11-27 08:33:21.564 18541 18564 I app_process64:     #4 0x710f9e98  (/system/framework/arm64/boot-framework.oat+0x296e98)
+11-27 08:33:21.578 18541 18564 I app_process64:     #5 0x7cd485d514  (/system/framework/framework.jar+0x6ed514)
+11-27 08:33:21.578 18541 18564 I app_process64: 
+11-27 08:33:21.578 18541 18564 I app_process64: Tail contains: .. .. .. .. .. .. .. .. 00 00 00 00 00 00 00 00 
+11-27 08:33:21.578 18541 18564 I app_process64: Expected:      .. .. .. .. .. .. .. .. 28 f8 0e 2a 0d d7 7b 54 
+11-27 08:33:21.578 18541 18564 I app_process64:                                        ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ 
+11-27 08:33:21.578 18541 18564 I app_process64: This error occurs when a buffer overflow overwrites memory
+11-27 08:33:21.578 18541 18564 I app_process64: to the right of a heap object, but within the 16-byte granule, e.g.
+11-27 08:33:21.578 18541 18564 I app_process64:    char *x = new char[20];
+11-27 08:33:21.578 18541 18564 I app_process64:    x[25] = 42;
+11-27 08:33:21.578 18541 18564 I app_process64: By default HWAddressSanitizer does not detect such bugs at the time of write,
+11-27 08:33:21.578 18541 18564 I app_process64: but can detect them at the time of free/delete.
+11-27 08:33:21.578 18541 18564 I app_process64: To disable this feature set HWASAN_OPTIONS=free_checks_tail_magic=0;
+11-27 08:33:21.578 18541 18564 I app_process64: To enable checking at the time of access, set HWASAN_OPTIONS=malloc_align_right to non-zero
+11-27 08:33:21.578 18541 18564 I app_process64: 
+11-27 08:33:21.579 18541 18564 I app_process64: Thread: T103423 0x007350cca000 stack: [0x007c6f35b000,0x007c6f45fd50) sz: 1068368 tls: [0x000000000000,0x000000000000)
+11-27 08:33:21.579 18541 18564 I app_process64: Memory tags around the buggy address (one tag corresponds to 16 bytes):
+11-27 08:33:21.579 18541 18564 I app_process64:    50  50  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.579 18541 18564 I app_process64:    e9  e9  0d  0d  e5  e5  8a  8a  47  47  98  98  5b  5b  42  42   
+11-27 08:33:21.579 18541 18564 I app_process64:    7e  7e  61  61  19  19  93  93  1c  1c  ed  ed  1e  1e  58  58   
+11-27 08:33:21.579 18541 18564 I app_process64:    82  82  d7  d7  18  18  32  32  36  36  fd  fd  f8  f8  35  35   
+11-27 08:33:21.579 18541 18564 I app_process64:    39  39  2b  2b  9b  9b  61  61  a7  a7  21  21  7d  7d  9b  9b   
+11-27 08:33:21.579 18541 18564 I app_process64:    63  63  1e  1e  72  72  d6  d6  3c  3c  a3  a3  78  78  22  22   
+11-27 08:33:21.579 18541 18564 I app_process64:    53  53  3e  3e  f8  f8  f5  f5  0a  0a  ce  ce  76  76  b4  b4   
+11-27 08:33:21.579 18541 18564 I app_process64:    f1  f1  a2  a2  40  40  db  db  be  be  c2  c2  f4  f4  22  22   
+11-27 08:33:21.579 18541 18564 I app_process64: => b7  b7  eb  eb  39  8b [77] 77  00  00  00  00  00  00  00  00 <=
+11-27 08:33:21.579 18541 18564 I app_process64:    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.579 18541 18564 I chatty  : uid=10109(com.example.fuzzer) Thread-2 identical 5 lines
+11-27 08:33:21.579 18541 18564 I app_process64:    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.579 18541 18564 I app_process64: SUMMARY: HWAddressSanitizer: alocation-tail-overwritten (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1ea64) 
+11-27 08:33:21.579 18541 18564 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 18564 (Thread-2), pid 18541 (.example.fuzzer)
+11-27 08:33:21.622 18570 18570 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+11-27 08:33:21.623  1083  1083 I /system/bin/tombstoned: received crash request for pid 18564
+11-27 08:33:21.623 18570 18570 I crash_dump64: performing dump of process 18541 (target tid = 18564)
+11-27 08:33:21.632 18570 18570 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-27 08:33:21.632 18570 18570 F DEBUG   : Build fingerprint: 'Android/aosp_blueline/blueline:10/QP1A.190711.020/eng.siyu.20231125.030149:userdebug/test-keys'
+11-27 08:33:21.632 18570 18570 F DEBUG   : Revision: 'MP1.0'
+11-27 08:33:21.632 18570 18570 F DEBUG   : ABI: 'arm64'
+11-27 08:33:21.633 18570 18570 F DEBUG   : Timestamp: 2023-11-27 08:33:21+0000
+11-27 08:33:21.633 18570 18570 F DEBUG   : pid: 18541, tid: 18564, name: Thread-2  >>> com.example.fuzzer <<<
+11-27 08:33:21.633 18570 18570 F DEBUG   : uid: 10109
+11-27 08:33:21.633 18570 18570 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-27 08:33:21.633 18570 18570 F DEBUG   : Abort message: '==18541==ERROR: HWAddressSanitizer: alocation-tail-overwritten; heap object [0x00451ddb5c60,0x00451ddb5c78) of size 24
+11-27 08:33:21.633 18570 18570 F DEBUG   : 
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #0 0x7cd90fca64  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1ea64)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #1 0x7cd5a9f7b8  (/apex/com.android.runtime/lib64/libart.so+0x5f17b8)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #2 0x7cd59f5a40  (/apex/com.android.runtime/lib64/libart.so+0x547a40)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #3 0x7cd8da725c  (/system/lib64/libandroid_runtime.so+0x1d325c)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #4 0x710f9e98  (/system/framework/arm64/boot-framework.oat+0x296e98)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #5 0x7cd485d514  (/system/framework/framework.jar+0x6ed514)
+11-27 08:33:21.633 18570 18570 F DEBUG   : 
+11-27 08:33:21.633 18570 18570 F DEBUG   : allocated here:
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #0 0x7cd90fc840  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1e840)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #1 0x7cd5a98a74  (/apex/com.android.runtime/lib64/libart.so+0x5eaa74)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #2 0x7cd59f3e9c  (/apex/com.android.runtime/lib64/libart.so+0x545e9c)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #3 0x7cd8da7214  (/system/lib64/libandroid_runtime.so+0x1d3214)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #4 0x710f9e98  (/system/framework/arm64/boot-framework.oat+0x296e98)
+11-27 08:33:21.633 18570 18570 F DEBUG   :     #5 0x7cd485d514  (/system/framework/framework.jar+0x6ed514)
+11-27 08:33:21.633 18570 18570 F DEBUG   : 
+11-27 08:33:21.633 18570 18570 F DEBUG   : Tail contains: .. .. .. .. .. .. .. .. 00 00 00 00 00 00 00 00 
+11-27 08:33:21.633 18570 18570 F DEBUG   : Expected:      .. .. .. .. .. .. .. .. 28 f8 0e 2a 0d d7 7b 54 
+11-27 08:33:21.633 18570 18570 F DEBUG   :                                        ^^ ^^ ^^ ^^ ^^ ^^ ^^ ^^ 
+11-27 08:33:21.633 18570 18570 F DEBUG   : This error occurs when a buffer overflow overwrites memory
+11-27 08:33:21.633 18570 18570 F DEBUG   : to the right of a heap object, but within the 16-byte granule, e.g.
+11-27 08:33:21.633 18570 18570 F DEBUG   :    char *x = new char[20];
+11-27 08:33:21.633 18570 18570 F DEBUG   :    x[25] = 42;
+11-27 08:33:21.633 18570 18570 F DEBUG   : By default HWAddressSanitizer does not detect such bugs at the time of write,
+11-27 08:33:21.633 18570 18570 F DEBUG   : but can detect them at the time of free/delete.
+11-27 08:33:21.633 18570 18570 F DEBUG   : To disable this feature set HWASAN_OPTIONS=free_checks_tail_magic=0;
+11-27 08:33:21.633 18570 18570 F DEBUG   : To enable checking at the time of access, set HWASAN_OPTIONS=malloc_align_right to non-zero
+11-27 08:33:21.633 18570 18570 F DEBUG   : 
+11-27 08:33:21.633 18570 18570 F DEBUG   : Thread: T103423 0x007350cca000 stack: [0x007c6f35b000,0x007c6f45fd50) sz: 1068368 tls: [0x000000000000,0x000000000000)
+11-27 08:33:21.633 18570 18570 F DEBUG   : Memory tags around the buggy address (one tag corresponds to 16 bytes):
+11-27 08:33:21.633 18570 18570 F DEBUG   :    50  50  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    e9  e9  0d  0d  e5  e5  8a  8a  47  47  98  98  5b  5b  42  42   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    7e  7e  61  61  19  19  93  93  1c  1c  ed  ed  1e  1e  58  58   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    82  82  d7  d7  18  18  32  32  36  36  fd  fd  f8  f8  35  35   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    39  39  2b  2b  9b  9b  61  61  a7  a7  21  21  7d  7d  9b  9b   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    63  63  1e  1e  72  72  d6  d6  3c  3c  a3  a3  78  78  22  22   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    53  53  3e  3e  f8  f8  f5  f5  0a  0a  ce  ce  76  76  b4  b4   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    f1  f1  a2  a2  40  40  db  db  be  be  c2  c2  f4  f4  22  22   
+11-27 08:33:21.633 18570 18570 F DEBUG   : => b7  b7  eb  eb  39  8b [77] 77  00  00  00  00  00  00  00  00 <=
+11-27 08:33:21.633 18570 18570 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   :    00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00   
+11-27 08:33:21.633 18570 18570 F DEBUG   : SUMMARY: HWAddressSanitizer: alocation-tail-overwritten (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1ea64) 
+11-27 08:33:21.633 18570 18570 F DEBUG   : '
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x0  0000000000000000  x1  0000000000004884  x2  0000000000000006  x3  e500007c6f45bfc0
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x4  0000007c6f45c040  x5  0000000000000000  x6  0000000000000000  x7  0000000000000010
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x8  00000000000000f0  x9  0200007400000000  x10 0000007bc6f45c04  x11 0000007bc6f45c03
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x12 00000000000000e5  x13 00000000000000e5  x14 00000007c6f45be1  x15 00000007c6f45be9
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x16 00000000000000e5  x17 00000000000000e5  x18 0000007c6e512000  x19 0200007400000000
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x20 e400007c6f45c040  x21 e600007c6f45bfb0  x22 e700007c6f45bf90  x23 e500007c6f45bfc0
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x24 000000000000486d  x25 0000000000004884  x26 00000000ffffffff  x27 0000007cd9116020
+11-27 08:33:21.633 18570 18570 F DEBUG   :     x28 0000000000000000  x29 0000007c6f45c110
+11-27 08:33:21.633 18570 18570 F DEBUG   :     sp  0000007c6f45bf90  lr  0000007cd9646098  pc  0000007cd96460b4
+11-27 08:33:21.812 18570 18570 F DEBUG   : 
+11-27 08:33:21.812 18570 18570 F DEBUG   : backtrace:
+11-27 08:33:21.812 18570 18570 F DEBUG   :       #00 pc 00000000000a00b4  /apex/com.android.runtime/lib64/bionic/libc.so (abort+352) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 08:33:21.812 18570 18570 F DEBUG   :       #01 pc 00000000000276ac  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Abort()+56) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 08:33:21.812 18570 18570 F DEBUG   :       #02 pc 0000000000026ab0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Die()+200) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #03 pc 000000000001d828  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::ScopedReport::~ScopedReport()+120) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #04 pc 000000000001dba8  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::ReportTailOverwritten(__sanitizer::StackTrace*, unsigned long, unsigned long, unsigned long, unsigned char const*)+892) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #05 pc 0000000000018678  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::HwasanDeallocate(__sanitizer::StackTrace*, void*)+276) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #06 pc 000000000001ea90  /system/lib64/libclang_rt.hwasan-aarch64-android.so (operator delete[](void*)+112) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #07 pc 00000000005f17b8  /apex/com.android.runtime/lib64/libart.so (void art::JNI::ReleasePrimitiveArray<_jfloatArray*, float, art::mirror::PrimitiveArray<float>>(_JNIEnv*, _jfloatArray*, float*, int)+1328) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #08 pc 0000000000547a40  /apex/com.android.runtime/lib64/libart.so (art::(anonymous namespace)::CheckJNI::ReleasePrimitiveArrayElements(char const*, art::Primitive::Type, _JNIEnv*, _jarray*, void*, int)+2152) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #09 pc 00000000001d325c  /system/lib64/libandroid_runtime.so (android::SurfaceTexture_getTransformMatrix(_JNIEnv*, _jobject*, _jfloatArray*)+312) (BuildId: 608a42a16f2b1474852a08d1c1af4e6d)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #10 pc 0000000000296e98  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+152) (BuildId: fc6c362971570fa38236aa93a2426909230f6823)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #11 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #12 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #13 pc 0000000000775fcc  /apex/com.android.runtime/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+544) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #14 pc 0000000000778eac  /apex/com.android.runtime/lib64/libart.so (art::InvokeMethod(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jobject*, _jobject*, unsigned long)+2484) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #15 pc 00000000006a1ea0  /apex/com.android.runtime/lib64/libart.so (art::Method_invoke(_JNIEnv*, _jobject*, _jobject*, _jobjectArray*)+168) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #16 pc 00000000000c2c34  /system/framework/arm64/boot.oat (art_jni_trampoline+180) (BuildId: 9acdc84a8fcd063a1fd61d0dc163b27bfcdc0159)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #17 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.813 18570 18570 F DEBUG   :       #18 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #19 pc 0000000000418c08  /apex/com.android.runtime/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+916) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #20 pc 00000000004109a0  /apex/com.android.runtime/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1572) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #21 pc 0000000000907ff0  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+1604) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #22 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #23 pc 0000000000004dba  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.process+5026)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #24 pc 000000000090ef04  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtualRange+2664) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #25 pc 0000000000139b14  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual_range+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #26 pc 0000000000006186  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.TCPServer+602)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #27 pc 0000000000908608  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+3164) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #28 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #29 pc 0000000000002ee0  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity$2.run+4)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #30 pc 000000000090b494  /apex/com.android.runtime/lib64/libart.so (MterpInvokeInterface+3644) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #31 pc 0000000000139a14  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_interface+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #32 pc 00000000000ea918  /apex/com.android.runtime/javalib/core-oj.jar (java.lang.Thread.run+8)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #33 pc 00000000003bda88  /apex/com.android.runtime/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+1028) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #34 pc 00000000008ee318  /apex/com.android.runtime/lib64/libart.so (artQuickToInterpreterBridge+2540) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #35 pc 0000000000148468  /apex/com.android.runtime/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #36 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #37 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #38 pc 0000000000775fcc  /apex/com.android.runtime/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+544) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #39 pc 0000000000777ea0  /apex/com.android.runtime/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue const*)+888) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #40 pc 00000000007df2b8  /apex/com.android.runtime/lib64/libart.so (art::Thread::CreateCallback(void*)+2456) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #41 pc 000000000012f4fc  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 08:33:21.814 18570 18570 F DEBUG   :       #42 pc 00000000000a2b3c  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 08:33:22.338  1083  1083 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_44
+11-27 08:33:22.343  1371 18577 W ActivityTaskManager:   Force finishing activity com.example.fuzzer/.MainActivity
+11-27 08:33:22.343  1371 18578 I DropBoxManagerService: add tag=system_app_native_crash isTagEnabled=true flags=0x2
+11-27 08:33:22.350  1371  1446 I BootReceiver: Copying /data/tombstones/tombstone_44 to DropBox (SYSTEM_TOMBSTONE)
+11-27 08:33:22.353  1371  1446 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+11-27 08:33:22.357  1371  1392 I ActivityManager: Showing crash dialog for package com.example.fuzzer u0
+11-27 08:33:22.399  1371  3343 E libc    : Access denied finding property "vendor.debug.egl.changepixelformat"
+11-27 08:33:22.406  1371  3343 E libc    : Access denied finding property "vendor.debug.egl.swapinterval"
+code null: crash before code was sent
+11-27 08:33:22.415  1371  1572 W InputDispatcher: channel 'd0fe949 com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+11-27 08:33:22.415  1371  1572 E InputDispatcher: channel 'd0fe949 com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+11-27 08:33:22.416   832   832 I Zygote  : Process 18541 exited due to signal 6 (Aborted)

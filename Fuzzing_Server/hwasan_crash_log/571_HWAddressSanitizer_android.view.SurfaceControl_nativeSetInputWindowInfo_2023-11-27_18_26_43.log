@@ -1,0 +1,15 @@
+
+android.view.SurfaceControl|nativeSetInputWindowInfo|long, long, android.view.InputWindowHandle|void
+
+objfileName: 1701070025771.obj
+
+android.view.SurfaceControl|nativeSetInputWindowInfo
+
+android.view.SurfaceControl|nativeSetInputWindowInfo|2023-11-27 18:26:43
+11-27 07:27:05.822 17351 17374 I app_process64: ==17351==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000008 at pc 0x007cdbb1cdc8
+11-27 07:27:05.822 17351 17374 I app_process64: READ of size 8 at 0x000000000008 tags: 80/00 (ptr/mem) in thread T100798
+11-27 07:27:05.838 17351 17374 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-27 07:27:05.838 17351 17374 I app_process64:     #1 0x7cd8d240d8  (/system/lib64/libandroid_runtime.so+0x1500d8)
+11-27 07:27:05.838 17351 17374 I app_process64:     #2 0x7112845c  (/system/framework/arm64/boot-framework.oat+0x2c545c)
+11-27 07:27:05.838 17351 17374 I app_process64: 
+11-27 07:27:05.838 17351 17374 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 17374 (Thread-2), pid 17351 (.example.fuzzer)

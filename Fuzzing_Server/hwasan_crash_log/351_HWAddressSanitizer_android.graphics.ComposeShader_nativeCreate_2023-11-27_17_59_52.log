@@ -1,0 +1,14 @@
+
+android.graphics.ComposeShader|nativeCreate|long, long, long, int|long
+
+objfileName: 1701068414588.obj
+
+android.graphics.ComposeShader|nativeCreate
+
+android.graphics.ComposeShader|nativeCreate|2023-11-27 17:59:52
+11-27 07:00:14.616  3977  4001 I app_process64: ==3977==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cd8da4aa8
+11-27 07:00:14.616  3977  4001 I app_process64: WRITE of size 4 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T99699
+11-27 07:00:14.632  3977  4001 I app_process64:     #0 0x7cd8da4aa4  (/system/lib64/libandroid_runtime.so+0x1d0aa4)
+11-27 07:00:14.632  3977  4001 I app_process64:     #1 0x71100f00  (/system/framework/arm64/boot-framework.oat+0x29df00)
+11-27 07:00:14.632  3977  4001 I app_process64: 
+11-27 07:00:14.632  3977  4001 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 4001 (Thread-2), pid 3977 (.example.fuzzer)

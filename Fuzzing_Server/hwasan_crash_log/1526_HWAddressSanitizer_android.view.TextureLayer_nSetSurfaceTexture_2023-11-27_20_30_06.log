@@ -1,0 +1,15 @@
+
+android.view.TextureLayer|nSetSurfaceTexture|long, android.graphics.SurfaceTexture|void
+
+objfileName: 1701077428814.obj
+
+android.view.TextureLayer|nSetSurfaceTexture
+
+android.view.TextureLayer|nSetSurfaceTexture|2023-11-27 20:30:06
+11-27 09:30:28.853 16158 16181 I app_process64: ==16158==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000040 at pc 0x007cd8d06eac
+11-27 09:30:28.854 16158 16181 I app_process64: READ of size 8 at 0x000000000040 tags: 80/00 (ptr/mem) in thread T105633
+11-27 09:30:28.870 16158 16181 I app_process64:     #0 0x7cd8d06ea8  (/system/lib64/libandroid_runtime.so+0x132ea8)
+11-27 09:30:28.870 16158 16181 I app_process64:     #1 0x7cd8d06df0  (/system/lib64/libandroid_runtime.so+0x132df0)
+11-27 09:30:28.870 16158 16181 I app_process64:     #2 0x710ebdf4  (/system/framework/arm64/boot-framework.oat+0x288df4)
+11-27 09:30:28.870 16158 16181 I app_process64: 
+11-27 09:30:28.870 16158 16181 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 16181 (Thread-2), pid 16158 (.example.fuzzer)

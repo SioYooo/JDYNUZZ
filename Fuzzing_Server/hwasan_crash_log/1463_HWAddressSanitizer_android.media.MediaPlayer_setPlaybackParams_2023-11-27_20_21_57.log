@@ -1,0 +1,12 @@
+
+android.media.MediaPlayer|setPlaybackParams|android.media.PlaybackParams|void
+
+objfileName: 1701076939649.obj
+
+android.media.MediaPlayer|setPlaybackParams|2023-11-27 20:21:57
+11-27 09:22:19.685 12320 12343 I app_process64: ==12320==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000001f at pc 0x007cd7436370
+11-27 09:22:19.685 12320 12343 I app_process64: READ of size 8 at 0x00000000001f tags: 80/00 (ptr/mem) in thread T105318
+11-27 09:22:19.701 12320 12343 I app_process64:     #0 0x7cd743636c  (/system/lib64/libbinder.so+0x7236c)
+11-27 09:22:19.702 12320 12343 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 09:22:19.702 12320 12343 I app_process64: 
+11-27 09:22:19.702 12320 12343 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 12343 (Thread-2), pid 12320 (.example.fuzzer)

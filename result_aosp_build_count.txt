@@ -1,0 +1,12 @@
+Total issue file: 0
+Version Count Start
+Version Count End
+Category Count Start
+Category Count End
+Total reproducible issue file: 0
+Reproducible Category Count Start
+Reproducible Category Count End
+Reproducible Category List Start
+Reproducible Category List End
+Available Backtrace List Start
+Available Backtrace List End

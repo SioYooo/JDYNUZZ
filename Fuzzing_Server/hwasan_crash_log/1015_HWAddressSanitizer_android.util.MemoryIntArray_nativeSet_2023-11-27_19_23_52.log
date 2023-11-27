@@ -1,0 +1,15 @@
+
+android.util.MemoryIntArray|nativeSet|int, long, int, int|void
+
+objfileName: 1701073454850.obj
+
+android.util.MemoryIntArray|nativeSet
+
+android.util.MemoryIntArray|nativeSet|2023-11-27 19:23:52
+11-27 08:24:14.915 14338 14361 I app_process64: ==14338==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7442408
+11-27 08:24:14.915 14338 14361 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T103073
+11-27 08:24:14.931 14338 14361 I app_process64:     #0 0x7cd7442404  (/system/lib64/libbinder.so+0x7e404)
+11-27 08:24:14.931 14338 14361 I app_process64:     #1 0x7cd8d542a8  (/system/lib64/libandroid_runtime.so+0x1802a8)
+11-27 08:24:14.931 14338 14361 I app_process64:     #2 0x710ed0e8  (/system/framework/arm64/boot-framework.oat+0x28a0e8)
+11-27 08:24:14.931 14338 14361 I app_process64: 
+11-27 08:24:14.931 14338 14361 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 14361 (Thread-2), pid 14338 (.example.fuzzer)

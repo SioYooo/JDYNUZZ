@@ -1,0 +1,58 @@
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/37120221_M4B30X.pdf:SM-N9005
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/68751645_OPR5.170623.007.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/80166962_OPR1.170623.032.pdf:htc_pmeuhl,Xperia XA1,Mi A1,Galaxy S8
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/151334951_PPR1.180610.011.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/188852795_RP1A.200720.009.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/279825798_TP1A.221005.002.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/280658602_OPM1.171019.026.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/ASSIGNED/300402195_TP1A.220624.014.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/col/62179655_OPM2.171019.029.pdf:Pixel 2
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/col/63826873_LMY48B.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/col/191903378_RP1A.201005.004.A1.pdf:emulator-5554 eng.brando.20210622.122815
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/col/279130068_PQ3A.190801.002.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/DUPLICATE/37007444_KTU84P.pdf:nexus 5
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/DUPLICATE/124793830_PPR2.181005.003.pdf:Pixel 2XL
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/DUPLICATE/134912609_MRA58K.pdf:LGMS631
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/36983752_JWR66Y.pdf:Nexus 4
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/36997081_KVT49L.pdf:Asus Zenfone
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/37045647_LRX22G.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/37046187_LMY47V.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/37068652_KVT49L.pdf:Xperia
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/37070241_MRA58N.pdf:Nexus 6
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/37108325_NRD90M.pdf:Nexus 5X
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/37121527_NRD90M.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/37135347_N4F26O.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/40035065_LMY47V.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/65355068_NRD90M.pdf:hongmi note4X
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/66498889_PPR1.180610.009.pdf:Pixel XL
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/71421054_OPM3.171019.013.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/73366049_KVT49L.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/110924477_PQ1A.190105.004.pdf:HUAWEI M6 VRD_AL09
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/113828142_OPM1.171019.011.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/136535675_QP1A.190711.020.pdf:BlackBerry Key2 BBF100-4
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/138397755_PQ3A.190705.001.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/167014931_QQ3A.200805.001.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/179709053_RP1A.201005.004.A1.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/201181574_RQ3A.210905.001.pdf:pixel 4a
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/205880718_SP1A.211105.002.A1.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/255397162_TQ1A.221205.011.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/260517780_QP1A.190711.020.pdf:iData 70 Series Android 10.0 (Q)
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/FIXED/286247197_QP1A.190711.020.pdf:Redmi 9A/ Android 10
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/36921417_FRF91.pdf:Nexus One
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/36923426_GRH55.pdf:emulator
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/36923484_GRH55.pdf:emulator with target "Google APIs" and API Level 9.
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/36933380_ERD79.pdf:emulators
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/36967392_7070703.pdf:Nexus 7
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37001437_LMY47D.pdf:Nexus 7
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37013028_LRX21O.pdf:Nexus 5
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37013848_LRX22C.pdf:Nexus 4
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37033745_LMY47D.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37036009_LMY47D.pdf:Nexus 6,Nexus 5,Nexus 9
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37047523_LRX22G.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37048393_LRX22G.pdf:Nexus 6
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37123764_OPR1.170623.032.pdf:Nexus 5X
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/37139867_N2G48B.pdf:Mi5
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/62245700_NRD90M.pdf:SM-G920F
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/63750410_NRD90M.pdf:sp9861e
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/64471597_NRD90M.pdf:NA
+/home/siyu/tifs/JDYNUZZ/issue_tracer/backtrace/OBSOLETE/195340078_RQ3A.210705.001.pdf:NA

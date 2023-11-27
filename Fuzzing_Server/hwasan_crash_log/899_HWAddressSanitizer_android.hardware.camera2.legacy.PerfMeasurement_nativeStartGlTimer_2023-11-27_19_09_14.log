@@ -1,0 +1,14 @@
+
+android.hardware.camera2.legacy.PerfMeasurement|nativeStartGlTimer|long|void
+
+objfileName: 1701072576129.obj
+
+android.hardware.camera2.legacy.PerfMeasurement|nativeStartGlTimer
+
+android.hardware.camera2.legacy.PerfMeasurement|nativeStartGlTimer|2023-11-27 19:09:14
+11-27 08:09:36.156  7215  7238 I app_process64: ==7215==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000048 at pc 0x007cd8de1718
+11-27 08:09:36.156  7215  7238 I app_process64: READ of size 1 at 0x000000000048 tags: 80/00 (ptr/mem) in thread T102473
+11-27 08:09:36.172  7215  7238 I app_process64:     #0 0x7cd8de1714  (/system/lib64/libandroid_runtime.so+0x20d714)
+11-27 08:09:36.172  7215  7238 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-27 08:09:36.172  7215  7238 I app_process64: 
+11-27 08:09:36.172  7215  7238 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 7238 (Thread-2), pid 7215 (.example.fuzzer)

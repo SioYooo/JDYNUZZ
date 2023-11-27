@@ -1,0 +1,15 @@
+
+android.media.AudioTrack|native_setOutputDevice|int|boolean
+
+objfileName: 1701073655772.obj
+
+android.media.AudioTrack|native_setOutputDevice
+
+android.media.AudioTrack|native_setOutputDevice|2023-11-27 19:27:13
+11-27 08:27:35.866 15970 15993 I app_process64: ==15970==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000007 at pc 0x007cdbb1cdc8
+11-27 08:27:35.866 15970 15993 I app_process64: READ of size 8 at 0x000000000007 tags: 80/00 (ptr/mem) in thread T103208
+11-27 08:27:35.883 15970 15993 I app_process64:     #0 0x7cdbb1cdc4  (/system/lib64/libutils.so+0x10dc4)
+11-27 08:27:35.883 15970 15993 I app_process64:     #1 0x7cd8dc439c  (/system/lib64/libandroid_runtime.so+0x1f039c)
+11-27 08:27:35.883 15970 15993 I app_process64:     #2 0x711228d8  (/system/framework/arm64/boot-framework.oat+0x2bf8d8)
+11-27 08:27:35.883 15970 15993 I app_process64: 
+11-27 08:27:35.883 15970 15993 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 15993 (Thread-2), pid 15970 (.example.fuzzer)

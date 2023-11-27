@@ -1,0 +1,14 @@
+
+android.database.sqlite.SQLiteConnection|nativePrepareStatement|long, java.lang.String|long
+
+objfileName: 1701069452550.obj
+
+android.database.sqlite.SQLiteConnection|nativePrepareStatement
+
+android.database.sqlite.SQLiteConnection|nativePrepareStatement|2023-11-27 18:17:10
+11-27 07:17:32.576 12618 12641 I app_process64: ==12618==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8cfb0b4
+11-27 07:17:32.576 12618 12641 I app_process64: READ of size 8 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T100408
+11-27 07:17:32.592 12618 12641 I app_process64:     #0 0x7cd8cfb0b0  (/system/lib64/libandroid_runtime.so+0x1270b0)
+11-27 07:17:32.592 12618 12641 I app_process64:     #1 0x710ed6b4  (/system/framework/arm64/boot-framework.oat+0x28a6b4)
+11-27 07:17:32.592 12618 12641 I app_process64: 
+11-27 07:17:32.593 12618 12641 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 12641 (Thread-2), pid 12618 (.example.fuzzer)

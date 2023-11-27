@@ -1,0 +1,14 @@
+
+android.view.MotionEvent|nativeGetClassification|long|int
+
+objfileName: 1701077640196.obj
+
+android.view.MotionEvent|nativeGetClassification
+
+android.view.MotionEvent|nativeGetClassification|2023-11-27 20:33:37
+11-27 09:34:00.222 17796 17819 I app_process64: ==17796==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000002b at pc 0x007cd8d14d10
+11-27 09:34:00.222 17796 17819 I app_process64: READ of size 1 at 0x00000000002b tags: 80/00 (ptr/mem) in thread T105768
+11-27 09:34:00.239 17796 17819 I app_process64:     #0 0x7cd8d14d0c  (/system/lib64/libandroid_runtime.so+0x140d0c)
+11-27 09:34:00.239 17796 17819 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 09:34:00.239 17796 17819 I app_process64: 
+11-27 09:34:00.239 17796 17819 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 17819 (Thread-2), pid 17796 (.example.fuzzer)

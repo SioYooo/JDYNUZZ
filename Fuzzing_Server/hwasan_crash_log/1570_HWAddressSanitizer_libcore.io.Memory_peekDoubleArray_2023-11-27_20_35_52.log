@@ -1,0 +1,15 @@
+
+libcore.io.Memory|peekDoubleArray|long, double[], int, int, boolean|void
+
+objfileName: 1701077774590.obj
+
+libcore.io.Memory|peekDoubleArray
+
+libcore.io.Memory|peekDoubleArray|2023-11-27 20:35:52
+11-27 09:36:14.635 18804 18827 I app_process64: ==18804==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd90f5010
+11-27 09:36:14.635 18804 18827 I app_process64: READ of size 16 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T105853
+11-27 09:36:14.652 18804 18827 I app_process64:     #0 0x7cd90f500c  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1700c)
+11-27 09:36:14.652 18804 18827 I app_process64:     #1 0x7cccb9e894  (/apex/com.android.runtime/lib64/libjavacore.so+0x4a894)
+11-27 09:36:14.652 18804 18827 I app_process64:     #2 0x70cef25c  (/system/framework/arm64/boot-core-libart.oat+0x4e25c)
+11-27 09:36:14.652 18804 18827 I app_process64: 
+11-27 09:36:14.652 18804 18827 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 18827 (Thread-2), pid 18804 (.example.fuzzer)

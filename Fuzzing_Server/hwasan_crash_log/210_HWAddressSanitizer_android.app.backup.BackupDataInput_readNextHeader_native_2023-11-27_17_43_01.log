@@ -1,0 +1,15 @@
+
+android.app.backup.BackupDataInput|readNextHeader_native|long, android.app.backup.BackupDataInput$EntityHeader|int
+
+objfileName: 1701067403714.obj
+
+android.app.backup.BackupDataInput|readNextHeader_native
+
+android.app.backup.BackupDataInput|readNextHeader_native|2023-11-27 17:43:01
+11-27 06:43:23.770 26417 26440 I app_process64: ==26417==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000004 at pc 0x007cd77aff9c
+11-27 06:43:23.770 26417 26440 I app_process64: READ of size 1 at 0x000000000004 tags: 80/00 (ptr/mem) in thread T98968
+11-27 06:43:23.787 26417 26440 I app_process64:     #0 0x7cd77aff98  (/system/lib64/libandroidfw.so+0x77f98)
+11-27 06:43:23.787 26417 26440 I app_process64:     #1 0x7cd8e06b8c  (/system/lib64/libandroid_runtime.so+0x232b8c)
+11-27 06:43:23.787 26417 26440 I app_process64:     #2 0x710ec370  (/system/framework/arm64/boot-framework.oat+0x289370)
+11-27 06:43:23.787 26417 26440 I app_process64: 
+11-27 06:43:23.787 26417 26440 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 26440 (Thread-2), pid 26417 (.example.fuzzer)

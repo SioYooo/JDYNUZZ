@@ -1,0 +1,296 @@
+
+android.os.HwBlob|putBlob|long, android.os.HwBlob|void
+
+objfileName: 1701070554899.obj
+
+android.os.HwBlob|putBlob
+
+android.os.HwBlob|putBlob|2023-11-27 18:35:33
+11-27 07:35:55.846 22510 22533 I app_process64: ==22510==ERROR: HWAddressSanitizer: requested allocation size 0xffffffff80000000 exceeds maximum supported size of 0x80000000
+11-27 07:35:55.860   832   832 I Zygote  : Process 27241 exited due to signal 9 (Killed)
+11-27 07:35:55.860  1371  3675 I ActivityManager: Process android.process.acore (pid 27241) has died: cch+5 CEM 
+11-27 07:35:55.860  1371 11274 D CountryDetector: No listener is left
+11-27 07:35:55.861   928   928 I lowmemorykiller: 3 memory pressure events were skipped after a kill!
+11-27 07:35:55.862  1371  1403 I libprocessgroup: Successfully killed process cgroup uid 10047 pid 27241 in 0ms
+11-27 07:35:55.863   928   928 E lowmemorykiller: Kill 'com.android.settings' (27463), uid 1000, oom_adj 905 to free 39356kB
+11-27 07:35:55.864   928   928 I lowmemorykiller: Reclaimed 39356kB, cache(69792kB) and free(39624kB)-reserved(44776kB) below min(73728kB) for oom_adj 0
+11-27 07:35:55.879   832   832 I Zygote  : Process 27463 exited due to signal 9 (Killed)
+11-27 07:35:55.880  1371  3675 I ActivityManager: Process com.android.settings (pid 27463) has died: cch+5 CEM 
+11-27 07:35:55.881   928   928 I lowmemorykiller: 1 memory pressure events were skipped after a kill!
+11-27 07:35:55.882  1371  1403 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 27463 in 0ms
+11-27 07:35:55.883   928   928 E lowmemorykiller: Kill 'com.android.inputmethod.latin' (27215), uid 10102, oom_adj 200 to free 46732kB
+11-27 07:35:55.884   928   928 I lowmemorykiller: Reclaimed 46732kB, cache(71032kB) and free(51632kB)-reserved(44776kB) below min(73728kB) for oom_adj 0
+11-27 07:35:55.892   832   832 I Zygote  : Process 27215 exited due to signal 9 (Killed)
+11-27 07:35:55.894  1371  2009 I ActivityManager: Process com.android.inputmethod.latin (pid 27215) has died: prcp IMPB
+11-27 07:35:55.894  1371  1403 I libprocessgroup: Successfully killed process cgroup uid 10102 pid 27215 in 0ms
+11-27 07:35:55.894  1371  2009 W ActivityManager: Scheduling restart of crashed service com.android.inputmethod.latin/.LatinIME in 1000ms
+11-27 07:35:55.902   928   928 I lowmemorykiller: 1 memory pressure events were skipped after a kill!
+11-27 07:35:55.904   928   928 W lowmemorykiller: Failed to get t_pid for '0' of pid(27179)
+11-27 07:35:55.904   928   928 E lowmemorykiller: Kill 'com.android.launcher3' (27179), uid 10094, oom_adj 100 to free 80160kB
+11-27 07:35:55.904   928   928 I lowmemorykiller: Reclaimed 80160kB, cache(77184kB) and free(53772kB)-reserved(44776kB) below min(92160kB) for oom_adj 100
+11-27 07:35:55.914   832   832 I Zygote  : Process 27179 exited due to signal 9 (Killed)
+11-27 07:35:55.921   928   928 I lowmemorykiller: 1 memory pressure events were skipped after a kill!
+11-27 07:35:55.922  1371  7345 I ActivityManager: Process com.android.launcher3 (pid 27179) has died: vis BFGS
+11-27 07:35:55.922  1371  1572 W InputDispatcher: channel '5f132ad com.android.launcher3/com.android.launcher3.Launcher (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+11-27 07:35:55.922  1371 28802 D NotificationListeners: Removing active service ComponentInfo{com.android.launcher3/com.android.launcher3.notification.NotificationListener}
+11-27 07:35:55.922  1371  1371 V NotificationListeners: 0 notification listener connection lost: ComponentInfo{com.android.launcher3/com.android.launcher3.notification.NotificationListener}
+11-27 07:35:55.922  1371  1403 I libprocessgroup: Successfully killed process cgroup uid 10094 pid 27179 in 0ms
+11-27 07:35:55.923  1371  1572 E InputDispatcher: channel '5f132ad com.android.launcher3/com.android.launcher3.Launcher (server)' ~ Channel is unrecoverably broken and will be disposed!
+11-27 07:35:55.923  1371  1572 W InputDispatcher: channel 'recents_animation_input_consumer (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+11-27 07:35:55.923  1371  1572 E InputDispatcher: channel 'recents_animation_input_consumer (server)' ~ Channel is unrecoverably broken and will be disposed!
+11-27 07:35:55.923  1371 12353 W InputDispatcher: Attempted to unregister already unregistered input channel 'recents_animation_input_consumer (server)'
+11-27 07:35:55.924   928   928 E lowmemorykiller: Kill 'android.ext.services' (27605), uid 10045, oom_adj 100 to free 40516kB
+11-27 07:35:55.925   928   928 I lowmemorykiller: Reclaimed 40516kB, cache(80848kB) and free(75476kB)-reserved(44776kB) below min(92160kB) for oom_adj 100
+11-27 07:35:55.925  1371  1836 I WindowManager: WIN DEATH: Window{5f132ad u0 com.android.launcher3/com.android.launcher3.Launcher}
+11-27 07:35:55.926  1371  1836 W InputDispatcher: Attempted to unregister already unregistered input channel '5f132ad com.android.launcher3/com.android.launcher3.Launcher (server)'
+11-27 07:35:55.937  1371  7345 W ActivityManager: Scheduling restart of crashed service com.android.launcher3/com.android.quickstep.TouchInteractionService in 10957ms
+11-27 07:35:55.938   832   832 I Zygote  : Process 27605 exited due to signal 9 (Killed)
+11-27 07:35:55.938  1371  7345 W ActivityManager: Scheduling restart of crashed service com.android.launcher3/.notification.NotificationListener in 20956ms
+11-27 07:35:55.940  1371 12353 D NotificationAssistants: Removing active service ComponentInfo{android.ext.services/android.ext.services.notification.Assistant}
+11-27 07:35:55.940  1371 12353 D NotificationListeners: Removing active service ComponentInfo{android.ext.services/android.ext.services.notification.Assistant}
+11-27 07:35:55.941  1371  1371 V NotificationAssistants: 0 notification assistant connection lost: ComponentInfo{android.ext.services/android.ext.services.notification.Assistant}
+11-27 07:35:55.941   928   928 I lowmemorykiller: 1 memory pressure events were skipped after a kill!
+11-27 07:35:55.943  1371  2478 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-27 07:35:55.944  1371  1394 W ActivityManager: setHasOverlayUi called on unknown pid: 27179
+11-27 07:35:55.950  1371 12353 I ActivityManager: Process android.ext.services (pid 27605) has died: vis BFGS
+11-27 07:35:55.950  1371  1403 I libprocessgroup: Successfully killed process cgroup uid 10045 pid 27605 in 0ms
+11-27 07:35:55.951  1371 12353 W ActivityManager: Scheduling restart of crashed service android.ext.services/.notification.Assistant in 30944ms
+11-27 07:35:55.985   832   832 D Zygote  : Forked child process 22538
+11-27 07:35:55.991  1371  1402 I ActivityManager: Start proc 22538:com.android.launcher3/u0a94 for service {com.android.launcher3/com.android.quickstep.TouchInteractionService}
+11-27 07:35:56.228 22510 22533 I app_process64:     #0 0x7cd90f93c4  (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1b3c4)
+11-27 07:35:56.228 22510 22533 I app_process64:     #1 0x7cd95e946c  (/apex/com.android.runtime/lib64/bionic/libc.so+0x4346c)
+11-27 07:35:56.228 22510 22533 I app_process64:     #2 0x7cd8d406d8  (/system/lib64/libandroid_runtime.so+0x16c6d8)
+11-27 07:35:56.228 22510 22533 I app_process64:     #3 0x710f0f84  (/system/framework/arm64/boot-framework.oat+0x28df84)
+11-27 07:35:56.274 22538 22538 D TouchInteractionService: Touch service connected
+11-27 07:35:56.278 22510 22533 I app_process64:     #4 0x7cd3f85f0b  (/system/framework/framework.jar+0x1008f0b)
+11-27 07:35:56.278 22510 22533 I app_process64: 
+11-27 07:35:56.278 22510 22533 I app_process64: ==22510==HINT: if you don't care about these errors you may set allocator_may_return_null=1
+11-27 07:35:56.278 22510 22533 I app_process64: SUMMARY: HWAddressSanitizer: allocation-size-too-big (/system/lib64/libclang_rt.hwasan-aarch64-android.so+0x1b3c4) 
+11-27 07:35:56.279 22510 22533 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 22533 (Thread-2), pid 22510 (.example.fuzzer)
+11-27 07:35:56.284  1371  1371 V NotificationListeners: 0 notification listener service connected: ComponentInfo{com.android.launcher3/com.android.launcher3.notification.NotificationListener}
+11-27 07:35:56.326  1371 22536 I ActivityManager: Low on memory:
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   94353: surfaceflinger (   24,840K memtrack) (pid 651) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   36577: media.swcodec (pid 1070) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   34218: android.hardware.camera.provider@2.4-service_64 (pid 850) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   29526: logd (pid 605) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   17104: qcrild (pid 1069) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   15621: android.hardware.graphics.composer@2.3-service (pid 653) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   13087: zygote (pid 833) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   12706: netmgrd (pid 993) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   11439: webview_zygote (pid 1805) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   10919: zygote64 (pid 832) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   10820: audioserver (pid 922) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??   10033: android.hardware.audio@2.0-service (pid 847) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    6032: media.extractor (pid 1053) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    5562: init (pid 1) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    4886: android.hardware.sensors@1.0-service (pid 871) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    4709: android.hardware.gnss@1.1-service-qti (pid 860) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    4441: netd (pid 795) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    4281: imsdatadaemon (pid 1128) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    4250: adbd (pid 1092) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    4057: vold (pid 634) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    4040: hwservicemanager (pid 608) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3957: mediadrmserver (pid 1037) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3732: ims_rtp_daemon (pid 2268) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3703: media.metrics (pid 1057) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3701: cnd (pid 991) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3674: installd (pid 1030) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3666: statsd (pid 14310) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3584: ueventd (pid 584) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3482: thermal-engine (pid 2424) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3449: android.system.suspend@1.0-service (pid 845) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3436: idmap2d (pid 1021) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3297: storaged (pid 1062) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3280: chre (pid 1079) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3165: imsrcsd (pid 2270) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3144: mediaserver (pid 1058) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3137: android.hardware.power@1.3-service.pixel-libperfmgr (pid 870) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    3001: xtra-daemon (pid 1098) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2913: android.hardware.neuralnetworks@1.0-service-paintbox (pid 846) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2895: init (pid 580) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2856: keystore (pid 1034) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2842: sensors.qti (pid 889) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2780: apexd (pid 745) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2765: android.hardware.bluetooth@1.0-service-qti (pid 849) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2737: cameraserver (pid 1011) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2734: cnss-daemon (pid 1076) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2650: vendor.google.radioext@1.0-service (pid 880) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2578: ipacm (pid 996) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2522: android.hardware.drm@1.2-service.widevine (pid 858) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2492: android.hardware.thermal@2.0-service.pixel (pid 872) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2467: sscrpcd (pid 650) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2458: android.hardware.power.stats@1.0-service.pixel (pid 869) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2453: android.hardware.drm@1.0-service (pid 854) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2446: android.hardware.drm@1.2-service.clearkey (pid 855) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2437: android.hardware.keymaster@4.0-service.citadel (pid 613) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2428: android.hardware.confirmationui@1.0-service-crosshatch (pid 852) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2407: update_engine (pid 1086) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2390: mm-pp-dpps (pid 970) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2373: vendor.qti.hardware.display.allocator@1.0-service (pid 655) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2366: vendor.qti.media.c2@1.0-service (pid 885) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2337: init (pid 581) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2328: android.hardware.authsecret@1.0-service.citadel (pid 848) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2321: android.hardware.neuralnetworks@1.1-service-qti (pid 863) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2313: pm-service (pid 886) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2268: android.hardware.weaver@1.0-service.citadel (pid 875) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2267: gpuservice (pid 926) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2260: android.hardware.oemlock@1.0-service.citadel (pid 867) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2248: android.hardware.usb@1.1-service.crosshatch (pid 874) native
+11-27 07:35:56.326  1371 22536 I ActivityManager:   ntv   ??    2241: android.hardware.nfc@1.2-service (pid 865)
+11-27 07:35:56.327  1371 22536 I ActivityManager:   sys    PER   424856: system (  149,924K memtrack) (pid 1371) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   pers   PER    74335: com.android.systemui (   12,520K memtrack) (pid 1669) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   pers   PER    16799: com.android.phone (pid 1955) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   pers   PER    15047: com.android.nfc (pid 2487) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   pers   PER     8659: com.android.ims.rcsservice (pid 2549) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   pers   PER     8293: com.android.networkstack (pid 1737) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   pers   PER     8165: com.qualcomm.qti.telephonyservice (pid 1914) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   pers   PER     7423: com.android.se (pid 2524) fixed
+11-27 07:35:56.327  1371 22536 I ActivityManager:   psvc   PER    17243: com.android.bluetooth (pid 1646) service
+11-27 07:35:56.327  1371 22536 I ActivityManager:                        com.android.bluetooth/.gatt.GattService<=Proc{1371:system/1000}
+11-27 07:35:56.327  1371 22536 I ActivityManager:   fore   TOP  2295867: com.example.fuzzer (   33,960K memtrack) (pid 22510) top-activity
+11-27 07:35:56.327  1371 22536 I ActivityManager:   vis    BFGS       0: com.android.launcher3 (pid 27179) service
+11-27 07:35:56.327  1371 22536 I ActivityManager:                        com.android.launcher3/com.android.quickstep.TouchInteractionService<=Proc{1669:com.android.systemui/u0a95}
+11-27 07:35:56.327  1371 22536 I ActivityManager:   vis    BFGS       0: android.ext.services (pid 27605) service
+11-27 07:35:56.327  1371 22536 I ActivityManager:                        android.ext.services/.notification.Assistant<=Proc{1371:system/1000}
+11-27 07:35:56.327  1371 22536 I ActivityManager:   prcp   IMPB       0: com.android.inputmethod.latin (pid 27215) service
+11-27 07:35:56.327  1371 22536 I ActivityManager:                        com.android.inputmethod.latin/.LatinIME<=Proc{1371:system/1000}
+11-27 07:35:56.327  1371 22536 I ActivityManager:            3428397: TOTAL (  221,244K memtrack)
+11-27 07:35:56.327  1371 22536 I ActivityManager:   MemInfo:   189,260K slab,     2,388K shmem,    54,116K vm alloc,    75,640K page tables    26,544K kernel stack
+11-27 07:35:56.327  1371 22536 I ActivityManager:                  496K buffers,   236,844K cached,   164,896K mapped,    52,240K free
+11-27 07:35:56.327  1371 22536 I ActivityManager:   ZRAM:   112,428K RAM, 2,097,148K swap total, 1,566,612K swap free
+11-27 07:35:56.327  1371 22536 I ActivityManager:   Free RAM:   181,336K
+11-27 07:35:56.327  1371 22536 I ActivityManager:   Used RAM: 3,719,693K
+11-27 07:35:56.327  1371 22536 I ActivityManager:   Lost RAM:   133,990K
+11-27 07:35:56.353  1371 22536 I DropBoxManagerService: add tag=system_server_lowmem isTagEnabled=true flags=0x2
+11-27 07:35:56.446  1371  1385 I system_server: Background young concurrent copying GC freed 385932(13MB) AllocSpace objects, 159(9768KB) LOS objects, 22% free, 63MB/81MB, paused 152us total 114.815ms
+11-27 07:35:56.533 22566 22566 I crash_dump64: obtaining output fd from tombstoned, type: kDebuggerdTombstone
+11-27 07:35:56.537  1083  1083 I /system/bin/tombstoned: received crash request for pid 22533
+11-27 07:35:56.538 22566 22566 I crash_dump64: performing dump of process 22510 (target tid = 22533)
+11-27 07:35:56.547 22566 22566 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+11-27 07:35:56.547 22566 22566 F DEBUG   : Build fingerprint: 'Android/aosp_blueline/blueline:10/QP1A.190711.020/eng.siyu.20231125.030149:userdebug/test-keys'
+11-27 07:35:56.547 22566 22566 F DEBUG   : Revision: 'MP1.0'
+11-27 07:35:56.547 22566 22566 F DEBUG   : ABI: 'arm64'
+11-27 07:35:56.555 22566 22566 F DEBUG   : Timestamp: 2023-11-27 07:35:56+0000
+11-27 07:35:56.555 22566 22566 F DEBUG   : pid: 22510, tid: 22533, name: Thread-2  >>> com.example.fuzzer <<<
+11-27 07:35:56.555 22566 22566 F DEBUG   : uid: 10109
+11-27 07:35:56.555 22566 22566 F DEBUG   : signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x0  0000000000000000  x1  0000000000005805  x2  0000000000000006  x3  5500007c6f446350
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x4  0000007c6f4463d0  x5  fefefefefefefeff  x6  fefefefefefefeff  x7  7f7f7f7f7f7f7f7f
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x8  00000000000000f0  x9  0200007400000000  x10 0000007bc6f4463d  x11 0000007bc6f4463c
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x12 0000000000000055  x13 0000000000000055  x14 00000007c6f4461a  x15 00000007c6f44622
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x16 0000000000000055  x17 0000000000000055  x18 0000007c6eeb2000  x19 0200007400000000
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x20 5400007c6f4463d0  x21 5600007c6f446340  x22 5700007c6f446320  x23 5500007c6f446350
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x24 00000000000057ee  x25 0000000000005805  x26 00000000ffffffff  x27 fb0000471dd86ef0
+11-27 07:35:56.556 22566 22566 F DEBUG   :     x28 0000007c6f44b020  x29 0000007c6f4464a0
+11-27 07:35:56.556 22566 22566 F DEBUG   :     sp  0000007c6f446320  lr  0000007cd9646098  pc  0000007cd96460b4
+11-27 07:35:56.852 22566 22566 F DEBUG   : 
+11-27 07:35:56.852 22566 22566 F DEBUG   : backtrace:
+11-27 07:35:56.852 22566 22566 F DEBUG   :       #00 pc 00000000000a00b4  /apex/com.android.runtime/lib64/bionic/libc.so (abort+352) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 07:35:56.852 22566 22566 F DEBUG   :       #01 pc 00000000000276ac  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Abort()+56) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 07:35:56.852 22566 22566 F DEBUG   :       #02 pc 0000000000026ab0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::Die()+200) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 07:35:56.852 22566 22566 F DEBUG   :       #03 pc 00000000000287a0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer::ReportAllocationSizeTooBig(unsigned long, unsigned long, __sanitizer::StackTrace const*)+76) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #04 pc 00000000000183d0  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::HwasanAllocate(__sanitizer::StackTrace*, unsigned long, unsigned long, bool)+708) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #05 pc 0000000000018434  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__hwasan::hwasan_calloc(unsigned long, unsigned long, __sanitizer::StackTrace*)+56) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #06 pc 000000000001b3f8  /system/lib64/libclang_rt.hwasan-aarch64-android.so (__sanitizer_calloc+128) (BuildId: 5305c60a4101a2cd88c0fd38fb489a997d1c67de)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #07 pc 000000000004346c  /apex/com.android.runtime/lib64/bionic/libc.so (calloc+56) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #08 pc 000000000016c6d8  /system/lib64/libandroid_runtime.so (JHwBlob_native_setup(_JNIEnv*, _jobject*, int)+300) (BuildId: 608a42a16f2b1474852a08d1c1af4e6d)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #09 pc 000000000028df84  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+132) (BuildId: fc6c362971570fa38236aa93a2426909230f6823)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #10 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #11 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #12 pc 0000000000418c08  /apex/com.android.runtime/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+916) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #13 pc 00000000004109a0  /apex/com.android.runtime/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1572) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #14 pc 000000000090c4ec  /apex/com.android.runtime/lib64/libart.so (MterpInvokeDirect+1120) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #15 pc 0000000000139914  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_direct+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #16 pc 00000000002f62c2  /system/framework/framework.jar (android.os.HwBlob.<init>+6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #17 pc 00000000003bda88  /apex/com.android.runtime/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+1028) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #18 pc 00000000008ee318  /apex/com.android.runtime/lib64/libart.so (artQuickToInterpreterBridge+2540) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #19 pc 0000000000148468  /apex/com.android.runtime/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.853 22566 22566 F DEBUG   :       #20 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #21 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #22 pc 0000000000775fcc  /apex/com.android.runtime/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+544) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #23 pc 000000000077a964  /apex/com.android.runtime/lib64/libart.so (art::InvokeConstructor(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::ObjPtr<art::mirror::Object>, _jobject*)+1052) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #24 pc 000000000068ca18  /apex/com.android.runtime/lib64/libart.so (art::Constructor_newInstance0(_JNIEnv*, _jobject*, _jobjectArray*)+1292) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #25 pc 00000000000c0b98  /system/framework/arm64/boot.oat (art_jni_trampoline+152) (BuildId: 9acdc84a8fcd063a1fd61d0dc163b27bfcdc0159)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #26 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #27 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #28 pc 0000000000418c08  /apex/com.android.runtime/lib64/libart.so (art::interpreter::ArtInterpreterToCompiledCodeBridge(art::Thread*, art::ArtMethod*, art::ShadowFrame*, unsigned short, art::JValue*)+916) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #29 pc 00000000004109a0  /apex/com.android.runtime/lib64/libart.so (bool art::interpreter::DoCall<false, false>(art::ArtMethod*, art::Thread*, art::ShadowFrame&, art::Instruction const*, unsigned short, art::JValue*)+1572) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #30 pc 000000000090c4ec  /apex/com.android.runtime/lib64/libart.so (MterpInvokeDirect+1120) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #31 pc 0000000000139914  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_direct+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #32 pc 00000000000f780c  /apex/com.android.runtime/javalib/core-oj.jar (java.lang.reflect.Constructor.newInstance+8)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #33 pc 0000000000908608  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+3164) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.854 22566 22566 F DEBUG   :       #34 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #35 pc 00000000000055e2  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.handleObject+598)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #36 pc 0000000000908608  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+3164) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #37 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #38 pc 0000000000004d26  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.process+4878)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #39 pc 000000000090ef04  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtualRange+2664) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #40 pc 0000000000139b14  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual_range+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #41 pc 0000000000006186  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity.TCPServer+602)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #42 pc 0000000000908608  /apex/com.android.runtime/lib64/libart.so (MterpInvokeVirtual+3164) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #43 pc 0000000000139814  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_virtual+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #44 pc 0000000000002ee0  /system/priv-app/mytestapp/app-debug.apk (com.example.fuzzer.MainActivity$2.run+4)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #45 pc 000000000090b494  /apex/com.android.runtime/lib64/libart.so (MterpInvokeInterface+3644) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #46 pc 0000000000139a14  /apex/com.android.runtime/lib64/libart.so (mterp_op_invoke_interface+20) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #47 pc 00000000000ea918  /apex/com.android.runtime/javalib/core-oj.jar (java.lang.Thread.run+8)
+11-27 07:35:56.855 22566 22566 F DEBUG   :       #48 pc 00000000003bda88  /apex/com.android.runtime/lib64/libart.so (art::interpreter::Execute(art::Thread*, art::CodeItemDataAccessor const&, art::ShadowFrame&, art::JValue, bool, bool)+1028) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #49 pc 00000000008ee318  /apex/com.android.runtime/lib64/libart.so (artQuickToInterpreterBridge+2540) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #50 pc 0000000000148468  /apex/com.android.runtime/lib64/libart.so (art_quick_to_interpreter_bridge+88) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #51 pc 000000000013f334  /apex/com.android.runtime/lib64/libart.so (art_quick_invoke_stub+548) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #52 pc 0000000000150884  /apex/com.android.runtime/lib64/libart.so (art::ArtMethod::Invoke(art::Thread*, unsigned int*, unsigned int, art::JValue*, char const*)+528) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #53 pc 0000000000775fcc  /apex/com.android.runtime/lib64/libart.so (art::(anonymous namespace)::InvokeWithArgArray(art::ScopedObjectAccessAlreadyRunnable const&, art::ArtMethod*, art::(anonymous namespace)::ArgArray*, art::JValue*, char const*)+544) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #54 pc 0000000000777ea0  /apex/com.android.runtime/lib64/libart.so (art::InvokeVirtualOrInterfaceWithJValues(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, _jmethodID*, jvalue const*)+888) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #55 pc 00000000007df2b8  /apex/com.android.runtime/lib64/libart.so (art::Thread::CreateCallback(void*)+2456) (BuildId: 2c8d9441ade58d28da916e9c2cb087e6)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #56 pc 000000000012f4fc  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+40) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 07:35:56.856 22566 22566 F DEBUG   :       #57 pc 00000000000a2b3c  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: 20c98df20fef47154d27e29dfd041f2c)
+11-27 07:35:56.925   832   832 D Zygote  : Forked child process 22569
+11-27 07:35:56.930   928   928 I lowmemorykiller: Reclaimed 0kB, cache(115164kB) and free(42884kB)-reserved(44776kB) below min(129024kB) for oom_adj 250
+11-27 07:35:56.930   928   928 I lowmemorykiller: Suppressed 98 failed kill reports
+11-27 07:35:56.938  1371  1402 I ActivityManager: Start proc 22569:com.android.inputmethod.latin/u0a102 for service {com.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME}
+11-27 07:35:56.982 22569 22569 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-27 07:35:56.983 22569 22569 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.manager-V1.0-java.jar
+11-27 07:35:56.983 22569 22569 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.hidl.base-V1.0-java.jar
+11-27 07:35:57.246 22569 22569 I LatinIME: Hardware accelerated drawing: true
+11-27 07:35:57.362 22569 22569 W InputAttributes: No editor info for this field. Bug?
+11-27 07:35:57.398 22569 22594 I LatinIME:LogUtils: Dictionary info: dictionary = UserHistoryDictionary.en_US ; version = 1701070557 ; date = ?
+11-27 07:35:57.400 22569 22594 I LatinIME:LogUtils: Dictionary info: dictionary = userunigram.en_US ; version = 1701070557 ; date = ?
+11-27 07:35:57.420   928   928 E lowmemorykiller: Kill 'com.android.inputmethod.latin' (22569), uid 10102, oom_adj 200 to free 55936kB
+11-27 07:35:57.420   928   928 I lowmemorykiller: Reclaimed 55936kB, cache(108592kB) and free(44488kB)-reserved(44776kB) below min(110592kB) for oom_adj 200
+11-27 07:35:57.420   928   928 I lowmemorykiller: Suppressed 48 failed kill reports
+11-27 07:35:57.424   832   832 D Zygote  : Forked child process 22595
+11-27 07:35:57.440   832   832 I Zygote  : Process 22569 exited due to signal 9 (Killed)
+11-27 07:35:57.441  1371  3675 I ActivityManager: Process com.android.inputmethod.latin (pid 22569) has died: prcp IMPB
+11-27 07:35:57.441  1371  1403 I libprocessgroup: Successfully killed process cgroup uid 10102 pid 22569 in 0ms
+11-27 07:35:57.441  1371  3675 W ActivityManager: Scheduling restart of crashed service com.android.inputmethod.latin/.LatinIME in 4000ms
+11-27 07:35:57.447  1371  1402 I ActivityManager: Start proc 22595:android.process.acore/u0a47 for content provider {com.android.providers.userdictionary/com.android.providers.userdictionary.UserDictionaryProvider}
+11-27 07:35:57.449   928   928 I lowmemorykiller: 2 memory pressure events were skipped after a kill!
+11-27 07:35:57.478   928   928 E lowmemorykiller: Kill 'android.process.acore' (22595), uid 10047, oom_adj 905 to free 39352kB
+11-27 07:35:57.479   928   928 I lowmemorykiller: Reclaimed 39352kB, cache(100868kB) and free(59724kB)-reserved(44776kB) below min(110592kB) for oom_adj 200
+11-27 07:35:57.479   928   928 I lowmemorykiller: Suppressed 2 failed kill reports
+11-27 07:35:57.492  1371  3675 I ActivityManager: Process android.process.acore (pid 22595) has died: cch+5 CEM 
+11-27 07:35:57.492   832   832 I Zygote  : Process 22595 exited due to signal 9 (Killed)
+11-27 07:35:57.492  1371  1403 I libprocessgroup: Successfully killed process cgroup uid 10047 pid 22595 in 0ms
+11-27 07:35:57.497   928   928 I lowmemorykiller: 1 memory pressure events were skipped after a kill!
+11-27 07:35:57.500  1371 12353 E ActivityManager: Timeout waiting for provider com.android.providers.userdictionary/10047 for provider user_dictionary providerRunning=false caller=unknown/10102
+11-27 07:35:57.502  1371  1400 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+11-27 07:35:57.629  1083  1083 E /system/bin/tombstoned: Tombstone written to: /data/tombstones/tombstone_04
+11-27 07:35:57.633  1371 22616 W ActivityTaskManager:   Force finishing activity com.example.fuzzer/.MainActivity
+11-27 07:35:57.634  1371 22617 I DropBoxManagerService: add tag=system_app_native_crash isTagEnabled=true flags=0x2
+11-27 07:35:57.655  1371  1446 I BootReceiver: Copying /data/tombstones/tombstone_04 to DropBox (SYSTEM_TOMBSTONE)
+11-27 07:35:57.659  1371  1446 I DropBoxManagerService: add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x2
+11-27 07:35:57.681  1371  1392 I ActivityManager: Showing crash dialog for package com.example.fuzzer u0
+11-27 07:35:57.704 22538 22538 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@c729df7
+11-27 07:35:57.740  1371  3343 E libc    : Access denied finding property "vendor.debug.egl.changepixelformat"
+11-27 07:35:57.754 22538 22538 D Tonal   : Tonal Palette - index: 10. Main color: ffe590b7
+11-27 07:35:57.754 22538 22538 D Tonal   : Colors: ff060104, ff1b0613, ff2f0b23, ff481135, ff671850, ff861f5d, ffa42773, ffbe4d91, ffd85a9e, ffde73aa, ffe590b7, ffefb9d1, fff5d6e5
+11-27 07:35:57.754 22538 22538 D Tonal   : Gradients: 
+11-27 07:35:57.754 22538 22538 D Tonal   : 	Normal GradientColors(ffe590b7, ffe590b7)
+11-27 07:35:57.754 22538 22538 D Tonal   : 	Dark GradientColors(ff481135, ff481135)
+11-27 07:35:57.754 22538 22538 D Tonal   : 	Extra dark: GradientColors(ff2f0b23, ff2f0b23)
+11-27 07:35:57.754 22538 22538 V Launcher: LauncherAppState initiated
+11-27 07:35:57.759  1371  3343 E libc    : Access denied finding property "vendor.debug.egl.swapinterval"
+code null: crash before code was sent
+11-27 07:35:57.769  1371  3343 E libc    : Access denied finding property "vendor.debug.egl.swapinterval"
+11-27 07:35:57.898  1371  1572 W InputDispatcher: channel '21592d8 com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+11-27 07:35:57.898  1371  1572 E InputDispatcher: channel '21592d8 com.example.fuzzer/com.example.fuzzer.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+11-27 07:35:57.899  1371 12353 I ActivityManager: Process com.example.fuzzer (pid 22510) has died: vis+99 TOP 

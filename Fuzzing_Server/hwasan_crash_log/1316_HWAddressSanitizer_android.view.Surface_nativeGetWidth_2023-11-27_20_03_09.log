@@ -1,0 +1,14 @@
+
+android.view.Surface|nativeGetWidth|long|int
+
+objfileName: 1701075811252.obj
+
+android.view.Surface|nativeGetWidth
+
+android.view.Surface|nativeGetWidth|2023-11-27 20:03:09
+11-27 09:03:31.278  3476  3499 I app_process64: ==3476==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000009f at pc 0x007cd8d1c5d8
+11-27 09:03:31.279  3476  3499 I app_process64: READ of size 8 at 0x00000000009f tags: 80/00 (ptr/mem) in thread T104583
+11-27 09:03:31.295  3476  3499 I app_process64:     #0 0x7cd8d1c5d4  (/system/lib64/libandroid_runtime.so+0x1485d4)
+11-27 09:03:31.295  3476  3499 I app_process64:     #1 0x710edc68  (/system/framework/arm64/boot-framework.oat+0x28ac68)
+11-27 09:03:31.295  3476  3499 I app_process64: 
+11-27 09:03:31.295  3476  3499 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 3499 (Thread-2), pid 3476 (.example.fuzzer)

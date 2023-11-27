@@ -1,0 +1,15 @@
+
+android.graphics.Paint|nSetShadowLayer|long, float, float, float, long, long|void
+
+objfileName: 1701072799114.obj
+
+android.graphics.Paint|nSetShadowLayer
+
+android.graphics.Paint|nSetShadowLayer|2023-11-27 19:12:57
+11-27 08:13:19.144  8848  8871 I app_process64: ==8848==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000000 at pc 0x007cd8cff708
+11-27 08:13:19.144  8848  8871 I app_process64: WRITE of size 4 at 0x000000000000 tags: 80/00 (ptr/mem) in thread T102608
+11-27 08:13:19.160  8848  8871 I app_process64:     #0 0x7cd8cff704  (/system/lib64/libandroid_runtime.so+0x12b704)
+11-27 08:13:19.160  8848  8871 I app_process64:     #1 0x7cd8d9b23c  (/system/lib64/libandroid_runtime.so+0x1c723c)
+11-27 08:13:19.160  8848  8871 I app_process64:     #2 0x710f8468  (/system/framework/arm64/boot-framework.oat+0x295468)
+11-27 08:13:19.160  8848  8871 I app_process64: 
+11-27 08:13:19.161  8848  8871 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 8871 (Thread-2), pid 8848 (.example.fuzzer)

@@ -1,0 +1,12 @@
+
+android.mtp.MtpServer|native_add_storage|android.mtp.MtpStorage|void
+
+objfileName: 1701070736671.obj
+
+android.mtp.MtpServer|native_add_storage|2023-11-27 18:38:34
+11-27 07:38:56.763 23992 24015 I app_process64: ==23992==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7436370
+11-27 07:38:56.763 23992 24015 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T101273
+11-27 07:38:56.780 23992 24015 I app_process64:     #0 0x7cd743636c  (/system/lib64/libbinder.so+0x7236c)
+11-27 07:38:56.780 23992 24015 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 07:38:56.780 23992 24015 I app_process64: 
+11-27 07:38:56.781 23992 24015 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 24015 (Thread-2), pid 23992 (.example.fuzzer)

@@ -1,0 +1,14 @@
+
+android.media.AudioTrack|native_set_playback_rate|int|int
+
+objfileName: 1701075209171.obj
+
+android.media.AudioTrack|native_set_playback_rate
+
+android.media.AudioTrack|native_set_playback_rate|2023-11-27 19:53:07
+11-27 08:53:29.226 28616 28639 I app_process64: ==28616==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000020 at pc 0x007cd7436370
+11-27 08:53:29.226 28616 28639 I app_process64: READ of size 8 at 0x000000000020 tags: 80/00 (ptr/mem) in thread T104178
+11-27 08:53:29.242 28616 28639 I app_process64:     #0 0x7cd743636c  (/system/lib64/libbinder.so+0x7236c)
+11-27 08:53:29.242 28616 28639 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 08:53:29.242 28616 28639 I app_process64: 
+11-27 08:53:29.243 28616 28639 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 28639 (Thread-2), pid 28616 (.example.fuzzer)

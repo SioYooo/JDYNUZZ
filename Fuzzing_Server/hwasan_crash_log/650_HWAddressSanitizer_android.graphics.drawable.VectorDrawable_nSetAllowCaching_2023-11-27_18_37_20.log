@@ -1,0 +1,14 @@
+
+android.graphics.drawable.VectorDrawable|nSetAllowCaching|long, boolean|void
+
+objfileName: 1701070662133.obj
+
+android.graphics.drawable.VectorDrawable|nSetAllowCaching
+
+android.graphics.drawable.VectorDrawable|nSetAllowCaching|2023-11-27 18:37:20
+11-27 07:37:42.161 23470 23493 I app_process64: ==23470==ERROR: HWAddressSanitizer: tag-mismatch on address 0x00000000000c at pc 0x007cd8d01c34
+11-27 07:37:42.161 23470 23493 I app_process64: WRITE of size 1 at 0x00000000000c tags: 80/00 (ptr/mem) in thread T101228
+11-27 07:37:42.177 23470 23493 I app_process64:     #0 0x7cd8d01c30  (/system/lib64/libandroid_runtime.so+0x12dc30)
+11-27 07:37:42.177 23470 23493 I app_process64:     #1 0x711026a0  (/system/framework/arm64/boot-framework.oat+0x29f6a0)
+11-27 07:37:42.177 23470 23493 I app_process64: 
+11-27 07:37:42.178 23470 23493 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 23493 (Thread-2), pid 23470 (.example.fuzzer)

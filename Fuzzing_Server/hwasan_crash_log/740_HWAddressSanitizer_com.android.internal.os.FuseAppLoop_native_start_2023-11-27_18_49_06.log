@@ -1,0 +1,16 @@
+
+com.android.internal.os.FuseAppLoop|native_start|long|void
+
+objfileName: 1701071368591.obj
+
+com.android.internal.os.FuseAppLoop|native_start
+
+com.android.internal.os.FuseAppLoop|native_start|2023-11-27 18:49:06
+11-27 07:49:28.682 28828 28851 I app_process64: ==28828==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000003 at pc 0x007cd851abf8
+11-27 07:49:28.682 28828 28851 I app_process64: READ of size 4 at 0x000000000003 tags: 80/00 (ptr/mem) in thread T101678
+11-27 07:49:28.699 28828 28851 I app_process64:     #0 0x7cd851abf4  (/system/lib64/libappfuse.so+0x6bf4)
+11-27 07:49:28.699 28828 28851 I app_process64:     #1 0x7cd8519be4  (/system/lib64/libappfuse.so+0x5be4)
+11-27 07:49:28.699 28828 28851 I app_process64:     #2 0x7cd8e0bc1c  (/system/lib64/libandroid_runtime.so+0x237c1c)
+11-27 07:49:28.699 28828 28851 I app_process64:     #3 0x710f4274  (/system/framework/arm64/boot-framework.oat+0x291274)
+11-27 07:49:28.699 28828 28851 I app_process64: 
+11-27 07:49:28.699 28828 28851 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 28851 (Thread-2), pid 28828 (.example.fuzzer)

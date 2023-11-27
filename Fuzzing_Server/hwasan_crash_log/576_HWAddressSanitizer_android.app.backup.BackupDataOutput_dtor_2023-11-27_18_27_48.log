@@ -1,0 +1,16 @@
+
+android.app.backup.BackupDataOutput|dtor|long|void
+
+objfileName: 1701070090930.obj
+
+android.app.backup.BackupDataOutput|dtor
+
+android.app.backup.BackupDataOutput|dtor|2023-11-27 18:27:48
+11-27 07:28:10.956 17659 17682 I app_process64: ==17659==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000018 at pc 0x007cdbb1e838
+11-27 07:28:10.956 17659 17682 I app_process64: READ of size 8 at 0x000000000018 tags: 80/00 (ptr/mem) in thread T100823
+11-27 07:28:10.972 17659 17682 I app_process64:     #0 0x7cdbb1e834  (/system/lib64/libutils.so+0x12834)
+11-27 07:28:10.973 17659 17682 I app_process64:     #1 0x7cd8e06edc  (/system/lib64/libandroid_runtime.so+0x232edc)
+11-27 07:28:10.973 17659 17682 I app_process64:     #2 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-27 07:28:10.973 17659 17682 I app_process64: 
+--------- beginning of crash
+11-27 07:28:10.973 17659 17682 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 17682 (Thread-2), pid 17659 (.example.fuzzer)

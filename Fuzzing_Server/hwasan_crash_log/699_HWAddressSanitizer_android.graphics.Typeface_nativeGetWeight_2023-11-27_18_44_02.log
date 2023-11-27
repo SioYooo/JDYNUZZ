@@ -1,0 +1,14 @@
+
+android.graphics.Typeface|nativeGetWeight|long|int
+
+objfileName: 1701071064691.obj
+
+android.graphics.Typeface|nativeGetWeight
+
+android.graphics.Typeface|nativeGetWeight|2023-11-27 18:44:02
+11-27 07:44:24.717 26352 26376 I app_process64: ==26352==ERROR: HWAddressSanitizer: tag-mismatch on address 0x000000000010 at pc 0x007cd8da7c24
+11-27 07:44:24.717 26352 26376 I app_process64: READ of size 2 at 0x000000000010 tags: 80/00 (ptr/mem) in thread T101474
+11-27 07:44:24.734 26352 26376 I app_process64:     #0 0x7cd8da7c20  (/system/lib64/libandroid_runtime.so+0x1d3c20)
+11-27 07:44:24.734 26352 26376 I app_process64:     #1 0x710f4db0  (/system/framework/arm64/boot-framework.oat+0x291db0)
+11-27 07:44:24.734 26352 26376 I app_process64: 
+11-27 07:44:24.734 26352 26376 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 26376 (Thread-2), pid 26352 (.example.fuzzer)

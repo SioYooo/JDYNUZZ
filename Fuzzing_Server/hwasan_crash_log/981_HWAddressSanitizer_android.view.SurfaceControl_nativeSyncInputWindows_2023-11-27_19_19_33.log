@@ -1,0 +1,14 @@
+
+android.view.SurfaceControl|nativeSyncInputWindows|long|void
+
+objfileName: 1701073195331.obj
+
+android.view.SurfaceControl|nativeSyncInputWindows
+
+android.view.SurfaceControl|nativeSyncInputWindows|2023-11-27 19:19:33
+11-27 08:19:55.358 12193 12216 I app_process64: ==12193==ERROR: HWAddressSanitizer: tag-mismatch on address 0x0000000000b0 at pc 0x007cd8b4f448
+11-27 08:19:55.358 12193 12216 I app_process64: WRITE of size 1 at 0x0000000000b0 tags: 80/00 (ptr/mem) in thread T102883
+11-27 08:19:55.374 12193 12216 I app_process64:     #0 0x7cd8b4f444  (/system/lib64/libgui.so+0x100444)
+11-27 08:19:55.374 12193 12216 I app_process64:     #1 0x710ec148  (/system/framework/arm64/boot-framework.oat+0x289148)
+11-27 08:19:55.374 12193 12216 I app_process64: 
+11-27 08:19:55.374 12193 12216 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x73ffffffff in tid 12216 (Thread-2), pid 12193 (.example.fuzzer)
