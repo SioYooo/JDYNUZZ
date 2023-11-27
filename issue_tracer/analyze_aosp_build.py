@@ -161,6 +161,30 @@ def analyze_tag():
                 print("category: " + category + " build_id: " + build_id + " tag: " + id_tag_dict[aosp_id])
                 print("*" * 50)
 
+def check_issue_id_list():
+    global reproducible_list
+    temp = []
+    for p in reproducible_list:
+        file_name = os.path.basename(p)
+        temp.append(file_name)
+    with open(cwd + os.sep + 'backtrace_list.txt', "r", encoding='utf-8') as f:
+        lines = f.readlines()
+        for line in lines:
+            parts = line.split(':')
+            if len(parts) >= 2:
+                file_path = parts[0].strip()
+                file_name = os.path.basename(file_path)
+                if file_name in temp:
+                    print("file_path: " + file_path + " file_name: " + file_name)
+                    print("*" * 50)
+                    print("temp: " + str(len(temp)))
+                    temp.remove(file_name)
+                    print("temp: " + str(len(temp)))
+                else:
+                    print("file_path: " + file_path + " file_name: " + file_name + " not in check_list")
+                    print("*" * 50)
+    print("temp: " + str(temp))
+
 
 if __name__ == '__main__':
     read_file()
@@ -176,6 +200,8 @@ if __name__ == '__main__':
     sort_file("Reproducible Category Count Start", "Reproducible Category Count End")
     # 然后复制所有的reproducible文件
     copy_reproducible_file()
+    check_issue_id_list()
     # read_tag
     # read_id_tag()
     # analyze_tag()
+

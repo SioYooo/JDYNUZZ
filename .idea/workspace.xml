@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e7430d-2fd9-4732-928c-d6a1221a3cd2" name="Changes" comment="" />
+    <list default="true" id="e5e7430d-2fd9-4732-928c-d6a1221a3cd2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue_id_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue_tracer/analyze_aosp_build.py" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/analyze_aosp_build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue_tracer/backtrace_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/backtrace_list.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count_sorted.txt" beforeDir="false" afterPath="$PROJECT_DIR$/issue_tracer/result_aosp_build_count_sorted.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +45,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/siyu/tifs/JDYNUZZ/JNI_Analyzer/jni10.0",
@@ -56,6 +64,29 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/JNI_Analyzer/jni" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="analyze_aosp_build" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="JDYNUZZ" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/issue_tracer" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/issue_tracer/analyze_aosp_build.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -98,13 +129,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/JDYNUZZ$hwa_analyze.coverage" NAME="hwa_analyze Coverage Results" MODIFIED="1700380422453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py/analyze_py" />
-    <SUITE FILE_PATH="coverage/JDYNUZZ$dependency.coverage" NAME="dependency Coverage Results" MODIFIED="1700961092448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JNI_Analyzer" />
-    <SUITE FILE_PATH="coverage/JDYNUZZ$fuzz_engine_monitor.coverage" NAME="fuzz_engine_monitor Coverage Results" MODIFIED="1700790010833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
-    <SUITE FILE_PATH="coverage/JDYNUZZ$analyze_log.coverage" NAME="analyze_log Coverage Results" MODIFIED="1700299279501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
-    <SUITE FILE_PATH="coverage/JDYNUZZ$collect_jar.coverage" NAME="collect_jar Coverage Results" MODIFIED="1700838020995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Fuzzing_Server/py" />
-    <SUITE FILE_PATH="coverage/JDYNUZZ$helper.coverage" NAME="helper Coverage Results" MODIFIED="1700921142618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/JNI_Analyzer" />
   </component>
 </project>
